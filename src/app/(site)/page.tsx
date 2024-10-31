@@ -13,9 +13,8 @@ import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "Appline - Next.js App & Software Template and Starter Kit",
-  description:
-    "Website template and starter kit crafted to build fully functional mobile app landing pages and software websites",
+  title: "Webomo - Your Social Media Expert",
+  description: "Lorem Ipsum Dolor Sit Amet",
 };
 
 export default function Home() {
