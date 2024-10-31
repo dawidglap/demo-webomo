@@ -102,7 +102,7 @@ const Footer = () => {
                 <div className="mb-11 max-w-[320px]">
                   <Link href="/" className="mb-8 inline-block">
                     {/* Logo images */}
-                    <Image
+                    {/* <Image
                       width={173}
                       height={34}
                       src={"/images/logo/logo.svg"}
@@ -119,7 +119,10 @@ const Footer = () => {
                       priority
                       className="hidden max-w-full dark:block"
                       style={{ width: "auto", height: "auto" }}
-                    />
+                    /> */}
+                    <span className="text-[30px] font-bold text-[#181C30] dark:text-white">
+                      Webomo
+                    </span>
                   </Link>
                   <p className="text-base text-body">
                     Webomo provides expert social media solutions for businesses
