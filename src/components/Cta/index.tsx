@@ -20,7 +20,7 @@ const Cta = () => {
                     Take Your Social Media to the Next Level with Webomo
                   </h2>
                   <p className="mb-10 text-base text-body">
-                    Join Webomo's expert-driven social media services and start
+                    Join Webomo s expert-driven social media services and start
                     building a powerful online presence. From strategy to
                     engagement, we have the tools to help you grow.
                   </p>
