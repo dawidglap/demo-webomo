@@ -82,7 +82,7 @@ const Header = () => {
       >
         <div className="container relative max-w-[1400px]">
           <div className="flex items-center justify-between">
-            <div className="block w-1/3 py-4 lg:py-0">
+            <div className="block w-1/4 py-4 lg:py-0">
               <Link href="/" className="block max-w-[145px] sm:max-w-[180px]">
                 <span className="text-[30px] font-bold text-[#181C30] dark:text-white">
                   Webomo
