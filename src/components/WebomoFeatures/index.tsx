@@ -31,7 +31,7 @@ const WebomoFeatures = () => {
       <div className="w-full max-w-3xl px-4">
         <div
           ref={videoContainerRef}
-          className="relative aspect-video overflow-hidden rounded-2xl bg-black"
+          className="relative aspect-video overflow-hidden rounded-2xl bg-slate-950"
         >
           {/* Video element */}
           <video
