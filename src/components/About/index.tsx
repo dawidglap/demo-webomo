@@ -93,11 +93,11 @@ const About = () => {
                   className="wow fadeInUp lg:ml-auto lg:max-w-[510px]"
                   data-wow-delay=".3s"
                 >
-                  <span className="mb-4 block text-lg font-medium text-primary md:text-[22px]">
+                  <span className="mb-4 block text-lg font-medium text-primary md:text-[16px]">
                     Track Audience Activities
                   </span>
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                    Track Your Audience Activities
+                    Storys & Posts
                   </h2>
                   <p className="mb-[30px] text-base leading-relaxed text-body">
                     Schedule your posts for times when your audience is most
@@ -132,6 +132,12 @@ const About = () => {
                       </p>
                     </div>
                   </div>
+                  <Link
+                    href="#"
+                    className="mt-8 inline-block rounded-2xl bg-primary px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90"
+                  >
+                    Know More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -144,11 +150,11 @@ const About = () => {
                   className="wow fadeInUp lg:max-w-[510px]"
                   data-wow-delay=".2s"
                 >
-                  <span className="mb-4 block text-lg font-medium text-primary md:text-[22px]">
+                  <span className="mb-4 block text-lg font-medium text-primary md:text-[16px]">
                     Create Audience Reports
                   </span>
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                    Know More About Your Audience.
+                    Storys & Posts
                   </h2>
                   <p className="mb-[30px] text-base leading-relaxed text-body">
                     Schedule your posts for times when your audience is most

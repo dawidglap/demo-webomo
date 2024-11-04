@@ -24,14 +24,14 @@ export default function Home() {
       <HeroArea />
       <WebomoFeatures />
       <Clients />
-      <Features />
+      {/* <Features /> */}
       <About />
-      <WorkProcess />
-      <Pricing />
-      <Screens />
-      <Cta />
-      <Testimonials />
-      <Faq />
+      {/* <WorkProcess /> */}
+      {/* <Pricing /> */}
+      {/* <Screens /> */}
+      {/* <Cta /> */}
+      {/* <Testimonials /> */}
+      {/* <Faq /> */}
       {/* <Blog /> */}
       {/* <Contact /> */}
     </>
