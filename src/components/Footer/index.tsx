@@ -59,7 +59,7 @@ const Footer = () => {
                     <Link href="#">Impressum</Link>
                   </li>
                   <li>
-                    <Link href="#">AGB's</Link>
+                    <Link href="#">AGBs</Link>
                   </li>
                 </ul>
               </div>
