@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import About from "@/components/About";
 import About2 from "@/components/About2";
+import AboutEnd from "@/components/AboutEnd";
 // import videoDemo from "../../../../public/images/webomo-videos/webomo-demo.mp4";
 
 const Features = () => {
@@ -42,6 +43,7 @@ const Features = () => {
       </div>
       <About />
       <About2 />
+      <AboutEnd />
     </>
   );
 };
