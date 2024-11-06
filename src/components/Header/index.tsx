@@ -115,13 +115,12 @@ const Header = () => {
               </button>
 
               <nav className="fixed left-0 top-0 z-[999] flex h-screen w-full items-center justify-center bg-white bg-opacity-95 text-center backdrop-blur-sm dark:bg-black dark:bg-opacity-95 lg:static lg:h-auto lg:w-max lg:bg-transparent lg:bg-opacity-100 lg:backdrop-blur-0 lg:backdrop-blur-none lg:dark:bg-transparent dark:lg:bg-opacity-100">
-                <ul className=" items-center space-y-3 lg:flex lg:space-x-12 lg:space-y-0 xl:space-x-14">
+                <ul className="items-center space-y-3 lg:flex lg:space-x-12 lg:space-y-0 xl:space-x-14">
                   {menuData.map((item, index) => (
                     <li key={index} className="menu-item">
                       <Link
-                        href="#"
-                        onClick={(e) => e.preventDefault()}
-                        className={`${sticky ? "lg:py-[21px]" : "lg:py-7"} ud-menu-scroll pointer-events-none inline-flex cursor-not-allowed items-center text-base font-light text-black hover:text-primary dark:text-white dark:hover:text-primary`}
+                        href={item.route}
+                        className={`${sticky ? "lg:py-[21px]" : "lg:py-7"} ud-menu-scroll inline-flex items-center text-base font-light text-black hover:text-primary dark:text-white dark:hover:text-primary`}
                       >
                         {item.label}
                       </Link>
