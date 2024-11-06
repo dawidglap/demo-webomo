@@ -13,7 +13,7 @@ import GlobalSearchModal from "@/components/GlobalSearch";
 const menuData: Menu[] = [
   {
     label: "Leistungen",
-    route: "/#features",
+    route: "/features",
   },
   {
     label: "Designs",

@@ -1,56 +1,49 @@
 "use client";
-
-import React, { useState } from "react";
+import React from "react";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import Image from "next/image";
 import Link from "next/link";
-import FsLightbox from "fslightbox-react";
+import About from "@/components/About";
+import About2 from "@/components/About2";
+// import videoDemo from "../../../../public/images/webomo-videos/webomo-demo.mp4";
 
-const HeroArea = () => {
-  const [toggler, setToggler] = useState(false);
-
+const Features = () => {
   return (
     <>
-      <section
-        id="home"
-        className="flex h-[100vh] items-center justify-center bg-gradient-to-r from-indigo-50 via-purple-50 to-white pt-[165px] dark:from-slate-900 dark:to-black"
-      >
-        <div className="container text-center lg:max-w-[1305px] lg:px-10">
-          {/* Titolo al centro */}
-          <h1 className="mb-4 text-3xl font-bold leading-tight text-black dark:text-white md:text-7xl">
-            Unsere
-            <span className="inline bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-transparent dark:from-purple-300 dark:to-pink-300">
-              {" "}
-              Leistungen{" "}
-            </span>
-          </h1>
-
-          {/* Sotto il titolo, il video */}
-          <div className="mb-6">
-            <button
-              onClick={() => setToggler(!toggler)}
-              className="inline-flex items-center rounded-2xl bg-indigo-600 px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90"
-            >
-              Guarda i nostri lavori
-            </button>
-
-            <FsLightbox
-              toggler={toggler}
-              sources={[
-                "https://www.youtube.com/watch?v=HXHphpDJ9T0&pp=ygULaW50cm8gdmlkZW8%3D",
-              ]}
-            />
-          </div>
-
-          {/* Pulsante per una consulenza gratuita */}
-          <Link
-            href="#"
-            className="inline-flex h-[60px] items-center rounded-2xl bg-indigo-600 px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90"
-          >
-            Kostenlose Beratung
-          </Link>
-        </div>
-      </section>
+      <div className="dark:via-gray-900 flex flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-indigo-50 via-purple-50 to-white  dark:from-slate-900  dark:to-black">
+        <ContainerScroll
+          titleComponent={
+            <>
+              <h1 className="mb-20 mt-[-3em] text-4xl font-semibold text-black dark:text-white">
+                Unsere Leistungen für Ihren <br />
+                <span className="mt-1 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-4xl font-bold leading-none text-transparent dark:from-purple-300 dark:to-pink-300 md:text-[6rem]">
+                  digitalen Erfolg
+                </span>
+              </h1>
+            </>
+          }
+        >
+          <video
+            src="/images/webomo-videos/webomo-demo2.mp4" // Sostituisci con il percorso del tuo video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="mx-auto h-full rounded-2xl object-cover object-left-top"
+            draggable={false}
+          ></video>
+        </ContainerScroll>
+        <Link
+          href="#"
+          className="mb-20 mt-[-200px] inline-flex h-[60px] items-center rounded-2xl bg-indigo-600 px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90"
+        >
+          Kostenlose Beratung
+        </Link>
+      </div>
+      <About />
+      <About2 />
     </>
   );
 };
 
-export default HeroArea;
+export default Features;
