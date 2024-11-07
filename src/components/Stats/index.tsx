@@ -3,7 +3,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <section className="flex flex-col items-center bg-white px-4 pt-28 dark:bg-[#15182A]">
+    <section className="flex flex-col items-center bg-white px-4 pb-10 pt-20 dark:bg-[#15182A]">
       {/* Main Title */}
       <h2 className="text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
         Werbung für dein Unternehmen

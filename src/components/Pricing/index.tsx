@@ -5,13 +5,14 @@ import { Price } from "@/types/priceItem";
 
 import { pricingData } from "../../stripe/pricingData";
 import { PricingItem } from "./PricingItem";
+import Link from "next/link";
 
 const Pricing = () => {
   const [planType, setPlanType] = useState(false);
 
   return (
     <>
-      <section id="pricing" className="relative z-10 pt-[110px]">
+      <section id="pricing" className="relative z-10 mb-20 pt-[110px]">
         <div className="container">
           <div
             className="wow fadeInUp mx-auto mb-10 max-w-[690px] text-center"
@@ -25,11 +26,16 @@ const Pricing = () => {
               convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
               ante in maximus.
             </p>
+            <div className="flex flex-wrap items-center justify-center space-x-4">
+              <p className="my-4  inline-flex items-center rounded-full border-2 border-zinc-400 bg-white px-2 py-1 text-zinc-400 hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90">
+                Jährliche Zahlung
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="container max-w-[1120px] overflow-hidden">
-          <div
+          {/* <div
             className="wow fadeInUp mb-[60px] flex items-center justify-center"
             data-wow-delay=".25s"
           >
@@ -53,7 +59,7 @@ const Pricing = () => {
                 Yearly
               </span>
             </label>
-          </div>
+          </div> */}
 
           <div className="-mx-6 flex flex-wrap justify-center">
             {pricingData &&

@@ -20,146 +20,103 @@ export const PricingItem = ({ price, planType }: any) => {
     window.location.assign(data);
   };
 
+  // Define background color based on plan type
+  let bgColor = "bg-gray-100 dark:bg-gray-800"; // Default color
+  if (price.nickname === "Basic" || price.nickname === "Basic") {
+    bgColor = "bg-indigo-50 dark:bg-gray-800";
+  } else if (price.nickname === "Pro" || price.nickname === "Unlimited") {
+    bgColor = "bg-purple-50 dark:bg-slate-900";
+  } else if (price.nickname === "Business") {
+    bgColor = "bg-green-50 dark:bg-[#000]";
+  }
+
+  // Define price and feature details based on plan name
+  const priceDetails = {
+    Basic: {
+      price: "499",
+      features: [
+        "Projektleitung: Content Beratung & Administration",
+        "Produktion: Inhalte 106 (Storys und Posts)",
+        "Veröffentlichung: 1x pro Woche durch Webomo",
+        "Kanäle: Instagram / Facebook / LinkedIn / YouTube",
+        "Fotoshooting: Inklusive",
+        "Video: -",
+        "Social Media Kampagnen: -",
+      ],
+    },
+    Unlimited: {
+      price: "599",
+      features: [
+        "Projektleitung: Content Beratung & Administration",
+        "Produktion: Inhalte 106 (Storys und Posts)",
+        "Veröffentlichung: 1x pro Woche durch Webomo",
+        "Kanäle: Instagram / Facebook / LinkedIn / YouTube",
+        "Fotoshooting: Inklusive",
+        "Video: -",
+        "Social Media Kampagnen: -",
+      ],
+    },
+    Business: {
+      price: "799",
+      features: [
+        "Projektleitung: Content Beratung & Administration",
+        "Produktion: Inhalte 106 (Storys und Posts)",
+        "Veröffentlichung: 1x pro Woche durch Webomo",
+        "Kanäle: Instagram / Facebook / LinkedIn / YouTube",
+        "Fotoshooting: Inklusive",
+        "Video: 2 Werbefilme",
+        "Social Media Kampagnen: Inklusive",
+      ],
+    },
+  };
+
+  const currentPlan = priceDetails[price.nickname] || priceDetails["Basic"];
+
   return (
-    <div className="w-full px-6 md:w-1/2 lg:w-1/3">
-      <div className="wow fadeInUp relative mb-10 rounded-xl bg-white px-9 py-10 shadow-card dark:bg-dark dark:shadow-card-dark lg:mb-4 lg:px-7 xl:px-9">
+    <div className="w-full px-6 pb-8 md:w-1/2 lg:w-1/3">
+      <div
+        className={`relative mb-10 rounded-xl px-9 py-10 shadow-lg ${bgColor} flex h-full flex-col justify-between lg:mb-4 lg:px-7 xl:px-9`}
+      >
+        {/* Badge for Recommended Plan */}
         {price.nickname === "Unlimited" && (
-          <span className="absolute right-5 top-5 text-sm font-medium text-primary underline">
-            Most popular
+          <span className="absolute right-5 top-5 rounded-full bg-black px-4 py-1 text-sm font-medium text-white dark:bg-white dark:text-black">
+            Empfohlen
           </span>
         )}
 
+        {/* Plan Title and Price */}
         <h3 className="mb-2 text-[22px] font-semibold leading-tight text-black dark:text-white">
           {price.nickname}
         </h3>
-        <p className="mb-7 text-base text-body">
-          Lorem Ipsum is simply dummythe.
+        <p className="mb-2 text-4xl font-bold text-black dark:text-white">
+          {currentPlan.price}.- <span className="text-lg">/ Monat</span>
+        </p>
+        <p className="text-gray-700 dark:text-gray-300 text-sm">
+          12 Monate Betreuung
         </p>
 
-        <p className="border-b border-stroke pb-5 text-black dark:border-stroke-dark dark:text-white">
-          <span className="text-[40px] font-bold leading-none">
-            <sup className="text-[22px] font-medium"> $ </sup>
-
-            {planType
-              ? ((price.unit_amount / 100) * 12).toLocaleString("en-US", {
-                  currency: "USD",
-                })
-              : (price.unit_amount / 100).toLocaleString("en-US", {
-                  currency: "USD",
-                })}
-          </span>
-          <span className="text-base text-body">
-            {" "}
-            / {planType ? "year" : "month"}{" "}
-          </span>
-        </p>
-
-        <div className="space-y-4 pb-10 pt-[30px]">
-          <p className="flex text-base text-black dark:text-body">
-            <span className="mr-[10px] mt-1">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_44_7)">
-                  <path
-                    d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                    fill="#00BE6C"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_44_7">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            60-day chat history
-          </p>
-          <p className="flex text-base text-black dark:text-body">
-            <span className="mr-[10px] mt-1">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_44_7)">
-                  <path
-                    d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                    fill="#00BE6C"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_44_7">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            35 GB cloud storage
-          </p>
-          <p className="flex text-base text-black dark:text-body">
-            <span className="mr-[10px] mt-1">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_44_7)">
-                  <path
-                    d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                    fill="#00BE6C"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_44_7">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            24/7 Support
-          </p>
-          <p className="flex text-base text-black dark:text-body">
-            <span className="mr-[10px] mt-1">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_44_7)">
-                  <path
-                    d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                    fill="#00BE6C"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_44_7">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            Custom Branding Strategy
-          </p>
+        {/* Features List */}
+        <div className="space-y-4 pb-10 pt-6">
+          {currentPlan.features.map((feature, index) => (
+            <p key={index} className="flex text-base text-black dark:text-body">
+              <span className="mr-2 font-semibold">{index + 1}.</span> {feature}
+            </p>
+          ))}
         </div>
 
+        {/* Button */}
         <button
           aria-label="purchase this plan"
           onClick={handleSubscription}
-          className={`block w-full rounded-md px-8 py-[10px] text-center text-base font-medium text-white ${price.nickname === "Unlimited" ? "bg-primary hover:bg-opacity-90" : "bg-black hover:bg-primary dark:bg-[#2A2E44] dark:hover:bg-primary"}`}
+          className="dark:hover:bg-gray-200 block w-full rounded-2xl bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black"
         >
-          Choose Plan
+          wählen
         </button>
+
+        {/* Footer Text */}
+        <p className="text-gray-600 dark:text-gray-400 mt-6 text-center text-sm">
+          Inkl. Dashboard & <span className="underline">Reporting</span>
+        </p>
       </div>
     </div>
   );
