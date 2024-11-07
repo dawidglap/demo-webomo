@@ -120,6 +120,7 @@ const Header = () => {
                     <li key={index} className="menu-item">
                       <Link
                         href={item.route}
+                        onClick={closeMenu} // Close menu on link click
                         className={`${sticky ? "lg:py-[21px]" : "lg:py-7"} ud-menu-scroll inline-flex items-center text-base font-light text-black hover:text-primary dark:text-white dark:hover:text-primary`}
                       >
                         {item.label}
@@ -131,6 +132,7 @@ const Header = () => {
                   <li className="lg:ml-4">
                     <Link
                       href="#"
+                      onClick={closeMenu} // Close menu on button click
                       className="inline-flex h-[60px] items-center rounded-2xl bg-indigo-600 px-[30px]  text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90 md:hidden"
                     >
                       Kostenlose Beratung
@@ -144,6 +146,7 @@ const Header = () => {
               <DarkModeSwitcher />
               <Link
                 href="#"
+                onClick={closeMenu} // Close menu on link click
                 className="hidden  items-center rounded-2xl bg-indigo-600 px-4 py-2 text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90 md:inline-flex"
               >
                 Kostenlose Beratung
@@ -156,7 +159,10 @@ const Header = () => {
                   </p>
                   <button
                     aria-label="SignOut"
-                    onClick={() => signOut()}
+                    onClick={() => {
+                      signOut();
+                      closeMenu();
+                    }}
                     className="rounded-md bg-primary px-4 py-2 text-base font-medium text-white hover:bg-opacity-90"
                   >
                     Sign Out
@@ -165,6 +171,7 @@ const Header = () => {
               ) : (
                 <Link
                   href="#"
+                  onClick={closeMenu} // Close menu on link click
                   className="hidden items-center rounded-2xl bg-black px-4 py-2 text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90 lg:inline-flex"
                 >
                   Login

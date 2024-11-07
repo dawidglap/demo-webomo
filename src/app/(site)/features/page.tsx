@@ -11,7 +11,7 @@ import AboutEnd from "@/components/AboutEnd";
 const Features = () => {
   return (
     <>
-      <div className="dark:via-gray-900 flex flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-indigo-50 via-purple-50 to-white  dark:from-slate-900  dark:to-black">
+      <div className="dark:via-gray-900 flex min-h-[100vh] flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-indigo-50 via-purple-50 to-white  dark:from-slate-900  dark:to-black">
         <ContainerScroll
           titleComponent={
             <>
