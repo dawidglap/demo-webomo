@@ -62,7 +62,7 @@ const Testimonials = () => {
             {testimonialData.map((item, index) => (
               <div key={index} className="w-full px-6 lg:w-1/2">
                 <div
-                  className="wow fadeInUp mb-[50px] rounded-lg bg-white px-7 py-9 shadow-card dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9"
+                  className="wow fadeInUp mb-[50px] rounded-lg bg-slate-200 px-7 py-9 shadow-md dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9"
                   data-wow-delay=".2s"
                 >
                   <div className="mb-5 border-b border-stroke dark:border-stroke-dark">

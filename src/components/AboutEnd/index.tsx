@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const AboutEnd = () => {
   return (
-    <section className=" flex flex-col items-center overflow-hidden bg-white px-4 py-28 dark:bg-[#15182A]">
+    <section className="mb-10 flex flex-col items-center overflow-hidden bg-white px-4 py-28 dark:bg-[#15182A]">
       {/* Main Title */}
       <h2 className="mb-8 text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
         Ein Ziel dein Erfolg

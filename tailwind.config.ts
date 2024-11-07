@@ -42,7 +42,6 @@ const config: Config = {
         stroke: "#EBEFF4",
         dark: "#1F233A",
         body: "#79808A",
-        gray: "#F8F9FF",
         "stroke-dark": "#34374A",
       },
       backgroundImage: {
