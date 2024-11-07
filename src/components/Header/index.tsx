@@ -21,7 +21,7 @@ const menuData: Menu[] = [
   },
   {
     label: "Preise",
-    route: "/#work-process",
+    route: "/price",
   },
 ];
 
