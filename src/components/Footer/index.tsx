@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
 
             {/* Quattro colonne sotto la linea divisoria */}
-            <div className="flex flex-wrap justify-between pt-8 text-center md:text-left">
+            <div className="flex flex-wrap justify-between pt-8 text-left md:text-left">
               {/* Sezione "Unternehmen" */}
               <div className="mb-8 w-full px-4 md:w-1/4">
                 <h3 className="mb-4 text-[22px] font-bold text-black dark:text-white">

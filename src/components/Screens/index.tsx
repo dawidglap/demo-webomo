@@ -132,7 +132,7 @@ const Screens = () => {
                     height={573}
                     src={"/images/screens/screen-3-light.png"}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
+                    className="mx-auto w-full rounded-2xl opacity-40"
                   />
                 </div>
               </SwiperSlide>
