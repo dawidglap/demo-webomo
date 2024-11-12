@@ -61,7 +61,7 @@ export default function RootLayout({
               <PreLoader />
             ) : (
               <>
-                {/* <Header /> */}
+                <Header />
                 <ToasterContext />
                 <main>{children}</main>
                 <Footer />
