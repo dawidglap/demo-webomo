@@ -82,3 +82,7 @@
     @apply !static !top-auto !bottom-0 flex h-10 w-10 items-center justify-center rounded-full border border-body text-body after:hidden hover:border-primary hover:bg-primary hover:text-white;
   }
 }
+
+.theme-transition, .theme-transition * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}

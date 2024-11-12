@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 
 const testimonialData: Testimonial[] = [
   {
@@ -9,7 +11,7 @@ const testimonialData: Testimonial[] = [
     authorImage: "/images/testimonials/author-1.png",
     authorName: "Musharof Chowdhury",
     authorRole: "Web Entrepreneur",
-    // review: 5.0,
+    review: 5.0,
   },
   {
     quote:
@@ -17,7 +19,7 @@ const testimonialData: Testimonial[] = [
     authorImage: "/images/testimonials/author-2.png",
     authorName: "Naimur Rahman",
     authorRole: "Product Designer",
-    // review: 5.0,
+    review: 5.0,
   },
   {
     quote:
@@ -25,7 +27,7 @@ const testimonialData: Testimonial[] = [
     authorImage: "/images/testimonials/author-3.png",
     authorName: "Devid Miller",
     authorRole: "App Developer",
-    // review: 5.0,
+    review: 5.0,
   },
   {
     quote:
@@ -33,18 +35,24 @@ const testimonialData: Testimonial[] = [
     authorImage: "/images/testimonials/author-04.png",
     authorName: "Justin Farnandes",
     authorRole: "Seo Expert",
-    // review: 5.0,
+    review: 5.0,
   },
 ];
 
 const Testimonials = () => {
+  const thresholdValue = 0.3; // Alza il valore per aspettare una maggiore visibilità
+
   return (
     <>
       <section id="testimonials" className="relative z-10 pb-[60px] pt-[110px]">
         <div className="container">
-          <div
-            className="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
-            data-wow-delay=".2s"
+          {/* Title and Subtitle with Fade Up Animation */}
+          <motion.div
+            className="mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
               What Client&apos;s Say
@@ -54,17 +62,41 @@ const Testimonials = () => {
               convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
               ante in maximus.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         <div className="container overflow-hidden lg:max-w-[1160px]">
-          <div className="-mx-6 flex flex-wrap">
+          <motion.div
+            className="-mx-6 flex flex-wrap"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: thresholdValue }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.2, // staggered animation per le card
+                },
+              },
+            }}
+          >
             {testimonialData.map((item, index) => (
-              <div key={index} className="w-full px-6 lg:w-1/2">
-                <div
-                  className="wow fadeInUp mb-[50px] rounded-lg bg-slate-200 px-7 py-9 shadow-md dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9"
-                  data-wow-delay=".2s"
-                >
+              <motion.div
+                key={index}
+                className="w-full px-6 lg:w-1/2"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                viewport={{
+                  once: false, // Ripete l'animazione ogni volta che la card entra in view
+                  amount: 0.3, // Assicura che l'animazione parta quando almeno il 30% della card è visibile
+                }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                }}
+              >
+                <div className="mb-[50px] rounded-lg bg-slate-200 px-7 py-9 shadow-md dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9">
                   <div className="mb-5 border-b border-stroke dark:border-stroke-dark">
                     <p className="pb-9 text-base text-body">{item.quote}</p>
                   </div>
@@ -127,9 +159,9 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

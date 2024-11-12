@@ -6,7 +6,6 @@ import { Menu } from "@/types/menu";
 import { onScroll } from "@/utils/scrollActive";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import DarkModeSwitcher from "@/components/Header/DarkModeSwitcher";
 import GlobalSearchModal from "@/components/GlobalSearch";
 
@@ -56,17 +55,6 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyNavbar);
   });
 
-  const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index: number) => {
-    if (openIndex === index) {
-      setOpenIndex(-1);
-    } else {
-      setOpenIndex(index);
-    }
-  };
-
-  const [searchModalOpen, setSearchModalOpen] = useState(false);
-
   const closeMenu = () => {
     setNavbarOpen(false);
   };
@@ -80,7 +68,7 @@ const Header = () => {
             : "absolute"
         }`}
       >
-        <div className="container relative max-w-[1400px]">
+        <div className="container relative mx-auto max-w-[1400px] px-4">
           <div className="flex items-center justify-between">
             <div className="block w-1/4 py-4 lg:py-0">
               <Link href="/" className="block max-w-[145px] sm:max-w-[180px]">
@@ -92,7 +80,9 @@ const Header = () => {
 
             <button
               onClick={navbarToggleHandler}
-              className="navbarOpen absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-[6px] font-bold lg:hidden"
+              className={`${
+                navbarOpen ? "hidden" : "flex"
+              } navbarOpen absolute right-4 top-1/2 z-50 h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-[6px] font-bold lg:hidden`}
               aria-label="navbarOpen"
               name="navbarOpen"
             >
@@ -101,27 +91,31 @@ const Header = () => {
               <span className="block h-[2px] w-7 bg-black dark:bg-white"></span>
             </button>
 
-            <div
-              className={`${navbarOpen ? "" : "hidden"} menu-wrapper relative justify-between lg:flex`}
+            <button
+              onClick={closeMenu}
+              className={`${
+                navbarOpen ? "flex" : "hidden"
+              } navbarClose absolute right-4  top-1/2 z-50 h-10 w-10 -translate-y-1/2 flex-col items-center justify-center font-bold lg:hidden`}
+              name="navbarClose"
+              aria-label="navbarClose"
             >
-              <button
-                onClick={() => setNavbarOpen(false)}
-                className="navbarClose fixed right-10 top-10 z-[9999] flex h-10 w-10 flex-col items-center justify-center font-bold lg:hidden"
-                name="navbarClose"
-                aria-label="navbarClose"
-              >
-                <span className="block h-[2px] w-7 rotate-45 bg-black dark:bg-white"></span>
-                <span className="-mt-[2px] block h-[2px] w-7 -rotate-45 bg-black dark:bg-white"></span>
-              </button>
+              <span className="block h-[2px] w-7 rotate-45 bg-black dark:bg-white"></span>
+              <span className="-mt-[2px] block h-[2px] w-7 -rotate-45 bg-black dark:bg-white"></span>
+            </button>
 
-              <nav className="fixed left-0 top-0 z-[999] flex h-screen w-full items-center justify-center bg-white bg-opacity-95 text-center backdrop-blur-sm dark:bg-black dark:bg-opacity-95 lg:static lg:h-auto lg:w-max lg:bg-transparent lg:bg-opacity-100 lg:backdrop-blur-0 lg:backdrop-blur-none lg:dark:bg-transparent dark:lg:bg-opacity-100">
-                <ul className="items-center space-y-3 lg:flex lg:space-x-12 lg:space-y-0 xl:space-x-14">
+            <div
+              className={`${
+                navbarOpen ? "flex" : "hidden"
+              } fixed inset-0 z-40 flex flex-col items-center justify-center bg-white bg-opacity-95 text-center dark:bg-black dark:bg-opacity-95 lg:relative lg:flex lg:flex-row lg:space-x-8 lg:bg-transparent lg:bg-opacity-100 lg:backdrop-blur-none`}
+            >
+              <nav className="flex flex-col items-center space-y-6 lg:flex-row lg:space-x-12 lg:space-y-0">
+                <ul className=" flex flex-col items-center space-y-6 lg:flex-row lg:space-x-12 lg:space-y-0 xl:space-x-14">
                   {menuData.map((item, index) => (
-                    <li key={index} className="menu-item">
+                    <li key={index} className="menu-item me-8">
                       <Link
                         href={item.route}
                         onClick={closeMenu} // Close menu on link click
-                        className={`${sticky ? "lg:py-[21px]" : "lg:py-7"} ud-menu-scroll inline-flex items-center text-base font-light text-black hover:text-primary dark:text-white dark:hover:text-primary`}
+                        className="text-base font-light text-black hover:text-primary dark:text-white dark:hover:text-primary"
                       >
                         {item.label}
                       </Link>
@@ -133,7 +127,7 @@ const Header = () => {
                     <Link
                       href="#"
                       onClick={closeMenu} // Close menu on button click
-                      className="inline-flex h-[60px] items-center rounded-2xl bg-indigo-600 px-[30px]  text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90 md:hidden"
+                      className="me-8 inline-flex h-[60px] items-center rounded-2xl bg-indigo-600 px-[30px] text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90 md:hidden"
                     >
                       Kostenlose Beratung
                     </Link>
@@ -142,18 +136,18 @@ const Header = () => {
               </nav>
             </div>
 
-            <div className="mr-[60px] flex items-center justify-end space-x-4 lg:mr-0">
+            <div className="hidden items-center justify-end space-x-4 lg:flex">
               <DarkModeSwitcher />
               <Link
                 href="#"
                 onClick={closeMenu} // Close menu on link click
-                className="hidden  items-center rounded-2xl bg-indigo-600 px-4 py-2 text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90 md:inline-flex"
+                className="inline-flex items-center rounded-2xl bg-indigo-600 px-4 py-2 text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90"
               >
                 Kostenlose Beratung
               </Link>
 
               {session ? (
-                <div className="hidden items-center sm:flex">
+                <div className="flex items-center">
                   <p className="mx-3 text-black dark:text-white">
                     {session?.user?.name}
                   </p>
@@ -172,7 +166,7 @@ const Header = () => {
                 <Link
                   href="#"
                   onClick={closeMenu} // Close menu on link click
-                  className="hidden items-center rounded-2xl bg-black px-4 py-2 text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90 lg:inline-flex"
+                  className="inline-flex items-center rounded-2xl bg-black px-4 py-2 text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90"
                 >
                   Login
                 </Link>
@@ -181,11 +175,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-
-      <GlobalSearchModal
-        searchModalOpen={searchModalOpen}
-        setSearchModalOpen={setSearchModalOpen}
-      />
     </>
   );
 };
