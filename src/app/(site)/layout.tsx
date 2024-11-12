@@ -11,6 +11,7 @@ import AuthProvider from "../context/AuthContext";
 import ToasterContext from "../context/ToastContext";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider, useTheme } from "next-themes";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
+        <Analytics />
         <NextTopLoader
           color="#6057E8"
           crawlSpeed={300}
