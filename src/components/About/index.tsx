@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import screen2 from "../../../public/images/screens/screen-2-light.png";
+import screen2 from "../../../public/images/about/autumn-post.png";
 
 const About = () => {
   const { ref: textRef, inView: textInView } = useInView({
@@ -52,22 +52,23 @@ const About = () => {
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={smartphonesRef}
-              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-lg p-6 lg:mx-0 lg:mb-0"
+              className="relative z-10 mx-auto mb-14 w-full max-w-[470px]  rounded-xl bg-gradient-to-r from-indigo-200  to-purple-300 p-6 pb-10 shadow-xl lg:mx-0 lg:mb-0"
               initial="hidden"
               animate={smartphonesInView ? "visible" : "hidden"}
               variants={gradientVariants}
-              style={{
-                background: "linear-gradient(to right, #cbd5e1, #ede9fe)",
-              }}
+              // style={{
+              //   background:
+              //     "linear-gradient(to right, bg-indigo-900, bg-black)",
+              // }}
             >
-              <h2 className="mb-4 text-center text-3xl font-bold text-black dark:text-white">
+              <h2 className="mb-8 text-center text-3xl font-bold text-black dark:text-white">
                 wöchentlich
               </h2>
               <div className="flex items-center justify-around gap-4">
                 {[
                   {
                     type: "video",
-                    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+                    src: "/images/about/night-video.mp4",
                     label: "Reels",
                   },
                   {
@@ -77,8 +78,8 @@ const About = () => {
                   },
                   {
                     type: "video",
-                    src: "/images/about/termin-video.mov",
-                    label: "Storys",
+                    src: "/images/about/termin-video.mp4",
+                    label: "Stories",
                   },
                 ].map((item, index) => (
                   <motion.div
@@ -89,7 +90,7 @@ const About = () => {
                     animate={smartphonesInView ? "visible" : "hidden"}
                     variants={smartphoneVariants}
                   >
-                    <p className="mb-2 text-center text-lg  text-slate-500">
+                    <p className="mb-2 text-center text-lg  text-primary">
                       {item.label}
                     </p>
                     <div className="relative h-[234px] w-[108px] overflow-hidden">
@@ -106,7 +107,7 @@ const About = () => {
                           autoPlay
                           muted
                           loop
-                          className="absolute left-[0px] top-[0px] h-[230px] w-[107px] rounded-[18px] object-cover"
+                          className="absolute left-[0px] top-[0px] h-[220px] w-[107px] rounded-[18px] object-cover"
                         />
                       ) : (
                         <Image
