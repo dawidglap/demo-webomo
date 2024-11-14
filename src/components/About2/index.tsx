@@ -72,7 +72,7 @@ const About2 = () => {
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={cardRef}
-              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-xl bg-gradient-to-r from-[#FEFBEB] to-purple-300 p-6 shadow-xl dark:from-indigo-800 lg:mx-0 lg:mb-0"
+              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-xl bg-gradient-to-r from-[#FEFBEB] to-purple-300 p-6 shadow-xl dark:from-indigo-800 lg:mx-0 lg:mb-0 lg:ml-auto"
               initial="hidden"
               animate={cardInView ? "visible" : "hidden"}
               variants={cardVariants}

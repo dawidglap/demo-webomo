@@ -6,9 +6,10 @@ import Link from "next/link";
 import About from "@/components/About";
 import About2 from "@/components/About2";
 import AboutEnd from "@/components/AboutEnd";
+import Screens from "@/components/Screens";
 // import videoDemo from "../../../../public/images/webomo-videos/webomo-demo.mp4";
 
-const Features = () => {
+const Designs = () => {
   return (
     <>
       <div className="dark:via-gray-900 flex min-h-[100vh] flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-indigo-50 via-purple-50 to-white  dark:from-slate-900  dark:to-black">
@@ -16,11 +17,15 @@ const Features = () => {
           titleComponent={
             <>
               <h1 className="mb-20 mt-[-3em] text-4xl font-semibold text-black dark:text-white">
-                Unsere Leistungen für Ihren <br />
+                Passend für jede <br />
                 <span className="mt-1 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-4xl font-bold leading-none text-transparent dark:from-purple-300 dark:to-pink-300 md:text-[6rem]">
-                  digitalen Erfolg
+                  Branche
                 </span>
               </h1>
+              <p className="dark:text-gray-300 mx-auto mb-12 mt-[-60px] max-w-[768px] text-lg font-light leading-relaxed text-black md:text-2xl">
+                Du wählst das Design aus und wir kümmern uns um die Umsetzung
+                und Planung deiner Inhalte.
+              </p>
             </>
           }
         >
@@ -36,16 +41,14 @@ const Features = () => {
         </ContainerScroll>
         <Link
           href="#"
-          className="mb-20 mt-[-200px] inline-flex h-[60px] items-center rounded-2xl bg-indigo-600 px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90"
+          className="mb-20 mt-[-200px] inline-flex h-[60px] cursor-pointer items-center rounded-2xl bg-[#000] px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-[#ffffff] dark:text-[#000] dark:hover:bg-[#afafaf]"
         >
-          Kostenlose Beratung
+          Jetzt starten
         </Link>
       </div>
-      <About />
-      <About2 />
-      <AboutEnd />
+      <Screens />
     </>
   );
 };
 
-export default Features;
+export default Designs;

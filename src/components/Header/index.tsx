@@ -12,11 +12,11 @@ import GlobalSearchModal from "@/components/GlobalSearch";
 const menuData: Menu[] = [
   {
     label: "Leistungen",
-    route: "/features",
+    route: "/#leistungen",
   },
   {
     label: "Designs",
-    route: "/#about",
+    route: "/designs",
   },
   {
     label: "Preise",

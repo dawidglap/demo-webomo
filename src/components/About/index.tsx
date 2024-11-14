@@ -45,7 +45,7 @@ const About = () => {
   };
 
   return (
-    <motion.section id="about" className="relative pt-[150px]">
+    <motion.section id="leistungen" className="relative pt-[150px]">
       <div className="container lg:max-w-[1120px]">
         <div className="-mx-4 flex flex-wrap items-center justify-between">
           {/* Left Section with Gradient and Smartphone Mockups */}

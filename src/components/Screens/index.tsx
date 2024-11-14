@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,7 +8,30 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import Graphics from "@/components/Screens/Graphics";
 
+// List of sectors for the dropdown menu
+const sectors = [
+  "Food & Beverage",
+  "Retail & E-commerce",
+  "Healthcare",
+  "Real Estate",
+  "Automotive",
+  "Technology",
+  "Travel & Hospitality",
+  "Fitness & Wellness",
+  "Education",
+  "Finance",
+];
+
 const Screens = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedSector, setSelectedSector] = useState("Select a Sector");
+
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+  const selectSector = (sector) => {
+    setSelectedSector(sector);
+    setIsDropdownOpen(false);
+  };
+
   return (
     <>
       <section id="screens" className="relative z-20 pt-[110px]">
@@ -18,13 +41,47 @@ const Screens = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              App Screenshots
+              Social Media Designs for Every Sector
             </h2>
-            <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            <p className="text-base text-body dark:text-slate-400">
+              Tailored social media designs to engage audiences and enhance your
+              brand's presence, no matter the industry.
             </p>
+
+            {/* Dropdown Button */}
+            <div className="relative mt-6 inline-block">
+              <button
+                onClick={toggleDropdown}
+                className="rounded-full bg-primary px-6 py-2 text-base font-medium text-white hover:bg-opacity-90"
+              >
+                {selectedSector}
+              </button>
+
+              {/* Overlay with Blur Effect */}
+              {isDropdownOpen && (
+                <>
+                  <div
+                    className="fixed inset-0 z-30 bg-black bg-opacity-50 backdrop-blur-sm"
+                    onClick={() => setIsDropdownOpen(false)}
+                  ></div>
+
+                  {/* Dropdown Card */}
+                  <div className="dark:bg-gray-800 fixed left-1/2 top-1/2 z-40 w-[90%] max-w-sm -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white p-6 shadow-lg">
+                    <ul className="space-y-2">
+                      {sectors.map((sector) => (
+                        <li
+                          key={sector}
+                          onClick={() => selectSector(sector)}
+                          className="text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700 cursor-pointer rounded-md px-4 py-2"
+                        >
+                          {sector}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </div>
 
@@ -132,7 +189,7 @@ const Screens = () => {
                     height={573}
                     src={"/images/screens/screen-3-light.png"}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl opacity-40"
+                    className="mx-auto w-full rounded-2xl"
                   />
                 </div>
               </SwiperSlide>
