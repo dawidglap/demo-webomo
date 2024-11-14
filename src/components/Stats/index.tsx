@@ -51,7 +51,7 @@ const Stats = () => {
 
       {/* Subtitle with Animation */}
       <motion.p
-        className="mt-4 max-w-md text-center text-[#79808a] dark:text-[#79808a]"
+        className="container mt-4 max-w-[690px] text-center text-[#79808a] dark:text-[#79808a]"
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.2 }}

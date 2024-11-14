@@ -12,7 +12,7 @@ const AboutEnd = () => {
       </h2>
 
       {/* Main Container with Rounded Background */}
-      <div className="relative flex w-full max-w-5xl flex-col items-center justify-between rounded-3xl bg-gradient-to-b from-[#ECE7FE] via-purple-200 to-[#B4A2E0] p-8 dark:from-slate-700 dark:to-black md:flex-row md:p-16">
+      <div className="relative flex w-full max-w-5xl flex-col items-center justify-between rounded-3xl bg-gradient-to-b from-[#ECE7FE] via-purple-200 to-[#B4A2E0] p-8 shadow-xl dark:from-slate-700 dark:to-black md:flex-row md:p-16">
         {/* Text and Call-to-Action */}
         <div className="text-center md:max-w-lg md:text-left lg:max-w-2xl">
           <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
@@ -32,7 +32,7 @@ const AboutEnd = () => {
 
         {/* iPhone Frame with Video - Positioned at the right side */}
         <div className="relative hidden md:block">
-          <div className="relative  left-[100%] h-[234px] w-[108px] overflow-hidden ">
+          <div className=" relative  left-[100%] hidden h-[234px] w-[108px] overflow-hidden xl:block">
             <Image
               src="/images/screens/mobile-frame.png"
               alt="mobile frame"
