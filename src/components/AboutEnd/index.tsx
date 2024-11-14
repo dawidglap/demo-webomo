@@ -14,7 +14,7 @@ const AboutEnd = () => {
       {/* Main Container with Rounded Background */}
       <div className="relative flex w-full max-w-6xl flex-col items-center justify-between rounded-3xl bg-gradient-to-b from-[#ECE7FE] via-purple-200 to-[#B4A2E0] p-8 dark:from-slate-700 dark:to-black md:flex-row md:p-16">
         {/* Text and Call-to-Action */}
-        <div className="max-w-md text-center md:text-left">
+        <div className="text-center md:max-w-lg md:text-left lg:max-w-2xl">
           <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
             Mehr erreichen mit webomo
           </h3>
@@ -51,7 +51,7 @@ const AboutEnd = () => {
         </div>
 
         {/* Smartphone Image - Positioned at the bottom-right on desktop */}
-        <div className="absolute bottom-[-10px] right-10 hidden w-[250px] rotate-[0deg] md:block md:w-[200px] lg:w-[260px] xl:w-[300px]">
+        <div className="absolute bottom-[125px] right-10 hidden w-[250px] rotate-[0deg] md:block md:w-[225px] lg:w-[260px] xl:w-[300px]">
           <Image
             src={Popcorn}
             alt="Popcorn"
