@@ -38,8 +38,9 @@ const About2 = () => {
   return (
     <motion.section id="about" className="relative pt-[150px]">
       <div className="container lg:max-w-[1120px]">
-        <div className="-mx-4 flex flex-wrap items-center justify-between">
-          {/* Left Text Section */}
+        {/* Flex container with reverse column on mobile */}
+        <div className="-mx-4 flex flex-col-reverse flex-wrap items-center justify-between lg:flex-row">
+          {/* Left Section (Text Section) */}
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={textRef}
@@ -67,7 +68,7 @@ const About2 = () => {
               </Link>
             </motion.div>
           </div>
-          {/* Right Section with Gradient Card and Image */}
+          {/* Right Section (Image Card with Gradient Background) */}
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={cardRef}
