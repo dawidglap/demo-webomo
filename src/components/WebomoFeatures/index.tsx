@@ -55,19 +55,10 @@ const WebomoFeatures = () => {
     videoControls,
   ]);
 
-  const handlePlayFullscreen = () => {
+  const handlePlay = () => {
     setIsPlaying(true);
-
     if (videoRef.current) {
       videoRef.current.play();
-
-      if (videoContainerRef.current.requestFullscreen) {
-        videoContainerRef.current.requestFullscreen();
-      } else if (videoContainerRef.current.webkitRequestFullscreen) {
-        videoContainerRef.current.webkitRequestFullscreen();
-      } else if (videoContainerRef.current.msRequestFullscreen) {
-        videoContainerRef.current.msRequestFullscreen();
-      }
     }
   };
 
@@ -123,7 +114,7 @@ const WebomoFeatures = () => {
 
           {!isPlaying && (
             <motion.button
-              onClick={handlePlayFullscreen}
+              onClick={handlePlay}
               className="absolute inset-0 flex items-center justify-center rounded-2xl bg-black bg-opacity-50"
               variants={fadeVariants}
             >
