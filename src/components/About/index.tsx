@@ -134,10 +134,10 @@ const About = () => {
               variants={sectionVariants}
             >
               <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                Storys & Posts
+                Stories & Posts
               </h2>
               <p className="mb-[20px] text-base leading-relaxed text-body dark:text-slate-400">
-                Wir erstellen packende Storys und Beiträge auf Kino- und
+                Wir erstellen packende Stories und Beiträge auf Kino- und
                 Hollywood-Niveau, die Ihre Marke perfekt in Szene setzen. Webomo
                 übernimmt die komplette Content-Erstellung und Veröffentlichung
                 auf Ihren Social-Media-Kanälen – und das wöchentlich für die
