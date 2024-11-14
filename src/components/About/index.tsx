@@ -52,7 +52,7 @@ const About = () => {
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={smartphonesRef}
-              className="relative z-10 mx-auto mb-14 w-full max-w-[470px]  rounded-xl bg-gradient-to-r from-indigo-200  to-purple-300 p-6 pb-10 shadow-xl lg:mx-0 lg:mb-0"
+              className="relative z-10 mx-auto mb-14 w-full max-w-[470px]  rounded-xl bg-gradient-to-r from-indigo-200 to-purple-300  p-6 pb-10 shadow-xl dark:from-sky-900 lg:mx-0 lg:mb-0"
               initial="hidden"
               animate={smartphonesInView ? "visible" : "hidden"}
               variants={gradientVariants}

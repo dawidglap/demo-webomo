@@ -15,6 +15,7 @@ import WebomoFeatures from "@/components/WebomoFeatures";
 import Stats from "@/components/Stats";
 import HeroArea2 from "@/components/HeroArea2";
 import About2 from "@/components/About2";
+import About3 from "@/components/About3";
 
 export const metadata: Metadata = {
   title: "Webomo - Your Social Media Expert",
@@ -31,6 +32,7 @@ export default function Home() {
       {/* <Features /> */}
       <About />
       <About2 />
+      <About3 />
       {/* <WorkProcess /> */}
       {/* <Pricing /> */}
       {/* <Screens /> */}
