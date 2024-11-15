@@ -243,7 +243,7 @@ const Screens = () => {
         </div>
 
         {/*Graphics*/}
-        <Graphics />
+        {/* <Graphics /> */}
       </section>
     </>
   );

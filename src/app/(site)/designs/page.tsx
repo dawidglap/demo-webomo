@@ -43,7 +43,7 @@ const Designs = () => {
         </ContainerScroll>
         <Link
           href="#"
-          className="mb-20 mt-[-200px] inline-flex h-[60px] cursor-pointer items-center rounded-2xl bg-[#000] px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-[#ffffff] dark:text-[#000] dark:hover:bg-[#afafaf]"
+          className="mb-20 mt-[-200px] inline-flex h-[60px] cursor-pointer items-center rounded-full bg-[#000] px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-[#ffffff] dark:text-[#000] dark:hover:bg-[#afafaf]"
         >
           Jetzt starten
         </Link>

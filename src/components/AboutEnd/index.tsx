@@ -25,7 +25,7 @@ const AboutEnd = () => {
             Die Kampagnen deiner Produkte & Dienstleistungen sind auf einem
             anderen Niveau.
           </p>
-          <button className="hover:bg-gray-800 dark:hover:bg-gray-200 rounded-2xl bg-black px-6 py-3 text-white dark:bg-white dark:text-black">
+          <button className="hover:bg-gray-800 dark:hover:bg-gray-200 rounded-full bg-black px-6 py-3 text-white dark:bg-white dark:text-black">
             Loslegen
           </button>
         </div>
