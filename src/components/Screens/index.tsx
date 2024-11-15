@@ -8,27 +8,64 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import Graphics from "@/components/Screens/Graphics";
 
-// List of sectors for the dropdown menu
+// List of sectors for the dropdown menu and sector images
 const sectors = [
   "Food & Beverage",
   "Retail & E-commerce",
   "Healthcare",
   "Real Estate",
   "Automotive",
-  "Technology",
-  "Travel & Hospitality",
-  "Fitness & Wellness",
-  "Education",
-  "Finance",
 ];
+
+const sectorImages = {
+  "Food & Beverage": [
+    "/images/screens/food-beverage-1.png",
+    "/images/screens/food-beverage-2.png",
+    "/images/screens/food-beverage-3.png",
+    "/images/screens/food-beverage-4.png",
+    "/images/screens/food-beverage-5.png",
+  ],
+  "Retail & E-commerce": [
+    "/images/screens/retail-1.png",
+    "/images/screens/retail-2.png",
+    "/images/screens/retail-3.png",
+    "/images/screens/retail-4.png",
+    "/images/screens/retail-5.png",
+  ],
+  Healthcare: [
+    "/images/screens/healthcare-1.png",
+    "/images/screens/healthcare-2.png",
+    "/images/screens/healthcare-3.png",
+    "/images/screens/healthcare-4.png",
+    "/images/screens/healthcare-5.png",
+  ],
+  "Real Estate": [
+    "/images/screens/realestate-1.png",
+    "/images/screens/realestate-2.png",
+    "/images/screens/realestate-3.png",
+    "/images/screens/realestate-4.png",
+    "/images/screens/realestate-5.png",
+  ],
+  Automotive: [
+    "/images/screens/automotive-1.png",
+    "/images/screens/automotive-2.png",
+    "/images/screens/automotive-3.png",
+    "/images/screens/automotive-4.png",
+    "/images/screens/automotive-5.png",
+  ],
+};
 
 const Screens = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedSector, setSelectedSector] = useState("Select a Sector");
+  const [selectedSector, setSelectedSector] = useState("Food & Beverage");
+  const [selectedImages, setSelectedImages] = useState(
+    sectorImages["Food & Beverage"],
+  );
 
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   const selectSector = (sector) => {
     setSelectedSector(sector);
+    setSelectedImages(sectorImages[sector]);
     setIsDropdownOpen(false);
   };
 
@@ -61,7 +98,7 @@ const Screens = () => {
               {isDropdownOpen && (
                 <>
                   <div
-                    className="fixed inset-0 z-30 bg-black bg-opacity-50 backdrop-blur-sm"
+                    className="fixed inset-0 z-40 bg-black bg-opacity-50 backdrop-blur-sm"
                     onClick={() => setIsDropdownOpen(false)}
                   ></div>
 
@@ -85,19 +122,27 @@ const Screens = () => {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container relative">
+          {/* Left Blur Overlay */}
+          <div className="absolute left-0 top-[-30px] z-30 h-[100%] rounded-xl bg-white bg-opacity-70 backdrop-blur-[5px] dark:bg-black dark:bg-opacity-70 md:w-[35%]"></div>
+
+          {/* Right Blur Overlay */}
+          <div className="absolute right-0 top-[-30px] z-30 h-[105%] rounded-xl bg-white bg-opacity-70 backdrop-blur-[5px] dark:bg-black dark:bg-opacity-70 md:w-[35%]"></div>
+
           <div
             className="wow fadeInUp mx-auto max-w-[1000px]"
             data-wow-delay=".2s"
           >
             <Swiper
-              className="swiper mySwiper relative z-20"
+              className="swiper mySwiper relative z-20 "
               modules={[Navigation]}
               navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               }}
               loop={true}
+              centeredSlides={true}
+              slideToClickedSlide={true}
               breakpoints={{
                 640: {
                   slidesPerView: 1,
@@ -112,7 +157,7 @@ const Screens = () => {
                 },
               }}
             >
-              <div className="absolute left-0 right-0 top-0 z-50 mx-auto w-full md:w-1/3">
+              <div className="absolute left-0 right-0 top-0 z-50 mx-auto w-full  md:w-1/3">
                 <Image
                   width={288}
                   height={594}
@@ -122,77 +167,19 @@ const Screens = () => {
                 />
               </div>
 
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
-                    src={"/images/screens/screen-1-light.png"}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
-                  />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
-                    src={"/images/screens/screen-2-light.png"}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
-                  />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
-                    src={"/images/screens/screen-3-light.png"}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
-                  />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
-                    src={"/images/screens/screen-1-light.png"}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
-                  />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
-                    src={"/images/screens/screen-2-light.png"}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
-                  />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
-                    src={"/images/screens/screen-3-light.png"}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
-                  />
-                </div>
-              </SwiperSlide>
+              {selectedImages.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <div className="mx-auto mt-[5px] w-full max-w-[252px] xs:max-w-[260px]">
+                    <Image
+                      width={265}
+                      height={580}
+                      src={image}
+                      alt="screenshot"
+                      className="mx-auto w-full rounded-2xl"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
 
               <div className="flex items-center justify-center space-x-4 pt-20">
                 <button className="swiper-button-prev">
