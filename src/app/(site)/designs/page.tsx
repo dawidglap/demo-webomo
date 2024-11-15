@@ -67,6 +67,7 @@ const Designs = () => {
           <CompareDemo />
         </div>
       </div>
+      <AboutEnd />
     </>
   );
 };
