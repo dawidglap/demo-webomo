@@ -7,6 +7,8 @@ import About from "@/components/About";
 import About2 from "@/components/About2";
 import AboutEnd from "@/components/AboutEnd";
 import Screens from "@/components/Screens";
+import { Compare } from "@/components/ui/compare";
+import { CompareDemo } from "@/components/Compare";
 // import videoDemo from "../../../../public/images/webomo-videos/webomo-demo.mp4";
 
 const Designs = () => {
@@ -47,6 +49,24 @@ const Designs = () => {
         </Link>
       </div>
       <Screens />
+
+      <div className="container mt-20">
+        <div
+          className="wow fadeInUp mx-auto mb-10 max-w-[690px] text-center"
+          data-wow-delay=".2s"
+        >
+          <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
+            Vorher & Nachher
+          </h2>
+          <p className="mb-10 text-base text-body dark:text-slate-400">
+            Der Unterschied, den wir machen, ist deutlich spürbar, denn unsere
+            Arbeit zeichnet sich durch herausragende Qualität, Präzision und
+            Hingabe aus. Überzeug dich selbst mit Vorher und Nachher Funktion.
+          </p>
+
+          <CompareDemo />
+        </div>
+      </div>
     </>
   );
 };

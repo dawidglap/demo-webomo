@@ -91,8 +91,16 @@ const Screens = () => {
                 onClick={toggleDropdown}
                 className="rounded-full bg-primary px-6 py-2 text-base font-medium text-white hover:bg-opacity-90"
               >
-                {selectedSector}
+                Select industry:
               </button>
+
+              {/* Display of Current Industry */}
+              <p className="text-gray-700 dark:text-gray-300 mt-4 text-sm">
+                Currently selected:{" "}
+                <span className="font-semibold uppercase">
+                  {selectedSector}
+                </span>
+              </p>
 
               {/* Overlay with Blur Effect */}
               {isDropdownOpen && (
