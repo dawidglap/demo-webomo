@@ -8,6 +8,7 @@ import { IconDotsVertical } from "@tabler/icons-react";
 interface CompareProps {
   firstImage?: string;
   secondImage?: string;
+  secondImageIsVideo?: boolean; // New prop to indicate if the second image is a video
   className?: string;
   firstImageClassName?: string;
   secondImageClassname?: string;
@@ -17,9 +18,11 @@ interface CompareProps {
   autoplay?: boolean;
   autoplayDuration?: number;
 }
+
 export const Compare = ({
   firstImage = "",
   secondImage = "",
+  secondImageIsVideo = false, // Default to false
   className,
   firstImageClassName,
   secondImageClassname,
@@ -31,11 +34,8 @@ export const Compare = ({
 }: CompareProps) => {
   const [sliderXPercent, setSliderXPercent] = useState(initialSliderPercentage);
   const [isDragging, setIsDragging] = useState(false);
-
   const sliderRef = useRef<HTMLDivElement>(null);
-
   const [isMouseOver, setIsMouseOver] = useState(false);
-
   const autoplayRef = useRef<NodeJS.Timeout | null>(null);
 
   const startAutoplay = useCallback(() => {
@@ -222,15 +222,31 @@ export const Compare = ({
 
       <AnimatePresence initial={false}>
         {secondImage ? (
-          <motion.img
-            className={cn(
-              "absolute left-0 top-0 z-[19]  h-full w-full select-none rounded-2xl",
-              secondImageClassname,
-            )}
-            alt="second image"
-            src={secondImage}
-            draggable={false}
-          />
+          secondImageIsVideo ? (
+            <motion.video
+              className={cn(
+                "absolute left-0 top-0 z-[19] h-full w-full select-none rounded-2xl",
+                secondImageClassname,
+              )}
+              alt="second video"
+              src={secondImage}
+              autoPlay
+              loop
+              muted
+              playsInline
+              draggable={false}
+            />
+          ) : (
+            <motion.img
+              className={cn(
+                "absolute left-0 top-0 z-[19] h-full w-full select-none rounded-2xl",
+                secondImageClassname,
+              )}
+              alt="second image"
+              src={secondImage}
+              draggable={false}
+            />
+          )
         ) : null}
       </AnimatePresence>
     </div>
