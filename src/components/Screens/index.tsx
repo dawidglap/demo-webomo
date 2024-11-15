@@ -45,7 +45,7 @@ const Screens = () => {
             </h2>
             <p className="text-base text-body dark:text-slate-400">
               Tailored social media designs to engage audiences and enhance your
-              brand's presence, no matter the industry.
+              brand&apos;s presence, no matter the industry.
             </p>
 
             {/* Dropdown Button */}
