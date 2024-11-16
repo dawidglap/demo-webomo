@@ -41,6 +41,7 @@ const AboutEnd = () => {
               className="absolute inset-0 z-10 shadow-lg"
             />
             <video
+              playsInline
               src="/images/about/about-end.mp4" // replace with actual video path
               autoPlay
               muted
