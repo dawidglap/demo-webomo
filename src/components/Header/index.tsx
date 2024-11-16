@@ -211,7 +211,7 @@ const Header = () => {
                         href={item.route}
                         className={`text-2xl font-light text-black transition-all duration-300 hover:text-primary dark:text-white ${
                           pathUrl === item.route
-                            ? "rounded-full border-2 border-primary px-2 dark:border-white"
+                            ? "rounded-full border-2 border-primary  px-4 py-2 dark:border-white"
                             : ""
                         }`}
                       >

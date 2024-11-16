@@ -20,11 +20,18 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gray-100 dark:bg-gray-800 relative flex h-screen max-h-[1080px] flex-col items-center justify-center">
-      {/* Title and Subtitle */}
-      <h2 className="mb-2 pt-10 text-4xl font-semibold text-purple-700 dark:text-purple-300">
-        Immer und überall
-      </h2>
+    <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-b from-slate-300 to-slate-50 dark:from-slate-900 dark:to-slate-800">
+      {/* Subtitle Image */}
+      <div className="mb-2 pt-10">
+        <Image
+          src="/images/hero/subtitle.png"
+          alt="Immer und überall"
+          width={400} // Adjust width as needed
+          height={100} // Adjust height as needed
+          className="dark:invert" // Optional for dark mode
+        />
+      </div>
+
       <p className="text-5xl font-bold text-black dark:text-white">präsent</p>
 
       {/* Smartphone Frames */}
@@ -45,11 +52,11 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
-              src="/images/about/night-video.mp4"
+              src="/images/webomo-videos/video-left.mp4"
               autoPlay
               muted
               loop
-              className="absolute right-[0%] top-[2%] h-[97%] w-[97%] rounded-[21px] object-cover"
+              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
         </motion.div>
@@ -70,11 +77,11 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
-              src="/images/about/night-video.mp4"
+              src="/images/webomo-videos/video-center-left.mp4"
               autoPlay
               muted
               loop
-              className="absolute right-[0%] top-[2%] h-[97%] w-[97%] rounded-[21px] object-cover"
+              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
         </motion.div>
@@ -96,11 +103,11 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
-              src="/images/about/night-video.mp4"
+              src="/images/webomo-videos/video-center.mp4"
               autoPlay
               muted
               loop
-              className="absolute right-[0%] top-[2%] h-[97%] w-[97%] rounded-[21px] object-cover"
+              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
         </motion.div>
@@ -121,11 +128,11 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
-              src="/images/about/night-video.mp4"
+              src="/images/webomo-videos/video-center-right.mp4"
               autoPlay
               muted
               loop
-              className="absolute right-[0%] top-[2%] h-[97%] w-[97%] rounded-[21px] object-cover"
+              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
         </motion.div>
@@ -146,11 +153,11 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
-              src="/images/about/night-video.mp4"
+              src="/images/webomo-videos/video-right.mp4"
               autoPlay
               muted
               loop
-              className="absolute right-[0%] top-[2%] h-[97%] w-[97%] rounded-[21px] object-cover"
+              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
         </motion.div>
