@@ -103,6 +103,7 @@ const About = () => {
                       />
                       {item.type === "video" ? (
                         <video
+                          playsInline
                           src={item.src}
                           autoPlay
                           muted

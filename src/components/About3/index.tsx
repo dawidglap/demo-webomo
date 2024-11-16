@@ -47,6 +47,7 @@ const About3 = () => {
               variants={videoVariants}
             >
               <video
+                playsInline
                 src="/images/about/drone-video1.mp4"
                 autoPlay
                 muted
