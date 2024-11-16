@@ -26,7 +26,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/* <HeroArea2 /> */}
       <HeroArea />
       <WebomoFeatures />
       <Clients />
