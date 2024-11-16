@@ -5,20 +5,20 @@ import Image from "next/image";
 
 const AboutEnd = () => {
   return (
-    <section className="mb-0 flex flex-col items-center overflow-hidden bg-white px-4 py-28 dark:bg-[#15182A]">
+    <section className="mb-0 flex flex-col items-center overflow-hidden bg-white px-4 py-20 dark:bg-[#15182A]">
       {/* Main Title */}
-      <h2 className="mb-8 text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
+      <h2 className="mb-8 text-center text-3xl font-bold text-black dark:text-white md:mb-16 md:text-4xl">
         Ein Ziel dein Erfolg
       </h2>
 
       {/* Main Container with Rounded Background */}
-      <div className="relative flex w-full max-w-5xl flex-col items-center justify-between rounded-3xl bg-gradient-to-b from-[#ECE7FE] via-purple-200 to-[#B4A2E0] p-8 shadow-xl dark:from-slate-700 dark:to-black md:flex-row md:p-16">
+      <div className="relative flex w-full max-w-3xl flex-col items-center justify-between rounded-3xl bg-gradient-to-b from-[#ECE7FE] via-purple-200 to-[#B4A2E0] px-8 py-4 shadow-xl dark:from-slate-700 dark:to-black md:flex-row md:px-16 md:py-8">
         {/* Text and Call-to-Action */}
-        <div className="text-center md:max-w-lg md:text-left lg:max-w-2xl">
+        <div className="text-center md:max-w-md md:text-left lg:max-w-sm">
           <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
             Mehr erreichen mit webomo
           </h3>
-          <p className="mb-6 text-body dark:text-slate-400 ">
+          <p className="mb-6 text-slate-600 dark:text-slate-300 ">
             Wir steigern Emotionen bei deiner Zielgruppe.Deine Inhalte wie
             Bilder,Videos und Content werden in{" "}
             <span className="font-bold">Hollywood-Kinoqualität</span> erstellt.
@@ -32,7 +32,7 @@ const AboutEnd = () => {
 
         {/* iPhone Frame with Video - Positioned at the right side */}
         <div className="relative hidden md:block">
-          <div className=" relative  left-[100%] hidden h-[234px] w-[108px] overflow-hidden xl:block">
+          <div className=" relative  left-[100%] hidden h-[288px] w-[140px] overflow-hidden lg:block">
             <Image
               src="/images/screens/mobile-frame.png"
               alt="mobile frame"
@@ -45,13 +45,13 @@ const AboutEnd = () => {
               autoPlay
               muted
               loop
-              className="absolute left-[0px] top-[0px]   h-[232px] w-[106px] rounded-[18px] object-cover"
+              className="absolute left-[0px] top-[0px]   h-[284px] w-[136px] rounded-[22px] object-cover"
             />
           </div>
         </div>
 
         {/* Smartphone Image - Positioned at the bottom-right on desktop */}
-        <div className="absolute bottom-[125px] right-10 hidden w-[250px] rotate-[0deg] md:block md:w-[225px] lg:w-[260px] xl:w-[300px]">
+        <div className="absolute bottom-[130px] right-10 hidden w-[250px] rotate-[0deg] md:block md:w-[225px] lg:w-[260px] xl:w-[300px]">
           <Image
             src={Popcorn}
             alt="Popcorn"
