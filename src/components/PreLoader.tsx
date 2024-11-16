@@ -62,7 +62,7 @@ const PreLoader = ({ onFinish }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             // Apply gradient class randomly to each word
-            className={`bg-clip-text text-6xl font-extrabold text-transparent ${
+            className={`bg-clip-text  text-4xl font-extrabold text-transparent md:text-6xl ${
               gradients[index % gradients.length]
             } mb-4`}
           >
@@ -76,7 +76,7 @@ const PreLoader = ({ onFinish }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="absolute bottom-10  px-6 py-2 text-2xl font-bold uppercase text-slate-600"
+            className="absolute bottom-28  px-6 py-2 text-center text-xl font-bold uppercase text-slate-600 md:text-2xl"
           >
             Überall klicken, um zu starten
           </motion.div>
