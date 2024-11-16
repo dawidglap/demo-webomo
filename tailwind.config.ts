@@ -9,7 +9,7 @@ const config: Config = {
   darkMode: "class",
   theme: {
     fontFamily: {
-      inter: ["Inter", "sans-serif"],
+      inter: ['Montserrat', 'sans-serif'],
     },
     container: {
       center: true,

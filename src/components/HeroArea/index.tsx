@@ -10,40 +10,68 @@ const Hero = () => {
     threshold: 0.6,
   });
 
-  const smartphoneVariants = {
-    hidden: { opacity: 0, y: 20 },
+  // Animation Variants
+  const sectionVariants = {
+    hidden: { opacity: 0, y: -20, scale: 0.9 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      scale: 1,
+      transition: { duration: 1, ease: "easeOut" },
     },
+  };
+
+  const smartphoneVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, delay: i * 0.2, ease: "easeOut" },
+    }),
+    hover: { scale: 1.05, transition: { duration: 0.3 } },
   };
 
   return (
     <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-b from-slate-300 to-slate-50 dark:from-slate-900 dark:to-slate-800">
-      {/* Subtitle Image */}
-      <div className="mb-2 pt-10">
+      {/* Subtitle Image with Motion */}
+      <motion.div
+        className="mb-2 pt-10"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <Image
           src="/images/hero/subtitle.png"
           alt="Immer und überall"
-          width={400} // Adjust width as needed
-          height={100} // Adjust height as needed
-          className="dark:invert" // Optional for dark mode
+          width={400}
+          height={100}
+          className="dark:invert"
         />
-      </div>
+      </motion.div>
 
-      <p className="text-5xl font-bold text-black dark:text-white">präsent</p>
+      {/* Center Text */}
+      <motion.p
+        className="text-5xl font-bold text-black dark:text-white"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.5 }}
+      >
+        präsent
+      </motion.p>
 
       {/* Smartphone Frames */}
       <div className="relative mt-10 flex items-center justify-center">
         {/* Far Left Smartphone - Visible on screens larger than 768px */}
         <motion.div
           className="relative z-10 -mr-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          custom={0}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          whileHover="hover"
         >
-          <div className="relative h-full w-full">
+          <div className="relative h-full w-full ">
             <Image
               src="/images/screens/mobile-frame.png"
               alt="mobile frame"
@@ -64,9 +92,11 @@ const Hero = () => {
         {/* Left Smartphone */}
         <motion.div
           className="xxs:flex relative z-30 -mr-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          custom={1}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          whileHover="hover"
         >
           <div className="relative h-full w-full">
             <Image
@@ -90,9 +120,11 @@ const Hero = () => {
         <motion.div
           ref={smartphoneRef}
           className="relative z-[31] h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          custom={2}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          whileHover="hover"
         >
           <div className="relative h-full w-full">
             <Image
@@ -115,9 +147,11 @@ const Hero = () => {
         {/* Right Smartphone */}
         <motion.div
           className="xxs:flex relative z-20 -ml-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          custom={3}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          whileHover="hover"
         >
           <div className="relative h-full w-full">
             <Image
@@ -140,9 +174,11 @@ const Hero = () => {
         {/* Far Right Smartphone - Visible on screens larger than 768px */}
         <motion.div
           className="relative z-10 -ml-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          custom={4}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          whileHover="hover"
         >
           <div className="relative h-full w-full">
             <Image
