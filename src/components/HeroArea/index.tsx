@@ -80,6 +80,7 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
+              playsInline
               src="/images/webomo-videos/video-left.mp4"
               autoPlay
               muted
@@ -107,6 +108,7 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
+              playsInline
               src="/images/webomo-videos/video-center-left.mp4"
               autoPlay
               muted
@@ -135,6 +137,7 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
+              playsInline
               src="/images/webomo-videos/video-center.mp4"
               autoPlay
               muted
@@ -162,6 +165,7 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
+              playsInline
               src="/images/webomo-videos/video-center-right.mp4"
               autoPlay
               muted
@@ -189,6 +193,7 @@ const Hero = () => {
               className="absolute inset-0 z-10"
             />
             <video
+              playsInline
               src="/images/webomo-videos/video-right.mp4"
               autoPlay
               muted
