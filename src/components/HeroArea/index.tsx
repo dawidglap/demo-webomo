@@ -26,7 +26,7 @@ const Hero = () => {
     visible: (i) => ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, delay: i * 0.2, ease: "easeOut" },
+      transition: { duration: 0.8, delay: i * 0.4, ease: "easeOut" },
     }),
     hover: { scale: 1.05, transition: { duration: 0.3 } },
   };
