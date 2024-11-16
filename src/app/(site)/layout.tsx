@@ -2,7 +2,7 @@
 
 import "../../css/animate.css";
 import "../../css/style.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PreLoader from "@/components/PreLoader";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -20,22 +20,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState(true); // Controlled by PreLoader
   const { resolvedTheme } = useTheme();
-  const pathname = usePathname(); // Get the current pathname
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
+  const pathname = usePathname();
 
   // Effect for theme transition
-  useEffect(() => {
+  React.useEffect(() => {
     if (!resolvedTheme) return;
-
-    // Adds the transition class to the root (html)
     document.documentElement.classList.add("theme-transition");
-
-    // Removes the class after 300 ms
     const timeout = setTimeout(() => {
       document.documentElement.classList.remove("theme-transition");
     }, 300);
@@ -61,19 +53,19 @@ export default function RootLayout({
         >
           <AuthProvider>
             {loading ? (
-              <PreLoader />
+              <PreLoader onFinish={() => setLoading(false)} /> // Pass onFinish to PreLoader
             ) : (
               <>
                 <Header />
                 <ToasterContext />
                 <AnimatePresence mode="wait">
                   <motion.main
-                    key={pathname} // Unique key based on the pathname
-                    initial={{ opacity: 0, y: 10 }} // Start with opacity 0 and a slight vertical offset
-                    animate={{ opacity: 1, y: 0 }} // Fade in and move to y=0
-                    exit={{ opacity: 0, y: -10 }} // Fade out and move slightly upwards
+                    key={pathname}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
                     transition={{
-                      duration: 0.3, // Duration of the transition
+                      duration: 0.3,
                       ease: "easeInOut",
                     }}
                   >
