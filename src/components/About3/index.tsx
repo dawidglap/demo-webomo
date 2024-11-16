@@ -41,7 +41,7 @@ const About3 = () => {
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={videoRef}
-              className="relative mx-auto mb-14 w-full max-w-[500px] rounded-xl  shadow-xl lg:mx-0 lg:mb-0"
+              className="relative mx-auto mb-14 max-h-[450px] w-full max-w-[470px] overflow-hidden rounded-xl  shadow-xl lg:mx-0 lg:mb-0"
               initial="hidden"
               animate={videoInView ? "visible" : "hidden"}
               variants={videoVariants}
@@ -68,7 +68,7 @@ const About3 = () => {
               <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
                 Videos
               </h2>
-              <p className="mb-[20px] text-base leading-relaxed text-body dark:text-slate-400">
+              <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300">
                 Einen ganztägigen Videodreh, bei dem wir Filmmaterial Ihrer
                 Firma - Räumlichkeiten - Interviews - Kunden Feedbacks und
                 vieles mehr aufnehmen und erstellen. Wir liefern Ihnen Aufnahmen
@@ -77,7 +77,7 @@ const About3 = () => {
               </p>
               <Link
                 href="#"
-                className="inline-block rounded-full bg-primary px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90"
+                className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200"
               >
                 Know More
               </Link>

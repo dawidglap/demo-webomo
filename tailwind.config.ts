@@ -16,6 +16,7 @@ const config: Config = {
       padding: "1rem",
     },
     screens: {
+      xxs:"360px",
       sm: "575px",
       // => @media (min-width: 576px) { ... }
 
