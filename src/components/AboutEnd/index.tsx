@@ -18,14 +18,14 @@ const AboutEnd = () => {
           <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
             Mehr erreichen mit webomo
           </h3>
-          <p className="mb-6 text-slate-600 dark:text-slate-300 ">
+          <p className="mb-6 text-base text-slate-600 dark:text-slate-300 md:text-xl ">
             Wir steigern Emotionen bei deiner Zielgruppe.Deine Inhalte wie
             Bilder,Videos und Content werden in{" "}
             <span className="font-bold">Hollywood-Kinoqualität</span> erstellt.
             Die Kampagnen deiner Produkte & Dienstleistungen sind auf einem
             anderen Niveau.
           </p>
-          <button className="hover:bg-gray-800 dark:hover:bg-gray-200 rounded-full bg-black px-6 py-3 text-white dark:bg-white dark:text-black">
+          <button className="hover:bg-gray-800 dark:hover:bg-gray-200 rounded-full bg-black px-6 py-3 text-base text-white dark:bg-white dark:text-black md:text-xl">
             Loslegen
           </button>
         </div>

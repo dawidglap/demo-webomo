@@ -77,7 +77,7 @@ const Header = () => {
             {/* Logo */}
             <div className="z-50 block w-1/4">
               <Link href="/" className=" block max-w-[180px]">
-                <span className="relative text-[30px] font-bold tracking-wider text-[#181C30] transition-all duration-300 dark:text-white">
+                <span className="relative text-4xl font-bold tracking-wider text-[#181C30] transition-all duration-300 dark:text-white md:text-[48px]">
                   Webomo
                 </span>
               </Link>

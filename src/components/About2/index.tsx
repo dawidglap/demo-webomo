@@ -52,7 +52,7 @@ const About2 = () => {
               <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
                 Shooting
               </h2>
-              <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300">
+              <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
                 Wir erstellen für Sie in einem{" "}
                 <span className="font-bold"> ganztägigen</span> Fotoshooting
                 eine umfassende Auswahl an Motiven für Ihre Social Media Kanäle.
@@ -62,7 +62,7 @@ const About2 = () => {
               </p>
               <Link
                 href="#"
-                className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200"
+                className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
               >
                 Know More
               </Link>
@@ -81,7 +81,7 @@ const About2 = () => {
                 <h2 className="text-3xl font-bold text-black dark:text-white">
                   Showroom
                 </h2>
-                <p className="text-slate-600 dark:text-slate-300">
+                <p className="pt-1 text-lg text-slate-600 dark:text-slate-300 md:text-xl">
                   Individueller Shooting bei Ihnen vor Ort.
                 </p>
               </div>
