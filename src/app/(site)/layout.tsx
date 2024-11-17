@@ -2,7 +2,7 @@
 
 import "../../css/animate.css";
 import "../../css/style.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PreLoader from "@/components/PreLoader";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -20,12 +20,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [loading, setLoading] = useState(true); // Controlled by PreLoader
-  const { resolvedTheme } = useTheme();
   const pathname = usePathname();
+  const [loading, setLoading] = useState(pathname === "/"); // Preloader on homepage only
+  const { resolvedTheme } = useTheme();
 
   // Effect for theme transition
-  React.useEffect(() => {
+  useEffect(() => {
     if (!resolvedTheme) return;
     document.documentElement.classList.add("theme-transition");
     const timeout = setTimeout(() => {
@@ -34,6 +34,13 @@ export default function RootLayout({
 
     return () => clearTimeout(timeout);
   }, [resolvedTheme]);
+
+  // Ensure the preloader only shows on the homepage
+  useEffect(() => {
+    if (pathname !== "/") {
+      setLoading(false);
+    }
+  }, [pathname]);
 
   return (
     <html lang="en">
@@ -53,7 +60,7 @@ export default function RootLayout({
         >
           <AuthProvider>
             {loading ? (
-              <PreLoader onFinish={() => setLoading(false)} /> // Pass onFinish to PreLoader
+              <PreLoader onFinish={() => setLoading(false)} />
             ) : (
               <>
                 <Header />

@@ -19,12 +19,13 @@ const Pricing = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Choose Your Plan
+              Finde das passende Abo für dich
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              Wir bieten Dir drei Pakte zur Auswahl an. Mit unserem Service
+              kümmern wir uns 12 Monate lang, rund um die Uhr, um die Erstellung
+              und Pflege deiner Social Media Kanäle. Wähle das Paket aus, das
+              deinen individuellen Bedürfnissen am besten
             </p>
             <div className="flex flex-wrap items-center justify-center space-x-4">
               <p className="my-4  inline-flex items-center rounded-full border-2 border-zinc-400 bg-white px-2 py-1 text-zinc-400 hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90">

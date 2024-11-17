@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const Stats = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 1 });
@@ -92,6 +93,12 @@ const Stats = () => {
           </p>
         </motion.div>
       </div>
+      <Link
+        href="#"
+        className="mt-10 inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
+      >
+        Kontaktiere uns und erfahre mehr
+      </Link>
     </section>
   );
 };
