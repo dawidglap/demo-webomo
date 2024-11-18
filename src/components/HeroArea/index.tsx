@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-b from-slate-300 to-slate-50 dark:from-slate-900 dark:to-slate-800">
+    <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800">
       {/* Subtitle Image with Motion */}
       <motion.div
         className="mb-2 pt-10"

@@ -108,7 +108,7 @@ const Header = () => {
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
                   transition={{ duration: 0.5 }}
-                  className=" fixed inset-0 z-40 flex h-screen flex-col items-center justify-center overflow-y-auto bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 text-center backdrop-blur-md dark:from-slate-800 dark:via-blue-950 dark:to-black lg:hidden"
+                  className=" fixed inset-0 z-[100] flex h-screen flex-col items-center justify-center overflow-y-auto bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 text-center backdrop-blur-md dark:from-slate-900 dark:to-slate-800 lg:hidden"
                 >
                   <button
                     onClick={closeMenu}
@@ -202,8 +202,8 @@ const Header = () => {
             </AnimatePresence>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-8">
-              <nav>
+            <div className="z-[100] hidden lg:flex lg:items-center lg:space-x-8">
+              <nav className="z-[10000]">
                 <ul className="flex space-x-12">
                   {menuData.map((item, index) => (
                     <li key={index} className="menu-item relative">

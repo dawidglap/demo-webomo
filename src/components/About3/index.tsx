@@ -41,7 +41,7 @@ const About3 = () => {
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={videoRef}
-              className="relative mx-auto mb-14 max-h-[450px] w-full max-w-[470px] overflow-hidden rounded-xl  shadow-xl lg:mx-0 lg:mb-0"
+              className="relative  mx-auto mb-14 max-h-[450px] w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-xl  lg:mx-0 lg:mb-0"
               initial="hidden"
               animate={videoInView ? "visible" : "hidden"}
               variants={videoVariants}
@@ -52,7 +52,7 @@ const About3 = () => {
                 autoPlay
                 muted
                 loop
-                className="w-full rounded-xl object-cover shadow-xl"
+                className="rounded-xlobject-cover w-full shadow-xl"
               />
             </motion.div>
           </div>

@@ -33,6 +33,9 @@ const config: Config = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
