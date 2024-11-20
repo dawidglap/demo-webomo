@@ -73,9 +73,9 @@ export const PricingItem = ({ price, planType }: any) => {
   const currentPlan = priceDetails[price.nickname] || priceDetails["Basic"];
 
   return (
-    <div className="w-full px-6 pb-8 md:w-1/2 lg:w-1/3">
+    <div className="w-full  px-6 pb-8 md:w-1/2 lg:w-1/3">
       <div
-        className={`relative mb-10 rounded-xl px-9 py-10 shadow-lg ${bgColor} flex h-full flex-col justify-between lg:mb-4 lg:px-7 xl:px-9`}
+        className={` relative mb-10  rounded-xl px-9 py-10 shadow-2xl md:shadow-xl ${bgColor} flex h-full flex-col justify-between lg:mb-4 lg:px-7 xl:px-9`}
       >
         {/* Badge for Recommended Plan */}
         {price.nickname === "Unlimited" && (
@@ -91,7 +91,7 @@ export const PricingItem = ({ price, planType }: any) => {
         <p className="mb-2 text-4xl font-bold text-black dark:text-white">
           {currentPlan.price}.- <span className="text-lg">/ Monat</span>
         </p>
-        <p className="text-gray-700 dark:text-gray-300 text-sm">
+        <p className="text-sm text-gray-700 dark:text-gray-300">
           12 Monate Betreuung
         </p>
 
@@ -108,13 +108,13 @@ export const PricingItem = ({ price, planType }: any) => {
         <button
           aria-label="purchase this plan"
           onClick={handleSubscription}
-          className="dark:hover:bg-gray-200 block w-full rounded-2xl bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black"
+          className="block w-full rounded-2xl bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
           wählen
         </button>
 
         {/* Footer Text */}
-        <p className="text-gray-600 dark:text-gray-400 mt-6 text-center text-sm">
+        <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
           Inkl. Dashboard & <span className="underline">Reporting</span>
         </p>
       </div>

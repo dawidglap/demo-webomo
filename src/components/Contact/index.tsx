@@ -10,7 +10,7 @@ const Contact = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Let&apos;s Stay Connected
+              Kostenlose Beratung
             </h2>
             <p className="text-base text-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -22,7 +22,7 @@ const Contact = () => {
 
         <div className="container">
           <div
-            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10"
+            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10"
             data-wow-delay=".3s"
           >
             <form>
@@ -34,7 +34,7 @@ const Contact = () => {
                       name="name"
                       id="name"
                       placeholder="Enter your name"
-                      className="w-full rounded border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                      className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
                 </div>
@@ -46,7 +46,7 @@ const Contact = () => {
                       name="company"
                       id="company"
                       placeholder="Comapy (optioanl)"
-                      className="w-full rounded border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                      className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       placeholder="Enter Your email"
-                      className="w-full rounded border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                      className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
                 </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                       name="phone"
                       id="phone"
                       placeholder="Enter your Phone Number"
-                      className="w-full rounded border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                      className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                       name="message"
                       id="message"
                       placeholder="Tell us about yourself"
-                      className="w-full rounded border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                      className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     ></textarea>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                     </p>
                     <button
                       type="submit"
-                      className="inline-block rounded-md bg-primary px-11 py-[14px] text-base font-medium text-white hover:bg-opacity-90"
+                      className="inline-block  rounded-[30px] bg-primary px-11 py-[14px] text-base font-medium text-white hover:bg-opacity-90"
                     >
                       Contact Us
                     </button>

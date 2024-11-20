@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="bg-[#F8FAFB] pb-[46px] pt-[95px] dark:bg-[#15182A]">
-          <div className="container max-w-[1390px]">
+        <div className=" pb-[46px] pt-[95px]">
+          <div className="container max-w-[1390px] rounded-[30px] bg-indigo-100 p-8 shadow-xl dark:bg-slate-900">
             {/* Sezione "Folge uns" e social media */}
-            <div className="dark:border-gray-700 flex flex-wrap items-center justify-between border-b border-primary px-4 pb-4">
+            <div className="flex flex-wrap items-center justify-between border-b border-primary px-4 pb-4 dark:border-gray-700">
               <h3 className="text-[22px] font-bold text-black dark:text-white">
                 Folge uns
               </h3>
@@ -71,7 +71,7 @@ const Footer = () => {
                 </h3>
                 <ul className="space-y-2 text-base text-body dark:text-white">
                   <li>
-                    <Link href="#">Partnerprogramm</Link>
+                    <Link href="/webomo-business">Partnerprogramm</Link>
                   </li>
                   <li>
                     <Link href="#">Fragen & Antworten zu Partnerprogramm</Link>
@@ -127,10 +127,9 @@ const Footer = () => {
         </div>
 
         {/* Sezione Footer Bottom */}
-        <div className="bg-[#F8FAFB] py-4 text-center dark:bg-[#15182A] dark:text-white">
+        <div className="py-4 text-center text-black dark:text-white">
           <p className="text-sm">
-            Copyright © 2024 - webomo.ch - Eine Marke der Glanz GmbH. Alle
-            Rechte vorbehalten.
+            Copyright © 2024 - webomo.ch <br /> Alle Rechte vorbehalten.
           </p>
         </div>
       </footer>

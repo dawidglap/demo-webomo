@@ -12,9 +12,10 @@ import GlobalSearchModal from "@/components/GlobalSearch";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"; // Import Font Awesome icons
 
 const menuData: Menu[] = [
-  { label: "Leistungen", route: "/#leistungen" },
+  { label: "Leistungen", route: "/leistungen" },
   { label: "Designs", route: "/designs" },
   { label: "Preise", route: "/price" },
+  { label: "Kontakt", route: "/kontakt" },
 ];
 
 const Header = () => {
@@ -67,9 +68,7 @@ const Header = () => {
     <>
       <header
         className={`navbar left-0 top-0 z-50 w-full transition-all duration-300 ${
-          sticky
-            ? "fixed bg-opacity-90 shadow-lg backdrop-blur-lg"
-            : "absolute bg-opacity-0"
+          sticky ? "fixed bg-white dark:bg-black" : "absolute bg-opacity-100"
         }`}
       >
         <div className="container relative mx-auto max-w-[1400px] px-4">
@@ -84,7 +83,7 @@ const Header = () => {
             </div>
 
             {/* Theme Switcher and Hamburger button for mobile */}
-            <div className="flex items-center space-x-4 lg:hidden">
+            <div className="flex items-center space-x-4 xl:hidden">
               <DarkModeSwitcher />
               <button
                 onClick={navbarToggleHandler}
@@ -108,7 +107,7 @@ const Header = () => {
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
                   transition={{ duration: 0.5 }}
-                  className=" fixed inset-0 z-[100] flex h-screen flex-col items-center justify-center overflow-y-auto bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 text-center backdrop-blur-md dark:from-slate-900 dark:to-slate-800 lg:hidden"
+                  className=" fixed inset-0 z-[100] flex h-screen flex-col items-center justify-center overflow-y-auto bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 text-center backdrop-blur-md dark:from-slate-900 dark:to-slate-800 xl:hidden"
                 >
                   <button
                     onClick={closeMenu}
@@ -172,7 +171,7 @@ const Header = () => {
                         Kostenlose Beratung
                       </Link>
 
-                      <div className="border-gray-300 dark:border-gray-600 flex space-x-4 border-t pt-4">
+                      <div className="flex space-x-4 border-t border-gray-300 pt-4 dark:border-gray-600">
                         <Link
                           href="https://facebook.com"
                           target="_blank"
@@ -202,9 +201,9 @@ const Header = () => {
             </AnimatePresence>
 
             {/* Desktop Menu */}
-            <div className="z-[100] hidden lg:flex lg:items-center lg:space-x-8">
+            <div className="z-[100] hidden xl:flex xl:items-center xl:space-x-8">
               <nav className="z-[10000]">
-                <ul className="flex space-x-12">
+                <ul className="flex space-x-8">
                   {menuData.map((item, index) => (
                     <li key={index} className="menu-item relative">
                       <Link
@@ -227,7 +226,7 @@ const Header = () => {
             </div>
 
             {/* Right-side icons and CTA button for desktop */}
-            <div className="hidden items-center justify-end space-x-4 lg:flex">
+            <div className="hidden items-center justify-end space-x-4 xl:flex">
               <DarkModeSwitcher />
               <Link
                 href="#"

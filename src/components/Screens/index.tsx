@@ -86,7 +86,7 @@ const Screens = () => {
             </p>
 
             {/* Dropdown Button */}
-            <div className="relative mt-6 inline-block">
+            {/* <div className="relative mt-6 inline-block">
               <button
                 onClick={toggleDropdown}
                 className="rounded-full bg-primary px-6 py-2 text-base font-medium text-white hover:bg-opacity-90"
@@ -94,7 +94,7 @@ const Screens = () => {
                 Select industry:
               </button>
 
-              {/* Display of Current Industry */}
+              
               <p className="text-gray-700 dark:text-gray-300 mt-4 text-sm">
                 Currently selected:{" "}
                 <span className="font-semibold uppercase">
@@ -102,7 +102,7 @@ const Screens = () => {
                 </span>
               </p>
 
-              {/* Overlay with Blur Effect */}
+              
               {isDropdownOpen && (
                 <>
                   <div
@@ -110,7 +110,7 @@ const Screens = () => {
                     onClick={() => setIsDropdownOpen(false)}
                   ></div>
 
-                  {/* Dropdown Card */}
+                  
                   <div className="dark:bg-gray-800 fixed left-1/2 top-1/2 z-40 w-[90%] max-w-sm -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white p-6 shadow-lg">
                     <ul className="space-y-2">
                       {sectors.map((sector) => (
@@ -126,7 +126,7 @@ const Screens = () => {
                   </div>
                 </>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
 

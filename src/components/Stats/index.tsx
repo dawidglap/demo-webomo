@@ -7,13 +7,16 @@ import Link from "next/link";
 const Stats = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 1 });
   const leftControls = useAnimation();
+  const centerControls = useAnimation();
   const rightControls = useAnimation();
   const [leftStat, setLeftStat] = useState(0);
+  const [centerStat, setCenterStat] = useState(0);
   const [rightStat, setRightStat] = useState(0);
 
   useEffect(() => {
     if (inView) {
       leftControls.start({ opacity: 1, x: 0 });
+      centerControls.start({ opacity: 1, y: 0 });
       rightControls.start({ opacity: 1, x: 0 });
 
       const delayTimeout = setTimeout(() => {
@@ -21,26 +24,30 @@ const Stats = () => {
           setLeftStat((prev) => (prev < 37 ? prev + 1 : 37));
         }, 46);
 
+        const centerInterval = setInterval(() => {
+          setCenterStat((prev) => (prev < 75 ? prev + 1 : 75));
+        }, 20);
+
         const rightInterval = setInterval(() => {
           setRightStat((prev) => (prev < 57 ? prev + 1 : 57));
         }, 30);
 
         return () => {
           clearInterval(leftInterval);
+          clearInterval(centerInterval);
           clearInterval(rightInterval);
         };
       }, 750);
 
       return () => clearTimeout(delayTimeout);
     }
-  }, [inView, leftControls, rightControls]);
+  }, [inView, leftControls, centerControls, rightControls]);
 
   return (
     <section
       ref={ref}
       className="flex flex-col items-center overflow-hidden bg-[#F8FAFB] px-4 pb-20 pt-20 dark:bg-[#15182A]"
     >
-      {/* Main Title with Animation */}
       <motion.h2
         className="text-center text-3xl font-bold text-black dark:text-white md:text-4xl"
         initial={{ opacity: 0, y: 20 }}
@@ -50,7 +57,6 @@ const Stats = () => {
         Werbung für dein Unternehmen
       </motion.h2>
 
-      {/* Subtitle with Animation */}
       <motion.p
         className="container mt-4 max-w-[690px] text-center text-[#79808a] dark:text-[#79808a]"
         initial={{ opacity: 0, y: 20 }}
@@ -61,9 +67,7 @@ const Stats = () => {
         deiner Marke mit hochwertigen Marketing- Bild- und Videomaterialien.
       </motion.p>
 
-      {/* Stats Container */}
-      <div className="mt-8 flex flex-wrap justify-center gap-4 md:gap-8">
-        {/* Stat Card 1 - Appears from the left */}
+      <div className="mt-8 flex flex-wrap justify-center gap-4 md:flex-nowrap md:gap-8">
         <motion.div
           className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-indigo-100 p-4 shadow-lg dark:bg-[#33334D] md:h-60 md:w-60"
           initial={{ opacity: 0, x: -100 }}
@@ -73,12 +77,25 @@ const Stats = () => {
           <span className="mb-4 text-4xl font-bold text-indigo-600 dark:text-indigo-400 md:text-5xl">
             {leftStat}%
           </span>
-          <p className="text-gray-700 min-h-[3rem] text-center dark:text-white md:text-lg">
+          <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
             höhere Sichtbarkeit
           </p>
         </motion.div>
 
-        {/* Stat Card 2 - Appears from the right */}
+        <motion.div
+          className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-indigo-100 p-4 shadow-lg dark:bg-[#33334D] md:h-60 md:w-60"
+          initial={{ opacity: 0, y: 50 }}
+          animate={centerControls}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <span className="mb-4 text-4xl font-bold text-indigo-600 dark:text-indigo-400 md:text-5xl">
+            {centerStat}%
+          </span>
+          <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
+            gesteigerte Interaktion
+          </p>
+        </motion.div>
+
         <motion.div
           className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-indigo-100 p-4 shadow-lg dark:bg-[#33334D] md:h-60 md:w-60"
           initial={{ opacity: 0, x: 100 }}
@@ -88,14 +105,15 @@ const Stats = () => {
           <span className="mb-4 text-4xl font-bold text-indigo-600 dark:text-indigo-400 md:text-5xl">
             {rightStat}%
           </span>
-          <p className="text-gray-700 min-h-[3rem] text-center dark:text-white md:text-lg">
+          <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
             geringere Marketingkosten
           </p>
         </motion.div>
       </div>
+
       <Link
         href="#"
-        className="mt-10 inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
+        className=" mt-10 inline-block rounded-full bg-black px-8 py-[10px] text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
       >
         Kontaktiere uns und erfahre mehr
       </Link>
