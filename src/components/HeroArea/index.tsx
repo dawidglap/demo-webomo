@@ -1,14 +1,38 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
-  const { ref: smartphoneRef, inView: smartphoneInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.6,
-  });
+  const smartphoneRefs = useRef([]); // Array di ref per ogni smartphone
+  const [isInView, setIsInView] = useState([]); // Stato per ogni telefono
+
+  useEffect(() => {
+    const observers = smartphoneRefs.current.map((ref, index) => {
+      if (!ref) return null;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsInView((prev) => {
+              const updated = [...prev];
+              updated[index] = true; // Attiva la visibilità per il telefono corrente
+              return updated;
+            });
+            observer.disconnect(); // Disconnette l'observer
+          }
+        },
+        { threshold: 0.6 },
+      );
+
+      observer.observe(ref);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer) => observer?.disconnect());
+    };
+  }, []);
 
   // Animation Variants
   const sectionVariants = {
@@ -23,10 +47,14 @@ const Hero = () => {
 
   const smartphoneVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: (i) => ({
+    visible: (index) => ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, delay: i * 0.4, ease: "easeOut" },
+      transition: {
+        duration: 0.8,
+        delay: index * 0.4, // Aggiunge ritardo in base all'indice
+        ease: "easeOut",
+      },
     }),
     hover: { scale: 1.05, transition: { duration: 0.3 } },
   };
@@ -62,16 +90,17 @@ const Hero = () => {
 
       {/* Smartphone Frames */}
       <div className="relative mt-10 flex items-center justify-center">
-        {/* Far Left Smartphone - Visible on screens larger than 768px */}
-        {/* <motion.div
+        {/* Far Left Smartphone */}
+        <motion.div
+          ref={(el) => (smartphoneRefs.current[0] = el)}
           className="relative z-10 -mr-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          custom={0}
           initial="hidden"
-          animate={smartphoneInView ? "visible" : "hidden"}
+          animate={isInView[0] ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          custom={0}
           whileHover="hover"
         >
-          <div className="relative h-full w-full ">
+          <div className="relative h-full w-full">
             <Image
               src="/images/screens/mobile-frame.png"
               alt="mobile frame"
@@ -88,15 +117,16 @@ const Hero = () => {
               className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
-        </motion.div> */}
+        </motion.div>
 
         {/* Left Smartphone */}
         <motion.div
+          ref={(el) => (smartphoneRefs.current[1] = el)}
           className="relative z-30 -mr-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl xxs:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          custom={1}
           initial="hidden"
-          animate={smartphoneInView ? "visible" : "hidden"}
+          animate={isInView[1] ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          custom={1}
           whileHover="hover"
         >
           <div className="relative h-full w-full">
@@ -120,12 +150,12 @@ const Hero = () => {
 
         {/* Center Smartphone */}
         <motion.div
-          ref={smartphoneRef}
+          ref={(el) => (smartphoneRefs.current[2] = el)}
           className="relative z-[31] h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          custom={2}
           initial="hidden"
-          animate={smartphoneInView ? "visible" : "hidden"}
+          animate={isInView[2] ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          custom={2}
           whileHover="hover"
         >
           <div className="relative h-full w-full">
@@ -149,11 +179,12 @@ const Hero = () => {
 
         {/* Right Smartphone */}
         <motion.div
+          ref={(el) => (smartphoneRefs.current[3] = el)}
           className="relative z-20 -ml-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl xxs:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          custom={3}
           initial="hidden"
-          animate={smartphoneInView ? "visible" : "hidden"}
+          animate={isInView[3] ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          custom={3}
           whileHover="hover"
         >
           <div className="relative h-full w-full">
@@ -175,13 +206,14 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Far Right Smartphone - Visible on screens larger than 768px */}
-        {/* <motion.div
+        {/* Far Right Smartphone */}
+        <motion.div
+          ref={(el) => (smartphoneRefs.current[4] = el)}
           className="relative z-10 -ml-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          custom={4}
           initial="hidden"
-          animate={smartphoneInView ? "visible" : "hidden"}
+          animate={isInView[4] ? "visible" : "hidden"}
           variants={smartphoneVariants}
+          custom={4}
           whileHover="hover"
         >
           <div className="relative h-full w-full">
@@ -201,7 +233,7 @@ const Hero = () => {
               className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
-        </motion.div> */}
+        </motion.div>
       </div>
     </section>
   );
