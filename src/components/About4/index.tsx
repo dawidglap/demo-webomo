@@ -57,8 +57,9 @@ const AboutWebsite = () => {
                 <span className="font-bold">high-performing</span> websites
                 tailored to your business needs. From design to deployment, we
                 ensure your online presence stands out, engages your audience,
-                and drives results. Whether it's an e-commerce platform, a
-                corporate website, or a personal blog, we've got you covered.
+                and drives results. Whether it&apos;s an e-commerce platform, a
+                corporate website, or a personal blog, we&apos;ve got you
+                covered.
               </p>
               <Link
                 href="#"
