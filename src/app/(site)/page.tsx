@@ -33,7 +33,7 @@ export default function Home() {
       <About />
       <About2 />
       <About3 />
-      <AboutEnd />
+      {/* <AboutEnd /> */}
       {/* <WorkProcess /> */}
       {/* <Pricing /> */}
       {/* <Screens /> */}

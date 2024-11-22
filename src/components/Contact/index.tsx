@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <section id="support" className="pb-[110px] pt-[100px]">
+      <section id="support" className="pb-[110px] pt-[100px] md:pt-[150px]">
         <div className="container">
           <div
             className="wow fadeInUp mx-auto mb-10 max-w-[690px] text-center"
@@ -20,9 +20,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container px-0 md:px-4">
           <div
-            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10"
+            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 px-4 py-10 shadow-card dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8"
             data-wow-delay=".3s"
           >
             <form>

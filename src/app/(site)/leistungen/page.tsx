@@ -4,6 +4,7 @@ import About from "@/components/About";
 import About2 from "@/components/About2";
 import AboutEnd from "@/components/AboutEnd";
 import About3 from "@/components/About3";
+import AboutWebsite from "@/components/About4";
 
 const Leistungen = () => {
   return (
@@ -12,6 +13,7 @@ const Leistungen = () => {
       <About />
       <About2 />
       <About3 />
+      <AboutWebsite />
       <AboutEnd />
     </div>
   );
