@@ -5,11 +5,12 @@ import About2 from "@/components/About2";
 import AboutEnd from "@/components/AboutEnd";
 import About3 from "@/components/About3";
 import AboutWebsite from "@/components/About4";
+import Hero from "@/components/HeroArea";
 
 const Leistungen = () => {
   return (
     <div>
-      <Hero3 />
+      <Hero />
       <About />
       <About2 />
       <About3 />

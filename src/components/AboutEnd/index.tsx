@@ -1,9 +1,45 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Popcorn from "../../../public/images/about/popcorn.png";
 import Image from "next/image";
 
 const AboutEnd = () => {
+  const videoRef = useRef(null); // Ref for the video
+  const frameRef = useRef(null); // Ref for the frame container
+  const [isInView, setIsInView] = useState(false); // State to track if the video is in view
+  const [videoLoaded, setVideoLoaded] = useState(false); // State to track if the video is loaded
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true); // Mark as in view
+          observer.disconnect(); // Disconnect observer after visibility is triggered
+        }
+      },
+      { threshold: 0.6 },
+    );
+
+    if (frameRef.current) {
+      observer.observe(frameRef.current);
+
+      // Fallback: If the observer doesn't trigger within 1 second, set visibility
+      setTimeout(() => {
+        if (!isInView) setIsInView(true);
+      }, 1000);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [isInView]);
+
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true); // Mark video as loaded
+  };
+
+  const shouldDisplay = isInView || videoLoaded; // Ensure fallback for reliable display
+
   return (
     <section className="mb-0 flex flex-col items-center overflow-hidden bg-white px-4 py-20 dark:bg-[#15182A]">
       {/* Main Title */}
@@ -18,21 +54,26 @@ const AboutEnd = () => {
           <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
             Mehr erreichen mit webomo
           </h3>
-          <p className="mb-6 text-base text-slate-600 dark:text-slate-300 md:text-xl ">
+          <p className="mb-6 text-base text-slate-600 dark:text-slate-300 md:text-xl">
             Wir steigern Emotionen bei deiner Zielgruppe.Deine Inhalte wie
             Bilder,Videos und Content werden in{" "}
             <span className="font-bold">Hollywood-Kinoqualität</span> erstellt.
             Die Kampagnen deiner Produkte & Dienstleistungen sind auf einem
             anderen Niveau.
           </p>
-          <button className="hover:bg-gray-800 dark:hover:bg-gray-200 rounded-full bg-black px-6 py-3 text-base text-white dark:bg-white dark:text-black md:text-xl">
+          <button className="rounded-full bg-black px-6 py-3 text-base text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 md:text-xl">
             Loslegen
           </button>
         </div>
 
         {/* iPhone Frame with Video - Positioned at the right side */}
-        <div className="relative hidden md:block">
-          <div className=" relative  left-[100%] hidden h-[288px] w-[140px] overflow-hidden lg:block">
+        <div
+          ref={frameRef}
+          className={`relative hidden transition-opacity duration-500 md:block ${
+            shouldDisplay ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <div className="relative left-[100%] hidden h-[288px] w-[140px] overflow-hidden lg:block">
             <Image
               src="/images/screens/mobile-frame.png"
               alt="mobile frame"
@@ -41,12 +82,14 @@ const AboutEnd = () => {
               className="absolute inset-0 z-10 shadow-lg"
             />
             <video
+              ref={videoRef}
               playsInline
-              src="/images/about/about-end.mp4" // replace with actual video path
+              src="/images/about/about-end.mp4" // Replace with actual video path
               autoPlay
               muted
               loop
-              className="absolute left-[0px] top-[0px]   h-[284px] w-[136px] rounded-[22px] object-cover"
+              onLoadedData={handleVideoLoaded} // Trigger when the video is loaded
+              className="absolute left-[0px] top-[0px] h-[284px] w-[136px] rounded-[22px] object-cover"
             />
           </div>
         </div>
@@ -56,7 +99,7 @@ const AboutEnd = () => {
           <Image
             src={Popcorn}
             alt="Popcorn"
-            className="rounded-md "
+            className="rounded-md"
             style={{ width: "100%", height: "auto" }}
           />
         </div>

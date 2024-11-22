@@ -4,8 +4,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const smartphoneRefs = useRef([]); // Array di ref per ogni smartphone
-  const [isInView, setIsInView] = useState([]); // Stato per ogni telefono
+  const smartphoneRefs = useRef([]); // Array of refs for each smartphone
+  const [isInView, setIsInView] = useState(Array(5).fill(true)); // Default to true as a fallback
+  const [mediaLoaded, setMediaLoaded] = useState(Array(5).fill(true)); // Default to true as a fallback
 
   useEffect(() => {
     const observers = smartphoneRefs.current.map((ref, index) => {
@@ -16,16 +17,26 @@ const Hero = () => {
           if (entry.isIntersecting) {
             setIsInView((prev) => {
               const updated = [...prev];
-              updated[index] = true; // Attiva la visibilità per il telefono corrente
+              updated[index] = true; // Mark the current smartphone as in view
               return updated;
             });
-            observer.disconnect(); // Disconnette l'observer
+            observer.disconnect(); // Disconnect the observer
           }
         },
         { threshold: 0.6 },
       );
 
       observer.observe(ref);
+
+      // Fallback to ensure visibility if the observer doesn't trigger
+      setTimeout(() => {
+        setIsInView((prev) => {
+          const updated = [...prev];
+          updated[index] = true;
+          return updated;
+        });
+      }, 1000); // 1 second fallback
+
       return observer;
     });
 
@@ -33,6 +44,23 @@ const Hero = () => {
       observers.forEach((observer) => observer?.disconnect());
     };
   }, []);
+
+  const handleMediaLoaded = (index) => {
+    setMediaLoaded((prev) => {
+      const updated = [...prev];
+      updated[index] = true;
+      return updated;
+    });
+
+    // Fallback to ensure media is marked as loaded
+    setTimeout(() => {
+      setMediaLoaded((prev) => {
+        const updated = [...prev];
+        updated[index] = true;
+        return updated;
+      });
+    }, 1500); // 1.5 seconds fallback
+  };
 
   // Animation Variants
   const sectionVariants = {
@@ -52,7 +80,7 @@ const Hero = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        delay: index * 0.4, // Aggiunge ritardo in base all'indice
+        delay: index * 0.4, // Add delay based on index
         ease: "easeOut",
       },
     }),
@@ -90,150 +118,65 @@ const Hero = () => {
 
       {/* Smartphone Frames */}
       <div className="relative mt-10 flex items-center justify-center">
-        {/* Far Left Smartphone */}
-        <motion.div
-          ref={(el) => (smartphoneRefs.current[0] = el)}
-          className="relative z-10 -mr-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          initial="hidden"
-          animate={isInView[0] ? "visible" : "hidden"}
-          variants={smartphoneVariants}
-          custom={0}
-          whileHover="hover"
-        >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-left.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
-        </motion.div>
-
-        {/* Left Smartphone */}
-        <motion.div
-          ref={(el) => (smartphoneRefs.current[1] = el)}
-          className="relative z-30 -mr-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl xxs:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          initial="hidden"
-          animate={isInView[1] ? "visible" : "hidden"}
-          variants={smartphoneVariants}
-          custom={1}
-          whileHover="hover"
-        >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-center-left.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
-        </motion.div>
-
-        {/* Center Smartphone */}
-        <motion.div
-          ref={(el) => (smartphoneRefs.current[2] = el)}
-          className="relative z-[31] h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          initial="hidden"
-          animate={isInView[2] ? "visible" : "hidden"}
-          variants={smartphoneVariants}
-          custom={2}
-          whileHover="hover"
-        >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-center.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
-        </motion.div>
-
-        {/* Right Smartphone */}
-        <motion.div
-          ref={(el) => (smartphoneRefs.current[3] = el)}
-          className="relative z-20 -ml-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl xxs:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          initial="hidden"
-          animate={isInView[3] ? "visible" : "hidden"}
-          variants={smartphoneVariants}
-          custom={3}
-          whileHover="hover"
-        >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-center-right.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
-        </motion.div>
-
-        {/* Far Right Smartphone */}
-        <motion.div
-          ref={(el) => (smartphoneRefs.current[4] = el)}
-          className="relative z-10 -ml-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          initial="hidden"
-          animate={isInView[4] ? "visible" : "hidden"}
-          variants={smartphoneVariants}
-          custom={4}
-          whileHover="hover"
-        >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-right.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
-        </motion.div>
+        {[
+          {
+            src: "/images/webomo-videos/video-left.mp4",
+            zIndex: "z-10",
+            mt: "mt-24",
+          },
+          {
+            src: "/images/webomo-videos/video-center-left.mp4",
+            zIndex: "z-30",
+            mt: "mt-12",
+          },
+          {
+            src: "/images/webomo-videos/video-center.mp4",
+            zIndex: "z-[31]",
+            mt: "mt-0",
+          },
+          {
+            src: "/images/webomo-videos/video-center-right.mp4",
+            zIndex: "z-20",
+            mt: "mt-12",
+          },
+          {
+            src: "/images/webomo-videos/video-right.mp4",
+            zIndex: "z-10",
+            mt: "mt-24",
+          },
+        ].map((item, index) => (
+          <motion.div
+            ref={(el) => (smartphoneRefs.current[index] = el)}
+            key={index}
+            className={`relative ${item.zIndex} ${item.mt} hidden h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:flex lg:h-[374px] lg:w-[176px]`}
+            initial="hidden"
+            animate={
+              isInView[index] && mediaLoaded[index] ? "visible" : "hidden"
+            }
+            variants={smartphoneVariants}
+            custom={index}
+            whileHover="hover"
+          >
+            <div className="relative h-full w-full">
+              <Image
+                src="/images/screens/mobile-frame.png"
+                alt="mobile frame"
+                layout="fill"
+                objectFit="cover"
+                className="absolute inset-0 z-10"
+              />
+              <video
+                playsInline
+                src={item.src}
+                autoPlay
+                muted
+                loop
+                className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
+                onLoadedData={() => handleMediaLoaded(index)}
+              />
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

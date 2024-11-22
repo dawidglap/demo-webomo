@@ -17,6 +17,7 @@ import HeroArea2 from "@/components/HeroArea2";
 import About2 from "@/components/About2";
 import About3 from "@/components/About3";
 import AboutEnd from "@/components/AboutEnd";
+import Hero3 from "@/components/HeroArea3";
 
 export const metadata: Metadata = {
   title: "Webomo - Your Social Media Expert",
@@ -26,7 +27,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <HeroArea />
+      {/* <HeroArea /> */}
+      <Hero3 />
       <WebomoFeatures />
       <Clients />
       {/* <Features /> */}

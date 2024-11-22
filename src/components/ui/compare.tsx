@@ -4,6 +4,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { IconDotsVertical } from "@tabler/icons-react";
+import Image from "next/image";
 
 interface CompareProps {
   firstImage?: string;
@@ -206,7 +207,9 @@ export const Compare = ({
               }}
               transition={{ duration: 0 }}
             >
-              <img
+              <Image
+                width={400}
+                height={400}
                 alt="first image"
                 src={firstImage}
                 className={cn(
@@ -228,7 +231,6 @@ export const Compare = ({
                 "absolute left-0 top-0 z-[19] h-full w-full select-none rounded-2xl",
                 secondImageClassname,
               )}
-              alt="second video"
               src={secondImage}
               autoPlay
               loop

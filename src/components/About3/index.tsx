@@ -1,19 +1,51 @@
 "use client";
-import React from "react";
-import Link from "next/link";
+
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const About3 = () => {
-  const { ref: textRef, inView: textInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.8,
-  });
+  const videoRef = useRef(null);
+  const textRef = useRef(null);
 
-  const { ref: videoRef, inView: videoInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.6,
-  });
+  const [videoInView, setVideoInView] = useState(false);
+  const [textInView, setTextInView] = useState(false);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.4, // Trigger when 60% of the element is in view
+    };
+
+    // Video Observer
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVideoInView(true);
+        }
+      });
+    }, observerOptions);
+
+    if (videoRef.current) {
+      videoObserver.observe(videoRef.current);
+    }
+
+    // Text Observer
+    const textObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTextInView(true);
+        }
+      });
+    }, observerOptions);
+
+    if (textRef.current) {
+      textObserver.observe(textRef.current);
+    }
+
+    return () => {
+      videoObserver.disconnect();
+      textObserver.disconnect();
+    };
+  }, []);
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -52,7 +84,7 @@ const About3 = () => {
                 autoPlay
                 muted
                 loop
-                className="rounded-xlobject-cover w-full shadow-xl"
+                className="w-full rounded-xl object-cover shadow-xl"
               />
             </motion.div>
           </div>
@@ -76,12 +108,12 @@ const About3 = () => {
                 in <span className="font-bold"> Kinoqualität</span>
                 die Ihre Marke authentisch und eindrucksvoll präsentieren.
               </p>
-              <Link
+              <a
                 href="#"
                 className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
               >
                 Know More
-              </Link>
+              </a>
             </motion.div>
           </div>
         </div>

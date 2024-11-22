@@ -1,46 +1,81 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 import Link from "next/link";
-import About from "@/components/About";
-import About2 from "@/components/About2";
 import AboutEnd from "@/components/AboutEnd";
 import Screens from "@/components/Screens";
-import { Compare } from "@/components/ui/compare";
 import { CompareDemo } from "@/components/Compare";
-// import videoDemo from "../../../../public/images/webomo-videos/webomo-demo.mp4";
 
 const Designs = () => {
+  const containerRef = useRef(null); // Ref for the ContainerScroll
+  const [containerInView, setContainerInView] = useState(false); // Track visibility
+  const [videoError, setVideoError] = useState(false); // Track video load errors
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.6, // Trigger when 60% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setContainerInView(true); // Mark as in view
+          observer.disconnect(); // Disconnect to avoid multiple triggers
+        }
+      });
+    }, observerOptions);
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <>
-      <div className="dark:via-gray-900 flex min-h-[100vh] flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-indigo-50 via-purple-50 to-white  dark:from-slate-900  dark:to-black">
-        <ContainerScroll
-          titleComponent={
-            <>
-              <h1 className="mb-20 mt-[-3em] text-4xl font-semibold text-black dark:text-white">
-                Passend für jede <br />
-                <span className="mt-1 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-4xl font-bold leading-none text-transparent dark:from-purple-300 dark:to-pink-300 md:text-[6rem]">
-                  Branche
-                </span>
-              </h1>
-              <p className="dark:text-gray-300 mx-auto mb-12 mt-[-60px] max-w-[768px] text-lg font-light leading-relaxed text-black md:text-2xl">
-                Du wählst das Design aus und wir kümmern uns um die Umsetzung
-                und Planung deiner Inhalte.
-              </p>
-            </>
-          }
-        >
-          <video
-            src="/images/webomo-videos/webomo-demo2.mp4" // Sostituisci con il percorso del tuo video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="mx-auto h-full rounded-2xl object-cover object-left-top"
-            draggable={false}
-          ></video>
-        </ContainerScroll>
+      <div className="flex min-h-[100vh] flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-indigo-50 via-purple-50 to-white dark:from-slate-900  dark:via-gray-900  dark:to-black">
+        <div ref={containerRef}>
+          <ContainerScroll
+            titleComponent={
+              <>
+                <h1 className="mb-20 mt-[-3em] text-4xl font-semibold text-black dark:text-white">
+                  Passend für jede <br />
+                  <span className="mt-1 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-4xl font-bold leading-none text-transparent dark:from-purple-300 dark:to-pink-300 md:text-[6rem]">
+                    Branche
+                  </span>
+                </h1>
+                <p className="mx-auto mb-12 mt-[-60px] max-w-[768px] text-lg font-light leading-relaxed text-black dark:text-gray-300 md:text-2xl">
+                  Du wählst das Design aus und wir kümmern uns um die Umsetzung
+                  und Planung deiner Inhalte.
+                </p>
+              </>
+            }
+          >
+            {containerInView ? ( // Lazy-load video only when in view
+              <video
+                src="/images/webomo-videos/webomo-demo2.mp4" // Replace with actual video path
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="mx-auto h-full rounded-2xl object-cover object-left-top"
+                draggable={false}
+                onError={() => setVideoError(true)}
+              ></video>
+            ) : (
+              <div className="h-[300px] w-full rounded-2xl bg-gray-200 dark:bg-gray-700"></div>
+            )}
+            {videoError && (
+              <div className="mt-4 text-center text-red-600">
+                Video konnte nicht geladen werden. Bitte überprüfe das Format.
+              </div>
+            )}
+          </ContainerScroll>
+        </div>
         <Link
           href="#"
           className="mb-20 mt-[-200px] inline-flex h-[60px] cursor-pointer items-center rounded-full bg-[#000] px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-[#ffffff] dark:text-[#000] dark:hover:bg-[#afafaf]"

@@ -63,7 +63,7 @@ const Hero3 = () => {
       {/* Smartphone Frames */}
       <div className="relative mt-10 flex items-center justify-center">
         {/* Far Left Smartphone - Visible on screens larger than 768px */}
-        <motion.div
+        {/* <motion.div
           className="relative z-10 -mr-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
           custom={0}
           initial="hidden"
@@ -88,7 +88,7 @@ const Hero3 = () => {
               className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Left Smartphone */}
         <motion.div
@@ -176,7 +176,7 @@ const Hero3 = () => {
         </motion.div>
 
         {/* Far Right Smartphone - Visible on screens larger than 768px */}
-        <motion.div
+        {/* <motion.div
           className="relative z-10 -ml-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
           custom={4}
           initial="hidden"
@@ -201,7 +201,7 @@ const Hero3 = () => {
               className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
