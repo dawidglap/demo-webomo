@@ -43,7 +43,7 @@ const ScreensAvantico = () => {
         className="container mx-auto"
       >
         <div className="wow fadeInUp mb-10 text-center">
-          <h2 className="text-4xl font-bold text-black dark:text-white">
+          <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
             Social Media Stories
           </h2>
           <p className="pt-4 text-lg text-gray-600 dark:text-gray-400">

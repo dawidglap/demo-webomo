@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <footer>
         <div className=" pb-[46px] pt-[95px]">
-          <div className="container max-w-[1390px] rounded-[30px] bg-indigo-100 p-8 shadow-xl dark:bg-slate-900">
+          <div className="container max-w-[1390px] rounded-[30px]  bg-gradient-to-br from-indigo-100 via-pink-50 to-purple-200 p-8 shadow-xl dark:from-slate-900 dark:to-slate-800">
             {/* Sezione "Folge uns" e social media */}
             <div className="flex flex-wrap items-center justify-between border-b border-primary px-4 pb-4 dark:border-gray-700">
               <h3 className="text-[22px] font-bold text-black dark:text-white">
