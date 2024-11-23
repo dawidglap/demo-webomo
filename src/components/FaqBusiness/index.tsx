@@ -15,7 +15,7 @@ const Faq = () => {
   return (
     <>
       <section
-        id="faq"
+        id="faq-business"
         className="relative z-10 bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 py-[110px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
       >
         <div className="container">

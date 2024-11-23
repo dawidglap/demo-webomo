@@ -74,7 +74,9 @@ const Footer = () => {
                     <Link href="/webomo-business">Partnerprogramm</Link>
                   </li>
                   <li>
-                    <Link href="#">Fragen & Antworten zu Partnerprogramm</Link>
+                    <Link href="#faq-business">
+                      Fragen & Antworten zu Partnerprogramm
+                    </Link>
                   </li>
                 </ul>
               </div>
