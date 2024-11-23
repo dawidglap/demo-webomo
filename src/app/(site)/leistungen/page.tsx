@@ -6,11 +6,13 @@ import AboutEnd from "@/components/AboutEnd";
 import About3 from "@/components/About3";
 import AboutWebsite from "@/components/About4";
 import Hero from "@/components/HeroArea";
+import Mission from "@/components/Mission";
 
 const Leistungen = () => {
   return (
     <div>
       <Hero />
+      <Mission />
       <About />
       <About2 />
       <About3 />

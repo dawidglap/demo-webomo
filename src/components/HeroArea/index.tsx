@@ -87,6 +87,44 @@ const Hero = () => {
     hover: { scale: 1.05, transition: { duration: 0.3 } },
   };
 
+  const smartphones = [
+    {
+      src: "/images/webomo-videos/video-left.mp4",
+      zIndex: "z-10",
+      mt: "mt-24",
+      hideOnMobile: true, // Hide on mobile
+      hideOnXXS: true, // Hide on xxs
+    },
+    {
+      src: "/images/webomo-videos/video-center-left.mp4",
+      zIndex: "z-30",
+      mt: "mt-12",
+      hideOnMobile: false,
+      hideOnXXS: true, // Hide on xxs
+    },
+    {
+      src: "/images/webomo-videos/video-center.mp4",
+      zIndex: "z-[31]",
+      mt: "mt-0",
+      hideOnMobile: false,
+      hideOnXXS: false, // Show only this one on xxs
+    },
+    {
+      src: "/images/webomo-videos/video-center-right.mp4",
+      zIndex: "z-20",
+      mt: "mt-12",
+      hideOnMobile: false,
+      hideOnXXS: true, // Hide on xxs
+    },
+    {
+      src: "/images/webomo-videos/video-right.mp4",
+      zIndex: "z-10",
+      mt: "mt-24",
+      hideOnMobile: true, // Hide on mobile
+      hideOnXXS: true, // Hide on xxs
+    },
+  ];
+
   return (
     <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800">
       {/* Subtitle Image with Motion */}
@@ -118,37 +156,17 @@ const Hero = () => {
 
       {/* Smartphone Frames */}
       <div className="relative mt-10 flex items-center justify-center">
-        {[
-          {
-            src: "/images/webomo-videos/video-left.mp4",
-            zIndex: "z-10",
-            mt: "mt-24",
-          },
-          {
-            src: "/images/webomo-videos/video-center-left.mp4",
-            zIndex: "z-30",
-            mt: "mt-12",
-          },
-          {
-            src: "/images/webomo-videos/video-center.mp4",
-            zIndex: "z-[31]",
-            mt: "mt-0",
-          },
-          {
-            src: "/images/webomo-videos/video-center-right.mp4",
-            zIndex: "z-20",
-            mt: "mt-12",
-          },
-          {
-            src: "/images/webomo-videos/video-right.mp4",
-            zIndex: "z-10",
-            mt: "mt-24",
-          },
-        ].map((item, index) => (
+        {smartphones.map((item, index) => (
           <motion.div
             ref={(el) => (smartphoneRefs.current[index] = el)}
             key={index}
-            className={`relative ${item.zIndex} ${item.mt} hidden h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:flex lg:h-[374px] lg:w-[176px]`}
+            className={`relative ${item.zIndex} ${item.mt} ${
+              item.hideOnXXS
+                ? "hidden xs:flex"
+                : item.hideOnMobile
+                  ? "hidden lg:flex"
+                  : "flex"
+            } h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]`}
             initial="hidden"
             animate={
               isInView[index] && mediaLoaded[index] ? "visible" : "hidden"
