@@ -6,6 +6,7 @@ import Link from "next/link";
 import AboutEnd from "@/components/AboutEnd";
 import Screens from "@/components/Screens";
 import { CompareDemo } from "@/components/Compare";
+import ScreensAvantico from "@/components/ScreensAvantico";
 
 const Designs = () => {
   const containerRef = useRef(null); // Ref for the ContainerScroll
@@ -101,6 +102,7 @@ const Designs = () => {
 
           <CompareDemo />
         </div>
+        <ScreensAvantico />
       </div>
       <AboutEnd />
     </>
