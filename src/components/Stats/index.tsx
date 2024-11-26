@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
 const Stats = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 1 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
   const leftControls = useAnimation();
   const centerControls = useAnimation();
   const rightControls = useAnimation();
