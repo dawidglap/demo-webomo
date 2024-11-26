@@ -45,6 +45,26 @@ const Faq = () => {
             ))}
           </div>
         </div>
+        <div className="mt-10 text-center">
+          <p className="mx-auto max-w-lg text-base text-gray-700 dark:text-gray-300">
+            Wenn Sie keine Antwort auf Ihre Frage gefunden haben, können Sie uns
+            gerne{" "}
+            <a
+              href="/kontakt"
+              className="text-indigo-600 underline hover:text-indigo-800 dark:text-indigo-400"
+            >
+              kontaktieren
+            </a>{" "}
+            oder uns eine E-Mail senden an{" "}
+            <a
+              href="mailto:kontakt@webomo.ch"
+              className="text-indigo-600 underline hover:text-indigo-800 dark:text-indigo-400"
+            >
+              kontakt@webomo.ch
+            </a>
+            .
+          </p>
+        </div>
       </section>
     </>
   );
