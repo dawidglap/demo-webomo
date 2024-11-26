@@ -2,7 +2,7 @@
 import React from "react";
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const testimonialData: Testimonial[] = [
   {
@@ -40,13 +40,13 @@ const testimonialData: Testimonial[] = [
 ];
 
 const Testimonials = () => {
-  const thresholdValue = 0.3; // Alza il valore per aspettare una maggiore visibilità
+  const thresholdValue = 0.3; // Visibility threshold for animations
 
   return (
     <>
       <section id="testimonials" className="relative z-10 pb-[60px] pt-[110px]">
         <div className="container">
-          {/* Title and Subtitle with Fade Up Animation */}
+          {/* Title and Subtitle */}
           <motion.div
             className="mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
             initial={{ opacity: 0, y: 20 }}
@@ -65,16 +65,16 @@ const Testimonials = () => {
           </motion.div>
         </div>
 
-        <div className="container overflow-hidden lg:max-w-[1160px]">
+        <div className="container lg:max-w-[1160px]">
           <motion.div
-            className="-mx-6 flex flex-wrap"
+            className="-mx-6 flex flex-wrap items-stretch"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: thresholdValue }}
             variants={{
               visible: {
                 transition: {
-                  staggerChildren: 0.2, // staggered animation per le card
+                  staggerChildren: 0.2, // Staggered animation for cards
                 },
               },
             }}
@@ -82,26 +82,22 @@ const Testimonials = () => {
             {testimonialData.map((item, index) => (
               <motion.div
                 key={index}
-                className="w-full px-6 lg:w-1/2"
+                className="flex w-full px-6 lg:w-1/2"
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 },
-                }}
-                viewport={{
-                  once: false, // Ripete l'animazione ogni volta che la card entra in view
-                  amount: 0.3, // Assicura che l'animazione parta quando almeno il 30% della card è visibile
                 }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
                 }}
               >
-                <div className="mb-[50px] rounded-lg bg-slate-200 px-7 py-9 shadow-md dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9">
+                <div className="mb-[50px] flex flex-grow flex-col rounded-lg bg-slate-200 px-7 py-9 shadow-md dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9">
                   <div className="mb-5 border-b border-stroke dark:border-stroke-dark">
                     <p className="pb-9 text-base text-body">{item.quote}</p>
                   </div>
 
-                  <div className="items-center justify-between sm:flex lg:block xl:flex">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between lg:block xl:flex xl:justify-between">
                     <div className="mb-4 flex items-center sm:mb-0 lg:mb-4 xl:mb-0">
                       <div className="mr-4 h-[56px] w-full max-w-[56px] rounded-full">
                         <Image
