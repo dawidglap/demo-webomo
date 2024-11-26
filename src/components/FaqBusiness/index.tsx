@@ -16,7 +16,7 @@ const Faq = () => {
     <>
       <section
         id="faq-business"
-        className="relative z-10 bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 py-[110px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
+        className="relative z-10  bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 py-[110px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
       >
         <div className="container">
           <div
@@ -34,7 +34,7 @@ const Faq = () => {
           </div>
 
           <div
-            className="faqs wow fadeInUp mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark"
+            className="faqs wow fadeInUp mx-auto w-full max-w-[785px] rounded-[30px] bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark"
             data-wow-delay=".3s"
           >
             {faqData.map((faq, index) => (
