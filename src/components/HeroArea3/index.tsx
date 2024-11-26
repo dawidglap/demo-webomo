@@ -28,180 +28,115 @@ const Hero3 = () => {
       y: 0,
       transition: { duration: 0.8, delay: i * 0.4, ease: "easeOut" },
     }),
-    hover: { scale: 1.05, transition: { duration: 0.3 } },
+    hover: { scale: 1.0, transition: { duration: 0.3 } },
   };
 
   return (
-    <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800">
+    <section className="relative flex h-[75vh] max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800 md:h-screen">
       {/* Subtitle Image with Motion */}
       <motion.div
-        className="mb-2 pt-10"
+        className="mb-2 pt-0"
         variants={sectionVariants}
         initial="hidden"
         animate="visible"
       >
         <Image
-          src="/images/hero/subtitle.png"
+          src="/images/hero/wilkommen.png"
           alt="Immer und überall"
           width={400}
           height={100}
-          className="dark:invert"
+          className="mt-20"
         />
       </motion.div>
 
       {/* Center Text */}
       <motion.p
-        className="text-5xl font-bold text-black dark:text-white"
+        className=" text-4xl font-bold text-black dark:text-white md:text-7xl"
         variants={sectionVariants}
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        präsent
+        Webomo
+      </motion.p>
+      <motion.p
+        className="pb-0 text-2xl font-light text-black dark:text-white"
+        variants={sectionVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.5 }}
+      >
+        Ein Ziel - Dein Erfolg
       </motion.p>
 
       {/* Smartphone Frames */}
-      <div className="relative mt-10 flex items-center justify-center">
-        {/* Far Left Smartphone - Visible on screens larger than 768px */}
-        {/* <motion.div
-          className="relative z-10 -mr-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          custom={0}
-          initial="hidden"
-          animate={smartphoneInView ? "visible" : "hidden"}
-          variants={smartphoneVariants}
-          whileHover="hover"
-        >
-          <div className="relative h-full w-full ">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-left.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
-        </motion.div> */}
-
+      <div className="relative flex h-full w-full items-end justify-center">
         {/* Left Smartphone */}
         <motion.div
-          className="relative z-30 -mr-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl xxs:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          className=" absolute  bottom-0 left-[15%] h-[110px] w-[92px] overflow-hidden xxs:left-[16%] xxs:flex 
+         xxs:h-[122px]  xxs:w-[102px] xs:left-[15%] 
+         xs:h-[153px] xs:w-[128px] sm:left-[14%] 
+         sm:h-[204px] sm:w-[170px] md:-left-[-18%] 
+         md:h-[255px] md:w-[213px] lg:left-[22%] lg:h-[306px] lg:w-[255px] xl:left-[25%] 2xl:left-[28%] 3xl:left-[30%]"
           custom={1}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
           whileHover="hover"
         >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-center-left.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
+          <Image
+            src="/images/hero/hero-left.webp"
+            alt="mobile frame"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0 z-10"
+          />
         </motion.div>
 
         {/* Center Smartphone */}
         <motion.div
           ref={smartphoneRef}
-          className="relative z-[31] h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          className="relative z-[31] h-[166px] w-[119px] overflow-hidden xxs:h-[185px] xxs:w-[132px] 
+         xs:h-[231px] xs:w-[165px] 
+         sm:h-[308px] sm:w-[220px] 
+         md:h-[385px] md:w-[275px] 
+         lg:h-[393px] lg:w-[281px]"
           custom={2}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
           whileHover="hover"
         >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-center.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
+          <Image
+            src="/images/hero/hero-middle.webp"
+            alt="mobile frame"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0 z-10"
+          />
         </motion.div>
 
         {/* Right Smartphone */}
         <motion.div
-          className="relative z-20 -ml-[10px] mt-12 hidden h-[240px] w-[112px] translate-y-[10%] overflow-hidden rounded-2xl xxs:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
+          className=" absolute  bottom-0 right-[15%] h-[110px] w-[92px] overflow-hidden xxs:right-[16%] xxs:flex 
+        xxs:h-[122px]  xxs:w-[102px] xs:right-[15%] 
+        xs:h-[153px] xs:w-[128px] sm:right-[14%] 
+        sm:h-[204px] sm:w-[170px] md:-right-[-18%] 
+        md:h-[255px] md:w-[213px] lg:right-[22%] lg:h-[306px] lg:w-[255px] xl:right-[25%] 2xl:right-[28%] 3xl:right-[30%]"
           custom={3}
           initial="hidden"
           animate={smartphoneInView ? "visible" : "hidden"}
           variants={smartphoneVariants}
           whileHover="hover"
         >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-center-right.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
+          <Image
+            src="/images/hero/hero-right.webp"
+            alt="mobile frame"
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0 z-10"
+          />
         </motion.div>
-
-        {/* Far Right Smartphone - Visible on screens larger than 768px */}
-        {/* <motion.div
-          className="relative z-10 -ml-[10px] mt-24 hidden h-[240px] w-[112px] translate-y-[20%] overflow-hidden rounded-2xl sm:flex sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]"
-          custom={4}
-          initial="hidden"
-          animate={smartphoneInView ? "visible" : "hidden"}
-          variants={smartphoneVariants}
-          whileHover="hover"
-        >
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 z-10"
-            />
-            <video
-              playsInline
-              src="/images/webomo-videos/video-right.mp4"
-              autoPlay
-              muted
-              loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
-            />
-          </div>
-        </motion.div> */}
       </div>
     </section>
   );
