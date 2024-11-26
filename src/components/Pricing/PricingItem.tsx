@@ -23,11 +23,11 @@ export const PricingItem = ({ price, planType }: any) => {
   // Define background color based on plan type
   let bgColor = "bg-gray-100 dark:bg-gray-800"; // Default color
   if (price.nickname === "Basic" || price.nickname === "Basic") {
-    bgColor = "bg-indigo-50 dark:bg-gray-800";
+    bgColor = "bg-indigo-100 dark:bg-gray-800";
   } else if (price.nickname === "Pro" || price.nickname === "Unlimited") {
-    bgColor = "bg-purple-50 dark:bg-slate-900";
+    bgColor = "bg-purple-100 dark:bg-slate-900";
   } else if (price.nickname === "Business") {
-    bgColor = "bg-green-50 dark:bg-[#000]";
+    bgColor = "bg-green-100 dark:bg-[#000]";
   }
 
   // Define price and feature details based on plan name

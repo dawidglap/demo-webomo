@@ -15,7 +15,7 @@ const menuData: Menu[] = [
   { label: "Leistungen", route: "/leistungen" },
   { label: "Designs", route: "/designs" },
   { label: "Preise", route: "/price" },
-  { label: "Kontakt", route: "/kontakt" },
+  // { label: "Kontakt", route: "/kontakt" },
 ];
 
 const Header = () => {

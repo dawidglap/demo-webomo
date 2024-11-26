@@ -139,13 +139,13 @@ const Hero = () => {
           alt="Immer und überall"
           width={400}
           height={100}
-          className="dark:invert"
+          className="pt-40"
         />
       </motion.div>
 
       {/* Center Text */}
       <motion.p
-        className="text-5xl font-bold text-black dark:text-white"
+        className="mb-[-50px] text-5xl font-bold text-black dark:text-white"
         variants={sectionVariants}
         initial="hidden"
         animate="visible"
@@ -155,7 +155,7 @@ const Hero = () => {
       </motion.p>
 
       {/* Smartphone Frames */}
-      <div className="relative mt-10 flex items-center justify-center">
+      <div className="relative mb-[150px] mt-10 flex items-center justify-center">
         {smartphones.map((item, index) => (
           <motion.div
             ref={(el) => (smartphoneRefs.current[index] = el)}
@@ -166,7 +166,7 @@ const Hero = () => {
                 : item.hideOnMobile
                   ? "hidden lg:flex"
                   : "flex"
-            } h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[374px] lg:w-[176px]`}
+            } h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[320px] lg:w-[151px]`}
             initial="hidden"
             animate={
               isInView[index] && mediaLoaded[index] ? "visible" : "hidden"
@@ -189,7 +189,7 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
-                className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
+                className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[98%] lg:w-[98%]"
                 onLoadedData={() => handleMediaLoaded(index)}
               />
             </div>

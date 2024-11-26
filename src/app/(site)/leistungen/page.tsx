@@ -7,6 +7,7 @@ import About3 from "@/components/About3";
 import AboutWebsite from "@/components/About4";
 import Hero from "@/components/HeroArea";
 import Mission from "@/components/Mission";
+import ExtraFeatures from "@/components/ExtraFeatures";
 
 const Leistungen = () => {
   return (
@@ -17,6 +18,7 @@ const Leistungen = () => {
       <About2 />
       <About3 />
       <AboutWebsite />
+      <ExtraFeatures />
       <AboutEnd />
     </div>
   );

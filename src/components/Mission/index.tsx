@@ -2,7 +2,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <section className="bg-gradient-to-tr from-white via-pink-100 to-purple-300 px-6 py-12  pt-20 text-center dark:from-slate-900 dark:to-slate-800 md:pt-40">
+    <section className="bg-gradient-to-tr  px-6   pt-20 text-center md:pt-40">
       <div className="mx-auto max-w-4xl">
         <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 md:text-5xl">
           Was machen wir
