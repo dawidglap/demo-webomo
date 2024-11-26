@@ -42,6 +42,9 @@ export default function RootLayout({
     }
   }, [pathname]);
 
+  // Define pages where the Header and Footer should be excluded
+  const isNoLayoutPage = ["/affiliate"].includes(pathname);
+
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
@@ -63,7 +66,7 @@ export default function RootLayout({
               <PreLoader onFinish={() => setLoading(false)} />
             ) : (
               <>
-                <Header />
+                {!isNoLayoutPage && <Header />}
                 <ToasterContext />
                 <AnimatePresence mode="wait">
                   <motion.main
@@ -79,7 +82,7 @@ export default function RootLayout({
                     {children}
                   </motion.main>
                 </AnimatePresence>
-                <Footer />
+                {!isNoLayoutPage && <Footer />}
                 <ScrollToTop />
               </>
             )}
