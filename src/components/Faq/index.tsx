@@ -19,20 +19,21 @@ const Faq = () => {
         className="relative z-10 bg-[#F8FAFB] py-[110px] dark:bg-[#15182B]"
       >
         <div className="container">
+          {/* FAQ Header */}
           <div
             className="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Frequently Asked Questions
+              Häufig gestellte Fragen
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              Haben Sie Fragen? Hier finden Sie Antworten auf die häufigsten
+              Fragen zu unseren Produkten und Dienstleistungen.
             </p>
           </div>
 
+          {/* FAQ Items */}
           <div
             className="faqs wow fadeInUp mx-auto w-full max-w-[785px] rounded-[30px] bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark"
             data-wow-delay=".3s"
@@ -43,6 +44,28 @@ const Faq = () => {
                 faqData={{ ...faq, activeFaq, handleFaqToggle }}
               />
             ))}
+          </div>
+
+          {/* Contact Section */}
+          <div className="mt-10 text-center">
+            <p className="mx-auto max-w-lg text-base text-gray-700 dark:text-gray-300">
+              Wenn Sie keine Antwort auf Ihre Frage gefunden haben, können Sie
+              uns gerne{" "}
+              <a
+                href="/kontakt"
+                className="text-indigo-600 underline hover:text-indigo-800 dark:text-indigo-400"
+              >
+                kontaktieren
+              </a>{" "}
+              oder uns eine E-Mail senden an{" "}
+              <a
+                href="mailto:kontakt@webomo.ch"
+                className="text-indigo-600 underline hover:text-indigo-800 dark:text-indigo-400"
+              >
+                kontakt@webomo.ch
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
