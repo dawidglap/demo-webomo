@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const WebomoBusinessOnboarding = () => {
   return (
-    <section className="flex h-screen bg-gradient-to-r from-slate-500 from-50% to-white to-50% px-4 dark:bg-gray-900 sm:px-8 lg:px-16">
+    <section className="flex h-screen bg-gradient-to-r from-slate-900 from-50% to-white to-50% px-4 dark:bg-gray-900 sm:px-8 lg:px-16">
       <div className=" lg:gap16 gap- container mx-auto flex flex-wrap items-center lg:flex-nowrap">
         {/* Left Section */}
-        <div className="flex h-screen flex-col justify-center bg-gradient-to-r from-slate-500  to-slate-300 lg:w-1/2">
+        <div className="flex h-screen flex-col justify-center bg-gradient-to-r from-slate-900  to-slate-600 lg:w-1/2">
           {/* Logo */}
           <div className="mb-8 text-center lg:text-left">
             {/* <Image
@@ -18,13 +18,13 @@ const WebomoBusinessOnboarding = () => {
               height={50}
               className="mx-auto lg:mx-0"
             /> */}
-            <span className="relative ms-10 text-4xl font-bold tracking-wider text-[#181C30] transition-all duration-300 dark:text-white md:text-[48px]">
+            <span className="ms:0 relative text-4xl font-bold tracking-wider text-white transition-all duration-300 md:ms-10 md:text-[48px]">
               Webomo
             </span>
           </div>
 
           {/* Card */}
-          <div className="m-10 rounded-xl bg-white p-8 shadow-lg dark:bg-gray-800">
+          <div className="m-0 rounded-xl bg-cyan-100 p-8 shadow-lg dark:bg-gray-800 md:m-10">
             <h3 className="mb-4 text-2xl font-semibold text-gray-900 dark:text-white">
               Affiliate Package
             </h3>
