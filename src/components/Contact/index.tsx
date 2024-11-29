@@ -89,7 +89,7 @@ const Contact = () => {
                 <div className="w-full px-[22px]">
                   <div className="text-center">
                     <p className="mb-5 text-center text-base text-body">
-                      Indem Sie auf die Schaltfläche "Kontaktieren Sie uns"
+                      Indem Sie auf die Schaltfläche Kontaktieren Sie uns
                       klicken, stimmen Sie unseren Bedingungen und Richtlinien
                       zu.
                     </p>
