@@ -24,12 +24,11 @@ const Faq = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Frequently Asked Questions
+              Häufig gestellte Fragen
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              Haben Sie Fragen? Hier finden Sie Antworten auf die häufigsten
+              Fragen zu Webomo-Business Partnerprogramm.
             </p>
           </div>
 

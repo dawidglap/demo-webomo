@@ -13,9 +13,8 @@ const Contact = () => {
               Kostenlose Beratung
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              Wir hören Ihnen genau zu und bieten Ihnen wertvolle Insights, die
+              Ihnen helfen, ihre Ziele effizient zu erreichen.
             </p>
           </div>
         </div>
@@ -33,7 +32,7 @@ const Contact = () => {
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Enter your name"
+                      placeholder="Geben Sie Ihren Namen ein"
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -45,7 +44,7 @@ const Contact = () => {
                       type="text"
                       name="company"
                       id="company"
-                      placeholder="Comapy (optioanl)"
+                      placeholder="Firma (optional)"
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -57,7 +56,7 @@ const Contact = () => {
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Enter Your email"
+                      placeholder="Geben Sie Ihre E-Mail-Adresse ein"
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -69,7 +68,7 @@ const Contact = () => {
                       type="text"
                       name="phone"
                       id="phone"
-                      placeholder="Enter your Phone Number"
+                      placeholder="Geben Sie Ihre Telefonnummer ein"
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -81,7 +80,7 @@ const Contact = () => {
                       rows={6}
                       name="message"
                       id="message"
-                      placeholder="Tell us about yourself"
+                      placeholder="Erzählen Sie uns etwas über sich"
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     ></textarea>
                   </div>
@@ -90,14 +89,15 @@ const Contact = () => {
                 <div className="w-full px-[22px]">
                   <div className="text-center">
                     <p className="mb-5 text-center text-base text-body">
-                      By clicking contact us button, you agree our terms and
-                      policy,
+                      Indem Sie auf die Schaltfläche "Kontaktieren Sie uns"
+                      klicken, stimmen Sie unseren Bedingungen und Richtlinien
+                      zu.
                     </p>
                     <button
                       type="submit"
                       className="inline-block  rounded-[30px] bg-primary px-11 py-[14px] text-base font-medium text-white hover:bg-opacity-90"
                     >
-                      Contact Us
+                      Kontaktieren Sie uns
                     </button>
                   </div>
                 </div>

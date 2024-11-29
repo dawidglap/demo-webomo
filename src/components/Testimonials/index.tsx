@@ -55,12 +55,11 @@ const Testimonials = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              What Client&apos;s Say
+              Wasungere Kunden sagen
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              Unsere Kunden lieben, was wir tun und teilen ihre Begeisterung
+              gerne weiter.
             </p>
           </motion.div>
         </div>

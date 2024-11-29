@@ -53,19 +53,19 @@ const AboutWebsite = () => {
                 Website Development
               </h2>
               <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-                We specialize in creating{" "}
-                <span className="font-bold">high-performing</span> websites
-                tailored to your business needs. From design to deployment, we
-                ensure your online presence stands out, engages your audience,
-                and drives results. Whether it&apos;s an e-commerce platform, a
-                corporate website, or a personal blog, we&apos;ve got you
-                covered.
+                wallopeemititmg Von der ersten Idee bis zum Livegang stehen wir
+                an Ihrer Seite, um Ihre Marke ins beste digitale Licht zu
+                rücken. Mit responsivem Design, rasanten Ladezeiten und einer
+                Nutzererfahrung, die überzeugt, schaffen wir nachhaltige
+                Online-Erlebnisse. Dank neuester Technologien bleibt Ihre
+                Website nicht nur State-of-the-Art, sondern auch zukunftssicher.
+                Gemeinsam machen wir Ihre digitale Vision zur Realität.
               </p>
               <Link
                 href="#"
                 className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
               >
-                Learn More
+                Mehr ertahren
               </Link>
             </motion.div>
           </div>
@@ -80,10 +80,10 @@ const AboutWebsite = () => {
             >
               <div className="mb-8 text-center">
                 <h2 className="text-3xl font-bold text-black dark:text-white">
-                  Custom Solutions
+                  Individuelle Lösungen
                 </h2>
                 <p className="pt-1 text-lg text-slate-600 dark:text-slate-300 md:text-xl">
-                  Tailored website development to match your brand and goals.
+                  Kreativ, kraftvoll und immer einen Klick voraus.
                 </p>
               </div>
               <motion.div

@@ -47,7 +47,8 @@ const ScreensAvantico = () => {
             Social Media Stories
           </h2>
           <p className="pt-4 text-lg text-gray-600 dark:text-gray-400">
-            Tailored designs for every industry, presented with elegance.
+            So können Ihre Stories, Posts und Reels aussehen die Ihre Zielgruppe
+            fesselt.
           </p>
         </div>
 

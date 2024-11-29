@@ -78,11 +78,12 @@ const Screens = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Social Media Designs for Every Sector
+              Designs für jede Branche
             </h2>
             <p className="text-base text-body dark:text-slate-400">
-              Tailored social media designs to engage audiences and enhance your
-              brand&apos;s presence, no matter the industry.
+              Für jede Branche kreieren wir beeindruckende Social Media
+              presence, no matter the industry Designs, die Ihre Marke ins
+              Rampenlicht stellen und Ihre Zielgruppe begeistern.
             </p>
 
             {/* Dropdown Button */}
