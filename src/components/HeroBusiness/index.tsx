@@ -28,8 +28,8 @@ const HeroBusiness = () => {
           <Image
             src="/images/business/placeholderHero.webp" // Placeholder image path
             alt="Placeholder"
-            width={500}
-            height={500}
+            width={510}
+            height={450}
             className="rounded-[30px] shadow-xl"
           />
         </div>

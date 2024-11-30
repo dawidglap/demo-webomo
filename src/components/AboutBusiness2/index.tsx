@@ -89,10 +89,10 @@ const AboutBusinessTwo = () => {
               variants={sectionVariants}
             >
               <Image
-                src="/images/about/your-image.png" // Replace with your image path
+                src="/images/business/about-business2.webp" // Replace with your image path
                 alt="About Image"
-                width={470}
-                height={470}
+                width={510}
+                height={450}
                 className="rounded-[30px] object-cover"
               />
             </motion.div>
