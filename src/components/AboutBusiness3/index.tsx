@@ -122,7 +122,7 @@ const AboutBusinessThree = () => {
                 href="#"
                 className="mb-8 inline-block rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90  dark:from-indigo-500 dark:to-purple-400 md:text-xl"
               >
-                Mehr ertahren
+                Mehr erfahren
               </a>
             </motion.div>
           </div>

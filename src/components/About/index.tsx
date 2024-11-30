@@ -179,7 +179,7 @@ const About = () => {
                 href="#"
                 className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
               >
-                Mehr ertahren
+                Mehr erfahren
               </Link>
             </motion.div>
           </div>
