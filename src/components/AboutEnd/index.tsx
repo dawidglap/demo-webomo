@@ -1,9 +1,13 @@
 "use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import Popcorn from "../../../public/images/about/popcorn.png";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const AboutEnd = () => {
+  const t = useTranslations("AboutEnd");
+
   const videoRef = useRef(null); // Ref for the video
   const frameRef = useRef(null); // Ref for the frame container
   const [isInView, setIsInView] = useState(false); // State to track if the video is in view
@@ -44,7 +48,7 @@ const AboutEnd = () => {
     <section className="mb-0 flex flex-col items-center overflow-hidden bg-white px-4 py-20 dark:bg-[#15182A]">
       {/* Main Title */}
       <h2 className="mb-8 text-center text-3xl font-bold text-black dark:text-white md:mb-16 md:text-4xl">
-        Ein Ziel dein Erfolg
+        {t("mainTitle")}
       </h2>
 
       {/* Main Container with Rounded Background */}
@@ -52,17 +56,15 @@ const AboutEnd = () => {
         {/* Text and Call-to-Action */}
         <div className="text-center md:max-w-md md:text-left lg:max-w-sm">
           <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
-            Mehr erreichen mit webomo
+            {t("title")}
           </h3>
           <p className="mb-6 text-base text-slate-600 dark:text-slate-300 md:text-xl">
-            Wir steigern Emotionen bei deiner Zielgruppe.Deine Inhalte wie
-            Bilder,Videos und Content werden in{" "}
-            <span className="font-bold">Hollywood-Kinoqualität</span> erstellt.
-            Die Kampagnen deiner Produkte & Dienstleistungen sind auf einem
-            anderen Niveau.
+            {t("description.part1")}{" "}
+            <span className="font-bold">{t("description.bold")}</span>{" "}
+            {t("description.part2")}
           </p>
           <button className="rounded-full bg-black px-6 py-3 text-base text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 md:text-xl">
-            Loslegen
+            {t("cta")}
           </button>
         </div>
 
@@ -76,7 +78,7 @@ const AboutEnd = () => {
           <div className="relative left-[100%] hidden h-[288px] w-[140px] overflow-hidden lg:block">
             <Image
               src="/images/screens/mobile-frame.png"
-              alt="mobile frame"
+              alt={t("frameAlt")}
               layout="fill"
               objectFit="cover"
               className="absolute inset-0 z-10 shadow-lg"
@@ -84,7 +86,7 @@ const AboutEnd = () => {
             <video
               ref={videoRef}
               playsInline
-              src="/images/about/about-end.mp4" // Replace with actual video path
+              src={t("videoSrc")}
               autoPlay
               muted
               loop
@@ -98,7 +100,7 @@ const AboutEnd = () => {
         <div className="absolute bottom-[130px] right-10 hidden w-[250px] rotate-[0deg] md:block md:w-[225px] lg:w-[260px] xl:w-[300px]">
           <Image
             src={Popcorn}
-            alt="Popcorn"
+            alt={t("popcornAlt")}
             className="rounded-md"
             style={{ width: "100%", height: "auto" }}
           />

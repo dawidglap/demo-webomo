@@ -1,0 +1,342 @@
+{
+    "Header": {
+      "logo": "Webomo",
+      "menu": {
+        "services": "Serviços",
+        "designs": "Designs",
+        "pricing": "Preços"
+      },
+      "cta": {
+        "consultation": "Consulta Gratuita"
+      },
+      "session": {
+        "signOut": "Sair",
+        "login": "Entrar"
+      }
+    },
+    "About": {
+      "weekly": "Semanal",
+      "reels": "Reels",
+      "posts": "Publicações",
+      "stories": "Stories",
+      "title": "Stories & Publicações",
+      "description": "Criamos Stories e Publicações envolventes com qualidade cinematográfica e de Hollywood que destacam perfeitamente a sua marca. A Webomo gerencia a criação completa de conteúdo e sua publicação nos seus canais de redes sociais – semanalmente pelos próximos 12 meses.",
+      "learnMore": "Saiba Mais"
+    },
+    "About2": {
+      "title": "Sessões Fotográficas",
+      "description": {
+        "part1": "Realizamos uma",
+        "bold": " sessão fotográfica",
+        "part2": " de um dia inteiro para criar uma seleção abrangente de visuais para os seus canais de redes sociais. Seja para serviços, produtos, imóveis ou muito mais, garantimos que a sua marca seja apresentada de forma eficaz e direcionada."
+      },
+      "learnMore": "Saiba Mais",
+      "cardTitle": "Showroom",
+      "cardSubtitle": "Sessões personalizadas no seu local.",
+      "imageAlt": "Imagem de Sessão Fotográfica"
+    },
+    "About3": {
+      "title": "Vídeos",
+      "description": {
+        "part1": "Um dia inteiro de filmagem onde capturamos imagens da sua empresa – instalações – entrevistas – feedback de clientes e muito mais. Entregamos material em",
+        "bold": "Qualidade Cinematográfica",
+        "part2": " que apresenta a sua marca de maneira autêntica e impressionante."
+      },
+      "learnMore": "Saiba Mais"
+    },
+    "AboutWebsite": {
+      "title": "Desenvolvimento de Sites",
+      "description": "Desde a ideia inicial até o lançamento, estamos ao seu lado para destacar a sua marca no melhor contexto digital. Com design responsivo, tempos de carregamento rápidos e uma experiência do usuário convincente, criamos experiências online sustentáveis. Utilizando as tecnologias mais recentes, garantimos que o seu site permaneça moderno e preparado para o futuro. Juntos, transformamos a sua visão digital em realidade.",
+      "learnMore": "Saiba Mais",
+      "cardTitle": "Soluções Personalizadas",
+      "cardSubtitle": "Criativas, poderosas e sempre um passo à frente.",
+      "imageAlt": "Imagem de Desenvolvimento Web"
+    },
+    "AboutBusinessOne": {
+      "title": "Junte-se à Nossa Comunidade.",
+      "description": "Seja você um criador de conteúdo, coach ou um usuário comum do Instagram, a Webomo oferece a todos a chance de ter sucesso e ganhar dinheiro. Posicione-se agora na nossa comunidade, ganhe comissões e experimente a flexibilidade do trabalho do futuro.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Imagem Sobre Nós"
+    },
+    "AboutBusinessTwo": {
+      "title": "Seu Sucesso é Nossa Prioridade",
+      "description": "Apoiamos você com recursos e aquisição de clientes para gerar o máximo de clientes possível. Nossos recursos e suporte ajudam você a expandir sua equipe ou portfólio. Você recebe templates criativos para marketing e seu próprio painel com métricas de desempenho detalhadas.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Imagem Sobre Nós"
+    },
+    "AboutBusinessThree": {
+      "title": "Vídeos",
+      "description": "Os Incentivos Webomo levam você aos lugares mais bonitos do mundo. Você começa com uma emocionante aventura de team-building em montanhas majestosas, onde você e seus colegas enfrentam desafios empolgantes, fortalecendo suas habilidades de equipe e criando memórias inesquecíveis. Em seguida, você segue para cidades costeiras exóticas onde vivencia a cultura local, desfruta de uma deliciosa gastronomia e relaxa em um resort de luxo à beira-mar. Nesses locais deslumbrantes, você não apenas se diverte, mas também se sente inspirado e motivado a alcançar seus objetivos, tanto profissionais quanto pessoais.",
+      "learnMore": "Saiba Mais",
+      "videoSrc": "/images/about/drone-video1.mp4"
+    },
+    "AboutEnd": {
+      "mainTitle": "Um Objetivo: Seu Sucesso",
+      "title": "Alcance Mais com a Webomo",
+      "description": {
+        "part1": "Amplificamos as emoções no seu público-alvo. Seu conteúdo, incluindo imagens, vídeos e publicações, é criado com",
+        "bold": "Qualidade Cinematográfica de Hollywood",
+        "part2": ". As campanhas dos seus produtos e serviços estão em outro nível."
+      },
+      "cta": "Começar",
+      "videoSrc": "/images/about/about-end.mp4",
+      "frameAlt": "Moldura Móvel",
+      "popcornAlt": "Imagem de Pipoca"
+    },
+    "Clients": {
+      "heading": "Essas Marcas Confiam na Webomo"
+    },
+    "Contact": {
+      "title": "Consulta Gratuita",
+      "description": "Nós ouvimos atentamente e fornecemos insights valiosos para ajudar você a alcançar seus objetivos de forma eficiente.",
+      "form": {
+        "namePlaceholder": "Digite seu nome",
+        "companyPlaceholder": "Empresa (opcional)",
+        "emailPlaceholder": "Digite seu endereço de e-mail",
+        "phonePlaceholder": "Digite seu número de telefone",
+        "messagePlaceholder": "Conte-nos algo sobre você"
+      },
+      "terms": "Ao clicar no botão 'Contate-Nos', você concorda com nossos termos e políticas.",
+      "submit": "Contate-Nos"
+    },
+    "Cta": {
+      "title": "Eleve Suas Redes Sociais com a Webomo",
+      "description": "Junte-se aos serviços de redes sociais liderados por especialistas da Webomo e comece a construir uma forte presença online. Da estratégia ao engajamento – temos as ferramentas para ajudar você a crescer.",
+      "getStarted": "Começar",
+      "bookCall": "Agendar Chamada",
+      "ctaImageAlt": "Imagem CTA"
+    },
+    "CtaBusiness": {
+      "headlineHighlight": "Webomo-Business",
+      "headline": "Torne-se Parceiro",
+      "buttonText": "Comece a Ganhar Agora"
+    },
+    "ExtraFeatures": {
+      "title": "Além Disso, Você Recebe",
+      "stat1": "Perfis de Redes Sociais Gerenciados",
+      "stat2": "Publicações Publicadas",
+      "stat3": "Crescimento de Seguidores no Primeiro Ano",
+      "feature1": "Seu Próprio Painel",
+      "feature2": "Relatórios Regulares",
+      "feature3": "Marketing de Afiliados Personalizado"
+    },
+    "FAQ": {
+      "heading": "Perguntas Frequentes",
+      "description": "Tem perguntas? Encontre respostas para as perguntas mais comuns sobre nossos produtos e serviços.",
+      "faq1Title": "O que é a Webomo?",
+      "faq1Details": "A Webomo é uma ferramenta de marketing baseada em IA que também opera como uma agência de marketing profissional. Ela ajuda empresas e indivíduos a maximizar seu alcance. Combinando ferramentas de IA com suporte especializado personalizado, a Webomo garante eficiência e criatividade em perfeita harmonia.",
+      "faq2Title": "Como a Webomo funciona?",
+      "faq2Details": "A Webomo revoluciona a criação de conteúdo gerando postagens de vídeo criativas, stories e mais para canais de redes sociais como Instagram, Facebook, LinkedIn, YouTube e TikTok. Com publicações automatizadas ao longo de 12 meses e métricas de relatórios abrangentes, ela otimiza o alcance e o engajamento.",
+      "faq3Title": "Como os conteúdos são criados?",
+      "faq3Details": "Os conteúdos são criados através de sessões fotográficas individuais e gravações de vídeo diretamente nas localizações dos clientes. O material é alimentado em uma IA que então produz conteúdos expressivos. O contato direto com o cliente garante que as estratégias sejam implementadas de maneira autêntica e vibrante.",
+      "faq4Title": "Quem pode usar a Webomo?",
+      "faq4Details": "A Webomo pode ser usada por empresas e indivíduos que desejam expandir sua base de clientes, aumentar o reconhecimento da marca ou aumentar suas vendas. É adequada tanto para pequenas empresas quanto para grandes marcas que desejam melhorar sua visibilidade e alcance.",
+      "faq5Title": "Quais benefícios e vantagens a Webomo oferece?",
+      "faq5Details": "A Webomo economiza tempo valioso, reduz custos e fornece insights precisos através de análises impulsionadas por IA. Com estratégias personalizadas, a Webomo permite um crescimento significativo da receita e sucesso a longo prazo para as empresas.",
+      "faq6Title": "Por que a Webomo é tão popular entre empresas e indivíduos?",
+      "faq6Details": "A Webomo oferece uma oportunidade única para aumentar o alcance através do marketing de afiliados. Sua abordagem internacional abre portas em mercados locais e globais, criando o ambiente ideal para o sucesso – seja para startups ou marcas estabelecidas.",
+      "faq7Title": "Por que a Webomo utiliza modelos de assinatura?",
+      "faq7Details": "A Webomo oferece modelos de assinatura flexíveis que podem ser adaptados às necessidades individuais. Os clientes se beneficiam de atualizações automáticas e novas funcionalidades que permanecem atualizadas sem esforço adicional. Isso reduz a complexidade e os custos de marketing."
+    },
+    "FaqBusiness": {
+      "heading": "Perguntas Frequentes",
+      "description": "Tem perguntas? Encontre respostas para as perguntas mais comuns sobre o Programa de Parceiros Empresariais da Webomo.",
+      "faqBusiness1Title": "O que é o Programa Empresarial da Webomo?",
+      "faqBusiness1Details": "O Programa Empresarial da Webomo é uma ferramenta de Marketing de Afiliados. Você pode gerar renda recorrente através de indicações. É projetado para indivíduos que desejam ganhar dinheiro com as ferramentas de marketing atuais e construir uma segunda fonte de renda.",
+      "faqBusiness2Title": "Como funciona o Programa Empresarial da Webomo?",
+      "faqBusiness2Details": "Após o registro bem-sucedido, você recebe um link de Afiliado com conteúdo para publicar no seu próprio painel. Uma vez por semana, você publica o conteúdo na sua conta como uma postagem ou campanha.",
+      "faqBusiness3Title": "Quais são os requisitos?",
+      "faqBusiness3Details": "Você precisa apenas de uma conta ativa no Instagram com pelo menos 100 seguidores.",
+      "faqBusiness4Title": "Posso usar o Programa Empresarial da Webomo de qualquer país?",
+      "faqBusiness4Details": "Não. O Programa de Parceiros Empresariais da Webomo é destinado a indivíduos com sede na Suíça, Alemanha, Liechtenstein, Áustria, Itália e França.",
+      "faqBusiness5Title": "Quais diretrizes devo seguir?",
+      "faqBusiness5Details": "Ao se registrar com sucesso, você concorda automaticamente com as diretrizes do Programa de Parceiros Empresariais da Webomo. Isso inclui publicar o conteúdo fornecido pela Webomo uma vez por semana na sua conta do Instagram.",
+      "faqBusiness6Title": "O que significa 'Construir Meu Time Webomo'?",
+      "faqBusiness6Details": "Com a Webomo Business, você pode construir seu próprio time e aumentar seus ganhos. A Webomo oferece a oportunidade de recrutar participantes para o Programa de Parceiros Empresariais da Webomo utilizando um link de Afiliado, permitindo que você construa seu time. Todos os participantes registrados através do seu link de Afiliado ficam sob sua referência, gerando indicações para você.",
+      "faqBusiness7Title": "Como posso ganhar dinheiro com a Webomo Business?",
+      "faqBusiness7Details": "Publicando semanalmente, você gera indicações para nossos serviços. Assim que um cliente reserva um pacote (Basic, Pro ou Business) com a Webomo, você recebe comissões.",
+      "faqBusiness8Title": "Quanto posso ganhar com o Programa de Parceiros Empresariais da Webomo?",
+      "faqBusiness8Details": "Você recebe comissões pelas reservas de pacotes: Basic anualmente 500 CHF, Pro anualmente 700 CHF, Business anualmente 1'000 CHF. Quanto maior seu time, maior seu potencial de ganhos anuais.",
+      "faqBusiness9Title": "Como as comissões são pagas?",
+      "faqBusiness9Details": "Suas comissões são pagas no dia 30 do mês seguinte na sua conta bancária ou cartão de crédito. Note que as comissões são pagas em CHF (Francos Suíços) independentemente da sua região/país.",
+      "faqBusiness10Title": "A participação no Programa de Parceiros Empresariais da Webomo é gratuita?",
+      "faqBusiness10Details": "O registro no Programa Empresarial da Webomo é gratuito. No entanto, o uso do painel para links de Afiliado é pago. Descubra em uma consulta gratuita qual opção é a adequada para você."
+    },
+    "Footer": {
+      "followUs": "Siga-nos",
+      "company": "Empresa",
+      "aboutUs": "Sobre Nós",
+      "jobs": "Carreiras",
+      "privacyPolicy": "Política de Privacidade",
+      "imprint": "Imprint",
+      "termsAndConditions": "Termos & Condições",
+      "webomoBusiness": "Webomo Business",
+      "partnerProgram": "Programa de Parceiros",
+      "faqPartnerProgram": "FAQ Programa de Parceiros",
+      "help": "Ajuda",
+      "faq": "FAQ",
+      "contact": "Contato",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "contactUs": "Contate-Nos",
+      "copyright": "Copyright © 2024 - webomo.ch",
+      "allRightsReserved": "Todos os direitos reservados."
+    },
+    "Hero": {
+      "subtitle": "Em Qualquer Momento, Em Qualquer Lugar",
+      "centerText": "Presente",
+      "mobileFrame": "Moldura Móvel"
+    },
+    "Hero3": {
+      "subtitleAlt": "Em Qualquer Momento, Em Qualquer Lugar",
+      "mainText": "Webomo",
+      "subText": "Um Objetivo - Seu Sucesso",
+      "leftMobileAlt": "Tela Esquerda do Smartphone",
+      "centerMobileAlt": "Tela Central do Smartphone",
+      "rightMobileAlt": "Tela Direita do Smartphone"
+    },
+    "HeroBusiness": {
+      "subtitleAlt": "Em Qualquer Momento, Em Qualquer Lugar",
+      "mainText": "Webomo",
+      "mainTextSpan": "-Business",
+      "subText": "Uma Ferramenta - Seu Sucesso",
+      "smartphoneAlt": "Tela do Smartphone Webomo-Business"
+    },
+    "Mission": {
+      "title": "O Que Fazemos",
+      "description": "Oferecemos um portfólio único de serviços, desde campanhas em redes sociais e marketing de conteúdo até sessões fotográficas profissionais, produções de vídeo de qualidade cinematográfica, desenvolvimento web e estratégias personalizadas. Nosso objetivo é levar a sua marca para o próximo nível."
+    },
+    "Pricing": {
+      "choosePlan": "Escolher",
+      "plans": {
+        "Basic": {
+          "name": "Basic",
+          "price": "499",
+          "features": [
+            "Gestão de Projeto: Consultoria de Conteúdo & Administração",
+            "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
+            "Publicação: 1x por semana pela Webomo",
+            "Canais: Instagram / Facebook / LinkedIn / YouTube",
+            "Sessão Fotográfica: Incluída",
+            "Vídeo: -",
+            "Campanhas em Redes Sociais: -"
+          ]
+        },
+        "Unlimited": {
+          "name": "Unlimited",
+          "price": "599",
+          "features": [
+            "Gestão de Projeto: Consultoria de Conteúdo & Administração",
+            "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
+            "Publicação: 1x por semana pela Webomo",
+            "Canais: Instagram / Facebook / LinkedIn / YouTube",
+            "Sessão Fotográfica: Incluída",
+            "Vídeo: -",
+            "Campanhas em Redes Sociais: -"
+          ]
+        },
+        "Business": {
+          "name": "Business",
+          "price": "799",
+          "features": [
+            "Gestão de Projeto: Consultoria de Conteúdo & Administração",
+            "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
+            "Publicação: 1x por semana pela Webomo",
+            "Canais: Instagram / Facebook / LinkedIn / YouTube",
+            "Sessão Fotográfica: Incluída",
+            "Vídeo: 2 Vídeos Promocionais",
+            "Campanhas em Redes Sociais: Incluídas"
+          ]
+        }
+      },
+      "recommended": "Recomendado",
+      "month": "Mês",
+      "duration": "12 Meses de Suporte",
+      "footerText": "Inclui Painel & Relatórios"
+    },
+    "Screens": {
+      "title": "Designs para Todas as Indústrias",
+      "description": "Criamos presenças impressionantes nas redes sociais para todas as indústrias. Designs que destacam a sua marca e cativam o seu público-alvo.",
+      "selectIndustry": "Selecione uma Indústria",
+      "currentlySelected": "Atualmente Selecionado",
+      "mobileFrameAlt": "Moldura Móvel",
+      "screenshotAlt": "Captura de Tela",
+      "sectors": {
+        "Food & Beverage": "Alimentos & Bebidas",
+        "Retail & E-commerce": "Varejo & E-commerce",
+        "Healthcare": "Saúde",
+        "Real Estate": "Imobiliário",
+        "Automotive": "Automotivo"
+      }
+    },
+    "ScreensAvantico": {
+      "title": "Stories em Redes Sociais",
+      "description": "Assim podem ficar seus Stories, Publicações e Reels para cativar seu público.",
+      "mobileFrameAlt": "Moldura de Smartphone",
+      "storyAlt": "Imagem de Story"
+    },
+    "Stats": {
+      "title": "Publicidade para Sua Empresa",
+      "description": "Alcance mais clientes potenciais e fortaleça o reconhecimento da sua marca com imagens e vídeos de marketing de alta qualidade.",
+      "stats": {
+        "left": "Maior Visibilidade",
+        "center": "Engajamento Aprimorado",
+        "right": "Custos de Marketing Reduzidos"
+      },
+      "cta": "Contate-nos para saber mais"
+    },
+    "Testimonials": {
+      "title": "O Que Nossos Clientes Dizem",
+      "subtitle": "Nossos clientes adoram o que fazemos e estão felizes em compartilhar seu entusiasmo.",
+      "reviews": [
+        {
+          "quote": "Graças à Webomo, nossa empresa finalmente tem uma forte presença nas redes sociais! O conteúdo é criativo e envolvente. Recebemos significativamente mais consultas de clientes.",
+          "authorName": "Daniel Meier",
+          "authorRole": "CEO, Meier & Co."
+        },
+        {
+          "quote": "Trabalhar com a Webomo foi uma verdadeira vantagem para nosso marketing. Os vídeos e imagens de alta qualidade nos ajudaram a apresentar nossa marca de maneira profissional.",
+          "authorName": "Sara Schmid",
+          "authorRole": "Gerente de Marketing, Schmid AG"
+        },
+        {
+          "quote": "Estou impressionado com a rapidez e eficiência com que a Webomo construiu nossos canais de redes sociais. Nosso alcance dobrou em muito pouco tempo.",
+          "authorName": "Lukas Müller",
+          "authorRole": "Fundador de Startup, Innovatech"
+        },
+        {
+          "quote": "O conteúdo criativo da Webomo levou nosso engajamento nas redes sociais a um novo nível. Obrigado pelo excelente serviço!",
+          "authorName": "Claudia Keller",
+          "authorRole": "Freelancer, Keller Design Studio"
+        }
+      ]
+    },
+    "WebomoFeatures": {
+      "title": "Descubra Nossos Últimos Trabalhos"
+    },
+    "Designs": {
+      "headline": "Adequado para Cada",
+      "subHeadline": "Indústria",
+      "description": "Você escolhe o design e nós cuidamos da implementação e planejamento do seu conteúdo.",
+      "videoError": "O vídeo não pôde ser carregado. Por favor, verifique o formato.",
+      "cta": "Comece Agora",
+      "compareHeadline": "Antes & Depois",
+      "compareDescription": "A diferença que fazemos é claramente perceptível, já que nosso trabalho se caracteriza por qualidade excepcional, precisão e dedicação. Veja por si mesmo com a função Antes e Depois."
+    },
+    "WebomoBusinessOnboarding": {
+      "affiliatePackageTitle": "Pacote de Afiliados",
+      "affiliatePackageDescription": "Descubra os benefícios exclusivos do seu Pacote de Afiliados Webomo:",
+      "features": {
+        "0": "Painel Dedicado para Rastreamento",
+        "1": "Relatórios Semanais e Insights",
+        "2": "Suporte Personalizado em Marketing de Afiliados",
+        "3": "Acesso a Recursos Premium",
+        "4": "Suporte 24/7 da Nossa Equipe"
+      },
+      "thankYouTitle": "Obrigado por Participar da Reunião de Onboarding!",
+      "thankYouDescription": "Agradecemos sua confiança e parabenizamos por se juntar à família Webomo. Estamos ansiosos para apoiá-lo em sua jornada e ajudá-lo a aproveitar ao máximo seu programa de afiliados.",
+      "startNowAriaLabel": "Começar Agora",
+      "startNowButton": "Começar Agora"
+    }
+  }
+  

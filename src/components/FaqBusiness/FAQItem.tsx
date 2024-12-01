@@ -1,47 +1,37 @@
+"use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 
 type FaqData = {
   activeFaq: number;
   id: number;
   handleFaqToggle: (id: number) => void;
-  title: string;
-  details: string;
+  titleKey: string;
+  detailsKey: string;
 };
 
 const FAQItem = ({ faqData }: { faqData: FaqData }) => {
-  const { activeFaq, id, handleFaqToggle, title, details } = faqData;
+  const { activeFaq, id, handleFaqToggle, titleKey, detailsKey } = faqData;
+  const t = useTranslations("FaqBusiness");
 
   return (
     <>
       <div className="faq border-b border-stroke last-of-type:border-none dark:border-stroke-dark">
         <button
-          onClick={() => {
-            handleFaqToggle(id);
-          }}
+          onClick={() => handleFaqToggle(id)}
           className="faq-btn relative flex w-full items-center justify-between px-[18px] py-6 text-left text-base font-medium text-black dark:text-white sm:px-[26px] sm:text-lg"
         >
-          {title}
-
+          {t(titleKey)}
           {activeFaq === id ? (
             <svg
               className="fill-current"
               width="28"
               height="28"
               viewBox="0 0 28 28"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clipPath="url(#clip0_49_578)">
-                <path
-                  d="M22.1667 12.8333H15.1667H12.8333H5.83334V15.1666H12.8333H15.1667H22.1667V12.8333Z"
-                  fill=""
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_49_578">
-                  <rect width="28" height="28" fill="white" />
-                </clipPath>
-              </defs>
+              <path d="M22.167 12.833H5.833v2.333h16.334v-2.333z" />
             </svg>
           ) : (
             <svg
@@ -49,20 +39,9 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
               width="28"
               height="28"
               viewBox="0 0 28 28"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clipPath="url(#clip0_49_588)">
-                <path
-                  d="M12.8333 12.8333V5.83325H15.1667V12.8333H22.1667V15.1666H15.1667V22.1666H12.8333V15.1666H5.83334V12.8333H12.8333Z"
-                  fill=""
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_49_588">
-                  <rect width="28" height="28" fill="white" />
-                </clipPath>
-              </defs>
+              <path d="M12.833 5.833h2.333v16.334h-2.333V5.833zm9.333 6v2.334H5.833v-2.334h16.333z" />
             </svg>
           )}
         </button>
@@ -73,7 +52,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
               : "max-h-0 py-0 opacity-0 transition-all duration-100 ease-in-out"
           }`}
         >
-          <p className="text-base text-body">{details}</p>
+          <p className="text-base text-body">{t(detailsKey)}</p>
         </div>
       </div>
     </>

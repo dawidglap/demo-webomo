@@ -1,15 +1,19 @@
+"use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 
 type FaqData = {
   activeFaq: number;
   id: number;
   handleFaqToggle: (id: number) => void;
-  title: string;
-  details: string;
+  titleKey: string;
+  detailsKey: string;
 };
 
 const FAQItem = ({ faqData }: { faqData: FaqData }) => {
-  const { activeFaq, id, handleFaqToggle, title, details } = faqData;
+  const { activeFaq, id, handleFaqToggle, titleKey, detailsKey } = faqData;
+  const t = useTranslations("FAQ");
 
   return (
     <>
@@ -20,7 +24,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
           }}
           className="faq-btn relative flex w-full items-center justify-between px-[18px] py-6 text-left text-base font-medium text-black dark:text-white sm:px-[26px] sm:text-lg"
         >
-          {title}
+          {t(titleKey)}
 
           {activeFaq === id ? (
             <svg
@@ -73,7 +77,7 @@ const FAQItem = ({ faqData }: { faqData: FaqData }) => {
               : "max-h-0 py-0 opacity-0 transition-all duration-100 ease-in-out"
           }`}
         >
-          <p className="text-base text-body">{details}</p>
+          <p className="text-base text-body">{t(detailsKey)}</p>
         </div>
       </div>
     </>

@@ -1,10 +1,13 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Stats = () => {
+  const t = useTranslations("Stats"); // Translation hook
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
   const leftControls = useAnimation();
   const centerControls = useAnimation();
@@ -54,7 +57,7 @@ const Stats = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        Werbung für dein Unternehmen
+        {t("title")}
       </motion.h2>
 
       <motion.p
@@ -63,8 +66,7 @@ const Stats = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Erreiche mehr potenzielle Kunden und stärke deinen Wiedererkennungswert
-        deiner Marke mit hochwertigen Marketing- Bild- und Videomaterialien.
+        {t("description")}
       </motion.p>
 
       <div className="mt-8 flex flex-wrap justify-center gap-4 md:flex-nowrap md:gap-8">
@@ -78,7 +80,7 @@ const Stats = () => {
             {leftStat}%
           </span>
           <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
-            höhere Sichtbarkeit
+            {t("stats.left")}
           </p>
         </motion.div>
 
@@ -92,7 +94,7 @@ const Stats = () => {
             {centerStat}%
           </span>
           <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
-            gesteigerte Interaktion
+            {t("stats.center")}
           </p>
         </motion.div>
 
@@ -106,7 +108,7 @@ const Stats = () => {
             {rightStat}%
           </span>
           <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
-            geringere Marketingkosten
+            {t("stats.right")}
           </p>
         </motion.div>
       </div>
@@ -115,7 +117,7 @@ const Stats = () => {
         href="#"
         className=" mt-10 inline-block rounded-full bg-black px-8 py-[10px] text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
       >
-        Kontaktiere uns und erfahre mehr
+        {t("cta")}
       </Link>
     </section>
   );

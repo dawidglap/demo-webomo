@@ -2,66 +2,48 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 
 const WebomoFeatures = () => {
+  const t = useTranslations("WebomoFeatures");
+
   const videoContainerRef = useRef(null);
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Animazione della sezione
+  // Animations
   const sectionControls = useAnimation();
+  const titleControls = useAnimation();
+  const videoControls = useAnimation();
+
+  // Visibility tracking
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
-
-  // Controllo animazione per il titolo e il video per dissolvenza in uscita
-  const titleControls = useAnimation();
-  const videoControls = useAnimation();
-
-  // Controllo per il titolo (uscita graduale)
   const { ref: titleRef, inView: titleInView } = useInView({
     triggerOnce: false,
-    threshold: 0.1, // Attiva l'uscita quando inizia a uscire dal viewport
+    threshold: 0.1,
   });
-
-  // Controllo per il contenitore video (uscita graduale)
   const { ref: videoContainerInViewRef, inView: videoContainerInView } =
     useInView({
       triggerOnce: false,
       threshold: 0.1,
     });
 
+  // Animation triggers
   useEffect(() => {
-    if (sectionInView) {
-      sectionControls.start("visible");
-    }
-    if (titleInView) {
-      titleControls.start("visible");
-    } else {
-      titleControls.start("hidden");
-    }
-    if (videoContainerInView) {
-      videoControls.start("visible");
-    } else {
-      videoControls.start("hidden");
-    }
-  }, [
-    sectionInView,
-    titleInView,
-    videoContainerInView,
-    sectionControls,
-    titleControls,
-    videoControls,
-  ]);
+    if (sectionInView) sectionControls.start("visible");
+    titleControls.start(titleInView ? "visible" : "hidden");
+    videoControls.start(videoContainerInView ? "visible" : "hidden");
+  }, [sectionInView, titleInView, videoContainerInView]);
 
   const handlePlay = () => {
     setIsPlaying(true);
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
+    videoRef.current?.play();
   };
 
+  // Animation variants
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -91,7 +73,7 @@ const WebomoFeatures = () => {
         animate={titleControls}
         variants={fadeVariants}
       >
-        Entdecke unsere neusten Arbeiten
+        {t("title")}
       </motion.h2>
       <motion.div
         ref={videoContainerInViewRef}
@@ -108,7 +90,7 @@ const WebomoFeatures = () => {
             ref={videoRef}
             src="/images/webomo-videos/webomo-demo.mp4"
             className={`h-full w-full ${isPlaying ? "block" : "hidden"}`}
-            controls={true}
+            controls
             onEnded={() => setIsPlaying(false)}
           />
 

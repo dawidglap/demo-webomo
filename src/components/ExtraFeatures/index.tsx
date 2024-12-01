@@ -4,8 +4,11 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 
 const ExtraFeatures = () => {
+  const t = useTranslations("ExtraFeatures");
+
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
   const controls = useAnimation();
 
@@ -72,7 +75,7 @@ const ExtraFeatures = () => {
                     {firstStat}+
                   </span>
                   <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
-                    Betreute Social Media Profile
+                    {t("stat1")}
                   </p>
                 </motion.div>
 
@@ -87,7 +90,7 @@ const ExtraFeatures = () => {
                     {secondStat}+
                   </span>
                   <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
-                    Publizierte Beiträge
+                    {t("stat2")}
                   </p>
                 </motion.div>
 
@@ -102,7 +105,7 @@ const ExtraFeatures = () => {
                     {thirdStat}%
                   </span>
                   <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
-                    Follower-Wachstum im ersten Jahr
+                    {t("stat3")}
                   </p>
                 </motion.div>
               </div>
@@ -115,7 +118,7 @@ const ExtraFeatures = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Zusätzlich erhältst du von uns
+            {t("title")}
           </motion.h2>
           {/* Features */}
           <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-12">
@@ -129,14 +132,14 @@ const ExtraFeatures = () => {
               <div className="h-20 w-20">
                 <Image
                   src="/images/extra/graph.png"
-                  alt="Dein eigenes Dashboard"
+                  alt={t("feature1")}
                   width={80}
                   height={80}
                   className="dark:invert"
                 />
               </div>
               <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
-                Dein eigenes Dashboard
+                {t("feature1")}
               </p>
             </motion.div>
 
@@ -150,14 +153,14 @@ const ExtraFeatures = () => {
               <div className="h-20 w-20">
                 <Image
                   src="/images/extra/docs.png"
-                  alt="Regelmäßige Reportings"
+                  alt={t("feature2")}
                   width={80}
                   height={80}
                   className="dark:invert"
                 />
               </div>
               <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
-                Regelmässige Reportings
+                {t("feature2")}
               </p>
             </motion.div>
 
@@ -171,14 +174,14 @@ const ExtraFeatures = () => {
               <div className="h-20 w-20">
                 <Image
                   src="/images/extra/audio.png"
-                  alt="Individueller Affiliate-Marketing"
+                  alt={t("feature3")}
                   width={80}
                   height={80}
                   className="dark:invert"
                 />
               </div>
               <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
-                Individueller Affiliate-Marketing
+                {t("feature3")}
               </p>
             </motion.div>
           </div>

@@ -4,9 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 import shooting from "../../../public/images/about/shooting.png";
 
 const AboutWebsite = () => {
+  const t = useTranslations("AboutWebsite");
+
   const { ref: textRef, inView: textInView } = useInView({
     triggerOnce: true,
     threshold: 0.8,
@@ -38,7 +41,6 @@ const AboutWebsite = () => {
   return (
     <motion.section id="about" className="relative mb-20">
       <div className="container lg:max-w-[1120px]">
-        {/* Flex container with reverse column on mobile */}
         <div className="-mx-4 flex flex-col-reverse flex-wrap items-center justify-between lg:flex-row">
           {/* Left Section (Text Section) */}
           <div className="w-full px-4 lg:w-1/2">
@@ -50,22 +52,16 @@ const AboutWebsite = () => {
               variants={sectionVariants}
             >
               <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                Website Development
+                {t("title")}
               </h2>
               <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-                wallopeemititmg Von der ersten Idee bis zum Livegang stehen wir
-                an Ihrer Seite, um Ihre Marke ins beste digitale Licht zu
-                rücken. Mit responsivem Design, rasanten Ladezeiten und einer
-                Nutzererfahrung, die überzeugt, schaffen wir nachhaltige
-                Online-Erlebnisse. Dank neuester Technologien bleibt Ihre
-                Website nicht nur State-of-the-Art, sondern auch zukunftssicher.
-                Gemeinsam machen wir Ihre digitale Vision zur Realität.
+                {t("description")}
               </p>
               <Link
                 href="#"
                 className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
               >
-                Mehr erfahren
+                {t("learnMore")}
               </Link>
             </motion.div>
           </div>
@@ -80,10 +76,10 @@ const AboutWebsite = () => {
             >
               <div className="mb-8 text-center">
                 <h2 className="text-3xl font-bold text-black dark:text-white">
-                  Individuelle Lösungen
+                  {t("cardTitle")}
                 </h2>
                 <p className="pt-1 text-lg text-slate-600 dark:text-slate-300 md:text-xl">
-                  Kreativ, kraftvoll und immer einen Klick voraus.
+                  {t("cardSubtitle")}
                 </p>
               </div>
               <motion.div
@@ -94,7 +90,7 @@ const AboutWebsite = () => {
               >
                 <Image
                   src={shooting}
-                  alt="Web development image"
+                  alt={t("imageAlt")}
                   layout="responsive"
                   className="rounded-[18px] object-cover"
                 />

@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 import { Client } from "@/types/client";
 
 const clientsData: Client[] = [
@@ -46,13 +47,15 @@ const clientsData: Client[] = [
 ];
 
 const Clients = () => {
+  const t = useTranslations("Clients");
+
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation only once
     threshold: 0.8, // Trigger when 10% of the component is visible
   });
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (inView) {
       controls.start("visible");
     }
@@ -82,7 +85,7 @@ const Clients = () => {
     >
       <div className="container overflow-hidden lg:max-w-[1200px]">
         <h2 className="mb-16 text-center text-base font-light text-black dark:text-white md:text-lg">
-          Diese Marken vertrauen auf webomo
+          {t("heading")}
         </h2>
         <div className="-mx-4 flex flex-wrap items-center justify-center">
           {clientsData.map((item, index) => (

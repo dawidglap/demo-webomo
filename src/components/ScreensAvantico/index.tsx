@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const foodBeverageImages = [
   "/images/carousel/placeholder.webp",
@@ -33,6 +34,8 @@ const hoverEffect = {
 };
 
 const ScreensAvantico = () => {
+  const t = useTranslations("ScreensAvantico");
+
   return (
     <section className="relative z-20 bg-white pb-16 pt-12 dark:bg-black">
       <motion.div
@@ -44,11 +47,10 @@ const ScreensAvantico = () => {
       >
         <div className="wow fadeInUp mb-10 text-center">
           <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
-            Social Media Stories
+            {t("title")}
           </h2>
           <p className="pt-4 text-lg text-gray-600 dark:text-gray-400">
-            So können Ihre Stories, Posts und Reels aussehen die Ihre Zielgruppe
-            fesselt.
+            {t("description")}
           </p>
         </div>
 
@@ -125,7 +127,7 @@ const ScreensAvantico = () => {
                   >
                     <Image
                       src={"/images/screens/mobile-frame.png"}
-                      alt="Smartphone Frame"
+                      alt={t("mobileFrameAlt")}
                       layout="responsive"
                       width={300}
                       height={600}
@@ -135,7 +137,7 @@ const ScreensAvantico = () => {
                     <div className="absolute inset-[2%] z-[-1]">
                       <Image
                         src={image}
-                        alt={`Story ${index + 1}`}
+                        alt={`${t("storyAlt")} ${index + 1}`}
                         layout="fill"
                         objectFit="cover"
                         className="rounded-[30px]"

@@ -2,7 +2,7 @@ export const pricingData = [
   {
     id: "price_1P8hgCGqj8dLPi0A80d0Virv",
     unit_amount: 0,
-    nickname: "Free",
+    nickname: "Basic",
   },
   {
     id: "price_1P8hgmGqj8dLPi0Ae7x59NQH",

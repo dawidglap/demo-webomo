@@ -1,10 +1,14 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 
 const Hero3 = () => {
+  const t = useTranslations("Hero3");
+
   const { ref: smartphoneRef, inView: smartphoneInView } = useInView({
     triggerOnce: true,
     threshold: 0.6,
@@ -32,7 +36,7 @@ const Hero3 = () => {
   };
 
   return (
-    <section className="relative flex h-[75vh] max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800 md:h-screen">
+    <section className="relative flex h-[80vh] max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800 md:h-screen">
       {/* Subtitle Image with Motion */}
       <motion.div
         className="mb-2 pt-0"
@@ -42,10 +46,10 @@ const Hero3 = () => {
       >
         <Image
           src="/images/hero/wilkommen.png"
-          alt="Immer und überall"
+          alt={t("subtitleAlt")}
           width={400}
           height={100}
-          className="mt-20"
+          className="mt-20 pt-20"
         />
       </motion.div>
 
@@ -57,7 +61,7 @@ const Hero3 = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        Webomo
+        {t("mainText")}
       </motion.p>
       <motion.p
         className="pb-0 text-2xl font-light text-black dark:text-white"
@@ -66,7 +70,7 @@ const Hero3 = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        Ein Ziel - Dein Erfolg
+        {t("subText")}
       </motion.p>
 
       {/* Smartphone Frames */}
@@ -86,7 +90,7 @@ const Hero3 = () => {
         >
           <Image
             src="/images/hero/hero-left.webp"
-            alt="mobile frame"
+            alt={t("leftMobileAlt")}
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 z-10"
@@ -109,7 +113,7 @@ const Hero3 = () => {
         >
           <Image
             src="/images/hero/hero-middle.webp"
-            alt="mobile frame"
+            alt={t("centerMobileAlt")}
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 z-10"
@@ -131,7 +135,7 @@ const Hero3 = () => {
         >
           <Image
             src="/images/hero/hero-right.webp"
-            alt="mobile frame"
+            alt={t("rightMobileAlt")}
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 z-10"

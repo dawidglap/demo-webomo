@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const Contact = () => {
+  const t = useTranslations("Contact");
+
   return (
     <>
       <section id="support" className="pb-[110px] pt-[100px] md:pt-[150px]">
@@ -10,12 +14,9 @@ const Contact = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Kostenlose Beratung
+              {t("title")}
             </h2>
-            <p className="text-base text-body">
-              Wir hören Ihnen genau zu und bieten Ihnen wertvolle Insights, die
-              Ihnen helfen, ihre Ziele effizient zu erreichen.
-            </p>
+            <p className="text-base text-body">{t("description")}</p>
           </div>
         </div>
 
@@ -32,7 +33,7 @@ const Contact = () => {
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Geben Sie Ihren Namen ein"
+                      placeholder={t("form.namePlaceholder")}
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -44,7 +45,7 @@ const Contact = () => {
                       type="text"
                       name="company"
                       id="company"
-                      placeholder="Firma (optional)"
+                      placeholder={t("form.companyPlaceholder")}
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -56,7 +57,7 @@ const Contact = () => {
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Geben Sie Ihre E-Mail-Adresse ein"
+                      placeholder={t("form.emailPlaceholder")}
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -68,7 +69,7 @@ const Contact = () => {
                       type="text"
                       name="phone"
                       id="phone"
-                      placeholder="Geben Sie Ihre Telefonnummer ein"
+                      placeholder={t("form.phonePlaceholder")}
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     />
                   </div>
@@ -80,7 +81,7 @@ const Contact = () => {
                       rows={6}
                       name="message"
                       id="message"
-                      placeholder="Erzählen Sie uns etwas über sich"
+                      placeholder={t("form.messagePlaceholder")}
                       className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
                     ></textarea>
                   </div>
@@ -89,15 +90,13 @@ const Contact = () => {
                 <div className="w-full px-[22px]">
                   <div className="text-center">
                     <p className="mb-5 text-center text-base text-body">
-                      Indem Sie auf die Schaltfläche Kontaktieren Sie uns
-                      klicken, stimmen Sie unseren Bedingungen und Richtlinien
-                      zu.
+                      {t("terms")}
                     </p>
                     <button
                       type="submit"
-                      className="inline-block  rounded-[30px] bg-primary px-11 py-[14px] text-base font-medium text-white hover:bg-opacity-90"
+                      className="inline-block rounded-[30px] bg-primary px-11 py-[14px] text-base font-medium text-white hover:bg-opacity-90"
                     >
-                      Kontaktieren Sie uns
+                      {t("submit")}
                     </button>
                   </div>
                 </div>

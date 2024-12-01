@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import Graphics from "@/components/Faq/Graphics";
 import faqData from "./faqData";
 import FAQItem from "./FAQItem";
+import { useTranslations } from "next-intl";
 
-const Faq = () => {
+const FaqBusiness = () => {
   const [activeFaq, setActiveFaq] = useState(0);
+  const t = useTranslations("FaqBusiness");
 
   const handleFaqToggle = (index: number) => {
     activeFaq === index ? setActiveFaq(0) : setActiveFaq(index);
@@ -16,7 +17,7 @@ const Faq = () => {
     <>
       <section
         id="faq-business"
-        className="relative z-10  bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 py-[110px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
+        className="relative z-10 bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 py-[110px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
       >
         <div className="container">
           <div
@@ -24,12 +25,9 @@ const Faq = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Häufig gestellte Fragen
+              {t("heading")}
             </h2>
-            <p className="text-base text-body">
-              Haben Sie Fragen? Hier finden Sie Antworten auf die häufigsten
-              Fragen zu Webomo-Business Partnerprogramm.
-            </p>
+            <p className="text-base text-body">{t("description")}</p>
           </div>
 
           <div
@@ -44,29 +42,9 @@ const Faq = () => {
             ))}
           </div>
         </div>
-        {/* <div className="mt-10 text-center">
-          <p className="mx-auto max-w-lg text-base text-gray-700 dark:text-gray-300">
-            Wenn Sie keine Antwort auf Ihre Frage gefunden haben, können Sie uns
-            gerne{" "}
-            <a
-              href="/kontakt"
-              className="text-indigo-600 underline hover:text-indigo-800 dark:text-indigo-400"
-            >
-              kontaktieren
-            </a>{" "}
-            oder uns eine E-Mail senden an{" "}
-            <a
-              href="mailto:kontakt@webomo.ch"
-              className="text-indigo-600 underline hover:text-indigo-800 dark:text-indigo-400"
-            >
-              kontakt@webomo.ch
-            </a>
-            .
-          </p>
-        </div> */}
       </section>
     </>
   );
 };
 
-export default Faq;
+export default FaqBusiness;

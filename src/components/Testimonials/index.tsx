@@ -1,46 +1,44 @@
 "use client";
+
 import React from "react";
-import { Testimonial } from "@/types/testimonial";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const testimonialData: Testimonial[] = [
-  {
-    quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
-    authorImage: "/images/testimonials/author-1.png",
-    authorName: "Musharof Chowdhury",
-    authorRole: "Web Entrepreneur",
-    review: 5.0,
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
-    authorImage: "/images/testimonials/author-2.png",
-    authorName: "Naimur Rahman",
-    authorRole: "Product Designer",
-    review: 5.0,
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
-    authorImage: "/images/testimonials/author-3.png",
-    authorName: "Devid Miller",
-    authorRole: "App Developer",
-    review: 5.0,
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
-    authorImage: "/images/testimonials/author-04.png",
-    authorName: "Justin Farnandes",
-    authorRole: "Seo Expert",
-    review: 5.0,
-  },
-];
-
 const Testimonials = () => {
+  const t = useTranslations("Testimonials");
   const thresholdValue = 0.3; // Visibility threshold for animations
+
+  const testimonialData = [
+    {
+      quote: t("reviews.0.quote"),
+      authorImage: "/images/testimonials/author-1.png",
+      authorName: t("reviews.0.authorName"),
+      authorRole: t("reviews.0.authorRole"),
+      review: 5.0,
+    },
+    {
+      quote: t("reviews.1.quote"),
+      authorImage: "/images/testimonials/author-2.png",
+      authorName: t("reviews.1.authorName"),
+      authorRole: t("reviews.1.authorRole"),
+      review: 5.0,
+    },
+    {
+      quote: t("reviews.2.quote"),
+      authorImage: "/images/testimonials/author-3.png",
+      authorName: t("reviews.2.authorName"),
+      authorRole: t("reviews.2.authorRole"),
+      review: 5.0,
+    },
+    {
+      quote: t("reviews.3.quote"),
+      authorImage: "/images/testimonials/author-4.png",
+      authorName: t("reviews.3.authorName"),
+      authorRole: t("reviews.3.authorRole"),
+      review: 5.0,
+    },
+  ];
 
   return (
     <>
@@ -55,12 +53,9 @@ const Testimonials = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Wasungere Kunden sagen
+              {t("title")}
             </h2>
-            <p className="text-base text-body">
-              Unsere Kunden lieben, was wir tun und teilen ihre Begeisterung
-              gerne weiter.
-            </p>
+            <p className="text-base text-body">{t("subtitle")}</p>
           </motion.div>
         </div>
 

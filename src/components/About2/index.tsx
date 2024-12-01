@@ -4,9 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useTranslations } from "next-intl";
 import shooting from "../../../public/images/about/shooting.png";
 
 const About2 = () => {
+  const t = useTranslations("About2");
+
   const { ref: textRef, inView: textInView } = useInView({
     triggerOnce: true,
     threshold: 0.8,
@@ -38,7 +41,6 @@ const About2 = () => {
   return (
     <motion.section id="about" className="relative pt-[150px]">
       <div className="container lg:max-w-[1120px]">
-        {/* Flex container with reverse column on mobile */}
         <div className="-mx-4 flex flex-col-reverse flex-wrap items-center justify-between lg:flex-row">
           {/* Left Section (Text Section) */}
           <div className="w-full px-4 lg:w-1/2">
@@ -50,24 +52,22 @@ const About2 = () => {
               variants={sectionVariants}
             >
               <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                Shooting
+                {t("title")}
               </h2>
               <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-                Wir erstellen für Sie in einem{" "}
-                <span className="font-bold"> ganztägigen</span> Fotoshooting
-                eine umfassende Auswahl an Motiven für Ihre Social Media Kanäle.
-                Egal, ob für Dienstleistungen, Produkte, Objekte oder vieles
-                mehr. Wir stellen sicher, dass Ihre Marke wirkungsvoll und
-                zielgerichtet präsentiert wird.
+                {t("description.part1")}
+                <span className="font-bold"> {t("description.bold")}</span>
+                {t("description.part2")}
               </p>
               <Link
                 href="#"
                 className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
               >
-                Mehr erfahren
+                {t("learnMore")}
               </Link>
             </motion.div>
           </div>
+
           {/* Right Section (Image Card with Gradient Background) */}
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
@@ -79,10 +79,10 @@ const About2 = () => {
             >
               <div className="mb-8 text-center">
                 <h2 className="text-3xl font-bold text-black dark:text-white">
-                  Showroom
+                  {t("cardTitle")}
                 </h2>
                 <p className="pt-1 text-lg text-slate-600 dark:text-slate-300 md:text-xl">
-                  Individueller Shooting bei Ihnen vor Ort.
+                  {t("cardSubtitle")}
                 </p>
               </div>
               <motion.div
@@ -93,7 +93,7 @@ const About2 = () => {
               >
                 <Image
                   src={shooting}
-                  alt="Shooting image"
+                  alt={t("imageAlt")}
                   layout="responsive"
                   className="rounded-[18px] object-cover"
                 />

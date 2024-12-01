@@ -6,17 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import Graphics from "@/components/Screens/Graphics";
 
-// List of sectors for the dropdown menu and sector images
-const sectors = [
-  "Food & Beverage",
-  "Retail & E-commerce",
-  "Healthcare",
-  "Real Estate",
-  "Automotive",
-];
-
+// Sector images for each category
 const sectorImages = {
   "Food & Beverage": [
     "/images/screens/food-beverage-1.png",
@@ -56,6 +49,8 @@ const sectorImages = {
 };
 
 const Screens = () => {
+  const t = useTranslations("Screens");
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedSector, setSelectedSector] = useState("Food & Beverage");
   const [selectedImages, setSelectedImages] = useState(
@@ -63,7 +58,7 @@ const Screens = () => {
   );
 
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
-  const selectSector = (sector) => {
+  const selectSector = (sector: string) => {
     setSelectedSector(sector);
     setSelectedImages(sectorImages[sector]);
     setIsDropdownOpen(false);
@@ -78,12 +73,10 @@ const Screens = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Designs für jede Branche
+              {t("title")}
             </h2>
             <p className="text-base text-body dark:text-slate-400">
-              Für jede Branche kreieren wir beeindruckende Social Media
-              presence, no matter the industry Designs, die Ihre Marke ins
-              Rampenlicht stellen und Ihre Zielgruppe begeistern.
+              {t("description")}
             </p>
 
             {/* Dropdown Button */}
@@ -92,18 +85,16 @@ const Screens = () => {
                 onClick={toggleDropdown}
                 className="rounded-full bg-primary px-6 py-2 text-base font-medium text-white hover:bg-opacity-90"
               >
-                Select industry:
+                {t("selectIndustry")}
               </button>
 
-              
-              <p className="text-gray-700 dark:text-gray-300 mt-4 text-sm">
-                Currently selected:{" "}
+              <p className="mt-4 text-sm text-gray-700 dark:text-gray-300">
+                {t("currentlySelected")}:{" "}
                 <span className="font-semibold uppercase">
-                  {selectedSector}
+                  {t(`sectors.${selectedSector}`)}
                 </span>
               </p>
 
-              
               {isDropdownOpen && (
                 <>
                   <div
@@ -111,16 +102,15 @@ const Screens = () => {
                     onClick={() => setIsDropdownOpen(false)}
                   ></div>
 
-                  
-                  <div className="dark:bg-gray-800 fixed left-1/2 top-1/2 z-40 w-[90%] max-w-sm -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white p-6 shadow-lg">
+                  <div className="fixed left-1/2 top-1/2 z-40 w-[90%] max-w-sm -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white p-6 shadow-lg dark:bg-gray-800">
                     <ul className="space-y-2">
-                      {sectors.map((sector) => (
+                      {Object.keys(sectorImages).map((sector) => (
                         <li
                           key={sector}
                           onClick={() => selectSector(sector)}
-                          className="text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700 cursor-pointer rounded-md px-4 py-2"
+                          className="cursor-pointer rounded-md px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
                         >
-                          {sector}
+                          {t(`sectors.${sector}`)}
                         </li>
                       ))}
                     </ul>
@@ -143,7 +133,7 @@ const Screens = () => {
             data-wow-delay=".2s"
           >
             <Swiper
-              className="swiper mySwiper relative z-20 "
+              className="swiper mySwiper relative z-20"
               modules={[Navigation]}
               navigation={{
                 nextEl: ".swiper-button-next",
@@ -153,25 +143,17 @@ const Screens = () => {
               centeredSlides={true}
               slideToClickedSlide={true}
               breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 3, spaceBetween: 40 },
+                1024: { slidesPerView: 3, spaceBetween: 40 },
               }}
             >
-              <div className="absolute left-0 right-0 top-0 z-50 mx-auto w-full  md:w-1/3">
+              <div className="absolute left-0 right-0 top-0 z-50 mx-auto w-full md:w-1/3">
                 <Image
                   width={288}
                   height={594}
-                  src={"/images/screens/mobile-frame.png"}
-                  alt="mobile-frame"
+                  src="/images/screens/mobile-frame.png"
+                  alt={t("mobileFrameAlt")}
                   className="mx-auto max-w-full"
                 />
               </div>
@@ -183,7 +165,7 @@ const Screens = () => {
                       width={265}
                       height={580}
                       src={image}
-                      alt="screenshot"
+                      alt={`${t("screenshotAlt")} ${index + 1}`}
                       className="mx-auto w-full rounded-2xl"
                     />
                   </div>
@@ -192,50 +174,21 @@ const Screens = () => {
 
               <div className="flex items-center justify-center space-x-4 pt-20">
                 <button className="swiper-button-prev">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_46_342)">
-                      <path
-                        d="M6.52334 10.8334L10.9933 15.3034L9.81501 16.4817L3.33334 10L9.815 3.51836L10.9933 4.69669L6.52334 9.16669L16.6667 9.16669L16.6667 10.8334L6.52334 10.8334Z"
-                        fill="currentColor"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_46_342">
-                        <rect
-                          width="20"
-                          height="20"
-                          fill="white"
-                          transform="translate(20 20) rotate(180)"
-                        />
-                      </clipPath>
-                    </defs>
+                  {/* SVG for Previous Button */}
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M6.52334 10.8334L10.9933 15.3034L9.81501 16.4817L3.33334 10L9.815 3.51836L10.9933 4.69669L6.52334 9.16669L16.6667 9.16669L16.6667 10.8334L6.52334 10.8334Z"
+                      fill="currentColor"
+                    />
                   </svg>
                 </button>
                 <button className="swiper-button-next">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_46_337)">
-                      <path
-                        d="M13.4767 9.16664L9.00667 4.69664L10.185 3.51831L16.6667 9.99998L10.185 16.4816L9.00667 15.3033L13.4767 10.8333H3.33334V9.16664H13.4767Z"
-                        fill="currentColor"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_46_337">
-                        <rect width="20" height="20" fill="white" />
-                      </clipPath>
-                    </defs>
+                  {/* SVG for Next Button */}
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M13.4767 9.16664L9.00667 4.69664L10.185 3.51831L16.6667 9.99998L10.185 16.4816L9.00667 15.3033L13.4767 10.8333H3.33334V9.16664H13.4767Z"
+                      fill="currentColor"
+                    />
                   </svg>
                 </button>
               </div>
@@ -243,7 +196,7 @@ const Screens = () => {
           </div>
         </div>
 
-        {/*Graphics*/}
+        {/* Graphics */}
         {/* <Graphics /> */}
       </section>
     </>

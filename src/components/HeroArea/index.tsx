@@ -1,9 +1,12 @@
 "use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("Hero");
   const smartphoneRefs = useRef([]); // Array of refs for each smartphone
   const [isInView, setIsInView] = useState(Array(5).fill(true)); // Default to true as a fallback
   const [mediaLoaded, setMediaLoaded] = useState(Array(5).fill(true)); // Default to true as a fallback
@@ -136,7 +139,7 @@ const Hero = () => {
       >
         <Image
           src="/images/hero/subtitle.png"
-          alt="Immer und überall"
+          alt={t("subtitle")}
           width={400}
           height={100}
           className="pt-40"
@@ -151,7 +154,7 @@ const Hero = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        präsent
+        {t("centerText")}
       </motion.p>
 
       {/* Smartphone Frames */}
@@ -178,7 +181,7 @@ const Hero = () => {
             <div className="relative h-full w-full">
               <Image
                 src="/images/screens/mobile-frame.png"
-                alt="mobile frame"
+                alt={t("mobileFrame")}
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0 z-10"

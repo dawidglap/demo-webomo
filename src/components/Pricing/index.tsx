@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
-import { Price } from "@/types/priceItem";
-
+import React from "react";
+import { useTranslations } from "next-intl";
 import { pricingData } from "../../stripe/pricingData";
 import { PricingItem } from "./PricingItem";
-import Link from "next/link";
 
 const Pricing = () => {
-  const [planType, setPlanType] = useState(false);
+  const t = useTranslations("Pricing");
 
   return (
     <>
@@ -19,53 +17,17 @@ const Pricing = () => {
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              Finde das passende Abo für dich
+              {t("title")}
             </h2>
-            <p className="text-base text-body">
-              Wir bieten Dir drei Pakte zur Auswahl an. Mit unserem Service
-              kümmern wir uns 12 Monate lang, rund um die Uhr, um die Erstellung
-              und Pflege deiner Social Media Kanäle. Wähle das Paket aus, das
-              deinen individuellen Bedürfnissen am besten
-            </p>
-            <div className="flex flex-wrap items-center justify-center space-x-4">
-              <p className="my-4  inline-flex items-center rounded-full border-2 border-zinc-400 bg-white px-2 py-1 text-zinc-400 hover:bg-opacity-90 dark:bg-indigo-500 dark:text-white dark:hover:bg-opacity-90">
-                Jährliche Zahlung
-              </p>
-            </div>
+            <p className="text-base text-body">{t("description")}</p>
           </div>
         </div>
 
         <div className="container max-w-[1120px] overflow-hidden">
-          {/* <div
-            className="wow fadeInUp mb-[60px] flex items-center justify-center"
-            data-wow-delay=".25s"
-          >
-            <label htmlFor="togglePlan" className="inline-flex items-center">
-              <input
-                type="checkbox"
-                name="togglePlan"
-                id="togglePlan"
-                className="sr-only"
-                onClick={() => setPlanType(!planType)}
-              />
-              <span className="monthly text-sm font-medium text-black dark:text-white">
-                Monthly
-              </span>
-              <span className="mx-5 flex h-[34px] w-[60px] cursor-pointer items-center rounded-full bg-primary p-[3px]">
-                <span
-                  className={`${planType && "translate-x-[26px]"} block h-7 w-7 rounded-full bg-white duration-300`}
-                ></span>
-              </span>
-              <span className="yearly text-sm font-medium text-black dark:text-white">
-                Yearly
-              </span>
-            </label>
-          </div> */}
-
           <div className="-mx-6 flex flex-wrap justify-center">
             {pricingData &&
               pricingData.map((price, key) => (
-                <PricingItem price={price} key={key} planType={planType} />
+                <PricingItem price={price} key={key} />
               ))}
           </div>
         </div>

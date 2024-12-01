@@ -1,13 +1,16 @@
 "use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import screen2 from "../../../public/images/about/autumn-post.png";
 
 const About = () => {
+  const t = useTranslations("About");
   const textRef = useRef(null);
-  const sectionRef = useRef(null); // Ref for the entire section
+  const sectionRef = useRef(null);
   const [sectionInView, setSectionInView] = useState(false);
   const [mediaLoaded, setMediaLoaded] = useState({
     0: false,
@@ -17,14 +20,14 @@ const About = () => {
 
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.6, // Trigger when 60% of the section is visible
+      threshold: 0.6,
     };
 
     const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setSectionInView(true);
-          sectionObserver.disconnect(); // Disconnect after triggering once
+          sectionObserver.disconnect();
         }
       });
     }, observerOptions);
@@ -33,7 +36,6 @@ const About = () => {
       sectionObserver.observe(sectionRef.current);
     }
 
-    // Fallback: Ensure mediaLoaded is true for all media if not loaded within 2 seconds
     const fallbackTimeout = setTimeout(() => {
       setMediaLoaded({ 0: true, 1: true, 2: true });
     }, 2000);
@@ -83,7 +85,6 @@ const About = () => {
     >
       <div className="container lg:max-w-[1120px]">
         <div className="-mx-4 flex flex-wrap items-center justify-between">
-          {/* Left Section with Smartphones */}
           <div className="hidden w-full px-4 xxs:block lg:w-1/2">
             <motion.div
               className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-[30px] bg-gradient-to-r from-indigo-200 to-purple-300 p-6 pb-10 shadow-2xl dark:from-sky-900 md:min-h-[450px] lg:mx-0 lg:mb-0"
@@ -92,20 +93,20 @@ const About = () => {
               variants={sectionVariants}
             >
               <h2 className="mb-8 pt-2 text-center text-3xl font-bold text-black dark:text-white md:pt-4">
-                Wöchentlich
+                {t("weekly")}
               </h2>
               <div className="mt-10 flex items-center justify-between gap-4">
                 {[
                   {
                     type: "video",
                     src: "/images/about/night-video.mp4",
-                    label: "Reels",
+                    label: t("reels"),
                   },
-                  { type: "image", src: screen2, label: "Posts" },
+                  { type: "image", src: screen2, label: t("posts") },
                   {
                     type: "video",
                     src: "/images/about/termin-video.mp4",
-                    label: "Stories",
+                    label: t("stories"),
                   },
                 ].map((item, index) => (
                   <motion.div
@@ -155,7 +156,6 @@ const About = () => {
             </motion.div>
           </div>
 
-          {/* Right Text Section */}
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={textRef}
@@ -165,21 +165,16 @@ const About = () => {
               variants={sectionVariants}
             >
               <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                Stories & Posts
+                {t("title")}
               </h2>
               <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-                Wir erstellen packende Stories und Beiträge auf Kino- und
-                Hollywood-Niveau, die Ihre Marke perfekt in Szene setzen. Webomo
-                übernimmt die komplette Content-Erstellung und Veröffentlichung
-                auf Ihren Social-Media-Kanälen – und das wöchentlich für die
-                kommenden
-                <span className="font-bold"> 12 Monate</span>.
+                {t("description")}
               </p>
               <Link
                 href="#"
                 className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
               >
-                Mehr erfahren
+                {t("learnMore")}
               </Link>
             </motion.div>
           </div>
