@@ -207,6 +207,8 @@
     "description": "Offriamo un portafoglio unico di servizi, dalle campagne sui social media e content marketing a servizi fotografici professionali, produzioni video di qualità cinematografica, sviluppo web e strategie personalizzate. Il nostro obiettivo è portare il tuo brand al livello successivo."
   },
   "Pricing": {
+    "title": "Trova il piano giusto",
+"description": "Pacchetti Social Media su misura per ogni fase della tua attività",
     "choosePlan": "Scegli",
     "plans": {
       "Basic": {

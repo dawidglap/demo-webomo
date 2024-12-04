@@ -207,6 +207,8 @@
     "description": "Nous proposons un portefeuille unique de services, allant des campagnes sur les réseaux sociaux et du marketing de contenu aux séances photo professionnelles, productions vidéo de qualité cinéma, développement web et stratégies personnalisées. Notre objectif est de propulser votre marque vers de nouveaux sommets."
   },
   "Pricing": {
+    "title": "Trouvez le bon plan",
+    "description": "Des forfaits de réseaux sociaux adaptés à chaque étape de votre entreprise",
     "choosePlan": "Choisir",
     "plans": {
       "Basic": {

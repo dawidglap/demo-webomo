@@ -207,6 +207,8 @@
     "description": "We offer a unique portfolio of services, from social media campaigns and content marketing to professional photoshoots, cinema-quality video productions, web development, and customized strategies. Our goal is to take your brand to the next level."
   },
   "Pricing": {
+    "title":"Find the right plan",
+    "description":"Tailored Social Media Packages for Every Stage of Your Business", 
     "choosePlan": "Choose",
     "plans": {
       "Basic": {

@@ -207,6 +207,8 @@
       "description": "Ofrecemos un portafolio único de servicios, desde campañas en redes sociales y marketing de contenido hasta sesiones fotográficas profesionales, producciones de video de calidad cinematográfica, desarrollo web y estrategias personalizadas. Nuestro objetivo es llevar tu marca al siguiente nivel."
     },
     "Pricing": {
+      "title": "Encuentra el plan adecuado",
+      "description": "Paquetes de redes sociales a medida para cada etapa de su negocio",
       "choosePlan": "Elegir",
       "plans": {
         "Basic": {

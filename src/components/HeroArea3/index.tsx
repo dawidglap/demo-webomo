@@ -36,7 +36,7 @@ const Hero3 = () => {
   };
 
   return (
-    <section className="relative flex h-[80vh] max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800 md:h-screen">
+    <section className="relative flex h-[70vh] max-h-[900px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800 md:h-screen">
       {/* Subtitle Image with Motion */}
       <motion.div
         className="mb-2 pt-0"
@@ -49,7 +49,7 @@ const Hero3 = () => {
           alt={t("subtitleAlt")}
           width={400}
           height={100}
-          className="mt-20 pt-20"
+          className="mt-20 pt-10 2xl:pt-8"
         />
       </motion.div>
 
@@ -74,10 +74,10 @@ const Hero3 = () => {
       </motion.p>
 
       {/* Smartphone Frames */}
-      <div className="relative flex h-full w-full items-end justify-center">
+      <div className="relative flex h-full w-full items-end justify-center ">
         {/* Left Smartphone */}
         <motion.div
-          className=" absolute  bottom-0 left-[15%] h-[110px] w-[92px] overflow-hidden xxs:left-[16%] xxs:flex 
+          className="absolute bottom-0 left-[15%]  h-[110px] w-[92px] overflow-hidden border-b-4 border-black xxs:left-[16%] xxs:flex 
          xxs:h-[122px]  xxs:w-[102px] xs:left-[15%] 
          xs:h-[153px] xs:w-[128px] sm:left-[14%] 
          sm:h-[204px] sm:w-[170px] md:-left-[-18%] 
@@ -100,7 +100,7 @@ const Hero3 = () => {
         {/* Center Smartphone */}
         <motion.div
           ref={smartphoneRef}
-          className="relative z-[31] h-[166px] w-[119px] overflow-hidden xxs:h-[185px] xxs:w-[132px] 
+          className="relative z-[31] h-[166px] w-[119px] overflow-hidden border-b-4 border-black xxs:h-[185px] xxs:w-[132px] 
          xs:h-[231px] xs:w-[165px] 
          sm:h-[308px] sm:w-[220px] 
          md:h-[385px] md:w-[275px] 
@@ -122,7 +122,7 @@ const Hero3 = () => {
 
         {/* Right Smartphone */}
         <motion.div
-          className=" absolute  bottom-0 right-[15%] h-[110px] w-[92px] overflow-hidden xxs:right-[16%] xxs:flex 
+          className="absolute bottom-0 right-[15%]  h-[110px] w-[92px] overflow-hidden border-b-4 border-black xxs:right-[16%] xxs:flex 
         xxs:h-[122px]  xxs:w-[102px] xs:right-[15%] 
         xs:h-[153px] xs:w-[128px] sm:right-[14%] 
         sm:h-[204px] sm:w-[170px] md:-right-[-18%] 

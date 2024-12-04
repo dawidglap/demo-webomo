@@ -207,6 +207,8 @@
     "description": "Wir bieten ein einzigartiges Portfolio an Dienstleistungen an, von Social-Media-Kampagnen und Content-Marketing über professionelle Fotoshootings bis hin zu Videoproduktionen in Kinoqualität, Webentwicklung und maßgeschneiderten Strategien. Unser Ziel ist es, Ihre Marke auf die nächste Stufe zu bringen."
   },
   "Pricing": {
+    "title": "Finden Sie den richtigen Tarif",
+    "description": "Massgeschneiderte Social-Media-Pakete für jede Unternehmensphase",
     "choosePlan": "wählen",
     "plans": {
       "Basic": {
