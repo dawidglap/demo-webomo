@@ -14,10 +14,9 @@ const foodBeverageImages = [
   "/images/carousel/placeholder2.webp",
   "/images/carousel/placeholder3.webp",
   "/images/carousel/placeholder4.webp",
-  "/images/screens/food-beverage-1.png",
-  "/images/screens/food-beverage-2.png",
-  "/images/screens/food-beverage-3.png",
-  "/images/screens/food-beverage-4.png",
+  "/images/carousel/placeholder5.webp",
+  "/images/carousel/placeholder6.webp",
+  "/images/carousel/placeholder7.webp",
 ];
 
 const fadeInVariants = {

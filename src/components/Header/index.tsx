@@ -129,8 +129,8 @@ const Header = () => {
                       visible: {
                         opacity: 1,
                         transition: {
-                          staggerChildren: 0.4,
-                          delayChildren: 0.2,
+                          staggerChildren: 0.2,
+                          delayChildren: 0.1,
                         },
                       },
                     }}
@@ -161,8 +161,8 @@ const Header = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{
-                        delay: menuData.length * 0.4 + 0.2,
-                        duration: 0.5,
+                        delay: menuData.length * 0.2 + 0.1,
+                        duration: 0.25,
                       }}
                       className="mt-8 flex flex-col items-center space-y-4"
                     >
