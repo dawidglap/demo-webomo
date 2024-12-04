@@ -107,10 +107,10 @@ const Footer = () => {
                   <li>
                     {t("email")}:{" "}
                     <a
-                      href="mailto:info@webomo.com"
+                      href="mailto:kontakt@webomo.ch"
                       className="hover:text-primary"
                     >
-                      info@webomo.com
+                      kontakt@webomo.ch
                     </a>
                   </li>
                   <li>
