@@ -89,9 +89,9 @@ const Contact = () => {
 
                 <div className="w-full px-[22px]">
                   <div className="text-center">
-                    <p className="mb-5 text-center text-base text-body">
+                    {/* <p className="mb-5 text-center text-base text-body">
                       {t("terms")}
-                    </p>
+                    </p> */}
                     <button
                       type="submit"
                       className="inline-block rounded-[30px] bg-primary px-11 py-[14px] text-base font-medium text-white hover:bg-opacity-90"

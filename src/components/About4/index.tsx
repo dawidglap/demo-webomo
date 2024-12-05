@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
-import shooting from "../../../public/images/about/shooting.png";
+import website from "../../../public/images/about/website.webp";
 
 const AboutWebsite = () => {
   const t = useTranslations("AboutWebsite");
@@ -69,7 +69,7 @@ const AboutWebsite = () => {
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={cardRef}
-              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-[30px] bg-gradient-to-r from-[#FEFBEB] to-purple-300 p-6 shadow-xl dark:from-indigo-800 md:min-h-[450px] lg:mx-0 lg:mb-0 lg:ml-auto"
+              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-[30px] bg-gradient-to-b from-[#FEFBEB] to-yellow-400 p-6 shadow-xl dark:from-indigo-800 md:min-h-[450px] lg:mx-0 lg:mb-0 lg:ml-auto"
               initial="hidden"
               animate={cardInView ? "visible" : "hidden"}
               variants={cardVariants}
@@ -89,7 +89,7 @@ const AboutWebsite = () => {
                 variants={cardVariants}
               >
                 <Image
-                  src={shooting}
+                  src={website}
                   alt={t("imageAlt")}
                   layout="responsive"
                   className="rounded-[18px] object-cover"

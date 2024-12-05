@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
-import shooting from "../../../public/images/about/shooting.png";
+import shooting from "../../../public/images/about/shooting.webp";
 
 const About2 = () => {
   const t = useTranslations("About2");

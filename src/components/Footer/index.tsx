@@ -53,9 +53,9 @@ const Footer = () => {
                   <li>
                     <Link href="#">{t("aboutUs")}</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#">{t("jobs")}</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="#">{t("privacyPolicy")}</Link>
                   </li>
@@ -101,9 +101,9 @@ const Footer = () => {
                   {t("contact")}
                 </h3>
                 <ul className="space-y-2 text-base text-body dark:text-white">
-                  <li>
+                  {/* <li>
                     <Link href="#">{t("faq")}</Link>
-                  </li>
+                  </li> */}
                   <li>
                     {t("email")}:{" "}
                     <a
@@ -113,12 +113,12 @@ const Footer = () => {
                       kontakt@webomo.ch
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     {t("phone")}:{" "}
                     <a href="tel:+123456789" className="hover:text-primary">
                       +1 234 567 89
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="#" className="hover:text-primary">
                       {t("contactUs")}

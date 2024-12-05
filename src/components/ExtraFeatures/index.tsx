@@ -71,7 +71,7 @@ const ExtraFeatures = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                  <span className="text-neutral text-5xl font-extrabold dark:text-neutral-100">
+                  <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
                     {firstStat}+
                   </span>
                   <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
@@ -86,7 +86,7 @@ const ExtraFeatures = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                  <span className="text-neutral text-5xl font-extrabold dark:text-neutral-100">
+                  <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
                     {secondStat}+
                   </span>
                   <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
@@ -101,7 +101,7 @@ const ExtraFeatures = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                  <span className="text-neutral text-5xl font-extrabold dark:text-neutral-100">
+                  <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
                     {thirdStat}%
                   </span>
                   <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">

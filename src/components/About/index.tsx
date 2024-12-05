@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import screen2 from "../../../public/images/about/autumn-post.png";
+import screen2 from "../../../public/images/about/autumn-post.webp";
 
 const About = () => {
   const t = useTranslations("About");
