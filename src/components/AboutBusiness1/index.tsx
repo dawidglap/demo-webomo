@@ -54,6 +54,14 @@ const AboutBusinessOne = () => {
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1200px]">
+        <h1 className="mb-20 text-center text-4xl font-semibold text-black dark:text-white">
+          <span className="mt-1 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-4xl font-bold leading-none text-transparent dark:from-purple-900 dark:to-pink-300">
+            {t("subHeadline")}
+          </span>
+        </h1>
+        <p className="mx-auto mb-12 mt-[-60px] max-w-[768px] text-center text-lg font-light leading-relaxed text-black dark:text-gray-300 md:text-2xl">
+          {t("subHeadlinedescription")}
+        </p>
         <div className="-mx-4 flex flex-wrap-reverse items-center justify-between">
           {/* Left Section with Single Image */}
           <div className="w-full px-4 py-8 xxs:block md:py-0 lg:w-1/2">
