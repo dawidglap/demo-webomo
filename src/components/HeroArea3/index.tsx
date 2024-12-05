@@ -72,6 +72,9 @@ const Hero3 = () => {
       >
         {t("subText")}
       </motion.p>
+      <span className="mt-4 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text p-2 text-4xl font-bold leading-none text-transparent dark:from-purple-900 dark:to-pink-300 ">
+        {t("subHeadline")}
+      </span>
 
       {/* Smartphone Frames */}
       <div className="relative flex h-full w-full items-end justify-center ">

@@ -2,8 +2,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("Hero");
   const smartphoneRefs = useRef([]); // Array di ref per ogni smartphone
   const [isInView, setIsInView] = useState([]); // Stato per ogni telefono
 
@@ -73,7 +75,6 @@ const Hero = () => {
           alt="Immer und überall"
           width={400}
           height={100}
-          className="dark:invert"
         />
       </motion.div>
 
@@ -85,7 +86,7 @@ const Hero = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        präsent
+        {t("centerText")}
       </motion.p>
 
       {/* Smartphone Frames */}
