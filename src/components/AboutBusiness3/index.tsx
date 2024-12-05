@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const AboutBusinessThree = () => {
   const t = useTranslations("AboutBusinessThree");
@@ -82,13 +83,12 @@ const AboutBusinessThree = () => {
               animate={videoInView ? "visible" : "hidden"}
               variants={videoVariants}
             >
-              <video
-                playsInline
-                src={t("videoSrc")}
-                autoPlay
-                muted
-                loop
-                className="w-full rounded-xl object-cover shadow-xl"
+              <Image
+                src="/images/business/placeholderHero.webp"
+                alt={t("imageAlt")}
+                width={510}
+                height={450}
+                className="rounded-[30px] object-cover"
               />
             </motion.div>
           </div>
