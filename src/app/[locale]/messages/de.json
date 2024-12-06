@@ -88,25 +88,28 @@
     "Clients": {
       "heading": "Diese Marken vertrauen auf Webomo"
     },
-    "Contact": {
-      "title": "Kostenlose Beratung",
-      "description": "Wir hören Ihnen genau zu und bieten Ihnen wertvolle Insights, die Ihnen helfen, ihre Ziele effizient zu erreichen.",
-      "form": {
-        "title": "Kontaktieren Sie uns",
-        "namePlaceholder": "Geben Sie Ihren Namen ein",
-        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
-        "messagePlaceholder": "Erzählen Sie uns etwas über sich"
-      },
-      "bookCall": {
-        "title": "Planen Sie ein Videogespräch",
-        "subtitle": "Lassen Sie uns zusammenarbeiten, um Ihre Vision zu verwirklichen.",
-        "button": "Jetzt Planen",
-        "contactText": "Bevorzugen Sie es, uns auf eine andere Weise zu kontaktieren?",
-        "orFaq": "oder sehen Sie sich unsere FAQ an",
-        "thankYou": "Vielen Dank, wir freuen uns darauf, Sie kennenzulernen und Ihr Geschäft auf das nächste Level zu bringen!"
-      },
-      "submit": "Absenden"
+  "Contact": {
+  "title": "Kostenlose Beratung",
+  "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
+  "form": {
+    "title": "Kontaktieren Sie uns",
+    "namePlaceholder": "Geben Sie Ihren Namen ein",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "messagePlaceholder": "Erzählen Sie uns etwas über sich",
+    "submitting": "Ihre Nachricht wird gesendet...",
+    "successMessage": "Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir melden uns in Kürze bei Ihnen.",
+    "errorMessage": "Entschuldigung! Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
   },
+  "bookCall": {
+    "title": "Planen Sie einen Videoanruf",
+    "subtitle": "Lassen Sie uns gemeinsam daran arbeiten, Ihre Vision zu verwirklichen.",
+    "button": "Jetzt planen",
+    "contactText": "Bevorzugen Sie eine andere Kontaktmöglichkeit?",
+    "orFaq": "oder sehen Sie in unseren FAQ nach",
+    "thankYou": "Vielen Dank! Wir freuen uns darauf, Sie kennenzulernen und Ihr Unternehmen auf das nächste Level zu bringen."
+  },
+  "submit": "Absenden"
+},
   "Calendly": {
     "schedule": "Planen Sie Zeit mit uns"
   },

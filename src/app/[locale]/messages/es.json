@@ -89,25 +89,28 @@
     "Clients": {
       "heading": "Estas Marcas Confían en Webomo"
     },
-    "Contact": {
-      "title": "Consulta Gratuita",
-      "description": "Te escuchamos atentamente y proporcionamos ideas valiosas para ayudarte a alcanzar tus objetivos de manera eficiente.",
-      "form": {
-        "title": "Contáctanos",
-        "namePlaceholder": "Ingresa tu nombre",
-        "emailPlaceholder": "Ingresa tu correo electrónico",
-        "messagePlaceholder": "Cuéntanos algo sobre ti"
-      },
-      "bookCall": {
-        "title": "Agenda una Videollamada",
-        "subtitle": "Trabajemos juntos para hacer realidad tu visión.",
-        "button": "Agendar Ahora",
-        "contactText": "¿Prefieres contactarnos de otra manera?",
-        "orFaq": "o consulta nuestras FAQ",
-        "thankYou": "¡Gracias! Estamos emocionados de conocerte y llevar tu negocio al siguiente nivel."
-      },
-      "submit": "Enviar"
-    },
+  "Contact": {
+  "title": "Consulta Gratuita",
+  "description": "Te escuchamos atentamente y te brindamos ideas valiosas para alcanzar tus objetivos de manera eficiente.",
+  "form": {
+    "title": "Contáctanos",
+    "namePlaceholder": "Ingresa tu nombre",
+    "emailPlaceholder": "Ingresa tu correo electrónico",
+    "messagePlaceholder": "Cuéntanos algo sobre ti",
+    "submitting": "Enviando tu mensaje...",
+    "successMessage": "¡Gracias! Tu mensaje ha sido enviado exitosamente. Nos pondremos en contacto contigo pronto.",
+    "errorMessage": "¡Vaya! Algo salió mal. Por favor, inténtalo de nuevo más tarde."
+  },
+  "bookCall": {
+    "title": "Agenda una Videollamada",
+    "subtitle": "Trabajemos juntos para hacer realidad tu visión.",
+    "button": "Agendar ahora",
+    "contactText": "¿Prefieres contactarnos de otra manera?",
+    "orFaq": "o revisa nuestras FAQ",
+    "thankYou": "¡Gracias! Estamos ansiosos por conocerte y llevar tu negocio al siguiente nivel."
+  },
+  "submit": "Enviar"
+},
     "Calendly": {
       "schedule": "Planifica tiempo con nosotros"
     },

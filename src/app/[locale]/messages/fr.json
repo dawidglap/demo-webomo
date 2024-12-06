@@ -90,24 +90,27 @@
     "heading": "Ces Marques Font Confiance à Webomo"
   },
  "Contact": {
-    "title": "Consultation Gratuite",
-    "description": "Nous vous écoutons attentivement et fournissons des conseils précieux pour vous aider à atteindre vos objectifs efficacement.",
-    "form": {
-      "title": "Contactez-nous",
-      "namePlaceholder": "Entrez votre nom",
-      "emailPlaceholder": "Entrez votre adresse e-mail",
-      "messagePlaceholder": "Parlez-nous de vous"
-    },
-    "bookCall": {
-      "title": "Planifier un Appel Vidéo",
-      "subtitle": "Travaillons ensemble pour donner vie à votre vision.",
-      "button": "Planifier Maintenant",
-      "contactText": "Préférez-vous nous contacter d'une autre manière ?",
-      "orFaq": "ou consultez notre FAQ",
-      "thankYou": "Merci ! Nous sommes impatients de vous rencontrer et d'élever votre entreprise à un niveau supérieur."
-    },
-    "submit": "Envoyer"
+  "title": "Consultation Gratuite",
+  "description": "Nous vous écoutons attentivement et fournissons des conseils précieux pour atteindre vos objectifs efficacement.",
+  "form": {
+    "title": "Contactez-nous",
+    "namePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "messagePlaceholder": "Parlez-nous de vous",
+    "submitting": "Envoi de votre message en cours...",
+    "successMessage": "Merci ! Votre message a été envoyé avec succès. Nous vous répondrons sous peu.",
+    "errorMessage": "Oups ! Une erreur est survenue. Veuillez réessayer plus tard."
   },
+  "bookCall": {
+    "title": "Planifiez un Appel Vidéo",
+    "subtitle": "Travaillons ensemble pour concrétiser votre vision.",
+    "button": "Planifier maintenant",
+    "contactText": "Préférez-vous nous contacter autrement ?",
+    "orFaq": "ou consultez notre FAQ",
+    "thankYou": "Merci ! Nous sommes impatients de vous rencontrer et d'amener votre entreprise au niveau supérieur."
+  },
+  "submit": "Envoyer"
+ },
   "Calendly": {
     "schedule": "Planifiez du temps avec nous"
   },

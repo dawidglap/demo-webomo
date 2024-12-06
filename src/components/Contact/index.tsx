@@ -1,8 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
-import { AiOutlineMail } from "react-icons/ai";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import toastify CSS
 import emailjs from "emailjs-com";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineLoading3Quarters } from "react-icons/ai"; // Spinner Icon
 import CalendlyBtn from "../CalendlyBtn";
 
 const Contact = () => {
@@ -13,8 +16,6 @@ const Contact = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [isError, setIsError] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -23,35 +24,46 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    emailjs
-      .send(
+    try {
+      await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Your Template ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
-          name: formData.name, // User's name
-          message: formData.message, // User's message
+          name: formData.name,
+          message: formData.message,
           email: formData.email, // User's email (mapped to {{email}})
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!, // Your Public Key
-      )
-      .then(() => {
-        setIsSubmitting(false);
-        setIsSuccess(true);
-        setFormData({ name: "", email: "", message: "" }); // Clear form
-      })
-      .catch(() => {
-        setIsSubmitting(false);
-        setIsError(true);
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID!, // Your Public Key
+      );
+      setIsSubmitting(false);
+      setFormData({ name: "", email: "", message: "" }); // Clear the form
+
+      // Show success toast
+      toast.success(t("form.successMessage"), {
+        position: "top-center", // Use string-based position
+        autoClose: 3000, // Closes after 3 seconds
       });
+    } catch (error) {
+      setIsSubmitting(false);
+
+      // Show error toast
+      toast.error(t("form.errorMessage"), {
+        position: "top-center", // Use string-based position
+        autoClose: 3000,
+      });
+
+      console.error("EmailJS Error:", error);
+    }
   };
 
   return (
     <section id="support" className="pb-[110px] pt-[100px] md:pt-[150px]">
       <div className="container">
+        <ToastContainer /> {/* Toast container for notifications */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Contact Form */}
           <div
@@ -103,21 +115,22 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`inline-block rounded-[30px] px-11 py-[14px] text-base font-medium text-white ${
+                    className={`inline-flex items-center justify-center rounded-[30px] px-11 py-[14px] text-base font-medium text-white ${
                       isSubmitting
                         ? "cursor-not-allowed bg-gray-400"
                         : "bg-primary hover:bg-opacity-90"
                     }`}
                   >
-                    {isSubmitting ? t("form.submitting") : t("submit")}
+                    {isSubmitting ? (
+                      <>
+                        <AiOutlineLoading3Quarters className="mr-2 animate-spin" />
+                        {t("form.submitting")}
+                      </>
+                    ) : (
+                      t("submit")
+                    )}
                   </button>
                 </div>
-                {isSuccess && (
-                  <p className="text-green-500">{t("form.successMessage")}</p>
-                )}
-                {isError && (
-                  <p className="text-red-500">{t("form.errorMessage")}</p>
-                )}
               </div>
             </form>
           </div>
