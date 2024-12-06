@@ -78,7 +78,7 @@ const Header = () => {
             {/* Logo */}
             <div className="z-50 block w-1/3">
               <Link href={`/${currentLocale}/`} className="block max-w-[180px]">
-                <span className="relative text-4xl font-bold tracking-wider text-[#181C30] transition-all duration-300 dark:text-white md:text-[48px]">
+                <span className="relative text-2xl font-bold tracking-wider text-[#181C30] transition-all duration-300 dark:text-white md:text-[36px]">
                   {t("logo")}
                 </span>
               </Link>
