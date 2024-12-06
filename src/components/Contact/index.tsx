@@ -64,10 +64,10 @@ const Contact = () => {
     <section id="support" className="pb-[110px] pt-[100px] md:pt-[150px]">
       <div className="container">
         <ToastContainer /> {/* Toast container for notifications */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           {/* Contact Form */}
           <div
-            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 px-4 py-10 shadow-card dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8"
+            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-gradient-to-br from-indigo-50 to-slate-100 px-4 py-10 shadow-card dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8"
             data-wow-delay=".3s"
           >
             <h2 className="mb-6 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <textarea
-                    rows={6}
+                    rows={2}
                     name="message"
                     id="message"
                     placeholder={t("form.messagePlaceholder")}
@@ -118,7 +118,7 @@ const Contact = () => {
                     className={`inline-flex items-center justify-center rounded-[30px] px-11 py-[14px] text-base font-medium text-white ${
                       isSubmitting
                         ? "cursor-not-allowed bg-gray-400"
-                        : "bg-primary hover:bg-opacity-90"
+                        : "bg-black hover:bg-opacity-90 dark:bg-neutral-100 dark:text-black hover:dark:bg-neutral-300"
                     }`}
                   >
                     {isSubmitting ? (
@@ -136,7 +136,7 @@ const Contact = () => {
           </div>
 
           {/* Booking Card */}
-          <div className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-gradient-to-b from-indigo-50 to-slate-100 px-4 py-10 text-center shadow-card dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
+          <div className="wow fadeInUp  w-full max-w-[925px] rounded-[30px] bg-gradient-to-b from-indigo-50 to-slate-100 px-4 py-10 text-center shadow-card dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
             <h2 className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
               {t("bookCall.title")}
             </h2>
@@ -145,7 +145,7 @@ const Contact = () => {
             </p>
             <CalendlyBtn />
             <div className="mt-8 space-y-4 text-center">
-              <p className="flex items-center justify-center text-lg text-body dark:text-gray-300">
+              {/* <p className="flex items-center justify-center text-lg text-body dark:text-gray-300">
                 <AiOutlineMail className="mr-2 text-lg text-primary" />
                 <a
                   href="mailto:kontakt@webomo.ch"
@@ -153,7 +153,7 @@ const Contact = () => {
                 >
                   kontakt@webomo.ch
                 </a>
-              </p>
+              </p> */}
             </div>
             <p className="mt-8 text-xl text-black dark:text-gray-300">
               {t("bookCall.thankYou")}
