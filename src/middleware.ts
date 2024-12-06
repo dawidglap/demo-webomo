@@ -1,20 +1,38 @@
 import createMiddleware from "next-intl/middleware";
 import { NextRequest, NextResponse } from "next/server";
 
-// Define locales and default locale for the app
+// Define locales and default fallback locale
 const locales = ["en", "de", "it", "fr", "es", "pt"];
-const defaultLocale = "de";
+const fallbackLocale = "de"; // Use German as the default fallback
 const localePrefix = "always"; // 'always', 'as-needed', or 'never'
+
+// Function to determine the default locale based on the user's system settings
+function getDefaultLocale(req: NextRequest): string {
+  const acceptLanguage = req.headers.get("accept-language");
+  if (acceptLanguage) {
+    // Extract the first preferred language from the header
+    const preferredLocale = acceptLanguage
+      .split(",")[0] // Take the first language
+      .split("-")[0] // Normalize (e.g., "en-US" to "en")
+      .toLowerCase();
+
+    // Return the matched locale or fallback to German
+    if (locales.includes(preferredLocale)) {
+      return preferredLocale;
+    }
+  }
+  return fallbackLocale; // Use fallback if no match
+}
 
 // Configure next-intl middleware
 const intlMiddleware = createMiddleware({
   locales,
-  defaultLocale,
+  defaultLocale: fallbackLocale, // Set fallback in intl config
   localePrefix,
 });
 
-// Exclude paths that should not be processed by next-intl
-const excludedPaths = ["/api", "/_next", "/images", "/favicon.ico"];
+// Paths to exclude from middleware
+const excludedPaths = ["/api", "/_next", "/images", "/favicon.ico", "/404"];
 
 export default function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
@@ -24,16 +42,22 @@ export default function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  // Redirect `/` to the default locale
+  // Handle `/404` and `/404.html` directly
+  if (pathname === "/404" || pathname === "/404.html") {
+    return NextResponse.next();
+  }
+
+  // Redirect `/` to the default locale dynamically
   if (pathname === "/") {
-    const url = new URL(`/${defaultLocale}`, req.url);
+    const userLocale = getDefaultLocale(req);
+    const url = new URL(`/${userLocale}`, req.url);
     return NextResponse.redirect(url);
   }
 
-  // Apply next-intl middleware for other paths
+  // Apply intl middleware for locale-prefixed paths
   return intlMiddleware(req);
 }
 
 export const config = {
-  matcher: ["/:locale/:path*", "/"], // Matches locale-prefixed paths and root
+  matcher: ["/:locale/:path*", "/"], // Match locale-prefixed paths and the root
 };

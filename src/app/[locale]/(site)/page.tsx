@@ -21,7 +21,7 @@ import Hero3 from "@/components/HeroArea3";
 
 export const metadata: Metadata = {
   title: "Webomo - Your Social Media Expert",
-  description: "Lorem Ipsum Dolor Sit Amet",
+  description: "",
 };
 
 export default function Home() {

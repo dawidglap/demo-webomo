@@ -1,14 +1,12 @@
-import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "404 Error | Appline Tailwind App Landing Template",
-  description: "This is Error page for Apline Pro",
-  // other metadata
-};
+import { useRouter } from "next/router";
 
 const ErrorPage = () => {
+  const t = useTranslations("404");
+  const { locale } = useRouter(); // Get active locale
+
   return (
     <section className="pb-[110px] pt-[150px] lg:pt-[220px]">
       <div className="container overflow-hidden lg:max-w-[1250px]">
@@ -25,18 +23,17 @@ const ErrorPage = () => {
 
           <div className="wow fadeInUp text-center" data-wow-delay=".2s">
             <h2 className="mb-[18px] text-[28px] font-bold text-black dark:text-white sm:text-[35px]">
-              Sorry, the page can&apos;t be found
+              {t("pageNotFound")}
             </h2>
             <p className="mb-[30px] text-base font-medium text-body sm:text-lg">
-              The page you were looking for appears to have been moved, deleted
-              or does not exist.
+              {t("description")}
             </p>
 
             <Link
-              href="/"
+              href={`/${locale}/`} // Locale-aware homepage
               className="inline-flex justify-center rounded-md bg-primary px-8 py-3 text-base font-medium text-white hover:bg-opacity-90"
             >
-              Back to homepage
+              {t("goHome")}
             </Link>
           </div>
         </div>

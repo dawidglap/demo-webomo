@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-const Footer = () => {
+const Footer = ({ locale }: { locale: string }) => {
   const t = useTranslations("Footer");
 
   return (
@@ -51,19 +51,20 @@ const Footer = () => {
                 </h3>
                 <ul className="space-y-2 text-base text-body dark:text-white">
                   <li>
-                    <Link href="#">{t("aboutUs")}</Link>
-                  </li>
-                  {/* <li>
-                    <Link href="#">{t("jobs")}</Link>
-                  </li> */}
-                  <li>
-                    <Link href="#">{t("privacyPolicy")}</Link>
+                    <Link href={`/${locale}/uber-uns`}>{t("aboutUs")}</Link>
                   </li>
                   <li>
-                    <Link href="#">{t("imprint")}</Link>
+                    <Link href={`/${locale}/privacy-policy`}>
+                      {t("privacyPolicy")}
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#">{t("termsAndConditions")}</Link>
+                    <Link href={`/${locale}/imprint`}>{t("imprint")}</Link>
+                  </li>
+                  <li>
+                    <Link href={`/${locale}/terms-and-conditions`}>
+                      {t("termsAndConditions")}
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -75,10 +76,14 @@ const Footer = () => {
                 </h3>
                 <ul className="space-y-2 text-base text-body dark:text-white">
                   <li>
-                    <Link href="/webomo-business">{t("partnerProgram")}</Link>
+                    <Link href={`/${locale}/webomo-business`}>
+                      {t("partnerProgram")}
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#faq-business">{t("faqPartnerProgram")}</Link>
+                    <Link href={`/${locale}/webomo-business#faq-business`}>
+                      {t("faqPartnerProgram")}
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -90,7 +95,7 @@ const Footer = () => {
                 </h3>
                 <ul className="space-y-2 text-base text-body dark:text-white">
                   <li>
-                    <Link href="#">{t("faq")}</Link>
+                    <Link href={`/${locale}/price/#faq`}>{t("faq")}</Link>
                   </li>
                 </ul>
               </div>
@@ -101,9 +106,6 @@ const Footer = () => {
                   {t("contact")}
                 </h3>
                 <ul className="space-y-2 text-base text-body dark:text-white">
-                  {/* <li>
-                    <Link href="#">{t("faq")}</Link>
-                  </li> */}
                   <li>
                     {t("email")}:{" "}
                     <a
@@ -113,14 +115,11 @@ const Footer = () => {
                       kontakt@webomo.ch
                     </a>
                   </li>
-                  {/* <li>
-                    {t("phone")}:{" "}
-                    <a href="tel:+123456789" className="hover:text-primary">
-                      +1 234 567 89
-                    </a>
-                  </li> */}
                   <li>
-                    <Link href="#" className="hover:text-primary">
+                    <Link
+                      href={`/${locale}/kontakt`}
+                      className="hover:text-primary"
+                    >
                       {t("contactUs")}
                     </Link>
                   </li>

@@ -87,10 +87,12 @@ export default function RootLayout({
                         ease: "easeInOut",
                       }}
                     >
-                      {children}
+                      {React.cloneElement(children as React.ReactElement, {
+                        locale: params.locale,
+                      })}
                     </motion.main>
                   </AnimatePresence>
-                  {!isNoLayoutPage && <Footer />}
+                  {!isNoLayoutPage && <Footer locale={params.locale} />}
                   <ScrollToTop />
                 </>
               )}
