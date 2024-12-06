@@ -91,16 +91,25 @@
   },
   "Contact": {
     "title": "Consulenza Gratuita",
-    "description": "Ti ascoltiamo attentamente e forniamo insight preziosi per aiutarti a raggiungere i tuoi obiettivi in modo efficiente.",
+    "description": "Ti ascoltiamo con attenzione e forniamo preziosi consigli per aiutarti a raggiungere i tuoi obiettivi in modo efficiente.",
     "form": {
+      "title": "Contattaci",
       "namePlaceholder": "Inserisci il tuo nome",
-      "companyPlaceholder": "Azienda (opzionale)",
       "emailPlaceholder": "Inserisci il tuo indirizzo email",
-      "phonePlaceholder": "Inserisci il tuo numero di telefono",
-      "messagePlaceholder": "Raccontaci qualcosa di te"
+      "messagePlaceholder": "Raccontaci qualcosa su di te"
     },
-    "terms": "Cliccando sul pulsante 'Contattaci', accetti i nostri termini e politiche.",
-    "submit": "Contattaci"
+    "bookCall": {
+      "title": "Pianifica una Videochiamata",
+      "subtitle": "Lavoriamo insieme per realizzare la tua visione.",
+      "button": "Pianifica Ora",
+      "contactText": "Preferisci contattarci in un altro modo?",
+      "orFaq": "o consulta le nostre FAQ",
+      "thankYou": "Grazie! Non vediamo l'ora di conoscerti e portare il tuo business al livello successivo."
+    },
+    "submit": "Invia"
+  },
+  "Calendly": {
+    "schedule": "Pianifica del tempo con noi"
   },
   "Cta": {
     "title": "Eleva i Tuoi Social Media con Webomo",

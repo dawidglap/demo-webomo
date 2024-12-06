@@ -89,17 +89,26 @@
       "heading": "Diese Marken vertrauen auf Webomo"
     },
     "Contact": {
-    "title": "Kostenlose Beratung",
-    "description": "Wir hören Ihnen genau zu und bieten Ihnen wertvolle Insights, die Ihnen helfen, ihre Ziele effizient zu erreichen.",
-    "form": {
-      "namePlaceholder": "Geben Sie Ihren Namen ein",
-      "companyPlaceholder": "Firma (optional)",
-      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
-      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
-      "messagePlaceholder": "Erzählen Sie uns etwas über sich"
-    },
-    "terms": "Indem Sie auf die Schaltfläche Kontaktieren Sie uns klicken, stimmen Sie unseren Bedingungen und Richtlinien zu.",
-    "submit": "Kontaktieren Sie uns"
+      "title": "Kostenlose Beratung",
+      "description": "Wir hören Ihnen genau zu und bieten Ihnen wertvolle Insights, die Ihnen helfen, ihre Ziele effizient zu erreichen.",
+      "form": {
+        "title": "Kontaktieren Sie uns",
+        "namePlaceholder": "Geben Sie Ihren Namen ein",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "messagePlaceholder": "Erzählen Sie uns etwas über sich"
+      },
+      "bookCall": {
+        "title": "Planen Sie ein Videogespräch",
+        "subtitle": "Lassen Sie uns zusammenarbeiten, um Ihre Vision zu verwirklichen.",
+        "button": "Jetzt Planen",
+        "contactText": "Bevorzugen Sie es, uns auf eine andere Weise zu kontaktieren?",
+        "orFaq": "oder sehen Sie sich unsere FAQ an",
+        "thankYou": "Vielen Dank, wir freuen uns darauf, Sie kennenzulernen und Ihr Geschäft auf das nächste Level zu bringen!"
+      },
+      "submit": "Absenden"
+  },
+  "Calendly": {
+    "schedule": "Planen Sie Zeit mit uns"
   },
   "Cta": {
     "title": "Bringen Sie Ihre sozialen Medien mit Webomo auf die nächste Stufe",

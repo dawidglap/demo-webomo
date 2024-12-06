@@ -89,18 +89,27 @@
   "Clients": {
     "heading": "Ces Marques Font Confiance à Webomo"
   },
-  "Contact": {
+ "Contact": {
     "title": "Consultation Gratuite",
-    "description": "Nous vous écoutons attentivement et vous fournissons des insights précieux pour vous aider à atteindre vos objectifs efficacement.",
+    "description": "Nous vous écoutons attentivement et fournissons des conseils précieux pour vous aider à atteindre vos objectifs efficacement.",
     "form": {
+      "title": "Contactez-nous",
       "namePlaceholder": "Entrez votre nom",
-      "companyPlaceholder": "Entreprise (optionnel)",
       "emailPlaceholder": "Entrez votre adresse e-mail",
-      "phonePlaceholder": "Entrez votre numéro de téléphone",
-      "messagePlaceholder": "Parlez-nous un peu de vous"
+      "messagePlaceholder": "Parlez-nous de vous"
     },
-    "terms": "En cliquant sur le bouton 'Contactez-Nous', vous acceptez nos termes et conditions ainsi que nos politiques.",
-    "submit": "Contactez-Nous"
+    "bookCall": {
+      "title": "Planifier un Appel Vidéo",
+      "subtitle": "Travaillons ensemble pour donner vie à votre vision.",
+      "button": "Planifier Maintenant",
+      "contactText": "Préférez-vous nous contacter d'une autre manière ?",
+      "orFaq": "ou consultez notre FAQ",
+      "thankYou": "Merci ! Nous sommes impatients de vous rencontrer et d'élever votre entreprise à un niveau supérieur."
+    },
+    "submit": "Envoyer"
+  },
+  "Calendly": {
+    "schedule": "Planifiez du temps avec nous"
   },
   "Cta": {
     "title": "Élevez Vos Réseaux Sociaux avec Webomo",

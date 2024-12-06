@@ -91,16 +91,25 @@
     },
     "Contact": {
       "title": "Consulta Gratuita",
-      "description": "Te escuchamos atentamente y te proporcionamos insights valiosos para ayudarte a alcanzar tus objetivos de manera eficiente.",
+      "description": "Te escuchamos atentamente y proporcionamos ideas valiosas para ayudarte a alcanzar tus objetivos de manera eficiente.",
       "form": {
+        "title": "Contáctanos",
         "namePlaceholder": "Ingresa tu nombre",
-        "companyPlaceholder": "Empresa (opcional)",
         "emailPlaceholder": "Ingresa tu correo electrónico",
-        "phonePlaceholder": "Ingresa tu número de teléfono",
         "messagePlaceholder": "Cuéntanos algo sobre ti"
       },
-      "terms": "Al hacer clic en el botón 'Contáctanos', aceptas nuestros términos y políticas.",
-      "submit": "Contáctanos"
+      "bookCall": {
+        "title": "Agenda una Videollamada",
+        "subtitle": "Trabajemos juntos para hacer realidad tu visión.",
+        "button": "Agendar Ahora",
+        "contactText": "¿Prefieres contactarnos de otra manera?",
+        "orFaq": "o consulta nuestras FAQ",
+        "thankYou": "¡Gracias! Estamos emocionados de conocerte y llevar tu negocio al siguiente nivel."
+      },
+      "submit": "Enviar"
+    },
+    "Calendly": {
+      "schedule": "Planifica tiempo con nosotros"
     },
     "Cta": {
       "title": "Eleva Tus Redes Sociales con Webomo",

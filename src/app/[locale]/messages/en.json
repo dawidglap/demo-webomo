@@ -91,16 +91,25 @@
   },
   "Contact": {
     "title": "Free Consultation",
-    "description": "We listen attentively and provide valuable insights to help you achieve your goals efficiently.",
+    "description": "We listen to you carefully and provide valuable insights to help you achieve your goals efficiently.",
     "form": {
+      "title": "Contact Us",
       "namePlaceholder": "Enter your name",
-      "companyPlaceholder": "Company (optional)",
       "emailPlaceholder": "Enter your email address",
-      "phonePlaceholder": "Enter your phone number",
       "messagePlaceholder": "Tell us something about yourself"
     },
-    "terms": "By clicking the 'Contact Us' button, you agree to our terms and policies.",
-    "submit": "Contact Us"
+    "bookCall": {
+      "title": "Schedule a Video Call",
+      "subtitle": "Let's work together to bring your vision to life.",
+      "button": "Schedule Now",
+      "contactText": "Do you prefer to contact us in a different way?",
+      "orFaq": "or check our FAQ",
+      "thankYou": "Thank you! We look forward to meeting you and taking your business to the next level."
+    },
+    "submit": "Submit"
+  },
+  "Calendly": {
+    "schedule": "Schedule time with us"
   },
   "Cta": {
     "title": "Elevate Your Social Media with Webomo",
