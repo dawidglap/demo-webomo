@@ -30,18 +30,18 @@ const Contact = () => {
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Your EmailJS Template ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Your Template ID
         {
           name: formData.name, // User's name
-          email: formData.email, // User's email
           message: formData.message, // User's message
+          email: formData.email, // User's email (mapped to {{email}})
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!, // Your EmailJS Public Key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!, // Your Public Key
       )
       .then(() => {
         setIsSubmitting(false);
         setIsSuccess(true);
-        setFormData({ name: "", email: "", message: "" }); // Clear the form
+        setFormData({ name: "", email: "", message: "" }); // Clear form
       })
       .catch(() => {
         setIsSubmitting(false);
