@@ -200,7 +200,9 @@
   "Hero": {
     "subtitle": "Anytime, Anywhere",
     "centerText": "Present",
-    "mobileFrame": "Mobile Frame"
+    "mobileFrame": "Mobile Frame",
+      "mainText": "Your Digital Presence",
+    "subHeadline": "Content Campaigns & Management"
   },
   "Hero3": {
     "subtitleAlt": "Anytime, Anywhere",

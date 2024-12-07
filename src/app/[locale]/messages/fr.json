@@ -200,7 +200,9 @@
   "Hero": {
     "subtitle": "À Tout Moment, Partout",
     "centerText": "Présent",
-    "mobileFrame": "Cadre Mobile"
+    "mobileFrame": "Cadre Mobile",
+    "mainText": "Votre Présence Digitale",
+    "subHeadline": "Campagnes de Contenu & Gestion"
   },
   "Hero3": {
     "subtitleAlt": "À Tout Moment, Partout",

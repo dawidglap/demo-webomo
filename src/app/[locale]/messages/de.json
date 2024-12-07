@@ -201,7 +201,9 @@
   "Hero": {
     "subtitle": "Immer und überall",
     "centerText": "präsent",
-    "mobileFrame": "Handyrahmen"
+    "mobileFrame": "Handyrahmen",
+    "mainText":"Ihre digitale Präsenz",
+    "subHeadline":"Content Kampagnen & Betreuung"
   },
   "Hero3": {
     "subtitleAlt": "Immer und überall",
