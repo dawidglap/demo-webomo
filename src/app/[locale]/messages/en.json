@@ -357,5 +357,84 @@
     "thankYouDescription": "We thank you for your trust and congratulate you on joining the Webomo family. We look forward to supporting you on your journey and helping you get the most out of your affiliate program.",
     "startNowAriaLabel": "Start Now",
     "startNowButton": "Start Now"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "introduction": {
+      "title": "Introduction",
+      "description": "This Privacy Policy describes how Webomo (owned by Cengiz Cokickli) collects, uses, and protects personal data."
+    },
+    "dataCollection": {
+      "title": "Data Collection",
+      "description": "We collect personal data such as name and email address through forms on our website for marketing purposes."
+    },
+    "dataUse": {
+      "title": "Data Use",
+      "description": "The collected data is used to provide services, respond to inquiries, and conduct marketing campaigns."
+    },
+    "dataSharing": {
+      "title": "Data Sharing",
+      "description": "Your data may be shared with trusted third parties such as Google Analytics, Vercel, and Facebook Pixel to improve our website's functionality and analysis."
+    },
+    "userRights": {
+      "title": "User Rights",
+      "description": "You have the right to access, correct, or delete your data. Contact us if you have questions about how your data is processed."
+    },
+    "cookiesPolicy": {
+      "title": "Cookies Policy",
+      "description": "We use cookies to enhance user experience and analyze website performance. This includes third-party cookies from Google and Meta."
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "introduction": {
+      "title": "Introduction",
+      "description": "These Terms and Conditions (T&Cs) govern the use of the Webomo website (owned by Cengiz Cokickli) and all services offered on it."
+    },
+    "userResponsibilities": {
+      "title": "User Responsibilities",
+      "description": "Users agree to use the website and its content in compliance with applicable law. Prohibited actions, such as spreading malicious code, are strictly forbidden."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "description": "All content, trademarks, and materials on this website are the property of Webomo or its licensors and are protected by copyright laws."
+    },
+    "limitationsLiability": {
+      "title": "Limitation of Liability",
+      "description": "Webomo is not liable for indirect, incidental, or consequential damages arising from the use of the website."
+    },
+    "modifications": {
+      "title": "Modifications to T&Cs",
+      "description": "Webomo reserves the right to modify these T&Cs at any time. Changes take effect as soon as they are published on the website."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "description": "These T&Cs are governed by Swiss law. Disputes will be exclusively handled by Swiss courts."
+    }
+  },
+  "impressum": {
+    "title": "Imprint",
+    "owner": {
+      "title": "Owner",
+      "description": "Webomo, owned by Cengiz Cokickli."
+    },
+    "address": {
+      "title": "Address",
+      "description": "Example Street 123, 8000 Zurich, Switzerland."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Email: kontakt@webomo.ch | Phone: +41 79 123 45 67."
+    },
+    "registry": {
+      "title": "Registry",
+      "description": "Webomo is registered in the Swiss Commercial Register, registration number: CH-123.456.789."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "description": "The contents of this website have been created with the utmost care. However, we do not guarantee the accuracy, completeness, or timeliness of the content."
+    }
   }
 }
+
+

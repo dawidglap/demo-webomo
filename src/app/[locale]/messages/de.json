@@ -358,5 +358,82 @@
     "thankYouDescription": "Wir danken dir für dein Vertrauen und gratulieren dir zum Beitritt zur Webomo-Familie. Wir freuen uns, dich auf deinem Weg zu unterstützen und dir zu helfen, das Beste aus deinem Affiliate-Programm herauszuholen.",
     "startNowAriaLabel": "Jetzt starten",
     "startNowButton": "Jetzt starten"
-  }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "introduction": {
+      "title": "Einführung",
+      "description": "Diese Datenschutzerklärung beschreibt, wie Webomo (im Besitz von Cengiz Cokickli) personenbezogene Daten sammelt, verwendet und schützt."
+    },
+    "dataCollection": {
+      "title": "Datenerfassung",
+      "description": "Wir sammeln personenbezogene Daten wie Name und E-Mail-Adresse über Formulare auf unserer Website für Marketingzwecke."
+    },
+    "dataUse": {
+      "title": "Verwendung der Daten",
+      "description": "Die gesammelten Daten werden verwendet, um Dienstleistungen anzubieten, auf Anfragen zu reagieren und Marketingkampagnen durchzuführen."
+    },
+    "dataSharing": {
+      "title": "Datenweitergabe",
+      "description": "Ihre Daten können mit vertrauenswürdigen Drittanbietern wie Google Analytics, Vercel und Facebook Pixel geteilt werden, um die Funktionalität und Analyse unserer Website zu verbessern."
+    },
+    "userRights": {
+      "title": "Rechte der Nutzer",
+      "description": "Sie haben das Recht, auf Ihre Daten zuzugreifen, sie zu berichtigen oder zu löschen. Kontaktieren Sie uns bei Fragen zur Verarbeitung Ihrer Daten."
+    },
+    "cookiesPolicy": {
+      "title": "Cookie-Richtlinie",
+      "description": "Wir verwenden Cookies, um die Benutzererfahrung zu verbessern und die Website-Performance zu analysieren. Dazu gehören Cookies von Drittanbietern wie Google und Meta."
+    }
+  },
+  "terms":{
+    "title": "Allgemeine Geschäftsbedingungen",
+    "introduction": {
+      "title": "Einleitung",
+      "description": "Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die Nutzung der Website Webomo (im Besitz von Cengiz Cokickli) und aller darauf angebotenen Dienste."
+    },
+    "userResponsibilities": {
+      "title": "Pflichten der Nutzer",
+      "description": "Die Nutzer verpflichten sich, die Website und ihre Inhalte ausschließlich in Übereinstimmung mit geltendem Recht zu verwenden. Unzulässige Handlungen, wie das Verbreiten von schädlichem Code, sind streng verboten."
+    },
+    "intellectualProperty": {
+      "title": "Geistiges Eigentum",
+      "description": "Alle Inhalte, Marken und Materialien auf dieser Website sind Eigentum von Webomo oder seinen Lizenzgebern und durch Urheberrechtsgesetze geschützt."
+    },
+    "limitationsLiability": {
+      "title": "Haftungsbeschränkung",
+      "description": "Webomo haftet nicht für indirekte, zufällige oder Folgeschäden, die aus der Nutzung der Website entstehen können."
+    },
+    "modifications": {
+      "title": "Änderungen der AGB",
+      "description": "Webomo behält sich das Recht vor, diese AGB jederzeit zu ändern. Änderungen treten in Kraft, sobald sie auf der Website veröffentlicht werden."
+    },
+    "governingLaw": {
+      "title": "Anwendbares Recht",
+      "description": "Diese AGB unterliegen dem schweizerischen Recht. Streitigkeiten werden ausschließlich vor den Gerichten der Schweiz verhandelt."
+    }
+  },
+  "impressum":{
+    "title": "Impressum",
+    "owner": {
+      "title": "Eigentümer",
+      "description": "Webomo, im Besitz von Cengiz Cokickli."
+    },
+    "address": {
+      "title": "Adresse",
+      "description": "Beispielstraße 123, 8000 Zürich, Schweiz."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "E-Mail: kontakt@webomo.ch | Telefon: +41 79 123 45 67."
+    },
+    "registry": {
+      "title": "Handelsregister",
+      "description": "Webomo ist im schweizerischen Handelsregister eingetragen, Registernummer: CH-123.456.789."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "description": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr."
+    }
+  }  
 }
