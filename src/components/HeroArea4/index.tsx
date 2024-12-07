@@ -37,7 +37,7 @@ const Hero4 = () => {
   return (
     <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800">
       {/* Subtitle Image with Motion */}
-      <motion.div
+      {/* <motion.div
         className="mb-2 mt-6"
         variants={sectionVariants}
         initial="hidden"
@@ -50,7 +50,7 @@ const Hero4 = () => {
           height={90} // Reduced height by 10%
           className="pt-10 2xl:pt-16"
         />
-      </motion.div>
+      </motion.div> */}
 
       {/* Center Text */}
       <motion.div
@@ -60,15 +60,15 @@ const Hero4 = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        <p className="text-4xl font-bold text-black dark:text-white md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl">
+        <p className="mt-10 text-4xl font-bold text-black dark:text-white md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-5xl 3xl:text-7xl">
           {t("mainText")}
         </p>
-        <p className="md:text-md pb-0 text-xl text-black dark:text-white lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-2xl">
+        <p className=" bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text p-2 text-center text-4xl font-bold leading-none text-transparent md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl 3xl:text-7xl">
+          {t("subHeadline")}
+        </p>
+        <p className="md:text-md pb-0 text-2xl text-black dark:text-white lg:text-lg xl:text-lg 2xl:text-2xl 3xl:mt-4 3xl:text-4xl">
           {t("subText")}
         </p>
-        <span className="mt-4 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text p-2 text-center text-4xl font-bold leading-none text-transparent md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl">
-          {t("subHeadline")}
-        </span>
       </motion.div>
 
       {/* Hero Image */}

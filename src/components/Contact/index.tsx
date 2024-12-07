@@ -144,7 +144,7 @@ const Contact = () => {
           </div>
 
           {/* Booking Card */}
-          <div className="wow fadeInUp flex w-full max-w-[925px]  flex-col items-center justify-center rounded-[30px] border-2 border-black bg-purple-100 px-4 py-10 text-center shadow-xl dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
+          <div className="wow fadeInUp flex w-full max-w-[925px]  flex-col items-center justify-center rounded-[30px]  bg-purple-100 px-4 py-10 text-center shadow-xl dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
             <h2 className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
               {t("bookCall.title")}
             </h2>
