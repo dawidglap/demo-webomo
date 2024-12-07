@@ -64,10 +64,18 @@ const Contact = () => {
     <section id="support" className="pb-[110px] pt-[100px] md:pt-[150px]">
       <div className="container">
         <ToastContainer /> {/* Toast container for notifications */}
+        <div className=" text-center">
+          <h1 className="mb-10  text-2xl font-semibold text-black dark:text-white md:text-5xl">
+            {t("headline")} <br />
+            <span className="mt-1 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text font-semibold leading-none text-transparent dark:from-purple-300 dark:to-pink-300 ">
+              {t("subHeadline")}
+            </span>
+          </h1>
+        </div>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           {/* Contact Form */}
           <div
-            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-gradient-to-br from-indigo-50 to-slate-100 px-4 py-10 shadow-card dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8"
+            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-indigo-100 px-4  py-10 shadow-xl dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8"
             data-wow-delay=".3s"
           >
             <h2 className="mb-6 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
@@ -136,7 +144,7 @@ const Contact = () => {
           </div>
 
           {/* Booking Card */}
-          <div className="wow fadeInUp  w-full max-w-[925px] rounded-[30px] bg-gradient-to-b from-indigo-50 to-slate-100 px-4 py-10 text-center shadow-card dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
+          <div className="wow fadeInUp flex w-full max-w-[925px]  flex-col items-center justify-center rounded-[30px] border-2 border-black bg-purple-100 px-4 py-10 text-center shadow-xl dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
             <h2 className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
               {t("bookCall.title")}
             </h2>
