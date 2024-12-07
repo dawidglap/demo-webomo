@@ -91,7 +91,7 @@ const Hero3 = () => {
             whileHover="hover"
           >
             <Image
-              src="/images/hero/hero-left.webp"
+              src="/images/hero/left.webp"
               alt={t("leftMobileAlt")}
               layout="fill"
               objectFit="cover"
@@ -138,7 +138,7 @@ const Hero3 = () => {
             whileHover="hover"
           >
             <Image
-              src="/images/hero/hero-right.webp"
+              src="/images/hero/right.webp"
               alt={t("rightMobileAlt")}
               layout="fill"
               objectFit="cover"

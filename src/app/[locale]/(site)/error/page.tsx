@@ -1,11 +1,11 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useLocale } from "next-intl";
 
 const ErrorPage = () => {
   const t = useTranslations("404");
-  const { locale } = useRouter(); // Get active locale
+  const locale = useLocale(); // Get active locale
 
   return (
     <section className="pb-[110px] pt-[150px] lg:pt-[220px]">
