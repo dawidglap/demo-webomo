@@ -83,7 +83,7 @@ const About3 = () => {
             >
               <video
                 playsInline
-                src="/images/about/drone-video1.mp4"
+                src="/images/about/drone-video2.mp4"
                 autoPlay
                 muted
                 loop

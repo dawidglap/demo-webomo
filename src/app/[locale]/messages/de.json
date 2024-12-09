@@ -89,12 +89,12 @@
       "heading": "Diese Marken vertrauen auf Webomo"
     },
   "Contact": {
-    "headline":"Wähle deine Kontakt",
-    "subHeadline":"Variante",
+    "headline":"Wähle deine kostenlose",
+    "subHeadline":"Kontakt Variante",
   "title": "Kostenlose Beratung",
   "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
   "form": {
-    "title": "Kontaktieren Sie uns",
+    "title": "Kontaktieren Sie uns per e-mail",
     "namePlaceholder": "Geben Sie Ihren Namen ein",
     "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
     "messagePlaceholder": "Erzählen Sie uns etwas über sich",
@@ -103,7 +103,7 @@
     "errorMessage": "Entschuldigung! Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
   },
   "bookCall": {
-    "title": "Planen Sie ein Videogespräch",
+    "title": "Videogespräch vereinbaren",
     "subtitle": "Lassen Sie uns gemeinsam daran arbeiten, Ihre Vision zu verwirklichen.",
     "button": "Jetzt planen",
     "contactText": "Bevorzugen Sie eine andere Kontaktmöglichkeit?",
@@ -113,7 +113,7 @@
   "submit": "Absenden"
 },
   "Calendly": {
-    "schedule": "Planen Sie Zeit mit uns"
+    "schedule": "Demo Call buchen"
   },
   "Cta": {
     "title": "Bringen Sie Ihre sozialen Medien mit Webomo auf die nächste Stufe",
