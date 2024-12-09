@@ -108,7 +108,8 @@
     "errorMessage": "Ops! Algo deu errado. Por favor, tente novamente mais tarde."
   },
   "bookCall": {
-    "title": "Agende uma Videoconferência",
+    "title": "Agende uma",
+    "title2": "Videoconferência",
     "subtitle": "Vamos trabalhar juntos para concretizar sua visão.",
     "button": "Agendar agora",
     "contactText": "Prefere entrar em contato de outra forma?",

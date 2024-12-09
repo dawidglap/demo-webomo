@@ -70,7 +70,7 @@ const WhoWeAre = () => {
               <h3 className="mb-2 text-xl font-bold text-black dark:text-white">
                 {item.title}
               </h3>
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-left text-gray-700 dark:text-gray-300">
                 {item.description}
               </p>
             </motion.div>

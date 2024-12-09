@@ -94,13 +94,27 @@
   "mission": "Webomo ist eine KI-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit maßgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
   "cta": "Werde Teil unseres Teams!"
   } , 
+  "WhoWeAre":{
+    "title":"Mehr als nur ein Team",
+    "smallTeamTitle": "Kleines Team, GROSSE Wirkung",
+    "smallTeamDescription": "Bei Webomo setzen wir auf Qualität statt Quantität – in unserer Arbeit und unserem Team. Mit Agilität, Innovation und Leidenschaft konzentrieren wir uns vollkommendarauf, Ihre Erfolge zu maximieren.",
+    "growthTitle":"Bemerkenswertes Wachstum",
+    "growthDescription": "Webomo wurde 2022 gegründet, ist profitabel und hilft bereits über 200 Unternehmen, ihr volles Potenzial auszuschöpfen. Mit einer soliden Basis und großem Ehrgeiz bauen wir ein gesundes, dynamisch wachsendes Unternehmen auf, das begeistert und Erfolg.",
+    "trustedTitle":"Von Führungskräften vertraut",
+    "trustedDescription":"Webomo wird von Branchenexperten unterstützt: Berater wie KI-Pionier Yann LeCun, der renommierte Beschleuniger Y-Combinator und der erfahrene Risikokapitalgeber Nico Wittenborn stehen hinter uns."
+  },
+  "OurValues":{
+   "candidFeedbackTitle": "Unsere Werte: Offenes Feedback",
+   "candidFeedbackDescription":""
+
+  },
   "Contact": {
     "headline":"Wähle deine kostenlose",
     "subHeadline":"Kontakt Variante",
   "title": "Kostenlose Beratung",
   "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
   "form": {
-    "title": "Kontaktieren Sie uns per e-mail",
+    "title": "Kontaktieren Sie uns per E-Mail",
     "namePlaceholder": "Geben Sie Ihren Namen ein",
     "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
     "messagePlaceholder": "Erzählen Sie uns etwas über sich",
@@ -109,7 +123,8 @@
     "errorMessage": "Entschuldigung! Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
   },
   "bookCall": {
-    "title": "Videogespräch vereinbaren",
+    "title": "Videogespräch",
+    "title2": "vereinbaren",
     "subtitle": "Lassen Sie uns gemeinsam daran arbeiten, Ihre Vision zu verwirklichen.",
     "button": "Jetzt planen",
     "contactText": "Bevorzugen Sie eine andere Kontaktmöglichkeit?",

@@ -108,7 +108,8 @@
     "errorMessage": "¡Vaya! Algo salió mal. Por favor, inténtalo de nuevo más tarde."
   },
   "bookCall": {
-    "title": "Agenda una Videollamada",
+    "title": "Agenda una",
+    "title2": "Videollamada",
     "subtitle": "Trabajemos juntos para hacer realidad tu visión.",
     "button": "Agendar ahora",
     "contactText": "¿Prefieres contactarnos de otra manera?",

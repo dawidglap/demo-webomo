@@ -108,7 +108,8 @@
     "errorMessage": "Oups ! Une erreur est survenue. Veuillez réessayer plus tard."
   },
   "bookCall": {
-    "title": "Planifiez un Appel Vidéo",
+    "title": "Planifiez un",
+    "title2": "Appel Vidéo",
     "subtitle": "Travaillons ensemble pour concrétiser votre vision.",
     "button": "Planifier maintenant",
     "contactText": "Préférez-vous nous contacter autrement ?",

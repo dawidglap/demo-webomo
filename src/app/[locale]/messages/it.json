@@ -108,7 +108,8 @@
     "errorMessage": "Ops! Qualcosa è andato storto. Riprova più tardi."
   },
   "bookCall": {
-    "title": "Pianifica una Videochiamata",
+    "title": "Pianifica una",
+    "title2": "Videochiamata",
     "subtitle": "Lavoriamo insieme per realizzare la tua visione.",
     "button": "Pianifica ora",
     "contactText": "Preferisci contattarci in un altro modo?",
