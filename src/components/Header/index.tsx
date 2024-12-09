@@ -156,6 +156,7 @@ const Header = () => {
                       ))}
                       <Link
                         href={`/${currentLocale}/kontakt`}
+                        onClick={closeMenu}
                         className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-6 py-2 text-white shadow-lg transition-all duration-300 hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400"
                       >
                         {t("cta.consultation")}
