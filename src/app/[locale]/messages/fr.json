@@ -89,6 +89,12 @@
   "Clients": {
     "heading": "Ces Marques Font Confiance à Webomo"
   },
+  "HeroAboutUs": {
+    "title": "Notre Vision",
+    "subHeadline": "Votre Succès",
+    "mission": "Webomo est une agence de marketing alimentée par l'IA, spécialisée dans la création de contenus de haute qualité pour les réseaux sociaux. Nous nous concentrons sur le soutien à long terme des entreprises grâce à une gestion professionnelle de 12 mois. Avec des stratégies personnalisées, nous aidons nos clients à accroître leur notoriété et à renforcer leur présence sur les plateformes numériques. Notre technologie IA innovante nous permet de fournir un contenu efficace et basé sur les données, directement adapté aux publics cibles. L'objectif principal de Webomo : Augmenter durablement les revenus de nos clients et exploiter pleinement leur potentiel de croissance.",
+    "cta": "Rejoignez notre équipe !"
+  },
  "Contact": {
   "title": "Consultation Gratuite",
   "description": "Nous vous écoutons attentivement et fournissons des conseils précieux pour atteindre vos objectifs efficacement.",

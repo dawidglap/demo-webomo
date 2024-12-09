@@ -35,7 +35,7 @@ const HeroAboutUs = () => {
   };
 
   return (
-    <section className="relative flex h-[100vh] max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 py-20 dark:from-slate-900 dark:to-slate-800">
+    <section className="relative flex flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 py-20 dark:from-slate-900 dark:to-slate-800 md:h-[100vh] md:max-h-[1080px]">
       <div className="container mx-auto flex flex-col-reverse items-center justify-between gap-10 px-6 lg:flex-row lg:gap-16">
         {/* Text Section */}
         <motion.div
