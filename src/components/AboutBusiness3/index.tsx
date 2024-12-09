@@ -84,7 +84,7 @@ const AboutBusinessThree = () => {
               variants={videoVariants}
             >
               <Image
-                src="/images/business/placeholderHero.webp"
+                src="/images/business/about-business2.webp"
                 alt={t("imageAlt")}
                 width={510}
                 height={450}

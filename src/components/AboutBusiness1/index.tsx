@@ -72,7 +72,7 @@ const AboutBusinessOne = () => {
               variants={sectionVariants}
             >
               <Image
-                src="/images/business/about-business1.webp"
+                src="/images/business/placeholderHero.webp"
                 alt={t("imageAlt")}
                 width={510}
                 height={450}
