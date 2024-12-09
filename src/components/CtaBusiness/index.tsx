@@ -29,7 +29,7 @@ const CtaBusiness = () => {
 
         {/* Button */}
         <Link
-          href="#"
+          href="/kontakt"
           className="inline-block rounded-full bg-black px-8 py-[12px] text-base font-medium text-white transition hover:bg-opacity-80 dark:bg-white dark:text-black dark:hover:bg-indigo-300 md:text-xl"
         >
           {t("buttonText")}

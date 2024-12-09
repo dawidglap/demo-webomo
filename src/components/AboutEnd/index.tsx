@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Popcorn from "../../../public/images/about/popcorn.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const AboutEnd = () => {
   const t = useTranslations("AboutEnd");
@@ -63,9 +64,12 @@ const AboutEnd = () => {
             <span className="font-bold">{t("description.bold")}</span>{" "}
             {t("description.part2")}
           </p>
-          <button className="rounded-full bg-black px-6 py-3 text-base text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 md:text-xl">
+          <Link
+            href="/kontakt"
+            className="rounded-full bg-black px-6 py-3 text-base text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 md:text-xl"
+          >
             {t("cta")}
-          </button>
+          </Link>
         </div>
 
         {/* iPhone Frame with Video - Positioned at the right side */}

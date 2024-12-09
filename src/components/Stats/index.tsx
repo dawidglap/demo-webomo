@@ -114,7 +114,7 @@ const Stats = () => {
       </div>
 
       <Link
-        href="#"
+        href="/kontakt"
         className=" mt-10 inline-block rounded-full bg-black px-8 py-[10px] text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
       >
         {t("cta")}

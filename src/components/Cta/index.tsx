@@ -30,7 +30,7 @@ const Cta = () => {
                   <div className="-mx-[10px] flex flex-wrap items-center justify-center lg:justify-start">
                     <div className="inline-block px-[10px]">
                       <Link
-                        href="#"
+                        href="/kontakt"
                         className="mb-5 inline-flex items-center rounded-md bg-primary px-5 py-[10px] text-white hover:bg-opacity-90"
                       >
                         {t("getStarted")}
