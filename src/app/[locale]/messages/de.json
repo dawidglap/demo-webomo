@@ -88,6 +88,12 @@
     "Clients": {
       "heading": "Diese Marken vertrauen auf Webomo"
     },
+  "HeroAboutUs":{
+  "title":"Unsere Vision",
+  "subHeadline":"Ihr Erfolg",
+  "mission": "Webomo ist eine KI-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit maßgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
+  "cta": "Werde Teil unseres Teams!"
+  } , 
   "Contact": {
     "headline":"Wähle deine kostenlose",
     "subHeadline":"Kontakt Variante",
