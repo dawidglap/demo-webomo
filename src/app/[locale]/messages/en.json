@@ -95,6 +95,26 @@
     "mission": "Webomo is an AI-powered marketing agency specializing in creating high-quality social media content. Our focus is on providing long-term support to businesses through professional 12-month management. With tailored strategies, we help our clients increase brand awareness and build a stronger presence on digital platforms. Our innovative AI technology enables us to deliver effective, data-driven content that directly targets audiences. Webomo's main goal: To sustainably increase our clients' revenue and fully unlock their growth potential.",
     "cta": "Join our team!"
   },
+  "WhoWeAre": {
+    "title": "More than just a team",
+    "smallTeamTitle": "Small team, BIG impact",
+    "smallTeamDescription": "At Webomo, we focus on quality over quantity – in our work and our team. With agility, innovation, and passion, we are fully committed to maximizing your success.",
+    "growthTitle": "Remarkable Growth",
+    "growthDescription": "Founded in 2022, Webomo is profitable and already helping over 200 businesses unlock their full potential. With a solid foundation and great ambition, we are building a healthy, dynamically growing company that inspires success.",
+    "trustedTitle": "Trusted by Leaders",
+    "trustedDescription": "Webomo is supported by industry experts: advisors like AI pioneer Yann LeCun, the renowned accelerator Y-Combinator, and experienced venture capitalist Nico Wittenborn."
+  },
+  "OurValues": {
+    "title": "Our Values",
+    "candidFeedbackTitle": "Candid Feedback",
+    "candidFeedbackDescription": "At Webomo, we value honest and thoughtful feedback to challenge the status quo. It's our key to continuously improving not only our work but also our processes.",
+    "shipFastTitle": "Ship Fast to Learn",
+    "shipFastDescription": "At Webomo, we prioritize progress over perfection. Our focus on quick implementation allows us to learn early and improve continuously.",
+    "buildItTitle": "Build It, Own It",
+    "buildItDescription": "At Webomo, we are all trusted experts who take pride in our craft. We value follow-through and making a real impact on our users – no matter what role we take on.",
+    "stayOpenTitle": "Stay Open",
+    "stayOpenDescription": "At Webomo, we are always open to new ideas and promote a culture of transparency. We work together and share our knowledge to continuously grow and innovate."
+  },
 "Contact": {
   "title": "Free Consultation",
   "description": "We listen to you carefully and provide valuable insights to help you achieve your goals efficiently.",

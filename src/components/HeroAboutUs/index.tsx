@@ -80,7 +80,7 @@ const HeroAboutUs = () => {
             alt="Team Photo"
             width={600}
             height={400}
-            className="rounded-lg shadow-lg"
+            className="rounded-3xl shadow-lg"
           />
         </motion.div>
       </div>

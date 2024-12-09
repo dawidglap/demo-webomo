@@ -95,6 +95,26 @@
     "mission": "Webomo est une agence de marketing alimentée par l'IA, spécialisée dans la création de contenus de haute qualité pour les réseaux sociaux. Nous nous concentrons sur le soutien à long terme des entreprises grâce à une gestion professionnelle de 12 mois. Avec des stratégies personnalisées, nous aidons nos clients à accroître leur notoriété et à renforcer leur présence sur les plateformes numériques. Notre technologie IA innovante nous permet de fournir un contenu efficace et basé sur les données, directement adapté aux publics cibles. L'objectif principal de Webomo : Augmenter durablement les revenus de nos clients et exploiter pleinement leur potentiel de croissance.",
     "cta": "Rejoignez notre équipe !"
   },
+  "WhoWeAre": {
+    "title": "Plus qu'une simple équipe",
+    "smallTeamTitle": "Petite équipe, GRAND impact",
+    "smallTeamDescription": "Chez Webomo, nous privilégions la qualité à la quantité – dans notre travail et notre équipe. Avec agilité, innovation et passion, nous nous engageons pleinement à maximiser votre succès.",
+    "growthTitle": "Croissance Remarquable",
+    "growthDescription": "Fondée en 2022, Webomo est rentable et aide déjà plus de 200 entreprises à exploiter pleinement leur potentiel. Avec une base solide et une grande ambition, nous construisons une entreprise saine et en pleine croissance qui inspire le succès.",
+    "trustedTitle": "Fait confiance par les leaders",
+    "trustedDescription": "Webomo est soutenu par des experts de l'industrie : des conseillers tels que le pionnier de l'IA Yann LeCun, l'accélérateur renommé Y-Combinator et le capital-risqueur expérimenté Nico Wittenborn."
+  },
+  "OurValues": {
+    "title": "Nos Valeurs",
+    "candidFeedbackTitle": "Retour Sincère",
+    "candidFeedbackDescription": "Chez Webomo, nous valorisons des retours honnêtes et réfléchis pour défier le statu quo. C'est notre clé pour améliorer continuellement notre travail et nos processus.",
+    "shipFastTitle": "Livrer Rapidement pour Apprendre",
+    "shipFastDescription": "Chez Webomo, nous privilégions le progrès sur la perfection. Notre focus sur une mise en œuvre rapide nous permet d'apprendre tôt et de nous améliorer continuellement.",
+    "buildItTitle": "Construisez-le, Appropriez-vous-le",
+    "buildItDescription": "Chez Webomo, nous sommes tous des experts de confiance fiers de notre savoir-faire. Nous valorisons la constance et l'impact réel sur nos utilisateurs, peu importe notre rôle.",
+    "stayOpenTitle": "Rester Ouvert",
+    "stayOpenDescription": "Chez Webomo, nous sommes toujours ouverts à de nouvelles idées et promouvons une culture de transparence. Nous travaillons ensemble et partageons nos connaissances pour grandir et innover continuellement."
+  },
  "Contact": {
   "title": "Consultation Gratuite",
   "description": "Nous vous écoutons attentivement et fournissons des conseils précieux pour atteindre vos objectifs efficacement.",

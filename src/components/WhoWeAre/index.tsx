@@ -52,22 +52,23 @@ const WhoWeAre = () => {
           {data.map((item, index) => (
             <motion.div
               key={index}
-              className={`rounded-lg p-6 shadow-lg  ${item.bgColor}`}
+              className={`rounded-3xl p-6 shadow-lg ${item.bgColor}`}
               initial="hidden"
               animate="visible"
               variants={cardVariants}
               custom={index}
             >
               <div className="mb-4 flex justify-center">
-                <Image
-                  src={item.image}
-                  alt="Placeholder"
-                  width={300}
-                  height={300}
-                  className="object-contain"
-                />
+                <div className="relative h-[280px] w-[400px]">
+                  <Image
+                    src={item.image}
+                    alt="Placeholder"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-bold text-[#400CD8] dark:text-purple-400">
                 {item.title}
               </h3>
               <p className="text-left text-gray-700 dark:text-gray-300">

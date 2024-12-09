@@ -95,6 +95,26 @@
       "mission": "Webomo é uma agência de marketing impulsionada por IA, especializada na criação de conteúdo de alta qualidade para redes sociais. Nosso foco está em oferecer suporte de longo prazo às empresas por meio de uma gestão profissional de 12 meses. Com estratégias personalizadas, ajudamos nossos clientes a aumentar o reconhecimento da marca e construir uma presença mais forte nas plataformas digitais. Nossa tecnologia inovadora de IA nos permite entregar conteúdos eficazes e baseados em dados, diretamente direcionados aos públicos-alvo. O principal objetivo da Webomo: Aumentar de forma sustentável a receita de nossos clientes e desbloquear totalmente seu potencial de crescimento.",
       "cta": "Junte-se à nossa equipe!"
     },
+    "WhoWeAre": {
+      "title": "Più di un semplice team",
+      "smallTeamTitle": "Team piccolo, GRANDE impatto",
+      "smallTeamDescription": "In Webomo, puntiamo sulla qualità piuttosto che sulla quantità – sia nel nostro lavoro che nel nostro team. Con agilità, innovazione e passione, ci dedichiamo completamente a massimizzare il tuo successo.",
+      "growthTitle": "Crescita Straordinaria",
+      "growthDescription": "Fondata nel 2022, Webomo è redditizia e sta già aiutando oltre 200 aziende a raggiungere il loro pieno potenziale. Con una base solida e una grande ambizione, stiamo costruendo un'azienda sana e in crescita dinamica che ispira successo.",
+      "trustedTitle": "Fiducia dei Leader",
+      "trustedDescription": "Webomo è supportata da esperti del settore: consulenti come il pioniere dell'IA Yann LeCun, il rinomato acceleratore Y-Combinator e il capitalista di rischio esperto Nico Wittenborn."
+    },
+    "OurValues": {
+      "title": "I Nostri Valori",
+      "candidFeedbackTitle": "Feedback Sincero",
+      "candidFeedbackDescription": "In Webomo apprezziamo un feedback onesto e riflessivo per sfidare lo status quo. È la nostra chiave per migliorare continuamente non solo il nostro lavoro ma anche i nostri processi.",
+      "shipFastTitle": "Consegna Rapida per Imparare",
+      "shipFastDescription": "In Webomo privilegiamo il progresso alla perfezione. Il nostro focus sull'implementazione rapida ci consente di imparare presto e migliorare continuamente.",
+      "buildItTitle": "Costruiscilo, Rendilo Tuo",
+      "buildItDescription": "In Webomo siamo tutti esperti fidati che sono orgogliosi del proprio lavoro. Valorizziamo la coerenza e l'impatto reale sugli utenti, indipendentemente dal ruolo che ricopriamo.",
+      "stayOpenTitle": "Rimani Aperto",
+      "stayOpenDescription": "In Webomo siamo sempre aperti a nuove idee e promuoviamo una cultura di trasparenza. Lavoriamo insieme e condividiamo le nostre conoscenze per crescere e innovare continuamente."
+    },
     "Contact": {
   "title": "Consulta Gratuita",
   "description": "Ouvimos você com atenção e oferecemos insights valiosos para ajudá-lo a alcançar seus objetivos com eficiência.",

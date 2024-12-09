@@ -104,10 +104,17 @@
     "trustedDescription":"Webomo wird von Branchenexperten unterstützt: Berater wie KI-Pionier Yann LeCun, der renommierte Beschleuniger Y-Combinator und der erfahrene Risikokapitalgeber Nico Wittenborn stehen hinter uns."
   },
   "OurValues":{
+    "title":"Unsere Werte",
    "candidFeedbackTitle": "Unsere Werte: Offenes Feedback",
-   "candidFeedbackDescription":""
-
+   "candidFeedbackDescription":"Bei Webomo schätzen wir ehrliches und durchdachtes Feedback, um den Status quo herauszufordern. Es ist unser Schlüssel, um nicht nur unsere Arbeit, sondern auch unsere Prozesse stetig zu verbessern.",
+   "shipFastTitle":"Schnell liefern, um zu lernen",
+   "shipFastDescription":"Bei Webomo setzen wir auf Fortschritt statt Perfektion. Unser Fokus auf schnelles Umsetzen ermöglicht es uns, frühzeitig zu lernen und kontinuierlich besser zu werden.",
+   "buildItTitle":"Bauen, besitzen",
+   "buildItDescription":"Bei Webomo sind wir alle vertrauenswürdigen Experten, die stolz auf unser Handwerk sind. Wir legen großen Wert auf Konsequenz und darauf, einen echten Einfluss auf unsere Nutzer auszuüben – unabhängig von der Rolle, die wir übernehmen.",
+   "stayOpenTitle":"Offen bleiben",
+   "stayOpenDescription":"Bei Webomo sind wir stets offen für neue Ideen und fördern eine Kultur der Transparenz. Wir arbeiten gemeinsam und teilen unser Wissen, um kontinuierlich zu wachsen und zu innovieren."
   },
+  
   "Contact": {
     "headline":"Wähle deine kostenlose",
     "subHeadline":"Kontakt Variante",

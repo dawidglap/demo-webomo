@@ -60,7 +60,7 @@ const OurValues = () => {
         </motion.div>
         {/* Text Section */}
         <div className="lg:w-1/2">
-          <h2 className="mb-8 text-4xl font-bold text-black dark:text-white">
+          <h2 className="mb-8 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-4xl font-bold text-transparent">
             {t("title")}
           </h2>
           <div className="space-y-6">
@@ -73,7 +73,7 @@ const OurValues = () => {
                 custom={index}
                 className="text-left"
               >
-                <h3 className="mb-2 text-xl font-bold text-black dark:text-white">
+                <h3 className="mb-2 text-xl font-bold text-[#400CD8] dark:text-purple-400">
                   {item.title}
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300">

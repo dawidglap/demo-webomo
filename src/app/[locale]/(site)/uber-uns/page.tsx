@@ -1,3 +1,4 @@
+import AboutEnd from "@/components/AboutEnd";
 import HeroAboutUs from "@/components/HeroAboutUs";
 import OurValues from "@/components/OurValues";
 import WhoWeAre from "@/components/WhoWeAre";
@@ -9,6 +10,7 @@ const UberUns = () => {
       <HeroAboutUs />
       <WhoWeAre />
       <OurValues />
+      <AboutEnd />
     </div>
   );
 };
