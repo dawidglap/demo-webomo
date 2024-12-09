@@ -26,19 +26,19 @@ const WhoWeAre = () => {
       title: t("smallTeamTitle"),
       description: t("smallTeamDescription"),
       image: "/images/about/rb-team.webp", // Replace with your image path
-      bgColor: "bg-indigo-100 dark:bg-gray-800",
+      // bgColor: "bg-indigo-100 dark:bg-gray-800",
     },
     {
       title: t("growthTitle"),
       description: t("growthDescription"),
       image: "/images/about/rb-growth.webp", // Replace with your image path
-      bgColor: "bg-purple-100 dark:bg-slate-900",
+      // bgColor: "bg-purple-100 dark:bg-slate-900",
     },
     {
       title: t("trustedTitle"),
       description: t("trustedDescription"),
       image: "/images/about/rb-trust.webp", // Replace with your image path
-      bgColor: "bg-green-100 dark:bg-blue-950",
+      // bgColor: "bg-green-100 dark:bg-blue-950",
     },
   ];
 
