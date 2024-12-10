@@ -116,7 +116,8 @@
     "stayOpenDescription": "Chez Webomo, nous sommes toujours ouverts à de nouvelles idées et promouvons une culture de transparence. Nous travaillons ensemble et partageons nos connaissances pour grandir et innover continuellement."
   },
  "Contact": {
-  "title": "Consultation Gratuite",
+   "headline": "Choisissez votre",
+    "subHeadline": "Option de contact gratuite",
   "description": "Nous vous écoutons attentivement et fournissons des conseils précieux pour atteindre vos objectifs efficacement.",
   "form": {
     "title": "Contactez-nous",

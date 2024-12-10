@@ -116,7 +116,8 @@
     "stayOpenDescription": "In Webomo siamo sempre aperti a nuove idee e promuoviamo una cultura di trasparenza. Lavoriamo insieme e condividiamo le nostre conoscenze per crescere e innovare continuamente."
   },
  "Contact": {
-  "title": "Consulenza Gratuita",
+  "headline": "Scegli la tua",
+    "subHeadline": "Opzione di contatto gratuita",
   "description": "Ti ascoltiamo con attenzione e ti forniamo preziosi consigli per raggiungere i tuoi obiettivi in modo efficace.",
   "form": {
     "title": "Contattaci",
