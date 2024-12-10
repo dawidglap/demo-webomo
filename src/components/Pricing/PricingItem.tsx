@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export const PricingItem = ({ price }: any) => {
   const t = useTranslations("Pricing");
@@ -141,12 +142,13 @@ export const PricingItem = ({ price }: any) => {
         </div>
 
         {/* Button */}
-        <button
+        <Link
+          href="/kontakt"
           aria-label={`Choose ${price.nickname}`}
           className="mt-4 block w-full rounded-2xl bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
           {t("choosePlan")}
-        </button>
+        </Link>
 
         {/* Footer Text */}
         <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
