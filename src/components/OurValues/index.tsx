@@ -48,14 +48,14 @@ const OurValues = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex justify-center border-r-2 border-indigo-100  dark:border-indigo-900 lg:w-1/2"
+          className="flex justify-center  border-r-2 border-indigo-100  dark:border-indigo-900 lg:w-1/2"
         >
           <Image
-            src="/images/about/values.webp" // Replace with your image path
+            src="/images/about/dalle4.webp" // Replace with your image path
             alt="Our Values"
             width={400}
             height={400}
-            className="object-contain"
+            className="rounded-[20px] object-contain shadow-xl"
           />
         </motion.div>
         {/* Text Section */}
