@@ -257,7 +257,9 @@
     "title": "Finden Sie den",
     "subHeadline": "richtigen Tarif",
     "description": "Massgeschneiderte Social-Media-Pakete für jede Unternehmensphase",
-    "choosePlan": "wählen",
+    "choosePlan": "Demo call buchen",
+    "payLaterDescription":"Buchen Sie noch heute Ihren Plan und erledigen Sie die Zahlung stressfrei.",
+    "checkoutNow": "Jetzt buchen",
     "plans": {
       "Basic": {
         "name": "Basic",

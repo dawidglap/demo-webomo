@@ -4,7 +4,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-export const PricingItem = ({ price }: any) => {
+export const PricingItem = ({ price, stripeLink }: any) => {
   const t = useTranslations("Pricing");
 
   // Define background color based on plan type
@@ -141,11 +141,25 @@ export const PricingItem = ({ price }: any) => {
           {getFeatures(price.nickname)}
         </div>
 
-        {/* Button */}
+        {/* Stripe Checkout Button */}
+        <div className="mb-4">
+          <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
+            {t("payLaterDescription")}
+          </p>
+          <Link
+            href="#"
+            aria-label={`Pay for ${price.nickname}`}
+            className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
+          >
+            {t("checkoutNow")}
+          </Link>
+        </div>
+
+        {/* Contact Button */}
         <Link
           href="/kontakt"
           aria-label={`Choose ${price.nickname}`}
-          className="mt-4 block w-full rounded-2xl bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+          className=" block w-full rounded-full bg-black px-8 py-1 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
           {t("choosePlan")}
         </Link>
