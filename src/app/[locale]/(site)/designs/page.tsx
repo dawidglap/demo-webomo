@@ -82,7 +82,7 @@ const Designs = () => {
         </div>
         <Link
           href="/kontakt"
-          className="mb-20 mt-[-200px] inline-flex h-[60px] cursor-pointer items-center rounded-full bg-[#000] px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-[#ffffff] dark:text-[#000] dark:hover:bg-[#afafaf]"
+          className="z-[1] mb-20 mt-[-200px] inline-flex h-[60px] cursor-pointer items-center rounded-full bg-[#000] px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-[#ffffff] dark:text-[#000] dark:hover:bg-[#afafaf]"
         >
           {t("cta")}
         </Link>
