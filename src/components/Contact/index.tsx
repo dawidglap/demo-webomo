@@ -7,6 +7,7 @@ import emailjs from "emailjs-com";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLoading3Quarters } from "react-icons/ai"; // Spinner Icon
 import CalendlyBtn from "../CalendlyBtn";
+import CalBtn from "../CalBtn";
 
 const Contact = () => {
   const t = useTranslations("Contact");
@@ -154,7 +155,8 @@ const Contact = () => {
             <p className="mb-6 text-lg text-body dark:text-gray-300">
               {t("bookCall.subtitle")}
             </p>
-            <CalendlyBtn />
+            {/* <CalendlyBtn /> */}
+            <CalBtn />
             <div className="mt-8 space-y-4 text-center">
               {/* <p className="flex items-center justify-center text-lg text-body dark:text-gray-300">
                 <AiOutlineMail className="mr-2 text-lg text-primary" />

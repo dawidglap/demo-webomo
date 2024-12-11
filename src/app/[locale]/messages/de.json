@@ -275,7 +275,7 @@
         ]
       },
       "Unlimited": {
-        "name": "Unlimited",
+        "name": "Pro",
         "price": "599",
         "features": [
           "Projektleitung: Content Beratung & Administration",
@@ -288,7 +288,7 @@
         ]
       },
       "Business": {
-        "name": "Business",
+        "name": "Enterprise",
         "price": "799",
         "features": [
           "Projektleitung: Content Beratung & Administration",

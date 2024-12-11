@@ -3,6 +3,9 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import CalBtnBasic from "../CalBtnBasic";
+import CalBtnBusiness from "../CalBtnBusiness";
+import CalBtnEnterprise from "../CalBtnEnterprise";
 
 export const PricingItem = ({ price, stripeLink }: any) => {
   const t = useTranslations("Pricing");
@@ -15,6 +18,8 @@ export const PricingItem = ({ price, stripeLink }: any) => {
     bgColor = "bg-purple-100 dark:bg-slate-900";
   } else if (price.nickname === "Business") {
     bgColor = "bg-green-100 dark:bg-[#000]";
+  } else if (price.nickname === "Enterprise") {
+    bgColor = "bg-gray-100 dark:bg-gray-800";
   }
 
   // Hardcoded features for each plan
@@ -107,6 +112,23 @@ export const PricingItem = ({ price, stripeLink }: any) => {
             </p>
           </>
         );
+      case "Enterprise":
+        return (
+          <>
+            <p className="flex text-base text-black dark:text-body">
+              {t("plans.Enterprise.features.0")}
+            </p>
+            <p className="flex text-base text-black dark:text-body">
+              {t("plans.Enterprise.features.1")}
+            </p>
+            <p className="flex text-base text-black dark:text-body">
+              {t("plans.Enterprise.features.2")}
+            </p>
+            <p className="flex text-base text-black dark:text-body">
+              {t("plans.Enterprise.features.3")}
+            </p>
+          </>
+        );
       default:
         return null;
     }
@@ -126,15 +148,21 @@ export const PricingItem = ({ price, stripeLink }: any) => {
 
         {/* Plan Title and Price */}
         <h3 className="mb-2 text-[22px] font-semibold leading-tight text-black dark:text-white">
-          {t(`plans.${price.nickname}.name`)}
+          {price.nickname === "Enterprise"
+            ? "LET'S TALK"
+            : t(`plans.${price.nickname}.name`)}
         </h3>
-        <p className="mb-2 text-4xl font-bold text-black dark:text-white">
-          {t(`plans.${price.nickname}.price`)}.-{" "}
-          <span className="text-lg">/ {t("month")}</span>
-        </p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">
-          {t("duration")}
-        </p>
+        {price.nickname !== "Enterprise" && (
+          <>
+            <p className="mb-2 text-4xl font-bold text-black dark:text-white">
+              {t(`plans.${price.nickname}.price`)}.-{" "}
+              <span className="text-lg">/ {t("month")}</span>
+            </p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">
+              {t("duration")}
+            </p>
+          </>
+        )}
 
         {/* Features List */}
         <div className="space-y-4 pb-10 pt-6">
@@ -142,27 +170,49 @@ export const PricingItem = ({ price, stripeLink }: any) => {
         </div>
 
         {/* Stripe Checkout Button */}
-        <div className="mb-4">
-          <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
-            {t("payLaterDescription")}
-          </p>
-          <Link
-            href="#"
-            aria-label={`Pay for ${price.nickname}`}
-            className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
-          >
-            {t("checkoutNow")}
-          </Link>
-        </div>
+        {price.nickname === "Basic" && (
+          <div className="mb-4">
+            <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
+              {t("payLaterDescription")}
+            </p>
+            <Link
+              href="/#"
+              aria-label="Pay for Basic"
+              className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
+            >
+              {t("checkoutNow")}
+            </Link>
+          </div>
+        )}
+
+        {price.nickname === "Unlimited" && (
+          <div className="mb-4">
+            <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
+              {t("payLaterDescription")}
+            </p>
+            <Link
+              href="/#"
+              aria-label="Pay for Unlimited"
+              className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
+            >
+              {t("checkoutNow")}
+            </Link>
+          </div>
+        )}
 
         {/* Contact Button */}
-        <Link
-          href="/kontakt"
-          aria-label={`Choose ${price.nickname}`}
-          className=" block w-full rounded-full bg-black px-8 py-1 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-        >
-          {t("choosePlan")}
-        </Link>
+        {price.nickname === "Enterprise" && (
+          <Link
+            href="/kontakt"
+            aria-label="Contact us for Enterprise plan"
+            className="block w-full rounded-full bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+          >
+            {t("contactUs")}
+          </Link>
+        )}
+        {price.nickname === "Basic" && <CalBtnBasic />}
+        {price.nickname === "Unlimited" && <CalBtnBusiness />}
+        {price.nickname === "Business" && <CalBtnEnterprise />}
 
         {/* Footer Text */}
         <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">

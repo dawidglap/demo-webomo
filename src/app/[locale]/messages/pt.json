@@ -272,7 +272,7 @@
           ]
         },
         "Unlimited": {
-          "name": "Unlimited",
+          "name": "Pro",
           "price": "599",
           "features": [
             "Gestão de Projeto: Consultoria de Conteúdo & Administração",
@@ -285,7 +285,7 @@
           ]
         },
         "Business": {
-          "name": "Business",
+          "name": "Enterprise",
           "price": "799",
           "features": [
             "Gestão de Projeto: Consultoria de Conteúdo & Administração",

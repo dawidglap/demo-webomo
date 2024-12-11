@@ -272,7 +272,7 @@
         ]
       },
       "Unlimited": {
-        "name": "Unlimited",
+        "name": "Pro",
         "price": "599",
         "features": [
           "Gestione Progetto: Consulenza Contenuti & Amministrazione",
@@ -285,7 +285,7 @@
         ]
       },
       "Business": {
-        "name": "Business",
+        "name": "Enterprise",
         "price": "799",
         "features": [
           "Gestione Progetto: Consulenza Contenuti & Amministrazione",

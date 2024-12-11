@@ -272,7 +272,7 @@
         ]
       },
       "Unlimited": {
-        "name": "Unlimited",
+        "name": "Pro",
         "price": "599",
         "features": [
           "Project Management: Content Consulting & Administration",
@@ -285,7 +285,7 @@
         ]
       },
       "Business": {
-        "name": "Business",
+        "name": "Enterprise",
         "price": "799",
         "features": [
           "Project Management: Content Consulting & Administration",
