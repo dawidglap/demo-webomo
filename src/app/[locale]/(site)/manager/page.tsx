@@ -158,7 +158,9 @@ const ManagerPackage = () => {
               {t("platformSelection")}
             </h3>
             <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-              {t("platformInstruction")}
+              {/* {t("platformInstruction")} */}
+              Wähle einen Social-Media-Kanal aus, auf dem du dein
+              Affiliate-Marketing veröffentlichen möchtest.
             </p>
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
