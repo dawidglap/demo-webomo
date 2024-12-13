@@ -255,12 +255,17 @@ const Header = () => {
                   </button>
                 </div>
               ) : (
-                <Link
-                  href={`/${currentLocale}/login`}
-                  className="inline-flex items-center rounded-full bg-black px-4 py-2 text-white shadow-lg transition-all duration-300 hover:bg-opacity-90 dark:bg-white dark:text-black"
-                >
-                  {t("session.login")}
-                </Link>
+                <div className="group relative">
+                  <button
+                    disabled
+                    className="inline-flex cursor-not-allowed items-center rounded-full bg-[#000] px-4 py-2 text-white opacity-50  shadow-lg dark:bg-white dark:text-black"
+                  >
+                    {t("session.login")}
+                  </button>
+                  <div className="absolute bottom-[-35px] left-1/2 hidden w-max -translate-x-1/2 rounded-full bg-gray-700 px-2 py-1 text-sm text-indigo-200 opacity-0 transition-all duration-200 group-hover:block group-hover:opacity-100 dark:bg-gray-900">
+                    Coming Soon
+                  </div>
+                </div>
               )}
             </div>
           </div>
