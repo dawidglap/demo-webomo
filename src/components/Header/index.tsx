@@ -263,7 +263,7 @@ const Header = () => {
                     {t("session.login")}
                   </button>
                   <div className="absolute bottom-[-35px] left-1/2 hidden w-max -translate-x-1/2 rounded-full bg-gray-700 px-2 py-1 text-sm text-indigo-200 opacity-0 transition-all duration-200 group-hover:block group-hover:opacity-100 dark:bg-gray-900">
-                    Coming Soon
+                    Coming Soon.
                   </div>
                 </div>
               )}
