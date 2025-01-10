@@ -10,7 +10,7 @@ export function CompareDemo() {
         firstImage="/images/screens/screen-4.png"
         secondImage="/images/webomo-videos/webomo-demo2.mp4" // Video URL
         secondImageIsVideo={true} // Set to true to enable video mode
-        firstImageClassName="object-cover object-left-top"
+        firstImageClassName="object-cover object-left-top grayscale"
         secondImageClassname="object-cover object-left-top"
         className="h-[250px] w-full md:h-[500px] md:w-full"
         slideMode="hover"
