@@ -44,14 +44,14 @@ export const PricingItem = ({ price, stripeLink }: any) => {
               <span className="mr-2 font-semibold">4.</span>{" "}
               {t("plans.Basic.features.3")}
             </p>
-            <p className="flex text-base text-black dark:text-body">
+            {/* <p className="flex text-base text-black dark:text-body">
               <span className="mr-2 font-semibold">5.</span>{" "}
               {t("plans.Basic.features.4")}
             </p>
             <p className="flex text-base text-black dark:text-body">
               <span className="mr-2 font-semibold">6.</span>{" "}
               {t("plans.Basic.features.5")}
-            </p>
+            </p> */}
           </>
         );
       case "Unlimited":
@@ -155,8 +155,12 @@ export const PricingItem = ({ price, stripeLink }: any) => {
         {price.nickname !== "Enterprise" && (
           <>
             <p className="mb-2 text-4xl font-bold text-black dark:text-white">
-              {t(`plans.${price.nickname}.price`)}.-{" "}
-              <span className="text-lg">/ {t("month")}</span>
+              {t(`plans.${price.nickname}.price`)}
+              {price.nickname !== "Business" && (
+                <>
+                  .- <span className="text-lg">/ {t("month")}</span>
+                </>
+              )}
             </p>
             <p className="text-sm text-gray-700 dark:text-gray-300">
               {t("duration")}

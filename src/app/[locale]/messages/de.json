@@ -263,20 +263,19 @@
     "plans": {
       "Basic": {
         "name": "Basic",
-        "price": "499",
+        "price": "799",
         "features": [
-          "Projektleitung: Content Beratung & Administration",
-          "Produktion: Inhalte 106 (Storys und Posts)",
-          "Veröffentlichung: 1x pro Woche durch Webomo",
-          "Kanäle: Instagram / Facebook / LinkedIn / YouTube",
-          "Fotoshooting: Inklusive",
-          "Video: -",
-          "Social Media Kampagnen: -"
+          "Projektleitung: Content Beratung & Administration 1x pro Jahr per Video-Call oder vor Ort",
+          "Produktion: 53 Inhalte inkl. Text & Bildbearbeitung (Stories, Posts und Reels)",
+          "Veröffentlichung: 12 Monate / 1x pro Woche durch Webomo",
+          "Kanäle: Instagram",
+          " ",
+          ""
         ]
       },
       "Unlimited": {
         "name": "Pro",
-        "price": "599",
+        "price": "899",
         "features": [
           "Projektleitung: Content Beratung & Administration",
           "Produktion: Inhalte 106 (Storys und Posts)",
@@ -288,8 +287,8 @@
         ]
       },
       "Business": {
-        "name": "Enterprise",
-        "price": "799",
+        "name": "Business",
+        "price": "Auf Anfrage",
         "features": [
           "Projektleitung: Content Beratung & Administration",
           "Produktion: Inhalte 106 (Storys und Posts)",

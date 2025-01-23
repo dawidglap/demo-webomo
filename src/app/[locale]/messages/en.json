@@ -260,7 +260,7 @@
     "plans": {
       "Basic": {
         "name": "Basic",
-        "price": "499",
+        "price": "799",
         "features": [
           "Project Management: Content Consulting & Administration",
           "Production: 106 Content Pieces (Stories and Posts)",
@@ -273,7 +273,7 @@
       },
       "Unlimited": {
         "name": "Pro",
-        "price": "599",
+        "price": "899",
         "features": [
           "Project Management: Content Consulting & Administration",
           "Production: 106 Content Pieces (Stories and Posts)",
@@ -286,7 +286,7 @@
       },
       "Business": {
         "name": "Enterprise",
-        "price": "799",
+        "price": "On request",
         "features": [
           "Project Management: Content Consulting & Administration",
           "Production: 106 Content Pieces (Stories and Posts)",

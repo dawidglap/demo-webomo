@@ -260,7 +260,7 @@
       "plans": {
         "Basic": {
           "name": "Basic",
-          "price": "499",
+          "price": "799",
           "features": [
             "Gestão de Projeto: Consultoria de Conteúdo & Administração",
             "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
@@ -273,7 +273,7 @@
         },
         "Unlimited": {
           "name": "Pro",
-          "price": "599",
+          "price": "899",
           "features": [
             "Gestão de Projeto: Consultoria de Conteúdo & Administração",
             "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
@@ -286,7 +286,7 @@
         },
         "Business": {
           "name": "Enterprise",
-          "price": "799",
+          "price": "Sob consulta",
           "features": [
             "Gestão de Projeto: Consultoria de Conteúdo & Administração",
             "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
