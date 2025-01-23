@@ -31,14 +31,14 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        process.env.EMAILJS_SERVICE_ID!,
-        process.env.EMAILJS_TEMPLATE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
           name: formData.name,
           message: formData.message,
           email: formData.email, // User's email (mapped to {{email}})
         },
-        process.env.EMAILJS_USER_ID!, // Your Public Key
+        "_luXCOss442fyLs0Z", // Your Public Key
       );
       setIsSubmitting(false);
       setFormData({ name: "", email: "", message: "" }); // Clear the form
