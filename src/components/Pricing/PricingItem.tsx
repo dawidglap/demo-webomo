@@ -44,6 +44,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
               <span className="mr-2 font-semibold">4.</span>{" "}
               {t("plans.Basic.features.3")}
             </p>
+
             {/* <p className="flex text-base text-black dark:text-body">
               <span className="mr-2 font-semibold">5.</span>{" "}
               {t("plans.Basic.features.4")}
@@ -81,33 +82,37 @@ export const PricingItem = ({ price, stripeLink }: any) => {
               <span className="mr-2 font-semibold">6.</span>{" "}
               {t("plans.Unlimited.features.5")}
             </p>
+            <p className="flex text-base text-black dark:text-body">
+              <span className="mr-2 font-semibold">7.</span>{" "}
+              {t("plans.Unlimited.features.6")}
+            </p>
           </>
         );
       case "Business":
         return (
           <>
-            <p className="flex text-base text-black dark:text-body">
+            <p className="flex text-base font-bold text-black dark:text-body">
               <span className="mr-2 font-semibold">1.</span>{" "}
               {t("plans.Business.features.0")}
             </p>
             <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">2.</span>{" "}
+              <span className="mr-2 mt-[-4px] text-2xl font-semibold">+</span>{" "}
               {t("plans.Business.features.1")}
             </p>
             <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">3.</span>{" "}
+              <span className="mr-2 mt-[-4px] text-2xl font-semibold">+</span>{" "}
               {t("plans.Business.features.2")}
             </p>
             <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">4.</span>{" "}
+              <span className="mr-2 mt-[-4px]  text-2xl font-semibold">+</span>{" "}
               {t("plans.Business.features.3")}
             </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">5.</span>{" "}
+            <p className="flex  pt-6 text-2xl font-bold text-black dark:text-body">
+              <span className="mr-2 font-semibold"></span>{" "}
               {t("plans.Business.features.4")}
             </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">6.</span>{" "}
+            <p className="flex text-xl text-black dark:text-body">
+              <span className="mr-2 font-semibold"></span>{" "}
               {t("plans.Business.features.5")}
             </p>
           </>
@@ -115,7 +120,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
       case "Enterprise":
         return (
           <>
-            <p className="flex text-base text-black dark:text-body">
+            <p className="flex text-base font-bold text-black dark:text-body">
               {t("plans.Enterprise.features.0")}
             </p>
             <p className="flex text-base text-black dark:text-body">
@@ -123,6 +128,9 @@ export const PricingItem = ({ price, stripeLink }: any) => {
             </p>
             <p className="flex text-base text-black dark:text-body">
               {t("plans.Enterprise.features.2")}
+            </p>
+            <p className="flex text-base text-black dark:text-body">
+              {t("plans.Enterprise.features.3")}
             </p>
             <p className="flex text-base text-black dark:text-body">
               {t("plans.Enterprise.features.3")}
@@ -137,7 +145,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
   return (
     <div className="w-full px-6 pb-8 md:w-1/2 lg:w-1/3">
       <div
-        className={`relative mb-10 rounded-xl px-9 py-10 shadow-2xl md:shadow-xl ${bgColor} flex h-full flex-col justify-between lg:mb-4 lg:px-7 xl:px-9`}
+        className={`relative mb-10 rounded-xl px-9 py-10 shadow-2xl md:shadow-xl ${bgColor} flex h-full flex-col lg:mb-4 lg:px-7 xl:px-9`}
       >
         {/* Badge for Recommended Plan */}
         {price.nickname === "Unlimited" && (
@@ -169,13 +177,13 @@ export const PricingItem = ({ price, stripeLink }: any) => {
         )}
 
         {/* Features List */}
-        <div className="space-y-4 pb-10 pt-6">
+        <div className=" mb-auto space-y-4 pb-10 pt-6">
           {getFeatures(price.nickname)}
         </div>
 
         {/* Stripe Checkout Button */}
         {price.nickname === "Basic" && (
-          <div className="mb-4">
+          <div className="mb-4 mt-auto">
             <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
               {t("payLaterDescription")}
             </p>
@@ -190,7 +198,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
         )}
 
         {price.nickname === "Unlimited" && (
-          <div className="mb-4">
+          <div className="mb-4 mt-auto">
             <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
               {t("payLaterDescription")}
             </p>
@@ -209,7 +217,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
           <Link
             href="/kontakt"
             aria-label="Contact us for Enterprise plan"
-            className="block w-full rounded-full bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            className="block w-full rounded-full  bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
           >
             {t("contactUs")}
           </Link>
