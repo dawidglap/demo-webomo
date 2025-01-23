@@ -120,7 +120,8 @@
     "subHeadline": "Opzione di contatto gratuita",
   "description": "Ti ascoltiamo con attenzione e ti forniamo preziosi consigli per raggiungere i tuoi obiettivi in modo efficace.",
   "form": {
-    "title": "Contattaci",
+    "title": "Contattaci via E-Mail",
+    "titleEmail": "",
     "namePlaceholder": "Inserisci il tuo nome",
     "emailPlaceholder": "Inserisci il tuo indirizzo email",
     "messagePlaceholder": "Parlaci di te",
@@ -361,7 +362,7 @@
     ]
   },
   "WebomoFeatures": {
-    "title": "Scopri i Nostri Ultimi Lavori"
+    "title": "Scopri i Nostri Servizi"
   },
   "Designs": {
     "headline": "Adatto a Ogni",

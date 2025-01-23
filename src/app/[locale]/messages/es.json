@@ -120,7 +120,8 @@
     "subHeadline": "De contacto gratuita",
   "description": "Te escuchamos atentamente y te brindamos ideas valiosas para alcanzar tus objetivos de manera eficiente.",
   "form": {
-    "title": "Contáctanos",
+    "title": "Contáctanos por correo electrónico",
+    "titleEmail": "",
     "namePlaceholder": "Ingresa tu nombre",
     "emailPlaceholder": "Ingresa tu correo electrónico",
     "messagePlaceholder": "Cuéntanos algo sobre ti",
@@ -361,7 +362,7 @@
       ]
     },
     "WebomoFeatures": {
-      "title": "Descubre Nuestros Últimos Trabajos"
+      "title": "Descubre Nuestros Servicios"
     },
     "Designs": {
       "headline": "Adecuado para Cada",

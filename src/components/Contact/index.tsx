@@ -82,6 +82,9 @@ const Contact = () => {
             <h2 className="mb-6 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
               {t("form.title")}
             </h2>
+            <h2 className="mb-6 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
+              {t("form.titleEmail")}
+            </h2>
             <form onSubmit={handleSubmit}>
               <div className="space-y-8">
                 <div>
@@ -149,6 +152,7 @@ const Contact = () => {
             <h2 className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:mt-[-40px] md:text-[36px] md:leading-tight">
               {t("bookCall.title")}
             </h2>
+
             <p className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
               {t("bookCall.title2")}
             </p>

@@ -120,7 +120,8 @@
     "subHeadline": "Contact option",
   "description": "We listen to you carefully and provide valuable insights to help you achieve your goals efficiently.",
   "form": {
-    "title": "Contact Us",
+    "title": "Contact Us via E-Mail",
+    "titleEmail": "",
     "namePlaceholder": "Enter your name",
     "emailPlaceholder": "Enter your email address",
     "messagePlaceholder": "Tell us something about yourself",
@@ -361,7 +362,7 @@
     ]
   },
   "WebomoFeatures": {
-    "title": "Discover Our Latest Work"
+    "title": "Discover Our Services"
   },
   "Designs": {
     "headline": "Suitable for Every",

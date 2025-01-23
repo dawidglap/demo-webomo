@@ -121,7 +121,8 @@
   "title": "Kostenlose Beratung",
   "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
   "form": {
-    "title": "Kontaktieren Sie uns per E-Mail",
+    "title": "Kontaktieren Sie uns per",
+    "titleEmail": "E-Mail",
     "namePlaceholder": "Geben Sie Ihren Namen ein",
     "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
     "messagePlaceholder": "Erzählen Sie uns etwas über sich",
@@ -363,7 +364,7 @@
     ]
   },
   "WebomoFeatures": {
-    "title": "Entdecke unsere neusten Arbeiten"
+    "title": "Entdecke unsere Leistungen"
   },
   "Designs": {
     "headline": "Passend für jede",
