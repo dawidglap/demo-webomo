@@ -304,6 +304,17 @@
       "duration": "12 Meses de Soporte",
       "footerText": "Incluye Panel & Reportes"
     },
+    "Manager": {
+      "title": "Administrador de Paquetes",
+      "name": "Nombre",
+      "surname": "Apellido",
+      "birthday": "Fecha de nacimiento",
+      "email": "Correo electrónico",
+      "platformSelection": "Canales de redes sociales",
+      "platformInstruction": "Elige un canal de redes sociales donde quieras publicar tu marketing de afiliación.",
+      "paymentMethod": "Método de pago",
+      "paymentMethodSubtitle": "Elige el método de pago que prefieras"
+    },
     "Screens": {
       "title": "Diseños para Cada Industria",
       "description": "Creamos presencias impresionantes en redes sociales para cada industria. Diseños que destacan tu marca y capturan a tu audiencia objetivo.",

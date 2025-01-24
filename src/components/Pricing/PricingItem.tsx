@@ -188,7 +188,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
               {t("payLaterDescription")}
             </p>
             <Link
-              href="/#"
+              href="https://buy.stripe.com/00gaIyfu79lbcsU000"
               aria-label="Pay for Basic"
               className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
             >
@@ -203,7 +203,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
               {t("payLaterDescription")}
             </p>
             <Link
-              href="/#"
+              href="https://buy.stripe.com/bIYeYO6XBfJzfF6bIJ"
               aria-label="Pay for Unlimited"
               className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
             >

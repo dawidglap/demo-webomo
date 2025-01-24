@@ -304,6 +304,17 @@
     "duration": "12 Mois de Support",
     "footerText": "Inclut Tableau de Bord & Reporting"
   },
+  "Manager": {
+    "title": "Gestionnaire de Paquets",
+    "name": "Prénom",
+    "surname": "Nom de famille",
+    "birthday": "Date de naissance",
+    "email": "E-mail",
+    "platformSelection": "Canaux de médias sociaux",
+    "platformInstruction": "Choisissez un canal de médias sociaux sur lequel vous souhaitez publier votre marketing d'affiliation.",
+    "paymentMethod": "Méthode de paiement",
+    "paymentMethodSubtitle": "Choisissez la méthode de paiement que vous préférez"
+  },
   "Screens": {
     "title": "Designs pour Chaque Industrie",
     "description": "Nous créons des présences impressionnantes sur les réseaux sociaux pour chaque secteur. Des designs qui mettent votre marque en lumière et captivent votre audience cible.",

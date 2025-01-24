@@ -304,6 +304,17 @@
       "duration": "12 Meses de Suporte",
       "footerText": "Inclui Painel & Relatórios"
     },
+    "Manager": {
+    "title": "Gerente de Pacotes",
+    "name": "Nome",
+    "surname": "Sobrenome",
+    "birthday": "Data de nascimento",
+    "email": "Email",
+    "platformSelection": "Canais de mídia social",
+    "platformInstruction": "Escolha um canal de mídia social onde você deseja publicar seu marketing afiliado.",
+    "paymentMethod": "Método de pagamento",
+    "paymentMethodSubtitle": "Escolha o método de pagamento que você prefere"
+  },
     "Screens": {
       "title": "Designs para Todas as Indústrias",
       "description": "Criamos presenças impressionantes nas redes sociais para todas as indústrias. Designs que destacam a sua marca e cativam o seu público-alvo.",

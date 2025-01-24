@@ -306,6 +306,27 @@
     "duration": "12 Monate Betreuung",
     "footerText": "Inkl. Dashboard & Reporting"
   },
+  "Manager":{
+    "manager":"Manager",
+    "year":"jährlich",
+    "duration": "Dauer",
+    "months": "Monate",
+    "title": "Paket Manager",
+    "name": "Vorname",
+    "surname": "Nachname",
+    "birthday": "Geburtsdatum",
+    "email": "E-Mail",
+    "platformSelection": "Social Media Känale",
+    "platformInstruction": "Wähle einen Social-Media-Kanal aus, auf dem du dein Affiliate-Marketing veröffentlichen möchtest.",
+    "paymentMethod": "Zahlungsmethode",
+    "paymentMethodSubtitle": "Wähle die Zahlungsmethode, die du bevorzugst",
+    "Dashboard": "DASHBOARD",
+    "DashboardInfo": "Eigener Dashboard und Login mit allen",
+    "Coaching": "COACHING / BETREEUNG",
+    "CoachingInfo": "Coaching von Projekt Manager/in über 12 Monate - 1x wöchentlich.",
+    "Material": "WERBECONTENT",
+    "MaterialInfo": "Bereitstellung Werbeinhalten durch Webomo, zur Unterstützung der Akquisition."
+  },
   "Screens":{
   "title": "Designs für jede Branche",
   "description": "Für jede Branche erstellen wir beeindruckende Social-Media-Präsenz. Designs, die Ihre Marke ins Rampenlicht rücken und Ihre Zielgruppe begeistern.",

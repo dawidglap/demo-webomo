@@ -304,6 +304,17 @@
     "duration": "12 Months Support",
     "footerText": "Includes Dashboard & Reporting"
   },
+  "Manager": {
+    "title": "Package Manager",
+    "name": "First Name",
+    "surname": "Last Name",
+    "birthday": "Date of Birth",
+    "email": "Email",
+    "platformSelection": "Social Media Channels",
+    "platformInstruction": "Choose a social media channel on which you want to publish your affiliate marketing.",
+    "paymentMethod": "Payment Method",
+    "paymentMethodSubtitle": "Choose the payment method you prefer"
+  },
   "Screens": {
     "title": "Designs for Every Industry",
     "description": "We create impressive social media presences for every industry. Designs that spotlight your brand and captivate your target audience.",

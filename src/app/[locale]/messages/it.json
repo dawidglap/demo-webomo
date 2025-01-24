@@ -304,6 +304,17 @@
     "duration": "12 Mesi di Supporto",
     "footerText": "Include Dashboard & Reporting"
   },
+  "Manager": {
+    "title": "Gestore Pacchetti",
+    "name": "Nome",
+    "surname": "Cognome",
+    "birthday": "Data di nascita",
+    "email": "Email",
+    "platformSelection": "Canali di social media",
+    "platformInstruction": "Scegli un canale di social media su cui vuoi pubblicare il tuo marketing affiliato.",
+    "paymentMethod": "Metodo di pagamento",
+    "paymentMethodSubtitle": "Scegli il metodo di pagamento che preferisci"
+  },
   "Screens": {
     "title": "Design per Ogni Settore",
     "description": "Creiamo presenze impressionanti sui social media per ogni settore. Design che mettono in luce il tuo brand e catturano il tuo pubblico target.",
