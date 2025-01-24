@@ -31,6 +31,7 @@ const ManagerPackage = () => {
     linkedin: false,
     snapchat: false,
     youtube: false,
+    ziel: "Paket Manager",
   });
 
   const [errors, setErrors] = useState({});
@@ -101,6 +102,7 @@ const ManagerPackage = () => {
         linkedin: formData.linkedin ? "LinkedIn" : "Nicht ausgewählt",
         snapchat: formData.snapchat ? "Snapchat" : "Nicht ausgewählt",
         youtube: formData.youtube ? "YouTube" : "Nicht ausgewählt",
+        ziel: formData.ziel,
       };
 
       await emailjs.send(
