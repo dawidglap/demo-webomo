@@ -259,45 +259,47 @@
     "description": "Des forfaits de réseaux sociaux adaptés à chaque étape de votre entreprise",
     "choosePlan": "Choisir",
     "checkoutNow": "Réservez maintenant",
+    "payLaterDescription": "Réservez votre plan aujourd'hui et effectuez le paiement sans stress.",
     "plans": {
       "Basic": {
         "name": "Basic",
         "price": "799",
-        "features": [
-          "Gestion de Projet : Conseil en Contenu & Administration",
-          "Production : 106 Contenus (Stories et Publications)",
-          "Publication : 1x par semaine par Webomo",
-          "Canaux : Instagram / Facebook / LinkedIn / YouTube",
-          "Séance Photo : Incluse",
-          "Vidéo : -",
-          "Campagnes sur les Réseaux Sociaux : -"
-        ]
+       "features": [
+  "Gestion de projet : Conseil et administration de contenu 1x par an par appel vidéo ou sur site",
+  "Production : 53 contenus incluant la rédaction et le traitement des images (Stories, Posts et Reels)",
+  "Publication : 12 mois / 1x par semaine par Webomo",
+  "Canaux : Instagram",
+  " ",
+  ""
+]
       },
       "Unlimited": {
         "name": "Pro",
         "price": "899",
-        "features": [
-          "Gestion de Projet : Conseil en Contenu & Administration",
-          "Production : 106 Contenus (Stories et Publications)",
-          "Publication : 1x par semaine par Webomo",
-          "Canaux : Instagram / Facebook / LinkedIn / YouTube",
-          "Séance Photo : Incluse",
-          "Vidéo : -",
-          "Campagnes sur les Réseaux Sociaux : -"
-        ]
+    "features": [
+  "Direction de projet : Conseil en contenu et administration",
+  "Production : 106 contenus (Stories et Posts)",
+  "Publication : 1x par semaine par Webomo",
+  "Canaux : Instagram / Facebook / LinkedIn / YouTube",
+  "Séance photo : par exemple, employés, bureau, atelier, studio, détails, showroom, etc.",
+  "Vidéo : 1 film publicitaire (max. 60 secondes) planification, tournage, montage et adaptation",
+  "Campagnes sur les réseaux sociaux : 1 campagne incl. concept de planification & mise en œuvre"
+]
+
       },
       "Business": {
         "name": "Enterprise",
         "price": "Sur demande",
-        "features": [
-          "Gestion de Projet : Conseil en Contenu & Administration",
-          "Production : 106 Contenus (Stories et Publications)",
-          "Publication : 1x par semaine par Webomo",
-          "Canaux : Instagram / Facebook / LinkedIn / YouTube",
-          "Séance Photo : Incluse",
-          "Vidéo : 2 Vidéos Promotionnelles",
-          "Campagnes sur les Réseaux Sociaux : Incluse"
-        ]
+       "features": [
+  "Incluant les services du paquet Pro",
+  "Développement Web",
+  "Marketing d'affiliation",
+  "Design de logo et impression",
+  "Vous définissez vos services",
+  "Dites-nous ce que vous souhaitez et dans quelle mesure - nous le développerons et le réaliserons.",
+  "Campagnes sur les réseaux sociaux : Incluses"
+]
+
       }
     },
     "recommended": "Recommandé",

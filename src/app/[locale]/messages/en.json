@@ -259,45 +259,47 @@
     "description":"Tailored Social Media Packages for Every Stage of Your Business", 
     "choosePlan": "Choose",
     "checkoutNow": "Book Now",
+    "payLaterDescription": "Book your plan today and make the payment stress-free.",
     "plans": {
       "Basic": {
         "name": "Basic",
         "price": "799",
-        "features": [
-          "Project Management: Content Consulting & Administration",
-          "Production: 106 Content Pieces (Stories and Posts)",
-          "Publishing: Once a week by Webomo",
-          "Channels: Instagram / Facebook / LinkedIn / YouTube",
-          "Photoshoot: Included",
-          "Video: -",
-          "Social Media Campaigns: -"
-        ]
+     "features": [
+  "Project management: Content consulting & administration 1x per year via video call or on-site",
+  "Production: 53 contents including text & image editing (Stories, Posts, and Reels)",
+  "Publication: 12 months / 1x per week by Webomo",
+  "Channels: Instagram",
+  " ",
+  ""
+]
       },
       "Unlimited": {
         "name": "Pro",
         "price": "899",
-        "features": [
-          "Project Management: Content Consulting & Administration",
-          "Production: 106 Content Pieces (Stories and Posts)",
-          "Publishing: Once a week by Webomo",
-          "Channels: Instagram / Facebook / LinkedIn / YouTube",
-          "Photoshoot: Included",
-          "Video: -",
-          "Social Media Campaigns: -"
-        ]
+      "features": [
+  "Project Management: Content Consulting & Administration",
+  "Production: 106 contents (Stories and Posts)",
+  "Publication: 1x per week by Webomo",
+  "Channels: Instagram / Facebook / LinkedIn / YouTube",
+  "Photoshoot: e.g., employees, office, workshop, studio, details, showroom, etc.",
+  "Video: 1 promotional film (max. 60 seconds) planning, filming, editing, and customization",
+  "Social Media Campaigns: 1 campaign incl. planning concept & implementation"
+]
+
       },
       "Business": {
         "name": "Enterprise",
         "price": "On request",
-        "features": [
-          "Project Management: Content Consulting & Administration",
-          "Production: 106 Content Pieces (Stories and Posts)",
-          "Publishing: Once a week by Webomo",
-          "Channels: Instagram / Facebook / LinkedIn / YouTube",
-          "Photoshoot: Included",
-          "Video: 2 Promotional Videos",
-          "Social Media Campaigns: Included"
-        ]
+       "features": [
+  "Including Pro Package Services",
+  "Web Development",
+  "Affiliate Marketing",
+  "Logo & Print Design",
+  "You define your services",
+  "Tell us what you want and to what extent - we will develop and implement it.",
+  "Social Media Campaigns: Included"
+]
+
       }
     },
     "recommended": "Recommended",

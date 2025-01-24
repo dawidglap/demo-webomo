@@ -259,45 +259,47 @@
 "description": "Pacchetti Social Media su misura per ogni fase della tua attività",
     "choosePlan": "Scegli",
     "checkoutNow": "Prenota ora",
+    "payLaterDescription": "Prenota oggi il tuo piano e effettua il pagamento senza stress.",
     "plans": {
       "Basic": {
         "name": "Basic",
         "price": "799",
         "features": [
-          "Gestione Progetto: Consulenza Contenuti & Amministrazione",
-          "Produzione: 106 Contenuti (Stories e Post)",
-          "Pubblicazione: 1x a settimana da Webomo",
-          "Canali: Instagram / Facebook / LinkedIn / YouTube",
-          "Servizio Fotografico: Incluso",
-          "Video: -",
-          "Campagne Social Media: -"
-        ]
+  "Gestione del progetto: Consulenza e amministrazione dei contenuti 1x all'anno tramite videochiamata o di persona",
+  "Produzione: 53 contenuti inclusi testo e modifica immagini (Stories, Posts e Reels)",
+  "Pubblicazione: 12 mesi / 1x a settimana da parte di Webomo",
+  "Canali: Instagram",
+  " ",
+  ""
+]
       },
       "Unlimited": {
         "name": "Pro",
         "price": "899",
-        "features": [
-          "Gestione Progetto: Consulenza Contenuti & Amministrazione",
-          "Produzione: 106 Contenuti (Stories e Post)",
-          "Pubblicazione: 1x a settimana da Webomo",
-          "Canali: Instagram / Facebook / LinkedIn / YouTube",
-          "Servizio Fotografico: Incluso",
-          "Video: -",
-          "Campagne Social Media: -"
-        ]
+    "features": [
+  "Gestione del progetto: Consulenza e amministrazione del contenuto",
+  "Produzione: 106 contenuti (Story e Post)",
+  "Pubblicazione: 1x a settimana da Webomo",
+  "Canali: Instagram / Facebook / LinkedIn / YouTube",
+  "Fotoshooting: ad esempio dipendenti, ufficio, officina, studio, dettagli, showroom, ecc.",
+  "Video: 1 filmato pubblicitario (max. 60 secondi) pianificazione, riprese, montaggio e personalizzazione",
+  "Campagne sui social media: 1 campagna incl. pianificazione del concetto & realizzazione"
+]
+
       },
       "Business": {
         "name": "Enterprise",
         "price": "Su richiesta",
-        "features": [
-          "Gestione Progetto: Consulenza Contenuti & Amministrazione",
-          "Produzione: 106 Contenuti (Stories e Post)",
-          "Pubblicazione: 1x a settimana da Webomo",
-          "Canali: Instagram / Facebook / LinkedIn / YouTube",
-          "Servizio Fotografico: Incluso",
-          "Video: 2 Video Promozionali",
-          "Campagne Social Media: Incluse"
-        ]
+     "features": [
+  "Incluso pacchetto servizi Pro",
+  "Sviluppo Web",
+  "Marketing di affiliazione",
+  "Design di logo e stampa",
+  "Definisci i tuoi servizi",
+  "Dicci cosa desideri e in quale misura - noi svilupperemo e realizzeremo.",
+  "Campagne sui social media: Incluse"
+]
+
       }
     },
     "recommended": "Consigliato",

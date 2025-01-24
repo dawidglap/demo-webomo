@@ -259,45 +259,47 @@
       "description": "Pacotes de Mídias Sociais sob medida para cada estágio do seu negócio",
       "choosePlan": "Escolher",
       "checkoutNow": "Reserve agora",
+      "payLaterDescription": "Reserve seu plano hoje e faça o pagamento sem estresse.",
       "plans": {
         "Basic": {
           "name": "Basic",
           "price": "799",
-          "features": [
-            "Gestão de Projeto: Consultoria de Conteúdo & Administração",
-            "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
-            "Publicação: 1x por semana pela Webomo",
-            "Canais: Instagram / Facebook / LinkedIn / YouTube",
-            "Sessão Fotográfica: Incluída",
-            "Vídeo: -",
-            "Campanhas em Redes Sociais: -"
-          ]
+        "features": [
+  "Gerenciamento de projeto: Consultoria e administração de conteúdo 1x por ano por videochamada ou presencial",
+  "Produção: 53 conteúdos incluindo edição de texto e imagem (Stories, Posts e Reels)",
+  "Publicação: 12 meses / 1x por semana por Webomo",
+  "Canais: Instagram",
+  " ",
+  ""
+]
         },
         "Unlimited": {
           "name": "Pro",
           "price": "899",
-          "features": [
-            "Gestão de Projeto: Consultoria de Conteúdo & Administração",
-            "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
-            "Publicação: 1x por semana pela Webomo",
-            "Canais: Instagram / Facebook / LinkedIn / YouTube",
-            "Sessão Fotográfica: Incluída",
-            "Vídeo: -",
-            "Campanhas em Redes Sociais: -"
-          ]
+        "features": [
+  "Gestão de Projeto: Consultoria e Administração de Conteúdo",
+  "Produção: 106 conteúdos (Stories e Posts)",
+  "Publicação: 1x por semana por Webomo",
+  "Canais: Instagram / Facebook / LinkedIn / YouTube",
+  "Sessão de fotos: por exemplo, funcionários, escritório, oficina, estúdio, detalhes, showroom, etc.",
+  "Vídeo: 1 filme promocional (máx. 60 segundos) planejamento, filmagem, edição e customização",
+  "Campanhas de Mídia Social: 1 campanha incl. conceito de planejamento e implementação"
+]
+
         },
         "Business": {
           "name": "Enterprise",
           "price": "Sob consulta",
-          "features": [
-            "Gestão de Projeto: Consultoria de Conteúdo & Administração",
-            "Produção: 106 Peças de Conteúdo (Stories e Publicações)",
-            "Publicação: 1x por semana pela Webomo",
-            "Canais: Instagram / Facebook / LinkedIn / YouTube",
-            "Sessão Fotográfica: Incluída",
-            "Vídeo: 2 Vídeos Promocionais",
-            "Campanhas em Redes Sociais: Incluídas"
-          ]
+       "features": [
+  "Incluindo serviços do pacote Pro",
+  "Desenvolvimento Web",
+  "Marketing de Afiliados",
+  "Design de Logo e Impressão",
+  "Você define seus serviços",
+  "Diga-nos o que deseja e em que extensão - nós desenvolveremos e implementaremos.",
+  "Campanhas de Mídia Social: Incluídas"
+]
+
         }
       },
       "recommended": "Recomendado",
