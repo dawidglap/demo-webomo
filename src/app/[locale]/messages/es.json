@@ -258,6 +258,7 @@
     "subHeadline": "tarifa adecuada",
       "description": "Paquetes de redes sociales a medida para cada etapa de su negocio",
       "choosePlan": "Elegir",
+      "checkoutNow": "Reserva ahora",
       "plans": {
         "Basic": {
           "name": "Basic",

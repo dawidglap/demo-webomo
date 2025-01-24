@@ -258,6 +258,7 @@
     "subHeadline": "bon tarif",
     "description": "Des forfaits de réseaux sociaux adaptés à chaque étape de votre entreprise",
     "choosePlan": "Choisir",
+    "checkoutNow": "Réservez maintenant",
     "plans": {
       "Basic": {
         "name": "Basic",
