@@ -4,9 +4,9 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import standOut from "../../../public/images/business/growth.png";
-import salary from "../../../public/images/business/salary.png";
-import freedom from "../../../public/images/business/freedom.png";
+import standOut from "../../../public/images/business/growth1.webp";
+import salary from "../../../public/images/business/investment.webp";
+import freedom from "../../../public/images/business/freedom2.webp";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -64,7 +64,7 @@ const CardsBusiness = () => {
               src={standOut}
               alt={t("card1.alt")}
               layout="fill"
-              className="rounded-lg bg-indigo-100 object-contain p-10 dark:bg-slate-950"
+              className="rounded-lg bg-indigo-100 object-cover p-0 shadow-lg dark:bg-slate-950"
             />
           </div>
           <h3 className="mt-6 text-center text-lg font-bold text-black dark:text-white">
@@ -86,7 +86,7 @@ const CardsBusiness = () => {
               src={salary}
               alt={t("card2.alt")}
               layout="fill"
-              className="rounded-lg bg-indigo-100 object-contain p-10 dark:bg-slate-950"
+              className="rounded-lg bg-indigo-100 object-cover p-0 shadow-lg dark:bg-slate-950"
             />
           </div>
           <h3 className="mt-6 text-center text-lg font-bold text-black dark:text-white">
@@ -108,7 +108,7 @@ const CardsBusiness = () => {
               src={freedom}
               alt={t("card3.alt")}
               layout="fill"
-              className="rounded-lg bg-indigo-100 object-contain p-10 dark:bg-slate-950"
+              className="rounded-lg bg-indigo-100 object-cover p-0 shadow-lg dark:bg-slate-950"
             />
           </div>
           <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
