@@ -1,11 +1,7 @@
 "use client";
-import {
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface TimelineEntry {
   title: string;
@@ -16,6 +12,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const t = useTranslations("Timeline"); // Use translations for "Timeline"
 
   useEffect(() => {
     if (ref.current) {
@@ -33,14 +30,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="font-sans w-full  md:px-10" ref={containerRef}>
+    <div className="font-sans w-full md:px-10" ref={containerRef}>
       <div className="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-10">
-        <h2 className="mb-4 max-w-4xl text-lg font-extrabold text-black dark:text-white md:text-4xl">
-          Wie setzen wir das um?
+        <h2 className="mb-4 mt-10 max-w-4xl text-lg font-extrabold text-black dark:text-white md:text-4xl">
+          {t("title")}
         </h2>
-        <p className="max-w-sm text-sm text-neutral-700 dark:text-neutral-300 md:text-base">
-          Erfahre die fünf Schritte, die dich zu einer erfolgreichen
-          Partnerschaft mit WEBOMO führen.
+        <p className="max-w-sm text-sm text-neutral-700 dark:text-neutral-300 md:text-xl">
+          {t("subtitle")}
         </p>
       </div>
 
@@ -55,7 +51,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="absolute left-1 flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-black md:left-1">
                 <div className="h-4 w-4 rounded-full border border-neutral-300 bg-indigo-700 p-2 dark:border-neutral-700 dark:bg-neutral-800" />
               </div>
-              <h3 className="ms-12 hidden text-xl font-bold text-black dark:text-neutral-500 md:block md:text-4xl">
+              <h3 className="ms-12 hidden text-xl font-extrabold text-black dark:text-neutral-500 md:block md:text-4xl">
                 {item.title}
               </h3>
             </div>
@@ -80,7 +76,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] rounded-full bg-gradient-to-t from-indigo-500 from-[0%] to-purple-500   to-[10%] "
+            className="absolute inset-x-0 top-0  w-[2px] rounded-full bg-gradient-to-t from-indigo-500 from-[0%] to-purple-500 to-[10%] "
           />
         </div>
       </div>

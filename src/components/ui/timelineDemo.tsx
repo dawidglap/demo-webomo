@@ -1,97 +1,77 @@
+"use client";
+
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import CalBtnTimeline from "../CalBtnTimeline";
 
 export function TimelineDemo() {
+  const t = useTranslations("TimelineDemo"); // Using translations from "Timeline"
+
   const data = [
     {
-      title: "01",
+      title: t("step1.number"),
       content: (
         <div className="flex flex-col">
-          <span className="text-xs uppercase text-neutral-500 dark:text-neutral-400">
-            Los geht s
+          <span className="text-xs font-semibold uppercase text-indigo-500 dark:text-indigo-400">
+            {t("step1.label")}
           </span>
           <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 md:text-3xl">
-            Buche ein kostenloses Beratungsgespräch
+            {t("step1.title")}
           </h3>
-          <p className="mt-2 text-sm text-neutral-800 dark:text-neutral-200 md:text-xl">
-            Starte deine Branding-Reise, indem du einen Termin für dein erstes
-            Gespräch vereinbarst. Wir können es kaum erwarten, mit dir
-            zusammenzukommen und deine Marke neu zu gestalten.
+          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-200 md:text-xl">
+            {t("step1.description")}
           </p>
-          <Link
-            href="/kontakt"
-            className="font-sm mt-4 max-w-[12rem] rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-4 py-[10px] text-center text-base text-white shadow-lg hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400 md:text-sm"
-          >
-            Erstgespräch buchen
-          </Link>
+          <CalBtnTimeline />
         </div>
       ),
     },
     {
-      title: "02",
+      title: t("step2.number"),
       content: (
         <div className="flex flex-col">
-          <span className="text-xs uppercase text-neutral-500 dark:text-neutral-400">
-            Was brauchst du?
+          <span className="text-xs font-semibold uppercase text-indigo-500 dark:text-indigo-400">
+            {t("step2.label")}
           </span>
           <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 md:text-3xl">
-            Individuelle Strategie
+            {t("step2.title")}
           </h3>
-          <p className="mt-2 text-sm text-neutral-800 dark:text-neutral-200 md:text-xl">
-            In unserem Beratungsgespräch entwickeln wir gemeinsam eine
-            massgeschneiderte Strategie, die genau auf die Bedürfnisse deines
-            Unternehmens eingeht. Dabei erstellen wir eine klare Roadmap, die
-            den Erfolg deiner Marke aufzeigt. Unser persönlicher Ansatz
-            garantiert, dass die Strategie nicht nur wirkungsvoll ist, sondern
-            auch perfekt zu deiner Markenvision und deinen Zielen passt.
+          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-200 md:text-xl">
+            {t("step2.description")}
           </p>
         </div>
       ),
     },
     {
-      title: "03",
+      title: t("step3.number"),
       content: (
         <div className="flex flex-col">
-          <span className="text-xs uppercase text-neutral-500 dark:text-neutral-400">
-            Es geht los
+          <span className="text-xs font-semibold uppercase text-indigo-500 dark:text-indigo-400">
+            {t("step3.label")}
           </span>
           <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 md:text-3xl">
-            Umsetzung
+            {t("step3.title")}
           </h3>
-          <p className="mt-2 text-sm text-neutral-800 dark:text-neutral-200 md:text-xl">
-            Nach deiner Zustimmung zu unserem Vorschlag beginnen wir mit der
-            Umsetzung. Gemeinsam bringen wir die massgeschneiderten
-            Branding-Strategien und -Materialien auf den Weg, die deine Marke in
-            eine neue Richtung führen werden. Dabei konzentrieren wir uns
-            darauf, deine Markenziele reibungslos und erfolgreich zu
-            realisieren.
+          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-200 md:text-xl">
+            {t("step3.description")}
           </p>
         </div>
       ),
     },
     {
-      title: "04",
+      title: t("step4.number"),
       content: (
         <div className="flex flex-col">
-          <span className="text-xs uppercase text-neutral-500 dark:text-neutral-400">
-            Optimierung
+          <span className="text-xs font-semibold uppercase text-indigo-500 dark:text-indigo-400">
+            {t("step4.label")}
           </span>
           <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 md:text-3xl">
-            Maximale Leistung
+            {t("step4.title")}
           </h3>
-          <p className="mt-2 text-sm text-neutral-800 dark:text-neutral-200 md:text-xl">
-            Wir streben danach, die Performance deiner Marke konstant zu
-            steigern. Mit regelmässigen Marktanalysen und strategischen
-            Anpassungen optimieren wir unsere Zusammenarbeit, um noch bessere
-            Ergebnisse zu erzielen.
+          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-200 md:text-xl">
+            {t("step4.description")}
           </p>
-          <Link
-            href="/kontakt"
-            className="font-sm mt-4 max-w-[10rem] rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-4 py-[10px] text-center text-base text-white shadow-lg hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400 md:text-sm"
-          >
-            Jetzt loslegen
-          </Link>
+          <CalBtnTimeline />
         </div>
       ),
     },

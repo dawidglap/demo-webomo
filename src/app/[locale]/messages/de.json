@@ -487,5 +487,35 @@
       "title": "Haftungsausschluss",
       "description": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr."
     }
-  }  
+  }  ,
+  "Timeline": {
+    "title": "Wie setzen wir das um?",
+    "subtitle": "Erfahre die fünf Schritte, die dich zu einer erfolgreichen Partnerschaft mit WEBOMO führen."
+  },
+  "TimelineDemo": {
+    "step1": {
+      "number": "01",
+      "label": "Los geht's",
+      "title": "Buche ein kostenloses Beratungsgespräch",
+      "description": "Starte deine Branding-Reise, indem du einen Termin für dein erstes Gespräch vereinbarst. Wir können es kaum erwarten, mit dir zusammenzukommen und deine Marke neu zu gestalten."
+    },
+    "step2": {
+      "number": "02",
+      "label": "Was brauchst du?",
+      "title": "Individuelle Strategie",
+      "description": "In unserem Beratungsgespräch entwickeln wir gemeinsam eine massgeschneiderte Strategie, die genau auf die Bedürfnisse deines Unternehmens eingeht. Dabei erstellen wir eine klare Roadmap, die den Erfolg deiner Marke aufzeigt."
+    },
+    "step3": {
+      "number": "03",
+      "label": "Es geht los",
+      "title": "Umsetzung",
+      "description": "Nach deiner Zustimmung zu unserem Vorschlag beginnen wir mit der Umsetzung. Gemeinsam bringen wir die massgeschneiderten Branding-Strategien und -Materialien auf den Weg, die deine Marke in eine neue Richtung führen werden."
+    },
+    "step4": {
+      "number": "04",
+      "label": "Optimierung",
+      "title": "Maximale Leistung",
+      "description": "Wir streben danach, die Performance deiner Marke konstant zu steigern. Mit regelmässigen Marktanalysen und strategischen Anpassungen optimieren wir unsere Zusammenarbeit."
+    }
+  }
 }
