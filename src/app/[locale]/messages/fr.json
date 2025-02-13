@@ -401,5 +401,37 @@
     "thankYouDescription": "Nous vous remercions de votre confiance et vous félicitons pour votre adhésion à la famille Webomo. Nous sommes impatients de vous soutenir dans votre parcours et de vous aider à tirer le meilleur parti de votre programme d'affiliation.",
     "startNowAriaLabel": "Commencer Maintenant",
     "startNowButton": "Commencer Maintenant"
-  }
+  },
+
+    "Timeline": {
+      "title": "Comment mettons-nous cela en œuvre ?",
+      "subtitle": "Découvrez les cinq étapes qui vous mèneront à un partenariat réussi avec WEBOMO."
+    },
+    "TimelineDemo": {
+      "step1": {
+        "number": "01",
+        "label": "C'est parti",
+        "title": "Réservez une consultation gratuite",
+        "description": "Commencez votre parcours de branding en planifiant votre première consultation. Nous sommes impatients de vous rencontrer et de redéfinir votre marque."
+      },
+      "step2": {
+        "number": "02",
+        "label": "De quoi avez-vous besoin ?",
+        "title": "Stratégie sur mesure",
+        "description": "Lors de notre consultation, nous élaborerons une stratégie personnalisée adaptée aux besoins de votre entreprise. Notre objectif est de créer une feuille de route claire pour assurer le succès de votre marque."
+      },
+      "step3": {
+        "number": "03",
+        "label": "Mise en place",
+        "title": "Exécution",
+        "description": "Une fois notre proposition validée, nous passons à la phase d’exécution. Ensemble, nous mettrons en œuvre des stratégies et supports de branding adaptés pour guider votre marque dans une nouvelle direction."
+      },
+      "step4": {
+        "number": "04",
+        "label": "Optimisation",
+        "title": "Performance Maximale",
+        "description": "Nous nous engageons à améliorer en permanence la performance de votre marque. Grâce à des analyses de marché régulières et des ajustements stratégiques, nous affinons notre collaboration pour des résultats encore meilleurs."
+      }
+    }
+    
 }

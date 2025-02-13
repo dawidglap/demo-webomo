@@ -401,6 +401,38 @@
       "thankYouDescription": "Te agradecemos tu confianza y te felicitamos por unirte a la familia Webomo. Estamos emocionados de apoyarte en tu camino y ayudarte a aprovechar al máximo tu programa de afiliados.",
       "startNowAriaLabel": "Comenzar Ahora",
       "startNowButton": "Comenzar Ahora"
-    }
+    },
+    
+      "Timeline": {
+        "title": "¿Cómo lo implementamos?",
+        "subtitle": "Descubre los cinco pasos que te llevarán a una colaboración exitosa con WEBOMO."
+      },
+      "TimelineDemo": {
+        "step1": {
+          "number": "01",
+          "label": "Empecemos",
+          "title": "Reserva una consulta gratuita",
+          "description": "Comienza tu viaje de branding programando tu primera consulta. Estamos emocionados de conocerte y ayudarte a transformar tu marca."
+        },
+        "step2": {
+          "number": "02",
+          "label": "¿Qué necesitas?",
+          "title": "Estrategia personalizada",
+          "description": "Durante nuestra consulta, desarrollaremos una estrategia personalizada adaptada a las necesidades de tu negocio. Nuestro objetivo es crear una hoja de ruta clara que muestre el camino hacia el éxito de tu marca."
+        },
+        "step3": {
+          "number": "03",
+          "label": "Ejecución",
+          "title": "Implementación",
+          "description": "Una vez que apruebes nuestra propuesta, pasamos a la fase de ejecución. Juntos, implementaremos estrategias y materiales de branding personalizados para dirigir tu marca hacia una nueva dirección."
+        },
+        "step4": {
+          "number": "04",
+          "label": "Optimización",
+          "title": "Máximo rendimiento",
+          "description": "Nos esforzamos continuamente por mejorar el rendimiento de tu marca. Con análisis de mercado regulares y ajustes estratégicos, perfeccionamos nuestra colaboración para lograr mejores resultados."
+        }
+      }
+        
   }
   

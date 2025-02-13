@@ -478,7 +478,39 @@
       "title": "Disclaimer",
       "description": "The contents of this website have been created with the utmost care. However, we do not guarantee the accuracy, completeness, or timeliness of the content."
     }
-  }
+  },
+  
+    "Timeline": {
+      "title": "How do we implement this?",
+      "subtitle": "Discover the five steps that will lead you to a successful partnership with WEBOMO."
+    },
+    "TimelineDemo": {
+      "step1": {
+        "number": "01",
+        "label": "Let's get started",
+        "title": "Book a free consultation",
+        "description": "Start your branding journey by scheduling your first consultation. We can't wait to connect with you and help reshape your brand."
+      },
+      "step2": {
+        "number": "02",
+        "label": "What do you need?",
+        "title": "Tailored Strategy",
+        "description": "During our consultation, we will develop a customized strategy specifically designed for your business needs. Our goal is to create a clear roadmap that outlines your brand’s path to success."
+      },
+      "step3": {
+        "number": "03",
+        "label": "Time to execute",
+        "title": "Implementation",
+        "description": "Once you approve our proposal, we move into the execution phase. Together, we will implement customized branding strategies and materials to steer your brand in a new direction."
+      },
+      "step4": {
+        "number": "04",
+        "label": "Optimization",
+        "title": "Maximizing Performance",
+        "description": "We continuously strive to enhance your brand’s performance. With regular market analysis and strategic adjustments, we fine-tune our collaboration for even better results."
+      }
+    }
+    
 }
 
 
