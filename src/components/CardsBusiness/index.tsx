@@ -22,9 +22,9 @@ const CardsBusiness = () => {
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
-        className="mb-10 pb-20 text-center"
+        className="mb-10 pb-16 text-center"
       >
-        <span className="text-sm font-semibold uppercase text-indigo-500">
+        {/* <span className="text-sm font-semibold uppercase text-indigo-500">
           {t("highlight")}
         </span>
         <h2 className="mt-2 text-3xl font-bold text-black dark:text-white md:text-5xl">
@@ -32,7 +32,16 @@ const CardsBusiness = () => {
         </h2>
         <p className="mt-3 text-lg text-gray-500 dark:text-gray-300 md:text-xl">
           {t("subtitle")}
-        </p>
+        </p> */}
+        <div className="">
+          <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-5xl">
+            <span className="text-indigo-700 dark:text-indigo-300">
+              {t("headlineHighlight")}
+              <br />
+            </span>{" "}
+            {t("headline")}
+          </h2>
+        </div>
       </motion.div>
 
       {/* Cards Grid */}

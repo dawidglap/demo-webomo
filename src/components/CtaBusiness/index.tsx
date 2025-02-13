@@ -10,14 +10,14 @@ const CtaBusiness = () => {
 
   return (
     <motion.section
-      className="me-10 ms-10 flex h-[300px] items-center justify-center rounded-[30px] bg-gradient-to-r from-indigo-100 via-purple-50  to-cyan-100   dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
+      className="me-10 ms-10 flex h-[100px] items-center justify-center rounded-[30px] bg-gradient-to-r from-indigo-100 via-purple-50  to-cyan-100   dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="text-center">
         {/* Headline */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-5xl">
             <span className="text-indigo-700 dark:text-indigo-300">
               {t("headlineHighlight")}
@@ -25,7 +25,7 @@ const CtaBusiness = () => {
             </span>{" "}
             {t("headline")}
           </h2>
-        </div>
+        </div> */}
 
         {/* Button */}
         <Link
