@@ -432,6 +432,29 @@
         "title": "Massima performance",
         "description": "Ci impegniamo costantemente a migliorare le performance del tuo brand. Attraverso analisi di mercato regolari e aggiustamenti strategici, ottimizziamo la nostra collaborazione per ottenere risultati sempre migliori."
       }
-    }
+    },
     
+  "CardsBusiness": {
+    "highlight": "Marketing d'Impatto",
+    "title": "Perché KL Marketing - Branding è la chiave del tuo successo?",
+    "subtitle": "Aumenta la visibilità e il posizionamento del tuo brand per attirare clienti che investono nella qualità.",
+    "card1": {
+      "alt": "Opportunità di guadagno illimitate",
+      "title": "Guadagni Senza Limiti",
+      "description": "Non ci sono limiti ai tuoi guadagni. Ogni anno costruisci il tuo portafoglio e il tuo reddito cresce di conseguenza."
+    },
+    "card2": {
+      "alt": "Reddito ricorrente",
+      "title": "Entrate Annuali invece di Guadagni Una Tantum",
+      "description": "Con entrate annuali ricorrenti, ottieni una stabilità economica senza dover dipendere da pagamenti singoli."
+    },
+    "card3": {
+      "alt": "Libertà e flessibilità",
+      "title": "Più Libertà",
+      "description": "Lavora da qualsiasi luogo e decidi quanto e per quanto tempo lavorare. Ti aiutiamo a costruire il tuo team per ottenere più tempo per te stesso."
+    }
+  }
 }
+
+    
+

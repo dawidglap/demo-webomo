@@ -432,7 +432,27 @@
           "title": "Máximo rendimiento",
           "description": "Nos esforzamos continuamente por mejorar el rendimiento de tu marca. Con análisis de mercado regulares y ajustes estratégicos, perfeccionamos nuestra colaboración para lograr mejores resultados."
         }
-      }
-        
+      },
+      
+        "CardsBusiness": {
+          "highlight": "Marketing de Alto Impacto",
+          "title": "¿Por qué KL Marketing - Branding es la clave de tu éxito?",
+          "subtitle": "Aumenta la visibilidad y posición de tu marca para atraer clientes que valoran la calidad excepcional.",
+          "card1": {
+            "alt": "Oportunidades de ingresos ilimitadas",
+            "title": "Potencial de Ingresos Ilimitado",
+            "description": "No hay un techo para tus ganancias. Cada año construyes tu portafolio y tus ingresos crecen con él."
+          },
+          "card2": {
+            "alt": "Ingresos recurrentes",
+            "title": "Ingresos Anuales en Lugar de Pagos Únicos",
+            "description": "Con ingresos anuales recurrentes, aseguras estabilidad financiera en lugar de depender de pagos puntuales."
+          },
+          "card3": {
+            "alt": "Libertad y flexibilidad",
+            "title": "Más Libertad",
+            "description": "Trabaja desde donde quieras y decide cuánto y cuándo trabajar. Te ayudamos a construir tu equipo para que disfrutes de más tiempo libre."
+          }
+        }        
   }
   

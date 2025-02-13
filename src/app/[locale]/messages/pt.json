@@ -432,6 +432,26 @@
           "title": "Desempenho máximo",
           "description": "Nos esforçamos constantemente para melhorar o desempenho da sua marca. Com análises de mercado regulares e ajustes estratégicos, otimizamos nossa colaboração para alcançar resultados ainda melhores."
         }
-      }    
+      },
+        "CardsBusiness": {
+          "highlight": "Marketing de Impacto",
+          "title": "Por que o KL Marketing - Branding é a chave do seu sucesso?",
+          "subtitle": "Aumente a visibilidade e o posicionamento da sua marca para atrair clientes que investem em qualidade excepcional.",
+          "card1": {
+            "alt": "Oportunidades de renda ilimitadas",
+            "title": "Potencial de Ganhos Ilimitado",
+            "description": "Não há limite para seus ganhos. A cada ano, você constrói seu portfólio e sua renda cresce junto com ele."
+          },
+          "card2": {
+            "alt": "Renda recorrente",
+            "title": "Receita Anual em Vez de Ganhos Únicos",
+            "description": "Com receita recorrente anual, você garante uma renda estável em vez de depender de pagamentos únicos."
+          },
+          "card3": {
+            "alt": "Liberdade e flexibilidade",
+            "title": "Mais Liberdade",
+            "description": "Trabalhe de onde quiser e decida quanto e por quanto tempo deseja trabalhar. Ajudamos você a expandir sua equipe para conquistar mais tempo para si mesmo."
+          }
+        }       
   }
   

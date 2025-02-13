@@ -509,8 +509,27 @@
         "title": "Maximizing Performance",
         "description": "We continuously strive to enhance your brand’s performance. With regular market analysis and strategic adjustments, we fine-tune our collaboration for even better results."
       }
-    }
-    
+    },
+      "CardsBusiness": {
+        "highlight": "Marketing with Impact",
+        "title": "Why is KL Marketing - Branding the Key to Your Success?",
+        "subtitle": "Boost your brand’s visibility and market position to attract clients who value exceptional quality.",
+        "card1": {
+          "alt": "Unlimited income opportunities",
+          "title": "Unlimited Earning Potential",
+          "description": "There is no income cap. Every year, you build your portfolio, and your revenue grows alongside it."
+        },
+        "card2": {
+          "alt": "Recurring income",
+          "title": "Annual Revenue Instead of One-Time Gains",
+          "description": "With recurring annual revenue, you secure a stable and predictable income instead of relying on one-off payments."
+        },
+        "card3": {
+          "alt": "Freedom and flexibility",
+          "title": "More Freedom",
+          "description": "Work from anywhere and decide how much and how long you want to work. We support you in growing your team so you can gain more time for yourself."
+        }
+      }
 }
 
 

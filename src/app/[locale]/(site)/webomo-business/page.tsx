@@ -1,6 +1,7 @@
 import AboutBusinessOne from "@/components/AboutBusiness1";
 import AboutBusinessTwo from "@/components/AboutBusiness2";
 import AboutBusinessThree from "@/components/AboutBusiness3";
+import CardsBusiness from "@/components/CardsBusiness";
 import CtaBusiness from "@/components/CtaBusiness";
 import Faq from "@/components/FaqBusiness";
 import HeroBusiness from "@/components/HeroBusiness";
@@ -13,6 +14,7 @@ const WebomoBusiness = () => {
       <AboutBusinessOne />
       <AboutBusinessTwo />
       <AboutBusinessThree />
+      <CardsBusiness />
       <CtaBusiness />
       <Faq />
     </div>

@@ -517,5 +517,26 @@
       "title": "Maximale Leistung",
       "description": "Wir streben danach, die Performance deiner Marke konstant zu steigern. Mit regelmässigen Marktanalysen und strategischen Anpassungen optimieren wir unsere Zusammenarbeit."
     }
-  }
+  },
+  
+    "CardsBusiness": {
+      "highlight": "Marketing mit Impact",
+      "title": "Warum ist Kl Marketing - Branding der Schlüssel zu deinem Erfolg?",
+      "subtitle": "Steigere die Wahrnehmung und Markposition deiner Marke und gewinne Kunden, die in herausragende Qualität investieren.",
+      "card1": {
+        "alt": "Stand out",
+        "title": "Unbegrenzte Einkommensmöglichkeiten",
+        "description": "Es gibt keine Obergrenze für deinen Verdienst. Jedes Jahr baust du dein Portfolio auf und gleichzeitig wächst dein Einkommen."
+      },
+      "card2": {
+        "alt": "Get dream clients",
+        "title": "Jährliche Einnahmen statt einmalige Gewinne",
+        "description": "Mit jährlichen Einnahmen erhältst du ein stetiges, wiederkehrendes Einkommen, anstatt nur einmalige Zahlungen zu erhalten."
+      },
+      "card3": {
+        "alt": "Increase your profits",
+        "title": "Mehr Freiheit",
+        "description": "Du arbeitest ortsunabhängig und hast die Freiheit, selbst zu bestimmen, wie viel und wie lange du arbeiten möchtest. Wir unterstützen dich dabei, dein Team auszubauen, damit du mehr Zeit für dich selbst gewinnen kannst."
+      }
+    }
 }
