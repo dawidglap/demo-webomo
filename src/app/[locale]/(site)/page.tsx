@@ -8,6 +8,7 @@ import About2 from "@/components/About2";
 import About3 from "@/components/About3";
 import Hero3 from "@/components/HeroArea3";
 import Hero4 from "@/components/HeroArea4";
+import { TimelineDemo } from "@/components/ui/timelineDemo";
 
 export const metadata: Metadata = {
   title: "Webomo - Your Social Media Expert",
@@ -23,10 +24,11 @@ export default function Home() {
 
       <WebomoFeatures />
       <Clients />
+      <TimelineDemo />
       {/* <Features /> */}
-      <About />
-      <About2 />
-      <About3 />
+      {/* <About /> */}
+      {/* <About2 /> */}
+      {/* <About3 /> */}
       {/* <AboutEnd /> */}
       {/* <WorkProcess /> */}
       {/* <Pricing /> */}
