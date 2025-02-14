@@ -10,6 +10,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import DarkModeSwitcher from "@/components/Header/DarkModeSwitcher";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import LangSwitcher from "../Language";
+import Image from "next/image";
+import LogoBlack from "../../../public/images/logo/webomo_black_4kpx.png";
+import LogoWhite from "../../../public/images/logo/webomo_white_4kpx.png";
 
 const Header = () => {
   const t = useTranslations("Header"); // Namespace for translations
@@ -76,11 +79,31 @@ const Header = () => {
         <div className="container relative mx-auto max-w-[1400px] px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <div className="z-50 block w-1/3">
+            {/* <div className="z-50 block w-1/3">
               <Link href={`/${currentLocale}/`} className="block max-w-[180px]">
                 <span className="relative text-2xl font-bold tracking-wider text-[#181C30] transition-all duration-300 dark:text-white md:text-[36px]">
                   {t("logo")}
                 </span>
+              </Link>
+            </div> */}
+            <div className="z-50 block w-1/3">
+              <Link href={`/${currentLocale}/`} className="block max-w-[180px]">
+                <div className="relative transition-all duration-300">
+                  <Image
+                    src={LogoBlack}
+                    alt="Webomo Logo"
+                    width={180}
+                    height={50}
+                    className="block dark:hidden"
+                  />
+                  <Image
+                    src={LogoWhite}
+                    alt="Webomo Logo"
+                    width={180}
+                    height={50}
+                    className="hidden dark:block"
+                  />
+                </div>
               </Link>
             </div>
 
