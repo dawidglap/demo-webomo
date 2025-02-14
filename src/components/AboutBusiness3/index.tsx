@@ -16,7 +16,7 @@ const AboutBusinessThree = () => {
 
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.4,
+      threshold: 0.2,
     };
 
     const videoObserver = new IntersectionObserver((entries) => {

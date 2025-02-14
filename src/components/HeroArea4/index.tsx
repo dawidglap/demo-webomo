@@ -11,7 +11,7 @@ const Hero4 = () => {
 
   const { ref: imageRef, inView: imageInView } = useInView({
     triggerOnce: true,
-    threshold: 0.6,
+    threshold: 0.3,
   });
 
   // Animation Variants

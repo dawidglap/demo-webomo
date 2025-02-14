@@ -15,7 +15,7 @@ const About3 = () => {
 
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.4,
+      threshold: 0.2,
     };
 
     // Video Observer

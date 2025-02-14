@@ -12,12 +12,12 @@ const About2 = () => {
 
   const { ref: textRef, inView: textInView } = useInView({
     triggerOnce: true,
-    threshold: 0.8,
+    threshold: 0.4,
   });
 
   const { ref: cardRef, inView: cardInView } = useInView({
     triggerOnce: true,
-    threshold: 0.6,
+    threshold: 0.3,
   });
 
   const sectionVariants = {

@@ -10,7 +10,7 @@ const HeroBusiness = () => {
 
   const { ref: smartphoneRef, inView: smartphoneInView } = useInView({
     triggerOnce: true,
-    threshold: 0.6,
+    threshold: 0.3,
   });
 
   // Animation Variants

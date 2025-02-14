@@ -19,7 +19,7 @@ const Designs = () => {
 
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.6, // Trigger when 60% of the element is visible
+      threshold: 0.3, // Trigger when 60% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries) => {

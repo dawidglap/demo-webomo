@@ -24,7 +24,7 @@ const Hero = () => {
             observer.disconnect(); // Disconnette l'observer
           }
         },
-        { threshold: 0.6 },
+        { threshold: 0.3 },
       );
 
       observer.observe(ref);

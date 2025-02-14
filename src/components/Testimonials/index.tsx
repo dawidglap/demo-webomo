@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   const t = useTranslations("Testimonials");
-  const thresholdValue = 0.3; // Visibility threshold for animations
+  const thresholdValue = 0.2; // Visibility threshold for animations
 
   const testimonialData = [
     {

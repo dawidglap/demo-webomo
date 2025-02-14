@@ -19,7 +19,7 @@ const WebomoFeatures = () => {
   // Visibility tracking
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.1,
   });
   const { ref: titleRef, inView: titleInView } = useInView({
     triggerOnce: false,

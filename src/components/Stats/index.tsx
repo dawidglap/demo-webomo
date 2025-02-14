@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Stats = () => {
   const t = useTranslations("Stats"); // Translation hook
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
   const leftControls = useAnimation();
   const centerControls = useAnimation();
   const rightControls = useAnimation();

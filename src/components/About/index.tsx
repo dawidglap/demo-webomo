@@ -20,7 +20,7 @@ const About = () => {
 
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.6,
+      threshold: 0.3,
     };
 
     const sectionObserver = new IntersectionObserver((entries) => {

@@ -22,7 +22,7 @@ const AboutEnd = () => {
           observer.disconnect(); // Disconnect observer after visibility is triggered
         }
       },
-      { threshold: 0.6 },
+      { threshold: 0.3 },
     );
 
     if (frameRef.current) {

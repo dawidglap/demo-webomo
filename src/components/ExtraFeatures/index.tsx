@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 const ExtraFeatures = () => {
   const t = useTranslations("ExtraFeatures");
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const controls = useAnimation();
 
   const [firstStat, setFirstStat] = useState(0);
