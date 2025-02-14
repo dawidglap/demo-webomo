@@ -11,8 +11,8 @@ import DarkModeSwitcher from "@/components/Header/DarkModeSwitcher";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import LangSwitcher from "../Language";
 import Image from "next/image";
-import LogoBlack from "../../../public/images/logo/webomo_black_4kpx.png";
-import LogoWhite from "../../../public/images/logo/webomo_white_4kpx.png";
+import LogoBlack from "../../../public/images/logo/logo_black.png";
+import LogoWhite from "../../../public/images/logo/logo_white.png";
 
 const Header = () => {
   const t = useTranslations("Header"); // Namespace for translations
