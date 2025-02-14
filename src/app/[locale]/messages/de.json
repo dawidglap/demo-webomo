@@ -53,7 +53,7 @@
       "imageAlt": "Webentwicklung Bild"
     },
     "AboutBusinessOne": {
-      "title": "Schließe dich unserer Community an.",
+      "title": "Schliesse dich unserer Community an.",
       "description": "Egal ob Content-Creator, Coaches oder ein einfacher Instagram Benutzer. Wir von Webomo bieten jedem die Chance, erfolgreich zu werden und Geld zu verdienen. Positioniere dich jetzt in unserer Community und verdiene Provisionen und erlebe die Flexibilität des Future-Works.",
       "learnMore": "Mehr erfahren",
       "imageAlt": "Über uns Bild",
@@ -68,7 +68,7 @@
     },
     "AboutBusinessThree": {
       "title": "Webomo Incentives",
-      "description": "Webomo Incentives führen dich an die schönsten Orten der Welt. Du beginnst mit einem aufregenden Team-Building-Abenteuer in den majestätischen Bergen, wo du mit deinen Kollegen aufregende Herausforderungen meisterst und dabei nicht nur deine Teamfähigkeiten stärkst, sondern auch unvergessliche Erinnerungen schaffst. Danach geht es weiter zu exotischen Küstenstädten, wo du die lokale Kultur erlebst, köstliche Küche genießt und dich in einem luxuriösen Strandresort entspannst. Während du an diesen atemberaubenden Orten bist, hast du nicht nur viel Spaß, sondern fühlst dich auch inspiriert und motiviert, deine Ziele zu erreichen, sei es im beruflichen oder im privaten Bereich.",
+      "description": "Webomo Incentives führen dich an die schönsten Orten der Welt. Du beginnst mit einem aufregenden Team-Building-Abenteuer in den majestätischen Bergen, wo du mit deinen Kollegen aufregende Herausforderungen meisterst und dabei nicht nur deine Teamfähigkeiten stärkst, sondern auch unvergessliche Erinnerungen schaffst. Danach geht es weiter zu exotischen Küstenstädten, wo du die lokale Kultur erlebst, köstliche Küche geniesst und dich in einem luxuriösen Strandresort entspannst. Während du an diesen atemberaubenden Orten bist, hast du nicht nur viel Spass, sondern fühlst dich auch inspiriert und motiviert, deine Ziele zu erreichen, sei es im beruflichen oder im privaten Bereich.",
       "learnMore": "Mehr erfahren",
       "videoSrc": "/images/about/drone-video1.mp4"
     },
@@ -91,7 +91,7 @@
   "HeroAboutUs":{
   "title":"Unsere Vision",
   "subHeadline":"Ihr Erfolg",
-  "mission": "Webomo ist eine KI-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit maßgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
+  "mission": "Webomo ist eine KI-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit massgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
   "cta": "Werde Teil unseres Teams!"
   } , 
   "WhoWeAre":{
@@ -99,7 +99,7 @@
     "smallTeamTitle": "Kleines Team, GROSSE Wirkung",
     "smallTeamDescription": "Bei Webomo setzen wir auf Qualität statt Quantität – in unserer Arbeit und unserem Team. Mit Agilität, Innovation und Leidenschaft konzentrieren wir uns vollkommendarauf, Ihre Erfolge zu maximieren.",
     "growthTitle":"Bemerkenswertes Wachstum",
-    "growthDescription": "Webomo wurde 2022 gegründet, ist profitabel und hilft bereits über 200 Unternehmen, ihr volles Potenzial auszuschöpfen. Mit einer soliden Basis und großem Ehrgeiz bauen wir ein gesundes, dynamisch wachsendes Unternehmen auf, das begeistert und Erfolg.",
+    "growthDescription": "Webomo wurde 2022 gegründet, ist profitabel und hilft bereits über 200 Unternehmen, ihr volles Potenzial auszuschöpfen. Mit einer soliden Basis und grossem Ehrgeiz bauen wir ein gesundes, dynamisch wachsendes Unternehmen auf, das begeistert und Erfolg.",
     "trustedTitle":"Von Führungskräften vertraut",
     "trustedDescription":"Webomo wird von Branchenexperten unterstützt: Berater wie KI-Pionier Yann LeCun, der renommierte Beschleuniger Y-Combinator und der erfahrene Risikokapitalgeber Nico Wittenborn stehen hinter uns."
   },
@@ -110,7 +110,7 @@
    "shipFastTitle":"Schnell liefern, um zu lernen",
    "shipFastDescription":"Bei Webomo setzen wir auf Fortschritt statt Perfektion. Unser Fokus auf schnelles Umsetzen ermöglicht es uns, frühzeitig zu lernen und kontinuierlich besser zu werden.",
    "buildItTitle":"Bauen, besitzen",
-   "buildItDescription":"Bei Webomo sind wir alle vertrauenswürdigen Experten, die stolz auf unser Handwerk sind. Wir legen großen Wert auf Konsequenz und darauf, einen echten Einfluss auf unsere Nutzer auszuüben – unabhängig von der Rolle, die wir übernehmen.",
+   "buildItDescription":"Bei Webomo sind wir alle vertrauenswürdigen Experten, die stolz auf unser Handwerk sind. Wir legen grossen Wert auf Konsequenz und darauf, einen echten Einfluss auf unsere Nutzer auszuüben – unabhängig von der Rolle, die wir übernehmen.",
    "stayOpenTitle":"Offen bleiben",
    "stayOpenDescription":"Bei Webomo sind wir stets offen für neue Ideen und fördern eine Kultur der Transparenz. Wir arbeiten gemeinsam und teilen unser Wissen, um kontinuierlich zu wachsen und zu innovieren."
   },
@@ -146,7 +146,7 @@
   },
   "Cta": {
     "title": "Bringen Sie Ihre sozialen Medien mit Webomo auf die nächste Stufe",
-    "description": "Schließen Sie sich den von Experten geleiteten Social-Media-Diensten von Webomo an und beginnen Sie, eine starke Online-Präsenz aufzubauen. Von der Strategie bis zur Interaktion – wir haben die Werkzeuge, um Ihnen beim Wachstum zu helfen.",
+    "description": "Schliessen Sie sich den von Experten geleiteten Social-Media-Diensten von Webomo an und beginnen Sie, eine starke Online-Präsenz aufzubauen. Von der Strategie bis zur Interaktion – wir haben die Werkzeuge, um Ihnen beim Wachstum zu helfen.",
     "getStarted": "Loslegen",
     "bookCall": "Einen Anruf buchen",
     "ctaImageAlt": "CTA Bild"
@@ -175,9 +175,9 @@
     "faq3Title": "Wie werden die Inhalte erstellt?",
     "faq3Details": "Die Inhalte entstehen durch individuelle Fotoshootings und Videoaufnahmen direkt vor Ort bei den Kunden. Das Material wird in eine KI eingespeist, die daraufhin ausdrucksstarke Inhalte erschafft. Der direkte Kontakt zum Kunden stellt sicher, dass die Strategien authentisch und lebendig umgesetzt werden.",
     "faq4Title": "Wer kann Webomo nutzen?",
-    "faq4Details": "Webomo kann von Unternehmen und Privatpersonen genutzt werden, die ihre Kundenbasis erweitern, ihre Markenbekanntheit steigern oder ihren Umsatz erhöhen möchten. Es ist sowohl für kleine Unternehmen als auch große Marken geeignet, die ihre Sichtbarkeit und Reichweite verbessern wollen.",
+    "faq4Details": "Webomo kann von Unternehmen und Privatpersonen genutzt werden, die ihre Kundenbasis erweitern, ihre Markenbekanntheit steigern oder ihren Umsatz erhöhen möchten. Es ist sowohl für kleine Unternehmen als auch grosse Marken geeignet, die ihre Sichtbarkeit und Reichweite verbessern wollen.",
     "faq5Title": "Welche Vorteile & Nutzen bringt Webomo?",
-    "faq5Details": "Webomo spart wertvolle Zeit, senkt Kosten und liefert präzise Insights durch KI-gestützte Analysen. Mit maßgeschneiderten Strategien ermöglicht Webomo eine erhebliche Umsatzsteigerung und langfristigen Erfolg für Unternehmen.",
+    "faq5Details": "Webomo spart wertvolle Zeit, senkt Kosten und liefert präzise Insights durch KI-gestützte Analysen. Mit massgeschneiderten Strategien ermöglicht Webomo eine erhebliche Umsatzsteigerung und langfristigen Erfolg für Unternehmen.",
     "faq6Title": "Wieso ist Webomo bei Unternehmen und Privatpersonen so beliebt?",
     "faq6Details": "Webomo bietet eine einzigartige Möglichkeit, die Reichweite durch Affiliate-Marketing zu erhöhen. Der internationale Ansatz öffnet Türen auf lokalen und globalen Märkten und schafft die ideale Umgebung für den Erfolg – egal ob für Startups oder etablierte Marken.",
     "faq7Title": "Wieso arbeitet Webomo mit Abo-Modellen?",
@@ -201,7 +201,7 @@
     "faqBusiness7Title": "Wie kann ich mit Webomo-Business Geld verdienen?",
     "faqBusiness7Details": "Durch die wöchentlichen Veröffentlichungen generierst du Empfehlungen für unsere Dienstleistungen. Sobald ein Kunde bei Webomo ein Paket (Basic, Pro oder Business) gebucht hat, werden dir Provisionen zugeteilt.",
     "faqBusiness8Title": "Wieviel Geld kann ich mit dem Webomo-Business Partnerprogramm verdienen?",
-    "faqBusiness8Details": "Du erhältst für die Buchung des Pakets: Basic jährlich 500.- CHF, Pro jährlich 700.- CHF, Business jährlich 1'000.- CHF Provisionen. Je größer dein Team ist, desto größer ist deine Chance, deine jährlichen Einnahmen zu erhöhen.",
+    "faqBusiness8Details": "Du erhältst für die Buchung des Pakets: Basic jährlich 500.- CHF, Pro jährlich 700.- CHF, Business jährlich 1'000.- CHF Provisionen. Je grösser dein Team ist, desto grösser ist deine Chance, deine jährlichen Einnahmen zu erhöhen.",
     "faqBusiness9Title": "Wie werden die Provisionen ausgezahlt?",
     "faqBusiness9Details": "Deine Provisionen werden immer im Folgemonat am 30. auf dein Bankkonto oder deine Kreditkarte ausbezahlt. Bitte beachte, dass die Provisionen unabhängig von deiner Region/Land in CHF (Schweizer Franken) ausgezahlt werden.",
     "faqBusiness10Title": "Ist die Teilnahme am Webomo-Business Partnerprogramm kostenlos?",
@@ -252,7 +252,7 @@
   },
   "Mission": {
     "title": "Was machen wir",
-    "description": "Wir bieten ein einzigartiges Portfolio an Dienstleistungen an, von Social-Media-Kampagnen und Content-Marketing über professionelle Fotoshootings bis hin zu Videoproduktionen in Kinoqualität, Webentwicklung und maßgeschneiderten Strategien. Unser Ziel ist es, Ihre Marke auf die nächste Stufe zu bringen."
+    "description": "Wir bieten ein einzigartiges Portfolio an Dienstleistungen an, von Social-Media-Kampagnen und Content-Marketing über professionelle Fotoshootings bis hin zu Videoproduktionen in Kinoqualität, Webentwicklung und massgeschneiderten Strategien. Unser Ziel ist es, Ihre Marke auf die nächste Stufe zu bringen."
   },
   "Pricing": {
     "title": "Finden Sie den",
@@ -378,7 +378,7 @@
         "authorRole": "Startup Gründer, Innovatech"
       },
       {
-        "quote": "Die kreativen Inhalte von Webomo haben unser Social-Media-Engagement auf ein neues Level gebracht. Vielen Dank für den großartigen Service!",
+        "quote": "Die kreativen Inhalte von Webomo haben unser Social-Media-Engagement auf ein neues Level gebracht. Vielen Dank für den grossartigen Service!",
         "authorName": "Claudia Keller",
         "authorRole": "Freelancer, Designstudio Keller"
       }
@@ -446,7 +446,7 @@
     },
     "userResponsibilities": {
       "title": "Pflichten der Nutzer",
-      "description": "Die Nutzer verpflichten sich, die Website und ihre Inhalte ausschließlich in Übereinstimmung mit geltendem Recht zu verwenden. Unzulässige Handlungen, wie das Verbreiten von schädlichem Code, sind streng verboten."
+      "description": "Die Nutzer verpflichten sich, die Website und ihre Inhalte ausschliesslich in Übereinstimmung mit geltendem Recht zu verwenden. Unzulässige Handlungen, wie das Verbreiten von schädlichem Code, sind streng verboten."
     },
     "intellectualProperty": {
       "title": "Geistiges Eigentum",
@@ -462,7 +462,7 @@
     },
     "governingLaw": {
       "title": "Anwendbares Recht",
-      "description": "Diese AGB unterliegen dem schweizerischen Recht. Streitigkeiten werden ausschließlich vor den Gerichten der Schweiz verhandelt."
+      "description": "Diese AGB unterliegen dem schweizerischen Recht. Streitigkeiten werden ausschliesslich vor den Gerichten der Schweiz verhandelt."
     }
   },
   "impressum":{
@@ -473,7 +473,7 @@
     },
     "address": {
       "title": "Adresse",
-      "description": "Beispielstraße 123, 8000 Zürich, Schweiz."
+      "description": "Beispielstrasse 123, 8000 Zürich, Schweiz."
     },
     "contact": {
       "title": "Kontakt",
@@ -485,7 +485,7 @@
     },
     "disclaimer": {
       "title": "Haftungsausschluss",
-      "description": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr."
+      "description": "Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr."
     }
   }  ,
   "Timeline": {
