@@ -342,7 +342,7 @@ const ManagerPackage = () => {
               </label>
 
               {/* TikTok */}
-              <label className="flex items-center space-x-3">
+              {/* <label className="flex items-center space-x-3">
                 <input
                   disabled
                   type="checkbox"
@@ -355,10 +355,10 @@ const ManagerPackage = () => {
                 <span className="text-sm text-black dark:text-white">
                   TikTok
                 </span>
-              </label>
+              </label> */}
 
               {/* LinkedIn */}
-              <label className="flex items-center space-x-3">
+              {/* <label className="flex items-center space-x-3">
                 <input
                   disabled
                   type="checkbox"
@@ -371,10 +371,10 @@ const ManagerPackage = () => {
                 <span className="text-sm text-black dark:text-white">
                   LinkedIn
                 </span>
-              </label>
+              </label> */}
 
               {/* Snapchat */}
-              <label className="flex items-center space-x-3">
+              {/* <label className="flex items-center space-x-3">
                 <input
                   disabled
                   type="checkbox"
@@ -387,10 +387,10 @@ const ManagerPackage = () => {
                 <span className="text-sm text-black dark:text-white">
                   Snapchat
                 </span>
-              </label>
+              </label> */}
 
               {/* YouTube */}
-              <label className="flex items-center space-x-3">
+              {/* <label className="flex items-center space-x-3">
                 <input
                   disabled
                   type="checkbox"
@@ -403,7 +403,7 @@ const ManagerPackage = () => {
                 <span className="text-sm text-black dark:text-white">
                   YouTube
                 </span>
-              </label>
+              </label> */}
             </div>
           </div>
 
