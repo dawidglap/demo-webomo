@@ -139,7 +139,7 @@ const ManagerPackage = () => {
       <ToastContainer />
       {/* Package Details */}
       <div className="w-full lg:w-1/3">
-        <div className=" relative flex flex-col rounded-xl bg-purple-100 p-6 shadow-2xl dark:bg-slate-900">
+        <div className=" relative flex flex-col rounded-2xl bg-purple-100 p-6 shadow-2xl dark:bg-slate-900">
           <h3 className="mb-4 text-2xl font-semibold text-black dark:text-white">
             {t("manager")}
           </h3>
@@ -201,7 +201,7 @@ const ManagerPackage = () => {
       </div>
 
       {/* Contact Form */}
-      <div className="w-full rounded-xl bg-gray-50 p-6 shadow-lg dark:bg-gray-800 lg:w-2/3">
+      <div className="w-full rounded-2xl bg-gray-50 p-6 shadow-lg dark:bg-gray-800 lg:w-2/3">
         <form className="space-y-6">
           <h3 className="mb-6 text-2xl font-semibold text-black dark:text-white">
             {t("title")}
@@ -318,7 +318,7 @@ const ManagerPackage = () => {
                   name="instagram"
                   checked={formData.instagram}
                   onChange={handleChange}
-                  className="h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500 dark:border-gray-600 dark:bg-gray-700"
+                  className=" h-4 w-4 rounded border-gray-300 text-purple-600  focus:ring-purple-500 dark:border-gray-600 dark:bg-gray-700"
                 />
                 <FaInstagram className="text-pink-600" size={20} />
                 <span className="text-sm text-black dark:text-white">
@@ -344,6 +344,7 @@ const ManagerPackage = () => {
               {/* TikTok */}
               <label className="flex items-center space-x-3">
                 <input
+                  disabled
                   type="checkbox"
                   name="tiktok"
                   checked={formData.tiktok}
@@ -359,6 +360,7 @@ const ManagerPackage = () => {
               {/* LinkedIn */}
               <label className="flex items-center space-x-3">
                 <input
+                  disabled
                   type="checkbox"
                   name="linkedin"
                   checked={formData.linkedin}
@@ -374,6 +376,7 @@ const ManagerPackage = () => {
               {/* Snapchat */}
               <label className="flex items-center space-x-3">
                 <input
+                  disabled
                   type="checkbox"
                   name="snapchat"
                   checked={formData.snapchat}
@@ -389,6 +392,7 @@ const ManagerPackage = () => {
               {/* YouTube */}
               <label className="flex items-center space-x-3">
                 <input
+                  disabled
                   type="checkbox"
                   name="youtube"
                   checked={formData.youtube}
