@@ -73,9 +73,9 @@ const Contact = () => {
             </span>
           </h1>
         </div>
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+        <div className="">
           {/* Contact Form */}
-          <div
+          {/* <div
             className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-indigo-100 px-4  py-10 shadow-xl dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8"
             data-wow-delay=".3s"
           >
@@ -145,23 +145,23 @@ const Contact = () => {
                 </div>
               </div>
             </form>
-          </div>
+          </div> */}
 
           {/* Booking Card */}
-          <div className="wow fadeInUp flex w-full max-w-[925px]  flex-col items-center justify-center rounded-[30px]  bg-purple-100 px-4 py-10 text-center shadow-xl dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
-            <h2 className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:mt-[-40px] md:text-[36px] md:leading-tight">
+          <div className="wow fadeInUp mx-auto flex w-full max-w-2xl flex-col  items-center justify-center rounded-[30px] bg-purple-100  px-4 py-10 text-center shadow-xl dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
+            <h2 className="mb-0 text-2xl font-bold text-black dark:text-white sm:text-3xl  md:text-[36px] md:leading-tight">
               {t("bookCall.title")}
             </h2>
 
             <p className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
               {t("bookCall.title2")}
             </p>
-            <p className="mb-6 text-lg text-body dark:text-gray-300">
+            <p className="text-md mb-6 text-body dark:text-gray-300">
               {t("bookCall.subtitle")}
             </p>
             {/* <CalendlyBtn /> */}
             <CalBtn />
-            <div className="mt-8 space-y-4 text-center">
+            <div className="mt-4 space-y-4 text-center">
               {/* <p className="flex items-center justify-center text-lg text-body dark:text-gray-300">
                 <AiOutlineMail className="mr-2 text-lg text-primary" />
                 <a
@@ -172,7 +172,7 @@ const Contact = () => {
                 </a>
               </p> */}
             </div>
-            <p className="mt-8 text-xl text-black dark:text-gray-300">
+            <p className="mt-2 text-xs font-semibold text-black dark:text-gray-300">
               {t("bookCall.thankYou")}
             </p>
           </div>
