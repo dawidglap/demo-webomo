@@ -11,7 +11,7 @@ import Hero4 from "@/components/HeroArea4";
 import { TimelineDemo } from "@/components/ui/timelineDemo";
 
 export const metadata: Metadata = {
-  title: "Webomo - Your Social Media Expert",
+  title: "Webomo - KI Marketing Agency",
   description: "",
 };
 
