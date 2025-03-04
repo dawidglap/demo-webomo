@@ -16,7 +16,7 @@ const Footer = ({ locale }: { locale: string }) => {
             <h3 className="text-lg font-bold text-black dark:text-white">
               Webomo
             </h3>
-            <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+            <p className="mt-2 max-w-xs text-xs font-light  text-gray-700 dark:text-gray-300">
               {t("companyDescription")}
             </p>
           </div>
