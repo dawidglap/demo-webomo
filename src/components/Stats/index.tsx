@@ -71,43 +71,43 @@ const Stats = () => {
 
       <div className="mt-8 flex flex-wrap justify-center gap-4 md:flex-nowrap md:gap-8">
         <motion.div
-          className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-indigo-100 p-4 shadow-lg dark:bg-[#33334D] md:h-60 md:w-60"
+          className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-500 p-4  text-white shadow-lg  dark:bg-[#33334D] md:h-60 md:w-60"
           initial={{ opacity: 0, x: -100 }}
           animate={leftControls}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <span className="mb-4 text-4xl font-bold text-indigo-600 dark:text-indigo-400 md:text-5xl">
+          <span className="mb-4 text-4xl font-bold text-white dark:text-black md:text-5xl">
             {leftStat}%
           </span>
-          <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
+          <p className="min-h-[3rem] text-center text-white dark:text-black md:text-lg">
             {t("stats.left")}
           </p>
         </motion.div>
 
         <motion.div
-          className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-indigo-100 p-4 shadow-lg dark:bg-[#33334D] md:h-60 md:w-60"
+          className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-500 p-4  text-white shadow-lg  dark:bg-[#33334D] md:h-60 md:w-60"
           initial={{ opacity: 0, y: 50 }}
           animate={centerControls}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <span className="mb-4 text-4xl font-bold text-indigo-600 dark:text-indigo-400 md:text-5xl">
+          <span className="mb-4 text-4xl font-bold text-white dark:text-black md:text-5xl">
             {centerStat}%
           </span>
-          <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
+          <p className="min-h-[3rem] text-center text-white dark:text-black md:text-lg">
             {t("stats.center")}
           </p>
         </motion.div>
 
         <motion.div
-          className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-indigo-100 p-4 shadow-lg dark:bg-[#33334D] md:h-60 md:w-60"
+          className="flex h-40 w-40 flex-col items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-500 p-4  text-white shadow-lg  dark:bg-[#33334D] md:h-60 md:w-60"
           initial={{ opacity: 0, x: 100 }}
           animate={rightControls}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <span className="mb-4 text-4xl font-bold text-indigo-600 dark:text-indigo-400 md:text-5xl">
+          <span className="mb-4 text-4xl font-bold text-white dark:text-black md:text-5xl">
             {rightStat}%
           </span>
-          <p className="min-h-[3rem] text-center text-gray-700 dark:text-white md:text-lg">
+          <p className="min-h-[3rem] text-center text-white dark:text-black md:text-lg">
             {t("stats.right")}
           </p>
         </motion.div>

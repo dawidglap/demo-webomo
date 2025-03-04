@@ -53,7 +53,7 @@ const AboutEnd = () => {
       </h2>
 
       {/* Main Container with Rounded Background */}
-      <div className="relative flex w-full max-w-3xl flex-col items-center justify-between rounded-3xl bg-gradient-to-b from-[#ECE7FE] via-purple-200 to-[#B4A2E0] px-8 py-4 shadow-xl dark:from-slate-700 dark:to-black md:flex-row md:px-16 md:py-8">
+      <div className="relative flex w-full max-w-3xl flex-col items-center justify-between rounded-3xl bg-gradient-to-b from-[#ECE7FE] via-purple-200 to-[#B4A2E0] px-8 py-4 pb-10 shadow-xl dark:from-slate-700 dark:to-black md:flex-row md:px-16 md:py-8">
         {/* Text and Call-to-Action */}
         <div className="text-center md:max-w-md md:text-left lg:max-w-sm">
           <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">

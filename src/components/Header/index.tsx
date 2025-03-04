@@ -13,6 +13,8 @@ import LangSwitcher from "../Language";
 import Image from "next/image";
 import LogoBlack from "../../../public/images/logo/logo_black.png";
 import LogoWhite from "../../../public/images/logo/logo_white.png";
+import CalBtnHeaderMobile from "../CalBtnHeaderMobile";
+import CalBtnHeaderDesktop from "../CalBtnHeaderDesktop";
 
 const Header = () => {
   const t = useTranslations("Header"); // Namespace for translations
@@ -87,20 +89,20 @@ const Header = () => {
               </Link>
             </div> */}
             <div className="z-50 block w-1/3">
-              <Link href={`/${currentLocale}/`} className="block max-w-[180px]">
+              <Link href={`/${currentLocale}/`} className="block max-w-[216px]">
                 <div className="relative transition-all duration-300">
                   <Image
                     src={LogoBlack}
                     alt="Webomo Logo"
-                    width={180}
-                    height={50}
+                    width={216}
+                    height={60}
                     className="block dark:hidden"
                   />
                   <Image
                     src={LogoWhite}
                     alt="Webomo Logo"
-                    width={180}
-                    height={50}
+                    width={216}
+                    height={60}
                     className="hidden dark:block"
                   />
                 </div>
@@ -177,13 +179,14 @@ const Header = () => {
                           </Link>
                         </motion.li>
                       ))}
-                      <Link
+                      {/* <Link
                         href={`/${currentLocale}/kontakt`}
                         onClick={closeMenu}
                         className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-6 py-2 text-white shadow-lg transition-all duration-300 hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400"
                       >
                         {t("cta.consultation")}
-                      </Link>
+                      </Link> */}
+                      <CalBtnHeaderMobile />
                     </ul>
 
                     {/* Social Media Links */}
@@ -254,12 +257,8 @@ const Header = () => {
             <div className="hidden w-1/3 items-center justify-end space-x-4 xl:flex">
               <DarkModeSwitcher />
               <LangSwitcher />
-              <Link
-                href={`/${currentLocale}/kontakt`}
-                className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-4 py-2 text-white shadow-lg transition-all duration-300 hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400"
-              >
-                {t("cta.consultation")}
-              </Link>
+
+              <CalBtnHeaderDesktop />
 
               {session ? (
                 <div className="flex items-center space-x-4">
