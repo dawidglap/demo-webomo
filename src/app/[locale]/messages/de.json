@@ -228,6 +228,18 @@
     "copyright": "Copyright © 2024 - webomo.ch",
     "allRightsReserved": "Alle Rechte vorbehalten."
   },
+  "Hiver3": {
+    "title": "Warum ist KI Marketing -  Branding der Schlüssel zu deinen Erfolg",
+       "description": "Steigere die Wahrnehmung und Marktposition deiner Marke und gewinne Kunden, die in herausragende Qualität investieren.",
+       "hiver": {
+        "leftTitle": "Aus der Masse herausstechen",
+        "centerTitle": "Deine Zielgruppe gewinnen",
+        "rightTitle": "Kunden zahlen höhere Preise",
+         "left": "Sorge dafür, dass die Wahrnehmung deiner Marke einzigartig ist und du dich von allen anderen abhebst.",
+         "center": "Erreiche deine Zielgruppe und gewinne sie, indem du deine Botschaft wirkungsvoll kommunizierst.",
+         "right": "Lass deine Kunden den Mehrwert deiner Marke spüren, sodass sie gerne in höhere Preise investieren."
+       }
+     },
   "Hero": {
     "subtitle": "Immer und überall",
     "centerText": "präsent",
