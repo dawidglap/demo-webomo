@@ -74,7 +74,7 @@ const ExtraFeatures = () => {
                   <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
                     {firstStat}+
                   </span>
-                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
+                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
                     {t("stat1")}
                   </p>
                 </motion.div>
@@ -89,7 +89,7 @@ const ExtraFeatures = () => {
                   <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
                     {secondStat}+
                   </span>
-                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
+                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
                     {t("stat2")}
                   </p>
                 </motion.div>
@@ -104,7 +104,7 @@ const ExtraFeatures = () => {
                   <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
                     {thirdStat}%
                   </span>
-                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
+                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
                     {t("stat3")}
                   </p>
                 </motion.div>
@@ -113,7 +113,7 @@ const ExtraFeatures = () => {
           </motion.section>
           {/* Title */}
           <motion.h2
-            className="nord:text-nord-content mx-auto mt-10 max-w-md pb-10 text-2xl font-bold dark:text-neutral-100 sm:text-3xl lg:text-4xl"
+            className="nord:text-nord-content mx-auto mt-10 max-w-2xl pb-10 text-2xl font-bold dark:text-neutral-100 sm:text-3xl lg:text-4xl"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
@@ -138,7 +138,7 @@ const ExtraFeatures = () => {
                   className="dark:invert"
                 />
               </div>
-              <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
+              <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
                 {t("feature1")}
               </p>
             </motion.div>
@@ -159,7 +159,7 @@ const ExtraFeatures = () => {
                   className="dark:invert"
                 />
               </div>
-              <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
+              <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
                 {t("feature2")}
               </p>
             </motion.div>
@@ -180,7 +180,7 @@ const ExtraFeatures = () => {
                   className="dark:invert"
                 />
               </div>
-              <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-light text-primary">
+              <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
                 {t("feature3")}
               </p>
             </motion.div>

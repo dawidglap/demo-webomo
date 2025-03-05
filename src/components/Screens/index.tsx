@@ -12,11 +12,17 @@ import Graphics from "@/components/Screens/Graphics";
 // Sector images for each category
 const sectorImages = {
   "Food & Beverage": [
-    "/images/screens/food-beverage-1.png",
-    "/images/screens/food-beverage-2.png",
-    "/images/screens/food-beverage-3.png",
-    "/images/screens/food-beverage-4.png",
-    "/images/screens/food-beverage-5.png",
+    "/images/screens2/11.png",
+    "/images/screens2/2.webp",
+    "/images/screens2/3.webp",
+    "/images/screens2/4.webp",
+    "/images/screens2/5.webp",
+    "/images/screens2/6.webp",
+    "/images/screens2/7.webp",
+    "/images/screens2/8.webp",
+    "/images/screens2/9.webp",
+    "/images/screens2/10.webp",
+
     // "/images/screens/placeholder1.webp",
     // "/images/screens/placeholder2.webp",
     // "/images/screens/placeholder3.webp",

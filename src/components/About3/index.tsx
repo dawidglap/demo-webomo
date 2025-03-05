@@ -83,11 +83,11 @@ const About3 = () => {
             >
               <video
                 playsInline
-                src="/images/about/drone-video2.mp4"
+                src="/images/about/drone-video22.mp4"
                 autoPlay
                 muted
                 loop
-                className="w-full rounded-xl object-cover shadow-xl"
+                className="max-h-[450px] w-full max-w-[470px] rounded-xl object-cover shadow-xl"
               />
             </motion.div>
           </div>
