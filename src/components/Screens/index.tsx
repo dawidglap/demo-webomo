@@ -12,7 +12,7 @@ import Graphics from "@/components/Screens/Graphics";
 // Sector images for each category
 const sectorImages = {
   "Food & Beverage": [
-    "/images/screens2/11.png",
+    "/images/screens/check3.png",
     "/images/screens2/2.webp",
     "/images/screens2/3.webp",
     "/images/screens2/4.webp",
