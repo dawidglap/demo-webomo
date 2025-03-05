@@ -30,7 +30,7 @@ const Hiver3 = () => {
       <div className="mt-8 flex flex-wrap justify-center gap-6 md:flex-nowrap md:gap-12">
         {/* Card 1 - Brand Awareness */}
         <motion.div
-          className="flex h-72 w-72 flex-col items-center justify-center rounded-2xl bg-gradient-to-r from-white to-indigo-100 p-6 text-white shadow-lg   dark:from-indigo-600 dark:to-indigo-500 md:w-80"
+          className="flex h-72 w-72 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-white to-indigo-100 p-6 text-white shadow-lg dark:from-indigo-600   dark:to-indigo-500 md:w-80 md:bg-gradient-to-r"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -46,7 +46,7 @@ const Hiver3 = () => {
 
         {/* Card 2 - Attracting the Right Audience */}
         <motion.div
-          className="from-indigo-00 flex h-72 w-72 flex-col items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-100 to-purple-100 p-6 text-white shadow-lg dark:from-indigo-500 dark:to-purple-400  md:w-80"
+          className="from-indigo-00 flex h-72 w-72 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-indigo-100 to-purple-100 p-6 text-white shadow-lg dark:from-indigo-500 dark:to-purple-400 md:w-80  md:bg-gradient-to-r"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -62,7 +62,7 @@ const Hiver3 = () => {
 
         {/* Card 3 - Higher Prices */}
         <motion.div
-          className="flex h-72 w-72 flex-col items-center justify-center rounded-2xl bg-gradient-to-r from-purple-100 to-pink-100 p-6 text-white shadow-lg dark:from-purple-400 dark:to-purple-500 md:w-80"
+          className="flex h-72 w-72 flex-col items-center justify-center rounded-2xl bg-gradient-to-b from-purple-100 to-pink-100 p-6 text-white shadow-lg dark:from-purple-400 dark:to-purple-500 md:w-80 md:bg-gradient-to-r"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
