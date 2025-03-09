@@ -20,7 +20,7 @@ const Contact = () => {
         <h2 className="text-xs font-semibold uppercase tracking-wide text-indigo-500 md:text-sm">
           {t("headline")}
         </h2>
-        <h1 className="mt-2 bg-gradient-to-r from-[#410cd9] to-[#f68efe] bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
+        <h1 className="mt-2 bg-gradient-to-r from-[#410cd9] to-[#f68efe] bg-clip-text pb-3 text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
           {t("bookCall.title")} {t("bookCall.title2")}
         </h1>
         <p className="mt-2 px-2 text-sm text-gray-700 dark:text-gray-300 sm:text-lg">
@@ -57,14 +57,21 @@ const Contact = () => {
                 className="text-purple-500 dark:text-purple-400"
                 size={16}
               />
-              Branding-Experten Gespräch
+              Bedürfnisanslyse
             </li>
             <li className="flex items-center gap-2">
               <CheckCircle
                 className="text-purple-500 dark:text-purple-400"
                 size={16}
               />
-              Bedürfnisanalyse & Strategie
+              Strategie definition
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle
+                className="text-purple-500 dark:text-purple-400"
+                size={16}
+              />
+              Umsetzumgsplan
             </li>
             <li className="flex items-center gap-2">
               <CheckCircle
@@ -87,9 +94,9 @@ const Contact = () => {
       </motion.div>
 
       {/* Thank You Message */}
-      <p className="mt-4 max-w-xl px-2 text-center text-xs text-gray-600 dark:text-gray-400 sm:text-sm">
+      {/* <p className="mt-4 max-w-xl px-2 text-center text-xs text-gray-600 dark:text-gray-400 sm:text-sm">
         {t("bookCall.thankYou")}
-      </p>
+      </p> */}
     </section>
   );
 };

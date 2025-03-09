@@ -118,7 +118,7 @@
   "Contact": {
     "headline":"Kostenloses",
     "subHeadline":"Beratungsgespräch",
-  "title": "Kostenlose Beratung",
+  "title": "Erstgespräch buchen",
   "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
   "form": {
     "title": "Kontaktieren Sie uns per",
@@ -142,7 +142,7 @@
   "submit": "Absenden"
 },
   "Calendly": {
-    "schedule": "Demo Call buchen"
+    "schedule": "Erstgespräch buchen"
   },
   "Cta": {
     "title": "Bringen Sie Ihre sozialen Medien mit Webomo auf die nächste Stufe",
@@ -154,7 +154,7 @@
   "CtaBusiness": {
     "headlineHighlight": "Webomo-Business",
     "headline": "Partner werden",
-    "buttonText": "Jetzt Geld verdienen"
+    "buttonText": "Erstgespräch buchen"
   },
   "ExtraFeatures": {
     "title": "Zusätzlich erhältst du von uns",

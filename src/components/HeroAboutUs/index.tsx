@@ -47,21 +47,21 @@ const HeroAboutUs = () => {
           animate="visible"
           variants={textVariants}
         >
-          <h1 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white md:text-left md:text-5xl lg:text-6xl">
+          <h1 className="mt-10 text-center text-4xl font-extrabold text-gray-900 dark:text-white md:text-left md:text-4xl lg:text-4xl">
             {t("title")}
           </h1>
           <motion.p
-            className="mt-2 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text pb-3 text-center text-4xl font-bold text-transparent dark:from-purple-400 dark:to-pink-500 md:text-left md:text-5xl lg:text-6xl"
+            className="mt-2 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text  pb-3 text-center text-4xl font-bold text-transparent dark:from-purple-400 dark:to-pink-500 md:text-left md:text-4xl lg:text-4xl"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
           >
             {t("subHeadline")}
           </motion.p>
-          <p className="mt-4  text-lg text-gray-600 dark:text-gray-400">
+          <p className="mt-4 px-4 text-lg text-gray-600 dark:text-gray-400">
             {t("mission")}
           </p>
 
-          <motion.div
+          {/* <motion.div
             className="mt-8 inline-block"
             initial="hidden"
             animate="visible"
@@ -74,7 +74,7 @@ const HeroAboutUs = () => {
               {t("cta")}
               <span className="absolute inset-0 -z-10 animate-pulse rounded-full bg-indigo-500/20 blur-lg dark:bg-pink-500/20"></span>
             </a>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         {/* Image Section */}
