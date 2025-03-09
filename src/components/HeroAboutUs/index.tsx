@@ -35,35 +35,44 @@ const HeroAboutUs = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 py-20 dark:from-slate-900 dark:to-slate-800 md:h-[100vh] md:max-h-[1080px]">
-      <div className="container mx-auto flex flex-col-reverse items-center justify-between gap-10 px-6 lg:flex-row lg:gap-16">
+    <section className="relative flex flex-col items-center justify-center bg-gradient-to-br from-gray-100 via-white to-gray-50 py-20 dark:from-[#0D0D0D] dark:via-[#1a1a1a] dark:to-[#262626] md:h-[100vh] md:max-h-[1080px]">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,_rgba(0,0,0,0.03),_transparent)] dark:bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.05),_transparent)]"></div>
+
+      <div className="container relative z-10 mx-auto flex flex-col-reverse items-center justify-between gap-10 px-0 lg:flex-row lg:gap-16">
         {/* Text Section */}
         <motion.div
-          className="w-full text-center lg:w-1/2 lg:text-left"
+          className=" w-full lg:w-1/2 "
           initial="hidden"
           animate="visible"
           variants={textVariants}
         >
-          <h1 className="mt-20 text-4xl font-bold text-black dark:text-white md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-5xl 3xl:text-7xl">
+          <h1 className="text-center text-4xl font-extrabold text-gray-900 dark:text-white md:text-left md:text-5xl lg:text-6xl">
             {t("title")}
           </h1>
-          <p className=" bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text py-2 text-4xl font-bold leading-none text-transparent md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl 3xl:text-7xl">
+          <motion.p
+            className="mt-2 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text pb-3 text-center text-4xl font-bold text-transparent dark:from-purple-400 dark:to-pink-500 md:text-left md:text-5xl lg:text-6xl"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+          >
             {t("subHeadline")}
-          </p>
-          <p className="font-base mt-2 text-black dark:text-white">
+          </motion.p>
+          <p className="mt-4  text-lg text-gray-600 dark:text-gray-400">
             {t("mission")}
           </p>
+
           <motion.div
-            className="mt-6"
+            className="mt-8 inline-block"
             initial="hidden"
             animate="visible"
             variants={buttonVariants}
           >
             <a
               href="/webomo-business"
-              className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-6 py-3 text-white shadow-lg transition-all duration-300 hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400"
+              className="relative inline-flex items-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-8 py-4 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/50 dark:from-purple-600 dark:to-pink-500 dark:hover:shadow-pink-500/50"
             >
               {t("cta")}
+              <span className="absolute inset-0 -z-10 animate-pulse rounded-full bg-indigo-500/20 blur-lg dark:bg-pink-500/20"></span>
             </a>
           </motion.div>
         </motion.div>
@@ -75,13 +84,29 @@ const HeroAboutUs = () => {
           animate="visible"
           variants={textVariants}
         >
-          <Image
-            src="/images/about/team.webp"
-            alt="Team Photo"
-            width={600}
-            height={400}
-            className="rounded-3xl shadow-lg"
-          />
+          {/* Desktop Image (Horizontal) */}
+          <div className="relative hidden overflow-hidden rounded-2xl shadow-lg lg:block">
+            <Image
+              src="/images/about/team.webp"
+              alt="Team Photo"
+              width={800}
+              height={500}
+              className="rounded-2xl transition-all duration-500 hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent dark:from-black/30"></div>
+          </div>
+
+          {/* Mobile Image (Vertical) */}
+          <div className="relative block overflow-hidden rounded-2xl shadow-lg lg:hidden">
+            <Image
+              src="/images/about/team.webp"
+              alt="Team Photo"
+              width={400}
+              height={600}
+              className="rounded-2xl transition-all duration-500 hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent dark:from-black/30"></div>
+          </div>
         </motion.div>
       </div>
     </section>

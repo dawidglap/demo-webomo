@@ -1,183 +1,95 @@
 "use client";
-import React, { useState } from "react";
+
+import React from "react";
 import { useTranslations } from "next-intl";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // Import toastify CSS
-import emailjs from "emailjs-com";
-import { AiOutlineMail } from "react-icons/ai";
-import { AiOutlineLoading3Quarters } from "react-icons/ai"; // Spinner Icon
-import CalendlyBtn from "../CalendlyBtn";
+import { motion } from "framer-motion";
+import { CalendarCheck, CheckCircle } from "lucide-react";
 import CalBtn from "../CalBtn";
 
 const Contact = () => {
   const t = useTranslations("Contact");
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        {
-          name: formData.name,
-          message: formData.message,
-          email: formData.email, // User's email (mapped to {{email}})
-        },
-        "_luXCOss442fyLs0Z", // Your Public Key
-      );
-      setIsSubmitting(false);
-      setFormData({ name: "", email: "", message: "" }); // Clear the form
-
-      // Show success toast
-      toast.success(t("form.successMessage"), {
-        position: "top-center", // Use string-based position
-        autoClose: 3000, // Closes after 3 seconds
-      });
-    } catch (error) {
-      setIsSubmitting(false);
-
-      // Show error toast
-      toast.error(t("form.errorMessage"), {
-        position: "top-center", // Use string-based position
-        autoClose: 3000,
-      });
-
-      console.error("EmailJS Error:", error);
-    }
-  };
 
   return (
-    <section id="support" className="pb-[110px] pt-[100px] md:pt-[150px]">
-      <div className="container">
-        <ToastContainer /> {/* Toast container for notifications */}
-        <div className=" text-center">
-          <h1 className="mb-10  text-2xl font-semibold text-black dark:text-white md:text-5xl">
-            {t("headline")} <br />
-            <span className="mt-1 bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text font-semibold leading-none text-transparent dark:from-purple-300 dark:to-pink-300 ">
-              {t("subHeadline")}
-            </span>
-          </h1>
-        </div>
-        <div className="">
-          {/* Contact Form */}
-          {/* <div
-            className="wow fadeInUp mx-auto w-full max-w-[925px] rounded-[30px] bg-indigo-100 px-4  py-10 shadow-xl dark:bg-gradient-to-br dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8"
-            data-wow-delay=".3s"
-          >
-            <h2 className="mb-6 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
-              {t("form.title")}
-            </h2>
-            <h2 className="mb-6 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
-              {t("form.titleEmail")}
-            </h2>
-            <form onSubmit={handleSubmit}>
-              <div className="space-y-8">
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder={t("form.namePlaceholder")}
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder={t("form.emailPlaceholder")}
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
-                    required
-                  />
-                </div>
-                <div>
-                  <textarea
-                    rows={2}
-                    name="message"
-                    id="message"
-                    placeholder={t("form.messagePlaceholder")}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full rounded-[30px] border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
-                    required
-                  ></textarea>
-                </div>
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className={`inline-flex items-center justify-center rounded-[30px] px-11 py-[14px] text-base font-medium text-white ${
-                      isSubmitting
-                        ? "cursor-not-allowed bg-gray-400"
-                        : "bg-black hover:bg-opacity-90 dark:bg-neutral-100 dark:text-black hover:dark:bg-neutral-300"
-                    }`}
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <AiOutlineLoading3Quarters className="mr-2 animate-spin" />
-                        {t("form.submitting")}
-                      </>
-                    ) : (
-                      t("submit")
-                    )}
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div> */}
+    <section className="relative mb-10 mt-20 flex flex-col items-center justify-center px-4 py-12 sm:py-16 md:py-24">
+      {/* Title Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+        className="text-center"
+      >
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-indigo-500 md:text-sm">
+          {t("headline")}
+        </h2>
+        <h1 className="mt-2 bg-gradient-to-r from-[#410cd9] to-[#f68efe] bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
+          {t("bookCall.title")} {t("bookCall.title2")}
+        </h1>
+        <p className="mt-2 px-2 text-sm text-gray-700 dark:text-gray-300 sm:text-lg">
+          {t("bookCall.subtitle")}
+        </p>
+      </motion.div>
 
-          {/* Booking Card */}
-          <div className="wow fadeInUp mx-auto flex w-full max-w-2xl flex-col  items-center justify-center rounded-[30px] bg-purple-100  px-4 py-10 text-center shadow-xl dark:bg-gradient-to-b dark:from-slate-900 dark:to-slate-800 dark:shadow-card-dark sm:px-10 md:px-8">
-            <h2 className="mb-0 text-2xl font-bold text-black dark:text-white sm:text-3xl  md:text-[36px] md:leading-tight">
-              {t("bookCall.title")}
-            </h2>
-
-            <p className="mb-4 text-2xl font-bold text-black dark:text-white sm:text-3xl md:text-[36px] md:leading-tight">
-              {t("bookCall.title2")}
-            </p>
-            <p className="text-md mb-6 text-body dark:text-gray-300">
-              {t("bookCall.subtitle")}
-            </p>
-            {/* <CalendlyBtn /> */}
-            <CalBtn />
-            <div className="mt-4 space-y-4 text-center">
-              {/* <p className="flex items-center justify-center text-lg text-body dark:text-gray-300">
-                <AiOutlineMail className="mr-2 text-lg text-primary" />
-                <a
-                  href="mailto:kontakt@webomo.ch"
-                  className="underline hover:text-black hover:dark:text-neutral-400"
-                >
-                  kontakt@webomo.ch
-                </a>
-              </p> */}
-            </div>
-            <p className="mt-2 text-xs font-semibold text-black dark:text-gray-300">
-              {t("bookCall.thankYou")}
-            </p>
+      {/* Booking Card */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+          transition: { delay: 0.2, duration: 0.5 },
+        }}
+        className="mt-8 w-full max-w-xs rounded-2xl border border-gray-200 bg-white bg-opacity-90 p-6 shadow-xl backdrop-blur-lg dark:border-gray-800 dark:bg-slate-900 dark:bg-opacity-80 sm:max-w-sm md:max-w-md md:p-8"
+      >
+        <div className="flex flex-col items-center text-center">
+          {/* Icon */}
+          <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500/10 dark:bg-indigo-400/10">
+            <CalendarCheck className="text-2xl text-indigo-500 dark:text-indigo-300" />
           </div>
+          <p className="text-xs font-semibold text-gray-500 dark:text-gray-300 sm:text-sm">
+            100% {t("title")}
+          </p>
+          <h3 className="mt-2 text-xl font-bold text-black dark:text-white sm:text-2xl">
+            {t("bookCall.title2")}
+          </h3>
+
+          {/* Features */}
+          <ul className="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300 sm:text-base">
+            <li className="flex items-center gap-2">
+              <CheckCircle
+                className="text-purple-500 dark:text-purple-400"
+                size={16}
+              />
+              Branding-Experten Gespräch
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle
+                className="text-purple-500 dark:text-purple-400"
+                size={16}
+              />
+              Bedürfnisanalyse & Strategie
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle
+                className="text-purple-500 dark:text-purple-400"
+                size={16}
+              />
+              Unverbindlich & kostenlos
+            </li>
+          </ul>
+
+          {/* CTA Button */}
+          <motion.div
+            className="mt-5 w-full"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <CalBtn />
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
+
+      {/* Thank You Message */}
+      <p className="mt-4 max-w-xl px-2 text-center text-xs text-gray-600 dark:text-gray-400 sm:text-sm">
+        {t("bookCall.thankYou")}
+      </p>
     </section>
   );
 };
