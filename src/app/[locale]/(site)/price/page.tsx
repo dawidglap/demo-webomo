@@ -3,6 +3,7 @@ import Link from "next/link";
 import Pricing from "@/components/Pricing";
 import Stats from "@/components/Stats";
 import Faq from "@/components/Faq";
+import ComparePricing from "@/components/ComparePricing";
 
 const Price = () => {
   return (
@@ -29,6 +30,7 @@ const Price = () => {
         </div>
       </div> */}
       <Pricing />
+      <ComparePricing />
       <Stats />
       <Faq />
     </>

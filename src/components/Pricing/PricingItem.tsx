@@ -24,128 +24,47 @@ export const PricingItem = ({ price, stripeLink }: any) => {
 
   // Hardcoded features for each plan
   const getFeatures = (nickname: string) => {
-    switch (nickname) {
-      case "Basic":
-        return (
-          <>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">1.</span>{" "}
-              {t("plans.Basic.features.0")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">2.</span>{" "}
-              {t("plans.Basic.features.1")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">3.</span>{" "}
-              {t("plans.Basic.features.2")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">4.</span>{" "}
-              {t("plans.Basic.features.3")}
-            </p>
+    const features = {
+      Basic: [
+        t("plans.Basic.features.0"),
+        t("plans.Basic.features.1"),
+        t("plans.Basic.features.2"),
+        t("plans.Basic.features.3"),
+      ],
+      Unlimited: [
+        t("plans.Unlimited.features.0"),
+        t("plans.Unlimited.features.1"),
+        t("plans.Unlimited.features.2"),
+        t("plans.Unlimited.features.3"),
+      ],
+      Business: [
+        t("plans.Business.features.0"),
+        t("plans.Business.features.1"),
+        t("plans.Business.features.2"),
+        t("plans.Business.features.3"),
+      ],
+      Enterprise: [
+        t("plans.Enterprise.features.0"),
+        t("plans.Enterprise.features.1"),
+        t("plans.Enterprise.features.2"),
+        t("plans.Enterprise.features.3"),
+      ],
+    };
 
-            {/* <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">5.</span>{" "}
-              {t("plans.Basic.features.4")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">6.</span>{" "}
-              {t("plans.Basic.features.5")}
-            </p> */}
-          </>
-        );
-      case "Unlimited":
-        return (
-          <>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">1.</span>{" "}
-              {t("plans.Unlimited.features.0")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">2.</span>{" "}
-              {t("plans.Unlimited.features.1")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">3.</span>{" "}
-              {t("plans.Unlimited.features.2")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">4.</span>{" "}
-              {t("plans.Unlimited.features.3")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">5.</span>{" "}
-              {t("plans.Unlimited.features.4")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">6.</span>{" "}
-              {t("plans.Unlimited.features.5")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 font-semibold">7.</span>{" "}
-              {t("plans.Unlimited.features.6")}
-            </p>
-          </>
-        );
-      case "Business":
-        return (
-          <>
-            <p className="flex text-base font-bold text-black dark:text-body">
-              <span className="mr-2 font-semibold">1.</span>{" "}
-              {t("plans.Business.features.0")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 mt-[-4px] text-2xl font-semibold">+</span>{" "}
-              {t("plans.Business.features.1")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 mt-[-4px] text-2xl font-semibold">+</span>{" "}
-              {t("plans.Business.features.2")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              <span className="mr-2 mt-[-4px]  text-2xl font-semibold">+</span>{" "}
-              {t("plans.Business.features.3")}
-            </p>
-            <p className="flex  pt-6 text-2xl font-bold text-black dark:text-body">
-              <span className="mr-2 font-semibold"></span>{" "}
-              {t("plans.Business.features.4")}
-            </p>
-            <p className="flex text-xl text-black dark:text-body">
-              <span className="mr-2 font-semibold"></span>{" "}
-              {t("plans.Business.features.5")}
-            </p>
-          </>
-        );
-      case "Enterprise":
-        return (
-          <>
-            <p className="flex text-base font-bold text-black dark:text-body">
-              {t("plans.Enterprise.features.0")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              {t("plans.Enterprise.features.1")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              {t("plans.Enterprise.features.2")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              {t("plans.Enterprise.features.3")}
-            </p>
-            <p className="flex text-base text-black dark:text-body">
-              {t("plans.Enterprise.features.3")}
-            </p>
-          </>
-        );
-      default:
-        return null;
-    }
+    return features[nickname].map((feature, index) => (
+      <p
+        key={index}
+        className="flex items-center text-base text-black dark:text-body"
+      >
+        <span className="mr-2 text-lg font-semibold">✔</span> {feature}
+      </p>
+    ));
   };
 
   return (
     <div className="w-full px-6 pb-8 md:w-1/2 lg:w-1/3">
       <div
-        className={`relative mb-10 rounded-xl px-9 py-10 shadow-2xl md:shadow-xl ${bgColor} flex h-full flex-col lg:mb-4 lg:px-7 xl:px-9`}
+        className={`relative mb-10 rounded-2xl px-9 py-10 shadow-2xl md:shadow-xl ${bgColor} flex h-full flex-col justify-between lg:mb-4 lg:px-7 xl:px-9`}
       >
         {/* Badge for Recommended Plan */}
         {price.nickname === "Unlimited" && (
@@ -173,11 +92,24 @@ export const PricingItem = ({ price, stripeLink }: any) => {
             <p className="text-sm text-gray-700 dark:text-gray-300">
               {t("duration")}
             </p>
+            {/* Contact Button */}
+            {price.nickname === "Enterprise" && (
+              <Link
+                href="/kontakt"
+                aria-label="Contact us for Enterprise plan"
+                className="block w-full rounded-full  bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+              >
+                {t("contactUs")}
+              </Link>
+            )}
+            {price.nickname === "Basic" && <CalBtnBasic />}
+            {price.nickname === "Unlimited" && <CalBtnBusiness />}
+            {price.nickname === "Business" && <CalBtnEnterprise />}
           </>
         )}
 
         {/* Features List */}
-        <div className=" mb-auto space-y-4 pb-10 pt-6">
+        <div className="mb-auto flex-1 space-y-4 pb-10 pt-6">
           {getFeatures(price.nickname)}
         </div>
 
@@ -211,20 +143,6 @@ export const PricingItem = ({ price, stripeLink }: any) => {
             </Link>
           </div>
         )}
-
-        {/* Contact Button */}
-        {price.nickname === "Enterprise" && (
-          <Link
-            href="/kontakt"
-            aria-label="Contact us for Enterprise plan"
-            className="block w-full rounded-full  bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-          >
-            {t("contactUs")}
-          </Link>
-        )}
-        {price.nickname === "Basic" && <CalBtnBasic />}
-        {price.nickname === "Unlimited" && <CalBtnBusiness />}
-        {price.nickname === "Business" && <CalBtnEnterprise />}
 
         {/* Footer Text */}
         <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">

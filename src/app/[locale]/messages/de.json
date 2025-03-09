@@ -288,6 +288,7 @@
   },
   "Pricing": {
     "title": "Finden Sie den",
+    "titleCompare": "Vergleiche unsere Pläne",
     "subHeadline": "richtigen Tarif",
     "description": "Massgeschneiderte Social-Media-Pakete für jede Unternehmensphase",
     "choosePlan": "Demo call buchen",
@@ -313,7 +314,7 @@
           "Projektleitung: Content Beratung & Administration",
           "Produktion: Inhalte 106 (Storys und Posts)",
           "Veröffentlichung: 1x pro Woche durch Webomo",
-          "Kanäle: Instagram / Facebook / LinkedIn / YouTube",
+          "Kanäle: Instagram / Facebook ",
           "Fotoshooting: z.B. Mitarbeiter, Büro, Werkstatt, Studio, Details, Showroom usw.",
           "Video: 1 Werbefilm (max. 60 Sekunden) Planung, Filmen, Schneiden und Anpassung",
           "Social Media Kampagnen: 1 Kampagne inkl. Planung-Konzep & Umsetzung"
@@ -324,9 +325,8 @@
         "price": "Auf Anfrage",
         "features": [
           "Inklusive Paket Pro Leistungen",
-          "Webentwicklung",
+          "Webentwicklung, Logo & Print Design",
           "Affiliate Marketing",
-          "Logo & Print Design",
           "Sie definieren Ihre Leistungen",
           "Teilen Sie uns mit, was Sie sich wünschen und in welchem Umfang - wir entwickeln und realisieren es.",
           "Social Media Kampagnen: Inklusive"
