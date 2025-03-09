@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import { CheckCircle, MinusCircle, Info } from "lucide-react";
+import { truncate } from "fs";
 
 const ComparePricing = () => {
   const t = useTranslations("Pricing");
@@ -46,7 +47,7 @@ const ComparePricing = () => {
     {
       name: t("plans.Basic.features.3"),
       shortName: "Kanäle",
-      basic: false,
+      basic: true,
       pro: true,
       enterprise: true,
     },
@@ -60,6 +61,42 @@ const ComparePricing = () => {
     {
       name: t("plans.Business.features.0"),
       shortName: "Affiliate Marketing",
+      basic: false,
+      pro: true,
+      enterprise: true,
+    },
+
+    {
+      name: "Fotoshooting: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt",
+      shortName: "Fotoshooting",
+      basic: false,
+      pro: true,
+      enterprise: true,
+    },
+    {
+      name: "Videoshooting: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt",
+      shortName: "Videoshooting",
+      basic: false,
+      pro: true,
+      enterprise: true,
+    },
+    {
+      name: "Social Media Kampagnen: 2x Instagram Kampagne",
+      shortName: "Instagram Kampagne",
+      basic: false,
+      pro: true,
+      enterprise: true,
+    },
+    {
+      name: "Kanäle Instagram / Facebook / LinkedIn / TikTok / Youtube",
+      shortName: "Kanäle",
+      basic: false,
+      pro: false,
+      enterprise: true,
+    },
+    {
+      name: "Social Media Kampagnen: 2x Instagram / Facebook / LinkedIn / TikTok / Youtube Kampagnen",
+      shortName: "SM Kampagnen",
       basic: false,
       pro: false,
       enterprise: true,
