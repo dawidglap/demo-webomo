@@ -18,7 +18,7 @@ const Hiver6 = () => {
   return (
     <section className="flex flex-col items-center overflow-hidden bg-[#F8FAFB] px-4 pb-10 pt-10 dark:bg-[#15182A] md:pb-20 md:pt-20">
       <motion.h2
-        className="max-w-5xl text-center text-3xl font-bold text-black dark:text-white md:text-4xl"
+        className="max-w-5xl bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text text-center text-3xl font-bold text-transparent md:text-4xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

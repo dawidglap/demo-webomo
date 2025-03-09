@@ -1,18 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Mousewheel } from "swiper/modules"; // ✅ Importa Mousewheel
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Graphics from "@/components/Screens/Graphics";
 
 // Sector images for each category
 const sectorImages = {
   "Food & Beverage": [
-    "/images/screens/lastcheck.png",
+    "/images/screens/morningcheck.png",
     "/images/screens2/2.webp",
     "/images/screens2/3.webp",
     "/images/screens2/4.webp",
@@ -155,7 +154,7 @@ const Screens = () => {
           >
             <Swiper
               className="swiper mySwiper relative z-20"
-              modules={[Navigation]}
+              modules={[Navigation, Mousewheel]} // ✅ Aggiunto Mousewheel
               navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -163,6 +162,8 @@ const Screens = () => {
               loop={true}
               centeredSlides={true}
               slideToClickedSlide={true}
+              freeMode={true} // ✅ Rende lo scroll più naturale
+              mousewheel={{ forceToAxis: true, releaseOnEdges: true }} // ✅ Ora lo scrolla solo orizzontalmente
               breakpoints={{
                 640: { slidesPerView: 1 },
                 768: { slidesPerView: 3, spaceBetween: 40 },
@@ -171,23 +172,24 @@ const Screens = () => {
             >
               <div className="absolute left-0 right-0 top-0 z-50 mx-auto w-full md:w-1/3">
                 <Image
-                  width={288}
+                  width={294}
                   height={594}
                   src="/images/screens/mobile-frame.png"
                   alt={t("mobileFrameAlt")}
                   className="mx-auto max-w-full"
+                  priority
                 />
               </div>
 
               {selectedImages.map((image, index) => (
                 <SwiperSlide key={index}>
-                  <div className="mx-auto mt-[5px] w-full max-w-[252px] xs:max-w-[260px]">
+                  <div className="mx-auto mt-[13px] w-full max-w-[283px]">
                     <Image
-                      width={265}
+                      width={283}
                       height={580}
                       src={image}
                       alt={`${t("screenshotAlt")} ${index + 1}`}
-                      className="mx-auto w-full rounded-2xl"
+                      className="mx-auto w-full rounded-3xl object-cover pe-[1px] ps-[1px] "
                     />
                   </div>
                 </SwiperSlide>
