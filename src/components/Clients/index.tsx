@@ -1,9 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Client } from "@/types/client";
 
@@ -49,29 +48,8 @@ const clientsData: Client[] = [
 const Clients = () => {
   const t = useTranslations("Clients");
 
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger the animation only once
-    threshold: 0.8, // Trigger when 10% of the component is visible
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
+  // Variants per hover
   const logoVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.2, // Delay for staggered effect
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    }),
     hover: {
       scale: 1.1,
       transition: { duration: 0.3 },
@@ -79,26 +57,27 @@ const Clients = () => {
   };
 
   return (
-    <section
-      ref={ref}
-      className="relative z-10 bg-[#F8FAFB] pb-[50px] pt-[70px] dark:bg-[#15182B]"
-    >
+    <section className="relative z-10 bg-[#F8FAFB] pb-[50px] pt-[70px] dark:bg-[#15182B]">
       <div className="container overflow-hidden lg:max-w-[1200px]">
         <h2 className="mb-16 text-center text-base font-light text-black dark:text-white md:text-lg">
           {t("heading")}
         </h2>
-        <div className="-mx-4 flex flex-wrap items-center justify-center">
-          {clientsData.map((item, index) => (
-            <motion.div
-              key={index}
-              className="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6"
-              custom={index}
-              initial="hidden"
-              animate={controls}
-              variants={logoVariants}
-            >
+
+        <div className="relative w-full overflow-hidden">
+          <motion.div
+            className="flex w-max items-center justify-center gap-8"
+            animate={{ x: ["0%", "-50%"] }} // Scroll continuo
+            transition={{
+              repeat: Infinity,
+              duration: 30, // Puoi modificare la velocità
+              ease: "easeInOut",
+            }}
+          >
+            {/* Duplichiamo i loghi per continuità del loop */}
+            {[...clientsData, ...clientsData].map((item, index) => (
               <motion.div
-                className="mb-5 text-center"
+                key={index}
+                className="flex-none"
                 whileHover="hover"
                 variants={logoVariants}
               >
@@ -109,12 +88,12 @@ const Clients = () => {
                     priority
                     src={item.logo}
                     alt="client"
-                    className="mx-auto max-w-full opacity-[65%] hover:opacity-100"
+                    className="mx-auto my-4 max-w-full opacity-[65%] hover:opacity-100"
                   />
                 </Link>
               </motion.div>
-            </motion.div>
-          ))}
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>
