@@ -11,11 +11,11 @@ const WebomoBusiness = () => {
   return (
     <div className="bg-gradient-to-r from-indigo-100 via-purple-50  to-cyan-100 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800">
       <HeroBusiness />
+      <CardsBusiness />
+      <CtaBusiness />
       <AboutBusinessOne />
       <AboutBusinessTwo />
       <AboutBusinessThree />
-      <CardsBusiness />
-      <CtaBusiness />
       <Faq />
     </div>
   );

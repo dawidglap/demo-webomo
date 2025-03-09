@@ -1,17 +1,17 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import standOut from "../../../public/images/business/growth1.webp";
-import salary from "../../../public/images/business/investment.webp";
-import freedom from "../../../public/images/business/freedom2.webp";
+import { Megaphone, TrendingUp, TreePalm } from "lucide-react";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
+
+const iconWrapper =
+  "flex items-center justify-center w-16 h-16 rounded-full transition-all duration-300 shadow-lg bg-gradient-to-br from-indigo-200 to-indigo-400 dark:from-gray-800 dark:to-gray-700";
 
 const CardsBusiness = () => {
   const t = useTranslations("CardsBusiness");
@@ -24,15 +24,6 @@ const CardsBusiness = () => {
         animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
         className="mb-10 pb-16 text-center"
       >
-        {/* <span className="text-sm font-semibold uppercase text-indigo-500">
-          {t("highlight")}
-        </span>
-        <h2 className="mt-2 text-3xl font-bold text-black dark:text-white md:text-5xl">
-          {t("title")}
-        </h2>
-        <p className="mt-3 text-lg text-gray-500 dark:text-gray-300 md:text-xl">
-          {t("subtitle")}
-        </p> */}
         <div className="">
           <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-5xl">
             <span className="text-indigo-700 dark:text-indigo-300">
@@ -56,67 +47,73 @@ const CardsBusiness = () => {
         {/* Card 1 */}
         <motion.div
           variants={cardVariants}
-          className=" flex flex-col items-center rounded-2xl bg-indigo-50 p-6 shadow-lg dark:bg-gray-900"
-          whileHover={{ scale: 1.02 }}
+          className="relative flex flex-col items-center rounded-2xl border border-gray-300 p-8 shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl dark:border-gray-700 dark:bg-gray-900"
         >
-          <div className="relative h-52 w-full">
-            <Image
-              src={standOut}
-              alt={t("card1.alt")}
-              layout="fill"
-              className="rounded-lg bg-indigo-100 object-cover p-0 shadow-lg dark:bg-slate-950"
-            />
+          {/* Icon */}
+          <div className={iconWrapper}>
+            <Megaphone className="h-8 w-8 text-black dark:text-white" />
           </div>
+
+          {/* Title */}
           <h3 className="mt-6 text-center text-lg font-bold text-black dark:text-white">
             {t("card1.title")}
           </h3>
+
+          {/* Description */}
           <p className="mt-2 text-center text-gray-500 dark:text-gray-300">
             {t("card1.description")}
           </p>
+
+          {/* Decorative Border Effect */}
+          <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-indigo-300 to-indigo-500 opacity-10 blur-lg dark:from-gray-700 dark:to-gray-900"></div>
         </motion.div>
 
         {/* Card 2 */}
         <motion.div
           variants={cardVariants}
-          className="flex flex-col items-center rounded-2xl bg-indigo-50 p-6 shadow-lg dark:bg-gray-900"
-          whileHover={{ scale: 1.02 }}
+          className="relative flex flex-col items-center rounded-2xl border border-gray-300 p-8 shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl dark:border-gray-700 dark:bg-gray-900"
         >
-          <div className="relative h-52 w-full">
-            <Image
-              src={salary}
-              alt={t("card2.alt")}
-              layout="fill"
-              className="rounded-lg bg-indigo-100 object-cover p-0 shadow-lg dark:bg-slate-950"
-            />
+          {/* Icon */}
+          <div className={iconWrapper}>
+            <TrendingUp className="h-8 w-8 text-black dark:text-white" />
           </div>
+
+          {/* Title */}
           <h3 className="mt-6 text-center text-lg font-bold text-black dark:text-white">
             {t("card2.title")}
           </h3>
+
+          {/* Description */}
           <p className="mt-2 text-center text-gray-500 dark:text-gray-300">
             {t("card2.description")}
           </p>
+
+          {/* Decorative Border Effect */}
+          <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-indigo-300 to-indigo-500 opacity-10 blur-lg dark:from-gray-700 dark:to-gray-900"></div>
         </motion.div>
 
         {/* Card 3 */}
         <motion.div
           variants={cardVariants}
-          className="flex flex-col items-center rounded-2xl bg-indigo-50 p-6 shadow-lg dark:bg-gray-900"
-          whileHover={{ scale: 1.02 }}
+          className="relative flex flex-col items-center rounded-2xl border border-gray-300 p-8 shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl dark:border-gray-700 dark:bg-gray-900"
         >
-          <div className="relative h-52 w-full">
-            <Image
-              src={freedom}
-              alt={t("card3.alt")}
-              layout="fill"
-              className="rounded-lg bg-indigo-100 object-cover p-0 shadow-lg dark:bg-slate-950"
-            />
+          {/* Icon */}
+          <div className={iconWrapper}>
+            <TreePalm className="h-8 w-8 text-black dark:text-white" />
           </div>
+
+          {/* Title */}
           <h3 className="mt-6 text-lg font-bold text-black dark:text-white">
             {t("card3.title")}
           </h3>
+
+          {/* Description */}
           <p className="mt-2 text-center text-gray-500 dark:text-gray-300">
             {t("card3.description")}
           </p>
+
+          {/* Decorative Border Effect */}
+          <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-indigo-300 to-indigo-500 opacity-10 blur-lg dark:from-gray-700 dark:to-gray-900"></div>
         </motion.div>
       </motion.div>
     </div>
