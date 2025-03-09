@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Mousewheel } from "swiper/modules"; // ✅ Importa Mousewheel
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -95,7 +96,7 @@ const ScreensAvantico = () => {
           {/* Swiper Carousel */}
           <Swiper
             className="swiper-container"
-            modules={[Navigation]}
+            modules={[Navigation, Mousewheel]} // ✅ Aggiunto Mousewheel
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
@@ -104,6 +105,8 @@ const ScreensAvantico = () => {
             centeredSlides={false}
             slidesPerView={4}
             spaceBetween={20}
+            freeMode={true} // ✅ Rende lo scroll più naturale
+            mousewheel={{ forceToAxis: true, releaseOnEdges: true }} // ✅ Scroll orizzontale attivo
             breakpoints={{
               320: { slidesPerView: 1, spaceBetween: 10 },
               640: { slidesPerView: 2, spaceBetween: 15 },
