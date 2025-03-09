@@ -30,10 +30,10 @@ const OurValues = () => {
       title: t("shipFastTitle"),
       description: t("shipFastDescription"),
     },
-    {
-      title: t("buildItTitle"),
-      description: t("buildItDescription"),
-    },
+    // {
+    //   title: t("buildItTitle"),
+    //   description: t("buildItDescription"),
+    // },
     {
       title: t("stayOpenTitle"),
       description: t("stayOpenDescription"),
