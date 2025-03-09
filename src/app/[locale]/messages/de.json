@@ -80,7 +80,7 @@
         "bold": "Hollywood-Kinoqualität",
         "part2": "erstellt. Die Kampagnen deiner Produkte & Dienstleistungen sind auf einem anderen Niveau."
       },
-      "cta": "Loslegen",
+      "cta": "Erstgespräch buchen",
       "videoSrc": "/images/about/about-end.mp4",
       "frameAlt": "Mobile Frame",
       "popcornAlt": "Popcorn Bild"
@@ -118,7 +118,7 @@
   "Contact": {
     "headline":"Kostenloses",
     "subHeadline":"Beratungsgespräch",
-  "title": "Erstgespräch buchen",
+  "title": "Kostenlos",
   "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
   "form": {
     "title": "Kontaktieren Sie uns per",
@@ -142,7 +142,7 @@
   "submit": "Absenden"
 },
   "Calendly": {
-    "schedule": "Erstgespräch buchen"
+    "schedule": "Erstgespröch vereinbaren"
   },
   "Cta": {
     "title": "Bringen Sie Ihre sozialen Medien mit Webomo auf die nächste Stufe",

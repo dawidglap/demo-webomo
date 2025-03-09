@@ -7345,6 +7345,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-parallax-tilt@^1.7.286:
+  version "1.7.286"
+  resolved "https://registry.npmjs.org/react-parallax-tilt/-/react-parallax-tilt-1.7.286.tgz"
+  integrity sha512-n2lidXet9yUCi2bZWB2e2tchWgyHp/4HT8fzwFk9wW3ZOR3mDAPXD6az34D1O4LPzOxjolsea0sbOA26CE3xYw==
+
 react-reconciler@^0.27.0:
   version "0.27.0"
   resolved "https://registry.npmjs.org/react-reconciler/-/react-reconciler-0.27.0.tgz"

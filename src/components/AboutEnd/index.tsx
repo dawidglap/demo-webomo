@@ -66,10 +66,11 @@ const AboutEnd = () => {
           </p>
           <Link
             href="/kontakt"
-            className="rounded-full bg-black px-6 py-3 text-base text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 md:text-xl"
+            className=" rounded-full bg-black px-6 py-3 text-base text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 md:text-xl"
           >
             {t("cta")}
           </Link>
+          <div className="mt-3 md:mt-5"></div>
         </div>
 
         {/* iPhone Frame with Video - Positioned at the right side */}
