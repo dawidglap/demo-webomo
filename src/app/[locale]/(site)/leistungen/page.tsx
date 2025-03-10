@@ -8,6 +8,7 @@ import AboutWebsite from "@/components/About4";
 import Hero from "@/components/HeroArea";
 import Mission from "@/components/Mission";
 import ExtraFeatures from "@/components/ExtraFeatures";
+import AboutPrint from "@/components/AboutPrint";
 
 const Leistungen = () => {
   return (
@@ -18,6 +19,7 @@ const Leistungen = () => {
       <About2 />
       <About3 />
       <AboutWebsite />
+      <AboutPrint />
       <ExtraFeatures />
       <AboutEnd />
     </div>
