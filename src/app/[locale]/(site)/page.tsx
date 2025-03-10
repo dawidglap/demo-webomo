@@ -27,7 +27,7 @@ export default function Home() {
       <WebomoFeatures />
       <Clients />
       <Hiver3 />
-      <Hiver6 />
+      {/* <Hiver6 /> */}
       <TimelineDemo />
       {/* <Features /> */}
       {/* <About /> */}

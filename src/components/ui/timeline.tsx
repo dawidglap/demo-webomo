@@ -23,7 +23,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 10%", "end 30%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -31,11 +31,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div className="font-sans w-full md:px-10" ref={containerRef}>
-      <div className="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-10">
-        <h2 className="mb-4 mt-10 max-w-4xl text-lg font-extrabold text-black dark:text-white md:text-4xl">
+      <div className="mx-auto max-w-7xl px-4 pt-10 md:px-8 lg:px-10">
+        <h2 className="mb-4 mt-10 max-w-4xl text-center text-lg font-extrabold text-black dark:text-white md:text-4xl">
           {t("title")}
         </h2>
-        <p className="max-w-sm text-sm text-neutral-700 dark:text-neutral-300 md:text-xl">
+        <p className="mx-auto max-w-sm text-center text-sm text-neutral-700 dark:text-neutral-300 md:text-xl">
           {t("subtitle")}
         </p>
       </div>
@@ -44,7 +44,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:gap-6 md:pt-40"
+            className="flex justify-start pt-10 md:gap-6 md:pt-20"
           >
             {/* STEP NUMBER - Reduced width */}
             <div className="sticky top-40 z-40 flex w-16 flex-col items-center self-start md:w-24">
