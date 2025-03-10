@@ -23,6 +23,16 @@
       "description": "Wir erstellen packende Stories und Beiträge auf Kino- und Hollywood-Niveau, die Ihre Marke perfekt in Szene setzen. Webomo übernimmt die komplette Content-Erstellung und Veröffentlichung auf Ihren Social-Media-Kanälen – und das wöchentlich für die kommenden 12 Monate.",
       "learnMore": "Demo call buchen"
     },
+    "AboutHiver": {
+      "weekly": "Wöchentlich",
+      "reels": "Reels",
+      "posts": "Posts",
+      "stories": "Stories",
+      "title": "Aus der Masse herausstechen",
+      "description": "Sorge dafür, dass die Wahrnehmung deiner Marke einzigartig ist und du dich von allen anderen abhebst. Nutze kreative Marketingstrategien und authentische Geschichten, um eine emotionale Verbindung zu deiner Zielgruppe herzustellen. Indem du kontinuierlich Innovationen einführst und auf Kundenfeedback hörst, kannst du deine Marke weiter stärken und ihre Einzigartigkeit bewahren.",
+      "learnMore": "Demo call buchen"
+    },
+
     "About2": {
       "title": "Shooting",
       "description": {
@@ -31,6 +41,14 @@
         "part2": " Fotoshooting eine umfassende Auswahl an Motiven für Ihre Social Media Kanäle. Egal, ob für Dienstleistungen, Produkte, Objekte oder vieles mehr. Wir stellen sicher, dass Ihre Marke wirkungsvoll und zielgerichtet präsentiert wird."
       },
       "learnMore": "Mehr erfahren",
+      "cardTitle": "Showroom",
+      "cardSubtitle": "Individueller Shooting bei Ihnen vor Ort.",
+      "imageAlt": "Shooting Bild"
+    },
+    "About2Hiver": {
+      "title": "Deine Zielgruppe gewinnen",
+      "description": "Erreiche deine Zielgruppe und gewinne sie, indem du deine Botschaft wirkungsvoll kommunizierst. Nutze dabei ansprechende Inhalte und kreative Ansätze, um das Interesse deiner Zuhörer zu wecken. Eine klare und authentische Kommunikation fördert zudem das Vertrauen und die Bindung zu deiner Marke.",
+      "learnMore": "Demo call buchen",
       "cardTitle": "Showroom",
       "cardSubtitle": "Individueller Shooting bei Ihnen vor Ort.",
       "imageAlt": "Shooting Bild"
@@ -293,6 +311,10 @@
   "Mission": {
     "title": "Was machen wir",
     "description": "Wir bieten ein einzigartiges Portfolio an Dienstleistungen an, von Social-Media-Kampagnen und Content-Marketing über professionelle Fotoshootings bis hin zu Videoproduktionen in Kinoqualität, Webentwicklung und massgeschneiderten Strategien. Unser Ziel ist es, Ihre Marke auf die nächste Stufe zu bringen."
+  },
+  "TitleAboutHiver":{
+    "title": "Branding ist der Schlüssel zum Erfolg.",
+    "description": "Steigere die Wahrnehmung und Marktposition deiner Marke und gewinne Kunden, die in qualität investieren." 
   },
   "Pricing": {
     "title": "Finden Sie den",

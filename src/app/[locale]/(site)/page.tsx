@@ -12,6 +12,9 @@ import { TimelineDemo } from "@/components/ui/timelineDemo";
 import Hiver3 from "@/components/Hiver3Cards";
 import Hiver6 from "@/components/Hiver6Cards";
 import ExtraFeatures2 from "@/components/ExtraFeatures2";
+import AboutHiver from "@/components/AboutHiver";
+import TitleAboutHiver from "@/components/TitleAboutHiver";
+import About2Hiver from "@/components/About2Hiver";
 
 export const metadata: Metadata = {
   title: "Webomo - KI Marketing Agency",
@@ -27,7 +30,10 @@ export default function Home() {
 
       <WebomoFeatures />
       <Clients />
-      <Hiver3 />
+      <TitleAboutHiver />
+      <AboutHiver />
+      <About2Hiver />
+      {/* <Hiver3 /> */}
       {/* <Hiver6 /> */}
       <TimelineDemo />
       <ExtraFeatures2 />
