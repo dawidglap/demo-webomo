@@ -51,7 +51,7 @@ const Clients = () => {
   // Variants per hover
   const logoVariants = {
     hover: {
-      scale: 1.1,
+      scale: 1.05,
       transition: { duration: 0.3 },
     },
   };
@@ -77,7 +77,7 @@ const Clients = () => {
             {[...clientsData, ...clientsData].map((item, index) => (
               <motion.div
                 key={index}
-                className="flex-none"
+                className="my-4 flex-none rounded-2xl bg-gray-100 px-8 py-2 dark:bg-slate-800"
                 whileHover="hover"
                 variants={logoVariants}
               >
