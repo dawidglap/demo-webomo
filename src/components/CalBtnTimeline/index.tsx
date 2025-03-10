@@ -18,7 +18,7 @@ const CalBtn: React.FC = () => {
       data-cal-namespace="30min"
       data-cal-link="webomo/demo"
       data-cal-config='{"layout":"month_view"}'
-      className="font-sm mt-4 max-w-[12rem] rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-4 py-[10px] text-center text-base text-white shadow-lg hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400 md:text-sm"
+      className="font-sm mt-4 max-w-[16rem] rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 px-4 py-[10px] text-center text-base text-white shadow-lg hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400 md:text-sm"
     >
       {t("schedule")} {/* Fetch the localized text dynamically */}
     </button>

@@ -4,8 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-const About3 = () => {
-  const t = useTranslations("About3");
+const About3Hiver = () => {
+  const t = useTranslations("About3Hiver");
 
   const videoRef = useRef(null);
   const textRef = useRef(null);
@@ -73,7 +73,7 @@ const About3 = () => {
       <div className="container lg:max-w-[1120px]">
         <div className="-mx-4 flex flex-wrap items-center justify-between">
           {/* Left Section with Single Video */}
-          <div className="w-full px-4 lg:w-1/2">
+          <div className="w-full px-4 blur-lg lg:w-1/2">
             <motion.div
               ref={videoRef}
               className="relative mx-auto mb-14 max-h-[450px] w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-xl lg:mx-0 lg:mb-0"
@@ -105,9 +105,7 @@ const About3 = () => {
                 {t("title")}
               </h2>
               <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-                {t("description.part1")}
-                <span className="font-bold"> {t("description.bold")}</span>
-                {t("description.part2")}
+                {t("description")}
               </p>
               <a
                 href="/kontakt"
@@ -123,4 +121,4 @@ const About3 = () => {
   );
 };
 
-export default About3;
+export default About3Hiver;

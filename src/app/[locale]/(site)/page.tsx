@@ -15,6 +15,7 @@ import ExtraFeatures2 from "@/components/ExtraFeatures2";
 import AboutHiver from "@/components/AboutHiver";
 import TitleAboutHiver from "@/components/TitleAboutHiver";
 import About2Hiver from "@/components/About2Hiver";
+import About3Hiver from "@/components/About3Hiver";
 
 export const metadata: Metadata = {
   title: "Webomo - KI Marketing Agency",
@@ -33,6 +34,7 @@ export default function Home() {
       <TitleAboutHiver />
       <AboutHiver />
       <About2Hiver />
+      <About3Hiver />
       {/* <Hiver3 /> */}
       {/* <Hiver6 /> */}
       <TimelineDemo />
