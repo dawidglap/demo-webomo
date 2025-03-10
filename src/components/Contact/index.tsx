@@ -3,8 +3,8 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { CalendarCheck, CheckCircle } from "lucide-react";
-import CalBtn from "../CalBtn";
+import { CheckCircle } from "lucide-react";
+import CalBtnContact from "../CalBtnContact";
 
 const Contact = () => {
   const t = useTranslations("Contact");
@@ -15,15 +15,15 @@ const Contact = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
-        className="text-center"
+        className="max-w-3xl text-center"
       >
-        <h2 className="text-xs font-semibold uppercase tracking-wide text-indigo-500 md:text-sm">
+        <h2 className=" text-sm font-semibold uppercase tracking-wide text-[#f68efe] md:text-base">
           {t("headline")}
         </h2>
-        <h1 className="mt-2 bg-gradient-to-r from-[#410cd9] to-[#f68efe] bg-clip-text pb-3 text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
+        <h1 className="mt-4 bg-gradient-to-r from-[#410cd9] to-[#f68efe] bg-clip-text pb-3 text-3xl font-extrabold leading-tight text-transparent sm:text-4xl md:text-5xl">
           {t("bookCall.title")} {t("bookCall.title2")}
         </h1>
-        <p className="mt-2 px-2 text-sm text-gray-700 dark:text-gray-300 sm:text-lg">
+        <p className="mt-4 px-4 text-base text-gray-700 dark:text-gray-400 sm:text-lg">
           {t("bookCall.subtitle")}
         </p>
       </motion.div>
@@ -36,67 +36,64 @@ const Contact = () => {
           scale: 1,
           transition: { delay: 0.2, duration: 0.5 },
         }}
-        className="mt-8 w-full max-w-xs rounded-2xl border border-gray-200 bg-white bg-opacity-90 p-6 shadow-xl backdrop-blur-lg dark:border-gray-800 dark:bg-slate-900 dark:bg-opacity-80 sm:max-w-sm md:max-w-md md:p-8"
+        className="mt-12 w-full max-w-xs rounded-3xl border border-gray-200 bg-white bg-opacity-90 p-6 shadow-xl backdrop-blur-lg dark:border-gray-800 dark:bg-slate-900 dark:bg-opacity-80 sm:max-w-sm md:max-w-sm md:px-10 md:py-10"
       >
-        <div className="flex flex-col items-center text-center">
-          {/* Icon */}
-          <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500/10 dark:bg-indigo-400/10">
-            <CalendarCheck className="text-2xl text-indigo-500 dark:text-indigo-300" />
-          </div>
-          <p className="text-xs font-semibold text-gray-500 dark:text-gray-300 sm:text-sm">
+        <div className="flex flex-col items-center gap-4 text-center">
+          {/* Simple label */}
+          <p className="text-sm font-semibold text-gray-700 dark:text-gray-400">
             100% {t("title")}
           </p>
-          <h3 className="mt-2 text-xl font-bold text-black dark:text-white sm:text-2xl">
+
+          {/* Main Title */}
+          <h3 className="text-2xl font-bold text-black dark:text-white sm:text-3xl">
             {t("bookCall.title2")}
           </h3>
 
+          {/* Divider line */}
+          <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent" />
+
           {/* Features */}
-          <ul className="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-300 sm:text-base">
-            <li className="flex items-center gap-2">
+          <ul className="mx-auto w-full max-w-xs space-y-3 text-left text-sm text-gray-700 dark:text-gray-300 sm:text-base">
+            <li className="flex items-start gap-3">
               <CheckCircle
-                className="text-purple-500 dark:text-purple-400"
-                size={16}
+                size={18}
+                className="mt-0.5 text-purple-500 dark:text-purple-400"
               />
-              Bedürfnisanslyse
+              Sprich mit einem Branding-Experten
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-start gap-3">
               <CheckCircle
-                className="text-purple-500 dark:text-purple-400"
-                size={16}
+                size={18}
+                className="mt-0.5 text-purple-500 dark:text-purple-400"
               />
-              Strategie definition
+              Bedürfnisanalyse
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-start gap-3">
               <CheckCircle
-                className="text-purple-500 dark:text-purple-400"
-                size={16}
+                size={18}
+                className="mt-0.5 text-purple-500 dark:text-purple-400"
               />
-              Umsetzumgsplan
+              Erhalte eine individuelle Strategie
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-start gap-3">
               <CheckCircle
-                className="text-purple-500 dark:text-purple-400"
-                size={16}
+                size={18}
+                className="mt-0.5 text-purple-500 dark:text-purple-400"
               />
-              Unverbindlich & kostenlos
+              Unverbindlich für dich
             </li>
           </ul>
 
           {/* CTA Button */}
           <motion.div
-            className="mt-5 w-full"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            className="mt-6 w-full"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
           >
-            <CalBtn />
+            <CalBtnContact />
           </motion.div>
         </div>
       </motion.div>
-
-      {/* Thank You Message */}
-      {/* <p className="mt-4 max-w-xl px-2 text-center text-xs text-gray-600 dark:text-gray-400 sm:text-sm">
-        {t("bookCall.thankYou")}
-      </p> */}
     </section>
   );
 };
