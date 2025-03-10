@@ -22,11 +22,11 @@ const ExtraFeatures = () => {
 
       const delayTimeout = setTimeout(() => {
         const firstInterval = setInterval(() => {
-          setFirstStat((prev) => (prev < 25 ? prev + 1 : 25));
-        }, 50);
+          setFirstStat((prev) => (prev < 125 ? prev + 1 : 125));
+        }, 10);
 
         const secondInterval = setInterval(() => {
-          setSecondStat((prev) => (prev < 900 ? prev + 20 : 900));
+          setSecondStat((prev) => (prev < 1900 ? prev + 20 : 1900));
         }, 20);
 
         const thirdInterval = setInterval(() => {
@@ -56,61 +56,7 @@ const ExtraFeatures = () => {
       >
         <div className="container mx-auto text-center">
           {/* Counter Section */}
-          <motion.section
-            className="bg-base-100 dark:bg-base-300 nord:bg-nord-700 py-12 sm:py-20"
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : {}}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="container mx-auto text-center">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-12">
-                {/* Stat 1 */}
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
-                >
-                  <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
-                    {firstStat}+
-                  </span>
-                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
-                    {t("stat1")}
-                  </p>
-                </motion.div>
 
-                {/* Stat 2 */}
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
-                >
-                  <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
-                    {secondStat}+
-                  </span>
-                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
-                    {t("stat2")}
-                  </p>
-                </motion.div>
-
-                {/* Stat 3 */}
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
-                >
-                  <span className="text-neutral text-7xl font-extrabold dark:text-neutral-100">
-                    {thirdStat}%
-                  </span>
-                  <p className="dark:text-primary-content nord:text-nord-content mt-4 text-lg font-extrabold text-primary">
-                    {t("stat3")}
-                  </p>
-                </motion.div>
-              </div>
-            </div>
-          </motion.section>
           {/* Title */}
           <motion.h2
             className="nord:text-nord-content mx-auto mt-10 max-w-2xl pb-10 text-2xl font-bold dark:text-neutral-100 sm:text-3xl lg:text-4xl"

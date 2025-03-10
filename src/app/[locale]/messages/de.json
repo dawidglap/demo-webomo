@@ -90,8 +90,8 @@
     },
   "HeroAboutUs":{
   "title":"Unsere Vision",
-  "subHeadline":"Ihr Erfolg",
-  "mission": "Webomo ist eine KI-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit massgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
+  "subHeadline":"Ihr langfristiger Erfolg",
+  "mission": "Webomo ist eine Kl-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit massgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
   "cta": "Werde Teil unseres Teams!"
   } , 
   "WhoWeAre":{
@@ -158,9 +158,9 @@
   },
   "ExtraFeatures": {
     "title": "Zusätzlich erhältst du von uns",
-    "stat1": "Betreute Social Media Profile",
+    "stat1": "Betreute Kunden",
     "stat2": "Publizierte Beiträge",
-    "stat3": "Follower-Wachstum im ersten Jahr",
+    "stat3": "Höhere Sichtbarkeit",
     "feature1": "Dein eigenes Dashboard",
     "feature2": "Regelmässige Reportings",
     "feature3": "Individueller Affiliate-Marketing"
