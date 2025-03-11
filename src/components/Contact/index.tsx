@@ -46,7 +46,7 @@ const Contact = () => {
 
           {/* Main Title */}
           <h3 className="text-2xl font-bold text-black dark:text-white sm:text-3xl">
-            {t("bookCall.title2")}
+            {t("bookCall.title3")}
           </h3>
 
           {/* Divider line */}

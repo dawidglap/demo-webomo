@@ -149,7 +149,7 @@
   "Contact": {
     "headline":"Kostenloses",
     "subHeadline":"Beratungsgespräch",
-  "title": "Kostenlos",
+  "title": "kostenlos",
   "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
   "form": {
     "title": "Kontaktieren Sie uns per",
@@ -164,6 +164,7 @@
   "bookCall": {
     "title": "Videogespräch",
     "title2": "vereinbaren",
+    "title3": "Ein Ziel - Dein Erfolg",
     "subtitle": "Lassen Sie uns gemeinsam daran arbeiten, Ihre Vision zu verwirklichen.",
     "button": "Jetzt planen",
     "contactText": "Bevorzugen Sie eine andere Kontaktmöglichkeit?",
