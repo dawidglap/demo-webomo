@@ -57,23 +57,29 @@ const Clients = () => {
   };
 
   return (
-    <section className="relative z-10 bg-[#F8FAFB] pb-[50px] pt-[70px] dark:bg-[#15182B]">
+    <section className="relative z-10  pb-[50px] pt-[70px]">
       <div className="container overflow-hidden lg:max-w-[1200px]">
         <h2 className="mb-16 text-center text-base font-light text-black dark:text-white md:text-lg">
           {t("heading")}
         </h2>
 
         <div className="relative w-full overflow-hidden">
+          {/* Fade a sinistra */}
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-white to-transparent dark:from-black dark:to-transparent" />
+
+          {/* Fade a destra */}
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-white to-transparent dark:from-black dark:to-transparent" />
+
+          {/* Container scorrevole */}
           <motion.div
             className="flex w-max items-center justify-center gap-8"
-            animate={{ x: ["0%", "-50%"] }} // Scroll continuo
+            animate={{ x: ["0%", "-50%"] }}
             transition={{
               repeat: Infinity,
-              duration: 30, // Puoi modificare la velocità
-              ease: "easeInOut",
+              duration: 30,
+              ease: "linear",
             }}
           >
-            {/* Duplichiamo i loghi per continuità del loop */}
             {[...clientsData, ...clientsData].map((item, index) => (
               <motion.div
                 key={index}
