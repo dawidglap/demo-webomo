@@ -2,52 +2,30 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const About3Hiver = () => {
   const t = useTranslations("About3Hiver");
 
-  const videoRef = useRef(null);
+  const sectionRef = useRef(null);
   const textRef = useRef(null);
-
-  const [videoInView, setVideoInView] = useState(false);
-  const [textInView, setTextInView] = useState(false);
+  const [sectionInView, setSectionInView] = useState(false);
 
   useEffect(() => {
-    const observerOptions = {
-      threshold: 0.2,
-    };
-
-    // Video Observer
-    const videoObserver = new IntersectionObserver((entries) => {
+    const observerOptions = { threshold: 0.3 };
+    const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setVideoInView(true);
+          setSectionInView(true);
+          sectionObserver.disconnect();
         }
       });
     }, observerOptions);
 
-    if (videoRef.current) {
-      videoObserver.observe(videoRef.current);
-    }
+    if (sectionRef.current) sectionObserver.observe(sectionRef.current);
 
-    // Text Observer
-    const textObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setTextInView(true);
-        }
-      });
-    }, observerOptions);
-
-    if (textRef.current) {
-      textObserver.observe(textRef.current);
-    }
-
-    return () => {
-      videoObserver.disconnect();
-      textObserver.disconnect();
-    };
+    return () => sectionObserver.disconnect();
   }, []);
 
   const sectionVariants = {
@@ -59,62 +37,67 @@ const About3Hiver = () => {
     },
   };
 
-  const videoVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
-
   return (
-    <motion.section id="about" className="relative mb-[100px] pt-[100px]">
+    <motion.section
+      ref={sectionRef}
+      id="about"
+      className="relative mb-[100px] pt-[150px]"
+      initial="hidden"
+      animate={sectionInView ? "visible" : "hidden"}
+      variants={sectionVariants}
+    >
       <div className="container lg:max-w-[1120px]">
         <div className="-mx-4 flex flex-wrap items-center justify-between">
-          {/* Left Section with Single Video */}
-          <div className="w-full px-4 blur-lg lg:w-1/2">
-            <motion.div
-              ref={videoRef}
-              className="relative mx-auto mb-14 max-h-[450px] w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-xl lg:mx-0 lg:mb-0"
-              initial="hidden"
-              animate={videoInView ? "visible" : "hidden"}
-              variants={videoVariants}
-            >
-              <video
-                playsInline
-                src="/images/about/drone-video22.mp4"
-                autoPlay
-                muted
-                loop
-                className="max-h-[450px] w-full max-w-[470px] rounded-xl object-cover shadow-xl"
+          {/* Left Section (Image) */}
+          <motion.div
+            className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
+            initial="hidden"
+            animate={sectionInView ? "visible" : "hidden"}
+            variants={sectionVariants}
+          >
+            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
+              {/* Light mode */}
+              <Image
+                src="/images/hiver/ms-auto.webp"
+                alt="Hiver Card Light"
+                width={470}
+                height={450}
+                className="h-auto w-full object-cover dark:hidden"
+                priority
               />
-            </motion.div>
-          </div>
+              {/* Dark mode */}
+              <Image
+                src="/images/hiver/ms-auto-dark.webp"
+                alt="Hiver Card Dark"
+                width={470}
+                height={450}
+                className="hidden h-auto w-full object-cover dark:block"
+                priority
+              />
+            </div>
+          </motion.div>
 
-          {/* Right Text Section */}
-          <div className="w-full px-4 lg:w-1/2">
-            <motion.div
-              ref={textRef}
-              className="lg:ml-auto lg:max-w-[510px]"
-              initial="hidden"
-              animate={textInView ? "visible" : "hidden"}
-              variants={sectionVariants}
+          {/* Right Section (Text) */}
+          <motion.div
+            ref={textRef}
+            className="w-full px-4 lg:ml-auto lg:w-1/2 lg:max-w-[510px]"
+            initial="hidden"
+            animate={sectionInView ? "visible" : "hidden"}
+            variants={sectionVariants}
+          >
+            <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
+              {t("title")}
+            </h2>
+            <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
+              {t("description")}
+            </p>
+            <a
+              href="/kontakt"
+              className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
             >
-              <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                {t("title")}
-              </h2>
-              <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-                {t("description")}
-              </p>
-              <a
-                href="/kontakt"
-                className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
-              >
-                {t("learnMore")}
-              </a>
-            </motion.div>
-          </div>
+              {t("learnMore")}
+            </a>
+          </motion.div>
         </div>
       </div>
     </motion.section>
