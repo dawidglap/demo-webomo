@@ -5,24 +5,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import screen2 from "../../../public/images/about/autumn-post.webp";
 
 const AboutHiver = () => {
   const t = useTranslations("AboutHiver");
   const textRef = useRef(null);
   const sectionRef = useRef(null);
   const [sectionInView, setSectionInView] = useState(false);
-  const [mediaLoaded, setMediaLoaded] = useState({
-    0: false,
-    1: false,
-    2: false,
-  });
 
   useEffect(() => {
-    const observerOptions = {
-      threshold: 0.3,
-    };
-
+    const observerOptions = { threshold: 0.3 };
     const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -32,25 +23,10 @@ const AboutHiver = () => {
       });
     }, observerOptions);
 
-    if (sectionRef.current) {
-      sectionObserver.observe(sectionRef.current);
-    }
+    if (sectionRef.current) sectionObserver.observe(sectionRef.current);
 
-    const fallbackTimeout = setTimeout(() => {
-      setMediaLoaded({ 0: true, 1: true, 2: true });
-    }, 2000);
-
-    return () => {
-      sectionObserver.disconnect();
-      clearTimeout(fallbackTimeout);
-    };
+    return () => sectionObserver.disconnect();
   }, []);
-
-  const handleMediaLoaded = (index) => {
-    setMediaLoaded((prev) => ({ ...prev, [index]: true }));
-  };
-
-  const allMediaLoaded = Object.values(mediaLoaded).every((loaded) => loaded);
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -61,123 +37,67 @@ const AboutHiver = () => {
     },
   };
 
-  const smartphoneVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (i) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        delay: i * 0.5,
-        ease: "easeOut",
-      },
-    }),
-  };
-
   return (
     <motion.section
       ref={sectionRef}
       id="leistungen"
-      className="relative pt-[150px]"
+      className="relative pt-[-20px] md:pt-[15px]"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1120px]">
         <div className="-mx-4 flex flex-wrap items-center justify-between">
-          <div className="hidden w-full px-4 blur-lg xxs:block lg:w-1/2">
-            <motion.div
-              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-[30px] bg-gradient-to-r from-yellow-200 to-orange-300 p-6 pb-10 shadow-2xl dark:from-sky-900 md:min-h-[450px] lg:mx-0 lg:mb-0"
-              initial="hidden"
-              animate={sectionInView ? "visible" : "hidden"}
-              variants={sectionVariants}
-            >
-              <h2 className="mb-8 pt-2 text-center text-3xl font-bold text-black dark:text-white md:pt-4">
-                {t("weekly")}
-              </h2>
-              <div className="mt-10 flex items-center justify-between gap-4">
-                {[
-                  {
-                    type: "video",
-                    src: "/images/about/night-video.mp4",
-                    label: t("reels"),
-                  },
-                  { type: "image", src: screen2, label: t("posts") },
-                  {
-                    type: "video",
-                    src: "/images/about/termin-video.mp4",
-                    label: t("stories"),
-                  },
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    className="relative flex h-[208px] w-[96px] flex-col items-center overflow-hidden sm:h-[260px] sm:w-[120px]"
-                    custom={index}
-                    initial="hidden"
-                    animate={
-                      sectionInView && mediaLoaded[index] ? "visible" : "hidden"
-                    }
-                    variants={smartphoneVariants}
-                  >
-                    <p className="mb-2 text-center text-lg text-slate-600 dark:text-slate-300 md:text-xl">
-                      {item.label}
-                    </p>
-                    <div className="relative h-[180px] w-[80px] overflow-hidden sm:h-[234px] sm:w-[108px]">
-                      <Image
-                        src="/images/screens/mobile-frame.png"
-                        alt="mobile frame"
-                        layout="fill"
-                        objectFit="cover"
-                        className="absolute inset-0 z-10"
-                      />
-                      {item.type === "video" ? (
-                        <video
-                          playsInline
-                          src={item.src}
-                          autoPlay
-                          muted
-                          loop
-                          className="absolute left-[0px] top-[0px] h-[172px] w-[80px] rounded-[18px] object-cover sm:h-[220px] sm:w-[107px]"
-                          onLoadedData={() => handleMediaLoaded(index)}
-                        />
-                      ) : (
-                        <Image
-                          src={item.src}
-                          alt="content image"
-                          layout="fill"
-                          className="absolute left-[0px] top-[0px] h-[140px] w-[60px] rounded-[18px] object-cover sm:h-[230px] sm:w-[107px]"
-                          onLoad={() => handleMediaLoaded(index)}
-                        />
-                      )}
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
+          {/* IMAGE PART */}
+          <motion.div
+            className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
+            initial="hidden"
+            animate={sectionInView ? "visible" : "hidden"}
+            variants={sectionVariants}
+          >
+            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
+              {/* Light mode */}
+              <Image
+                src="/images/hiver/chf.webp"
+                alt="Hiver Card Light"
+                width={470}
+                height={450}
+                className="h-auto w-full object-cover dark:hidden"
+                priority
+              />
+              {/* Dark mode */}
+              <Image
+                src="/images/hiver/chf-dark.webp"
+                alt="Hiver Card Dark"
+                width={470}
+                height={450}
+                className="hidden h-auto w-full object-cover dark:block"
+                priority
+              />
+            </div>
+          </motion.div>
 
-          <div className="w-full px-4 lg:w-1/2">
-            <motion.div
-              ref={textRef}
-              className="lg:ml-auto lg:max-w-[510px]"
-              initial="hidden"
-              animate={sectionInView ? "visible" : "hidden"}
-              variants={sectionVariants}
+          {/* TEXT PART */}
+          <motion.div
+            ref={textRef}
+            className="w-full px-4 lg:ml-auto lg:w-1/2 lg:max-w-[510px]"
+            initial="hidden"
+            animate={sectionInView ? "visible" : "hidden"}
+            variants={sectionVariants}
+          >
+            <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
+              {t("title")}
+            </h2>
+            <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
+              {t("description")}
+            </p>
+            <Link
+              href="/kontakt"
+              className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
             >
-              <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                {t("title")}
-              </h2>
-              <p className="mb-[20px] text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-xl">
-                {t("description")}
-              </p>
-              <Link
-                href="/kontakt"
-                className="inline-block rounded-full bg-black px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-indigo-200 md:text-xl"
-              >
-                {t("learnMore")}
-              </Link>
-            </motion.div>
-          </div>
+              {t("learnMore")}
+            </Link>
+          </motion.div>
         </div>
       </div>
     </motion.section>
