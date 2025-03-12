@@ -12,10 +12,7 @@ const WebomoBusiness = () => {
   return (
     <div className="bg-gradient-to-r from-indigo-100 via-purple-50  to-cyan-100 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800">
       <HeroBusiness />
-      <CardWithBg
-        title="Mehr Freiheit"
-        description="Du arbeitest flexibel, ortsunabhängig und bestimmst selbst deine Arbeitszeit. Wir helfen dir, dein Team zu erweitern, um mehr Freizeit zu gewinnen."
-      />
+
       <CardsBusiness />
       <CtaBusiness />
       <AboutBusinessOne />
