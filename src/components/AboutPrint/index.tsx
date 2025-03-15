@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
-import website from "../../../public/images/about/website.webp";
+import website from "../../../public/images/hiver/print-design.webp";
 
 const AboutPrint = () => {
   const t = useTranslations("AboutPrint");
@@ -66,22 +66,14 @@ const AboutPrint = () => {
             </motion.div>
           </div>
           {/* Right Section (Image Card with Gradient Background) */}
-          <div className="w-full px-4 blur-md lg:w-1/2">
+          <div className="w-full px-4 lg:w-1/2">
             <motion.div
               ref={cardRef}
-              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-[30px] bg-gradient-to-b from-[#FEFBEB] to-cyan-400 p-6 shadow-xl dark:from-indigo-800 md:min-h-[450px] lg:mx-0 lg:mb-0 lg:mr-auto"
+              className="relative z-10 mx-auto mb-14 w-full max-w-[470px] rounded-[30px] bg-gradient-to-b from-[#FEFBEB] to-stone-400 p-6 shadow-xl dark:from-stone-300 dark:to-slate-800 md:min-h-[450px] lg:mx-0 lg:mb-0 lg:mr-auto"
               initial="hidden"
               animate={cardInView ? "visible" : "hidden"}
               variants={cardVariants}
             >
-              <div className="mb-8 text-center">
-                <h2 className="text-3xl font-bold text-black dark:text-white">
-                  {t("cardTitle")}
-                </h2>
-                <p className="pt-1 text-lg text-slate-600 dark:text-slate-300 md:text-xl">
-                  {t("cardSubtitle")}
-                </p>
-              </div>
               <motion.div
                 className="overflow-hidden rounded-xl"
                 initial="hidden"

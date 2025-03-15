@@ -46,21 +46,21 @@ const CardsBusiness = () => {
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/images/hiver/magnet-light.webp"
+              src="/images/hiver/bg-rocket.webp"
               alt="Card Background"
               className="h-full w-full object-cover dark:hidden"
             />
             <img
-              src="/images/hiver/magnet-dark.webp"
+              src="/images/hiver/bg-rocket.webp"
               alt="Card Background Dark"
               className="hidden h-full w-full object-cover dark:block"
             />
             {/* Optional overlay for readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent dark:from-black/70"></div>
+            <div className="absolute inset-0  bg-gradient-to-t from-white/90 to-transparent dark:from-black/90 dark:to-white/40"></div>
           </div>
 
           {/* Content */}
-          <div className="relative z-10 p-6 text-center">
+          <div className="relative z-10 my-auto p-6 text-center">
             <h3 className="text-lg font-bold text-black dark:text-white">
               {t("card1.title")}
             </h3>
@@ -89,7 +89,7 @@ const CardsBusiness = () => {
             />
 
             {/* Optional overlay for readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent dark:from-black/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent dark:from-black/70"></div>
           </div>
 
           {/* Content */}
@@ -116,12 +116,12 @@ const CardsBusiness = () => {
               className="h-full w-full object-cover dark:hidden"
             />
             <img
-              src="/images/hiver/bg-3-dark.webp"
+              src="/images/hiver/bg-3.webp"
               alt="Card Background Dark"
               className="hidden h-full w-full object-cover dark:block"
             />
             {/* Optional overlay for readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent dark:from-black/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent dark:from-black/90"></div>
           </div>
 
           {/* Content */}
