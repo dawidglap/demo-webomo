@@ -15,9 +15,9 @@ export const PricingItem = ({ price, stripeLink }: any) => {
   if (price.nickname === "Basic") {
     bgColor = "bg-indigo-100 dark:bg-gray-800";
   } else if (price.nickname === "Unlimited") {
-    bgColor = "bg-purple-100 dark:bg-slate-900";
+    bgColor = "bg-purple-200 dark:bg-slate-950";
   } else if (price.nickname === "Business") {
-    bgColor = "bg-green-100 dark:bg-[#000]";
+    bgColor = "bg-green-100 dark:bg-indigo-950";
   } else if (price.nickname === "Enterprise") {
     bgColor = "bg-gray-100 dark:bg-gray-800";
   }
@@ -64,7 +64,9 @@ export const PricingItem = ({ price, stripeLink }: any) => {
   return (
     <div className="w-full px-6 pb-8 md:w-1/2 lg:w-1/3">
       <div
-        className={`relative mb-10 rounded-2xl px-9 py-10 shadow-2xl md:shadow-xl ${bgColor} flex h-full flex-col justify-between lg:mb-4 lg:px-7 xl:px-9`}
+        className={`relative  mb-12 mt-10 rounded-2xl px-9 py-10 shadow-2xl md:shadow-md ${bgColor} flex h-[91%] flex-col justify-between lg:mb-4 lg:px-7 xl:px-9 ${
+          price.nickname === "Unlimited" ? "scale-110" : ""
+        }`}
       >
         {/* Badge for Recommended Plan */}
         {price.nickname === "Unlimited" && (
@@ -97,7 +99,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
               <Link
                 href="/kontakt"
                 aria-label="Contact us for Enterprise plan"
-                className="block w-full rounded-full  bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+                className="mt-10 block  rounded-full bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
               >
                 {t("contactUs")}
               </Link>
@@ -109,9 +111,9 @@ export const PricingItem = ({ price, stripeLink }: any) => {
         )}
 
         {/* Features List */}
-        <div className="mb-auto flex-1 space-y-4 pb-10 pt-6">
+        {/* <div className="mb-auto flex-1 space-y-4 pb-10 pt-6">
           {getFeatures(price.nickname)}
-        </div>
+        </div> */}
 
         {/* Stripe Checkout Button */}
         {price.nickname === "Basic" && (
@@ -122,7 +124,13 @@ export const PricingItem = ({ price, stripeLink }: any) => {
             <Link
               href="https://buy.stripe.com/00gaIyfu79lbcsU000"
               aria-label="Pay for Basic"
-              className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
+              className="
+    dark:hover:shadow-[0_0_5px_5px_rgba(99, 102, 241, 
+    0.6)] block w-full rounded-full bg-gradient-to-r from-indigo-500 
+    to-purple-500 
+    px-8 py-3 
+    text-center text-base font-medium text-white 
+    shadow-md transition-all duration-300 hover:shadow-[0_0_10px_5px_rgba(99,102,241,0.6)] dark:bg-indigo-500"
             >
               {t("checkoutNow")}
             </Link>
@@ -137,7 +145,14 @@ export const PricingItem = ({ price, stripeLink }: any) => {
             <Link
               href="https://buy.stripe.com/bIYeYO6XBfJzfF6bIJ"
               aria-label="Pay for Unlimited"
-              className=" block w-full rounded-full bg-neutral-50 px-8 py-3 text-center text-base font-medium text-black hover:bg-neutral-300 dark:bg-black dark:text-white hover:dark:bg-gray-700"
+              className="
+    block w-full rounded-full 
+    bg-gradient-to-r from-indigo-500 to-purple-500 
+    px-8 py-3 text-center text-base font-medium text-white 
+    shadow-md 
+    transition-all duration-300 
+    hover:shadow-[0_0_5px_5px_rgba(99,102,241,0.6)]
+    dark:bg-indigo-500 dark:hover:shadow-[0_0_20px_5px_rgba(99,102,241,0.6)]"
             >
               {t("checkoutNow")}
             </Link>
@@ -145,9 +160,9 @@ export const PricingItem = ({ price, stripeLink }: any) => {
         )}
 
         {/* Footer Text */}
-        <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
+        {/* <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
           {t("footerText")}
-        </p>
+        </p> */}
       </div>
     </div>
   );

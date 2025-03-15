@@ -111,93 +111,95 @@ const ComparePricing = () => {
   ];
 
   return (
-    <section className="container mx-auto my-10 px-4">
-      {/* Titolo */}
-      <h2 className="mb-6 text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
+    <div className="bg-gradient-to-b from-purple-100 via-gray-100 to-white pt-[110px] dark:from-purple-500 dark:via-slate-900 dark:to-black">
+      <section className="container relative mx-auto  mb-10 mt-[-3rem] rounded-2xl bg-white px-4 dark:bg-slate-950 md:p-10">
+        {/* Titolo */}
+        {/* <h2 className="mb-6 text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
         {t("titleCompare")}{" "}
-      </h2>
+      </h2> */}
 
-      {/* Legenda sopra la tabella */}
-      <div className="grid grid-cols-12 items-center border-b border-gray-200 py-4 dark:border-gray-700">
-        {/* <div className="mb-6 flex justify-end gap-4"> */}
-        <div className="col-span-3 md:col-span-6 "></div>
-        <div className="col-span-3 flex items-center justify-center md:col-span-2">
-          <span className="mr-2 h-2 w-2 rounded-full bg-gray-500 md:h-3 md:w-3"></span>
-          <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
-            {t("plans.Basic.name")}
-          </span>
-        </div>
-        <div className="col-span-3 flex items-center justify-center md:col-span-2">
-          <span className="mr-2 h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400 md:h-3 md:w-3"></span>
-          <span className="text-sm font-semibold text-gray-700 dark:text-gray-300  md:text-xl">
-            {t("plans.Unlimited.name")}
-          </span>
-        </div>
-        <div className="col-span-3 flex items-center justify-center md:col-span-2">
-          <span className="mr-2 h-2 w-2 rounded-full bg-green-600 dark:bg-green-400 md:h-3 md:w-3"></span>
-          <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
-            {t("plans.Business.name")}
-          </span>
-        </div>
-        {/* </div> */}
-      </div>
-
-      {/* Lista delle features */}
-      <div className="w-full">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="grid grid-cols-12 items-center border-b border-gray-200 py-4 dark:border-gray-700"
-          >
-            {/* Feature Name con Tooltip su mobile */}
-            <div className="relative  col-span-9 flex items-center gap-2 text-left text-gray-700 dark:text-gray-300 md:col-span-6">
-              <span className="hidden sm:inline">{feature.name}</span>
-              <span
-                className="flex cursor-pointer items-center gap-1 sm:hidden"
-                onClick={() => handleTooltip(index)}
-              >
-                {feature.shortName}
-                <Info className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-              </span>
-
-              {/* Tooltip */}
-              {activeTooltip === index && (
-                <div className="absolute left-0 z-50 mt-2 w-56 rounded-2xl border border-gray-300 bg-white p-2 text-sm shadow-lg dark:border-gray-700 dark:bg-gray-800">
-                  {feature.name}
-                </div>
-              )}
-            </div>
-
-            {/* Basic Plan */}
-            <div className="col-span-1 flex justify-center text-center md:col-span-2">
-              {feature.basic ? (
-                <CheckCircle className="h-6 w-6 text-gray-500 dark:text-gray-400" />
-              ) : (
-                <MinusCircle className="h-6 w-6 text-gray-300 dark:text-gray-600" />
-              )}
-            </div>
-
-            {/* Pro Plan */}
-            <div className="col-span-1 flex justify-center text-center md:col-span-2">
-              {feature.pro ? (
-                <CheckCircle className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
-              ) : (
-                <MinusCircle className="h-6 w-6 text-gray-300 dark:text-gray-600" />
-              )}
-            </div>
-
-            {/* Enterprise Plan */}
-            <div className="col-span-1 flex justify-center text-center md:col-span-2">
-              {feature.enterprise ? (
-                <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400" />
-              ) : (
-                <MinusCircle className="h-6 w-6 text-gray-300 dark:text-gray-600" />
-              )}
-            </div>
+        {/* Legenda sopra la tabella */}
+        <div className=" grid grid-cols-12 items-center border-b border-gray-200 py-4 dark:border-gray-700">
+          {/* <div className="mb-6 flex justify-end gap-4"> */}
+          <div className="col-span-3 md:col-span-6 "></div>
+          <div className="col-span-3 flex items-center justify-center md:col-span-2">
+            <span className="mr-2 h-2 w-2 rounded-full bg-gray-500 md:h-3 md:w-3"></span>
+            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
+              {t("plans.Basic.name")}
+            </span>
           </div>
-        ))}
-      </div>
-    </section>
+          <div className="col-span-3 flex items-center justify-center md:col-span-2">
+            <span className="mr-2 h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400 md:h-3 md:w-3"></span>
+            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300  md:text-xl">
+              {t("plans.Unlimited.name")}
+            </span>
+          </div>
+          <div className="col-span-3 flex items-center justify-center md:col-span-2">
+            <span className="mr-2 h-2 w-2 rounded-full bg-green-600 dark:bg-green-400 md:h-3 md:w-3"></span>
+            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
+              {t("plans.Business.name")}
+            </span>
+          </div>
+          {/* </div> */}
+        </div>
+
+        {/* Lista delle features */}
+        <div className="w-full">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="grid grid-cols-12 items-center border-b border-gray-200 py-4 dark:border-gray-700"
+            >
+              {/* Feature Name con Tooltip su mobile */}
+              <div className="relative  col-span-9 flex items-center gap-2 text-left text-gray-700 dark:text-gray-300 md:col-span-6">
+                <span className="hidden sm:inline">{feature.name}</span>
+                <span
+                  className="flex cursor-pointer items-center gap-1 sm:hidden"
+                  onClick={() => handleTooltip(index)}
+                >
+                  {feature.shortName}
+                  <Info className="h-4 w-4 text-gray-500 dark:text-gray-400" />
+                </span>
+
+                {/* Tooltip */}
+                {activeTooltip === index && (
+                  <div className="absolute left-0 z-50 mt-2 w-56 rounded-2xl border border-gray-300 bg-white p-2 text-sm shadow-lg dark:border-gray-700 dark:bg-gray-800">
+                    {feature.name}
+                  </div>
+                )}
+              </div>
+
+              {/* Basic Plan */}
+              <div className="col-span-1 flex justify-center text-center md:col-span-2">
+                {feature.basic ? (
+                  <CheckCircle className="h-6 w-6 text-gray-500 dark:text-gray-400" />
+                ) : (
+                  <MinusCircle className="h-6 w-6 text-gray-300 dark:text-gray-600" />
+                )}
+              </div>
+
+              {/* Pro Plan */}
+              <div className="col-span-1 flex justify-center text-center md:col-span-2">
+                {feature.pro ? (
+                  <CheckCircle className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+                ) : (
+                  <MinusCircle className="h-6 w-6 text-gray-300 dark:text-gray-600" />
+                )}
+              </div>
+
+              {/* Enterprise Plan */}
+              <div className="col-span-1 flex justify-center text-center md:col-span-2">
+                {feature.enterprise ? (
+                  <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400" />
+                ) : (
+                  <MinusCircle className="h-6 w-6 text-gray-300 dark:text-gray-600" />
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

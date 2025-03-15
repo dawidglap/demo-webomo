@@ -10,7 +10,10 @@ const Pricing = () => {
 
   return (
     <>
-      <section id="pricing" className="relative z-10 mb-20 pt-[110px]">
+      <section
+        id="pricing"
+        className=" relative  mb-[0px]   bg-gradient-to-t from-purple-100 via-gray-100 to-white pt-[110px] dark:from-purple-500 dark:via-slate-900 dark:to-black"
+      >
         <div className="container">
           <div
             className="wow fadeInUp mx-auto mb-10 max-w-[690px] text-center"

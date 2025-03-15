@@ -174,7 +174,11 @@
   "submit": "Absenden"
 },
   "Calendly": {
-    "schedule": "Erstgespräch vereinbaren"
+    "schedule": "Erstgespräch vereinbaren",
+    "features1": "Inklusive Paket Pro Leistungen",
+    "features2": "Webentwicklung, Logo & Print Design",
+    "features3": "Affiliate Marketing",
+    "features4": "Sie definieren Ihre Leistungen"
   },
   "Cta": {
     "title": "Bringen Sie Ihre sozialen Medien mit Webomo auf die nächste Stufe",

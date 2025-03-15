@@ -9,7 +9,7 @@ const Footer = ({ locale }: { locale: string }) => {
 
   return (
     <footer className="rounded-[30px] bg-gradient-to-br from-indigo-100 via-pink-50 to-purple-200 py-12 shadow-xl dark:from-slate-900 dark:to-slate-800">
-      <div className="container mx-auto max-w-[1200px] px-6">
+      <div className="container mx-auto max-w-7xl  px-6 md:px-8">
         <div className="flex flex-col space-y-8 md:flex-row md:items-start md:justify-between md:space-y-0">
           {/* Left Section: Company Description */}
           <div className="text-center md:w-1/3 md:text-left">
