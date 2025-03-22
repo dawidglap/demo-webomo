@@ -312,7 +312,7 @@ const ManagerPackage = () => {
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
               {/* Instagram */}
-              <label className="flex items-center space-x-3">
+              {/* <label className="flex items-center space-x-3">
                 <input
                   type="checkbox"
                   name="instagram"
@@ -324,10 +324,10 @@ const ManagerPackage = () => {
                 <span className="text-sm text-black dark:text-white">
                   Instagram
                 </span>
-              </label>
+              </label> */}
 
               {/* Facebook */}
-              <label className="flex items-center space-x-3">
+              {/* <label className="flex items-center space-x-3">
                 <input
                   type="checkbox"
                   name="facebook"
@@ -339,7 +339,7 @@ const ManagerPackage = () => {
                 <span className="text-sm text-black dark:text-white">
                   Facebook
                 </span>
-              </label>
+              </label> */}
 
               {/* TikTok */}
               {/* <label className="flex items-center space-x-3">
