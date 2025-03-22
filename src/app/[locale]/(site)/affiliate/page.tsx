@@ -303,12 +303,12 @@ const Affiliate = () => {
           </div>
           {/* Social Media Checklist */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold text-black dark:text-white">
+            {/* <h3 className="mb-4 text-lg font-semibold text-black dark:text-white">
               {t("platformSelection")}
             </h3>
             <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
               {t("platformInstruction")}
-            </p>
+            </p> */}
 
             
           </div>
