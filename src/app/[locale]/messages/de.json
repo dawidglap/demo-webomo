@@ -172,7 +172,7 @@
     "submit": "Absenden"
   },
   "Calendly": {
-    "schedule": "Erstgespräch vereinbaren",
+    "schedule": "Erstgespräch buchen",
     "features1": "Inklusive Paket Pro Leistungen",
     "features2": "Webentwicklung, Logo & Print Design",
     "features3": "Affiliate Marketing",
@@ -368,8 +368,8 @@
         ]
       }
     },
-    "recommended": "Empfohlen",
-    "month": "Monat",
+    "recommended": "Meist gebucht",
+    "month": "mtl",
     "duration": "12 Monate Betreuung",
     "footerText": "Inkl. Dashboard & Reporting"
   },
@@ -436,8 +436,8 @@
       },
       {
         "quote": "Die Zusammenarbeit mit Webomo war ein echter Gewinn für unser Marketing. Die hochwertigen Videos und Bilder haben uns geholfen, unsere Marke professionell zu präsentieren.",
-        "authorName": "Sara Schmid",
-        "authorRole": "Marketing Managerin, Schmid AG"
+        "authorName": "Xander Schmid",
+        "authorRole": "Marketing Manager, Schmid AG"
       },
       {
         "quote": "Ich bin begeistert, wie schnell und effizient Webomo unsere Social-Media-Kanäle aufgebaut hat. Unsere Reichweite hat sich innerhalb kürzester Zeit verdoppelt.",
