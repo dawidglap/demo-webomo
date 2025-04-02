@@ -14,165 +14,163 @@
       "login": "Anmelden"
     }
   },
-    "About": {
-      "weekly": "Wöchentlich",
-      "reels": "Reels",
-      "posts": "Posts",
-      "stories": "Stories",
-      "title": "Stories & Beiträge",
-      "description": "Wir erstellen packende Stories und Beiträge auf Kino- und Hollywood-Niveau, die Ihre Marke perfekt in Szene setzen. Webomo übernimmt die komplette Content-Erstellung und Veröffentlichung auf Ihren Social-Media-Kanälen – und das wöchentlich für die kommenden 12 Monate.",
-      "learnMore": "Demo call buchen"
+  "About": {
+    "weekly": "Wöchentlich",
+    "reels": "Reels",
+    "posts": "Posts",
+    "stories": "Stories",
+    "title": "Stories & Beiträge",
+    "description": "Wir erstellen packende Stories und Beiträge auf Kino- und Hollywood-Niveau, die Ihre Marke perfekt in Szene setzen. Webomo übernimmt die komplette Content-Erstellung und Veröffentlichung auf Ihren Social-Media-Kanälen – und das wöchentlich für die kommenden 12 Monate.",
+    "learnMore": "Demo call buchen"
+  },
+  "AboutHiver": {
+    "weekly": "Wöchentlich",
+    "reels": "Reels",
+    "posts": "Posts",
+    "stories": "Stories",
+    "title": "Aus der Masse herausstechen",
+    "description": "Sorge dafür, dass die Wahrnehmung deiner Marke einzigartig ist und du dich von allen anderen abhebst. Nutze kreative Marketingstrategien und authentische Geschichten, um eine emotionale Verbindung zu deiner Zielgruppe herzustellen. Indem du kontinuierlich Innovationen einführst und auf Kundenfeedback hörst, kannst du deine Marke weiter stärken und ihre Einzigartigkeit bewahren.",
+    "learnMore": "Demo call buchen"
+  },
+  "About2": {
+    "title": "Shooting",
+    "description": {
+      "part1": "Wir erstellen für Sie in einem",
+      "bold": " ganztägigen",
+      "part2": " Fotoshooting eine umfassende Auswahl an Motiven für Ihre Social Media Kanäle. Egal, ob für Dienstleistungen, Produkte, Objekte oder vieles mehr. Wir stellen sicher, dass Ihre Marke wirkungsvoll und zielgerichtet präsentiert wird."
     },
-    "AboutHiver": {
-      "weekly": "Wöchentlich",
-      "reels": "Reels",
-      "posts": "Posts",
-      "stories": "Stories",
-      "title": "Aus der Masse herausstechen",
-      "description": "Sorge dafür, dass die Wahrnehmung deiner Marke einzigartig ist und du dich von allen anderen abhebst. Nutze kreative Marketingstrategien und authentische Geschichten, um eine emotionale Verbindung zu deiner Zielgruppe herzustellen. Indem du kontinuierlich Innovationen einführst und auf Kundenfeedback hörst, kannst du deine Marke weiter stärken und ihre Einzigartigkeit bewahren.",
-      "learnMore": "Demo call buchen"
+    "learnMore": "Mehr erfahren",
+    "cardTitle": "Showroom",
+    "cardSubtitle": "Individueller Shooting bei Ihnen vor Ort.",
+    "imageAlt": "Shooting Bild"
+  },
+  "About2Hiver": {
+    "title": "Deine Zielgruppe gewinnen",
+    "description": "Erreiche deine Zielgruppe und gewinne sie, indem du deine Botschaft wirkungsvoll kommunizierst. Nutze dabei ansprechende Inhalte und kreative Ansätze, um das Interesse deiner Zuhörer zu wecken. Eine klare und authentische Kommunikation fördert zudem das Vertrauen und die Bindung zu deiner Marke.",
+    "learnMore": "Demo call buchen",
+    "cardTitle": "Showroom",
+    "cardSubtitle": "Individueller Shooting bei Ihnen vor Ort.",
+    "imageAlt": "Shooting Bild"
+  },
+  "About3": {
+    "title": "Videos",
+    "description": {
+      "part1": "Einen ganztägigen Videodreh, bei dem wir Filmmaterial Ihrer Firma - Räumlichkeiten - Interviews - Kunden Feedbacks und vieles mehr aufnehmen und erstellen. Wir liefern Ihnen Aufnahmen in",
+      "bold": " Kinoqualität",
+      "part2": " die Ihre Marke authentisch und eindrucksvoll präsentieren."
     },
-
-    "About2": {
-      "title": "Shooting",
-      "description": {
-        "part1": "Wir erstellen für Sie in einem",
-        "bold": " ganztägigen",
-        "part2": " Fotoshooting eine umfassende Auswahl an Motiven für Ihre Social Media Kanäle. Egal, ob für Dienstleistungen, Produkte, Objekte oder vieles mehr. Wir stellen sicher, dass Ihre Marke wirkungsvoll und zielgerichtet präsentiert wird."
-      },
-      "learnMore": "Mehr erfahren",
-      "cardTitle": "Showroom",
-      "cardSubtitle": "Individueller Shooting bei Ihnen vor Ort.",
-      "imageAlt": "Shooting Bild"
+    "learnMore": "Mehr erfahren"
+  },
+  "About3Hiver": {
+    "title": "Kunden zahlen höhere Preise",
+    "description": "Lass deine Kunden den Mehrwert deiner Marke spüren, sodass sie gerne in höhere Preise investieren. Indem du ihnen ein einzigartiges Erlebnis und exzellenten Service bietest, schaffst du eine emotionale Bindung. So wird der Preis zur Nebensache, während die Qualität und der Nutzen deiner Produkte im Vordergrund stehen.",
+    "learnMore": "Demo call buchen"
+  },
+  "AboutWebsite": {
+    "title": "Website-Entwicklung",
+    "description": "Von der ersten Idee bis zum Livegang stehen wir an Ihrer Seite, um Ihre Marke ins beste digitale Licht zu rücken. Mit responsivem Design, rasanten Ladezeiten und einer Nutzererfahrung, die überzeugt, schaffen wir nachhaltige Online-Erlebnisse. Dank neuester Technologien bleibt Ihre Website nicht nur State-of-the-Art, sondern auch zukunftssicher. Gemeinsam machen wir Ihre digitale Vision zur Realität.",
+    "learnMore": "Mehr erfahren",
+    "cardTitle": "Individuelle Lösungen",
+    "cardSubtitle": "Kreativ, kraftvoll und immer einen Klick voraus.",
+    "imageAlt": "Webentwicklung Bild"
+  },
+  "AboutPrint": {
+    "title": "Print- und Grafikdesign",
+    "description": "Wir bieten massgeschneiderte Print-Lösungen, von hochwertigen Broschüren bis hin zu individuell gestalteten Werbematerialien. Unser Grafikdesign umfasst die kreative Gestaltung von Logos, Corporate Designs und Marketingmaterialien, die Ihre Marke visuell stärken. Mit unserem Expertenwissen setzen wir Ihre Ideen professionell um und sorgen für eine starke visuelle Präsenz.",
+    "learnMore": "Mehr erfahren",
+    "cardTitle": "Individuelle Lösungen",
+    "cardSubtitle": "Kreativ, kraftvoll und immer einen Klick voraus.",
+    "imageAlt": "Webentwicklung Bild"
+  },
+  "AboutBusinessOne": {
+    "title": "Schliesse dich unserer Community an.",
+    "description": "Egal ob Content-Creator, Coaches oder ein einfacher Instagram Benutzer. Wir von Webomo bieten jedem die Chance, erfolgreich zu werden und Geld zu verdienen. Positioniere dich jetzt in unserer Community und verdiene Provisionen und erlebe die Flexibilität des Future-Works.",
+    "learnMore": "Mehr erfahren",
+    "imageAlt": "Über uns Bild",
+    "subHeadline": "Posten, empfehlen & Geld verdienen",
+    "subHeadlinedescription": "Geld zu verdienen, war nie so einfach."
+  },
+  "AboutBusinessTwo": {
+    "title": "Dein Erfolg liegt uns am Herzen",
+    "description": "Wir unterstützen dich mit Ressourcen und Akquisitionen dabei, so viele Kunden wie möglich zu generieren. Die Ressourcen und unser Support, sollen dir dabei helfen, dein Team oder dein Portfolio zu steigern. Du erhältst von uns kreative Vorlagen für die Vermarktung und dein eigenes Dashboard mit detaillierten Performance-Kennzahlen.",
+    "learnMore": "Mehr erfahren",
+    "imageAlt": "Über uns Bild"
+  },
+  "AboutBusinessThree": {
+    "title": "Webomo Incentives",
+    "description": "Webomo Incentives bringen dich zu den schönsten Orten der Welt. Du erlebst Team-Building-Abenteuer in den Bergen und entspannst anschliessend in luxuriösen Küstenstädten, wo du Kultur, köstliche Küche und unvergessliche Momente geniesst - alles, um inspiriert deine Ziele zu erreichen.",
+    "learnMore": "Mehr erfahren",
+    "videoSrc": "/images/about/drone-video1.mp4"
+  },
+  "AboutEnd": {
+    "mainTitle": "Ein Ziel dein Erfolg",
+    "title": "Mehr erreichen mit webomo",
+    "description": {
+      "part1": "Wir steigern Emotionen bei deiner Zielgruppe. Deine Inhalte wie Bilder, Videos und Content werden in",
+      "bold": "Hollywood-Kinoqualität",
+      "part2": "erstellt. Die Kampagnen deiner Produkte & Dienstleistungen sind auf einem anderen Niveau."
     },
-    "About2Hiver": {
-      "title": "Deine Zielgruppe gewinnen",
-      "description": "Erreiche deine Zielgruppe und gewinne sie, indem du deine Botschaft wirkungsvoll kommunizierst. Nutze dabei ansprechende Inhalte und kreative Ansätze, um das Interesse deiner Zuhörer zu wecken. Eine klare und authentische Kommunikation fördert zudem das Vertrauen und die Bindung zu deiner Marke.",
-      "learnMore": "Demo call buchen",
-      "cardTitle": "Showroom",
-      "cardSubtitle": "Individueller Shooting bei Ihnen vor Ort.",
-      "imageAlt": "Shooting Bild"
-    },
-    "About3": {
-      "title": "Videos",
-      "description": {
-        "part1": "Einen ganztägigen Videodreh, bei dem wir Filmmaterial Ihrer Firma - Räumlichkeiten - Interviews - Kunden Feedbacks und vieles mehr aufnehmen und erstellen. Wir liefern Ihnen Aufnahmen in",
-        "bold": " Kinoqualität",
-        "part2": " die Ihre Marke authentisch und eindrucksvoll präsentieren."
-      },
-      "learnMore": "Mehr erfahren"
-    },
-    "About3Hiver": {
-      "title": "Kunden zahlen höhere Preise",
-      "description":"Lass deine Kunden den Mehrwert deiner Marke spüren, sodass sie gerne in höhere Preise investieren. Indem du ihnen ein einzigartiges Erlebnis und exzellenten Service bietest, schaffst du eine emotionale Bindung. So wird der Preis zur Nebensache, während die Qualität und der Nutzen deiner Produkte im Vordergrund stehen.",
-      "learnMore": "Demo call buchen"
-    },
-    "AboutWebsite": {
-      "title": "Website-Entwicklung",
-      "description": "Von der ersten Idee bis zum Livegang stehen wir an Ihrer Seite, um Ihre Marke ins beste digitale Licht zu rücken. Mit responsivem Design, rasanten Ladezeiten und einer Nutzererfahrung, die überzeugt, schaffen wir nachhaltige Online-Erlebnisse. Dank neuester Technologien bleibt Ihre Website nicht nur State-of-the-Art, sondern auch zukunftssicher. Gemeinsam machen wir Ihre digitale Vision zur Realität.",
-      "learnMore": "Mehr erfahren",
-      "cardTitle": "Individuelle Lösungen",
-      "cardSubtitle": "Kreativ, kraftvoll und immer einen Klick voraus.",
-      "imageAlt": "Webentwicklung Bild"
-    },
-    "AboutPrint": {
-      "title": "Print- und Grafikdesign",
-      "description": "Wir bieten massgeschneiderte Print-Lösungen, von hochwertigen Broschüren bis hin zu individuell gestalteten Werbematerialien. Unser Grafikdesign umfasst die kreative Gestaltung von Logos, Corporate Designs und Marketingmaterialien, die Ihre Marke visuell stärken. Mit unserem Expertenwissen setzen wir Ihre Ideen professionell um und sorgen für eine starke visuelle Präsenz.",
-      "learnMore": "Mehr erfahren",
-      "cardTitle": "Individuelle Lösungen",
-      "cardSubtitle": "Kreativ, kraftvoll und immer einen Klick voraus.",
-      "imageAlt": "Webentwicklung Bild"
-    },
-    "AboutBusinessOne": {
-      "title": "Schliesse dich unserer Community an.",
-      "description": "Egal ob Content-Creator, Coaches oder ein einfacher Instagram Benutzer. Wir von Webomo bieten jedem die Chance, erfolgreich zu werden und Geld zu verdienen. Positioniere dich jetzt in unserer Community und verdiene Provisionen und erlebe die Flexibilität des Future-Works.",
-      "learnMore": "Mehr erfahren",
-      "imageAlt": "Über uns Bild",
-      "subHeadline": "Posten, empfehlen & Geld verdienen",
-      "subHeadlinedescription":"Geld zu verdienen, war nie so einfach."
-    },
-    "AboutBusinessTwo": {
-      "title": "Dein Erfolg liegt uns am Herzen",
-      "description": "Wir unterstützen dich mit Ressourcen und Akquisitionen dabei, so viele Kunden wie möglich zu generieren. Die Ressourcen und unser Support, sollen dir dabei helfen, dein Team oder dein Portfolio zu steigern. Du erhältst von uns kreative Vorlagen für die Vermarktung und dein eigenes Dashboard mit detaillierten Performance-Kennzahlen.",
-      "learnMore": "Mehr erfahren",
-      "imageAlt": "Über uns Bild"
-    },
-    "AboutBusinessThree": {
-      "title": "Webomo Incentives",
-      "description": "Webomo Incentives bringen dich zu den schönsten Orten der Welt. Du erlebst Team-Building-Abenteuer in den Bergen und entspannst anschliessend in luxuriösen Küstenstädten, wo du Kultur, köstliche Küche und unvergessliche Momente geniesst - alles, um inspiriert deine Ziele zu erreichen.",
-      "learnMore": "Mehr erfahren",
-      "videoSrc": "/images/about/drone-video1.mp4"
-    },
-    "AboutEnd": {
-      "mainTitle": "Ein Ziel dein Erfolg",
-      "title": "Mehr erreichen mit webomo",
-      "description": {
-        "part1": "Wir steigern Emotionen bei deiner Zielgruppe. Deine Inhalte wie Bilder, Videos und Content werden in",
-        "bold": "Hollywood-Kinoqualität",
-        "part2": "erstellt. Die Kampagnen deiner Produkte & Dienstleistungen sind auf einem anderen Niveau."
-      },
-      "cta": "Erstgespräch buchen",
-      "videoSrc": "/images/about/about-end.mp4",
-      "frameAlt": "Mobile Frame",
-      "popcornAlt": "Popcorn Bild"
-    },
-    "Clients": {
-      "heading": "Diese Marken vertrauen auf Webomo"
-    },
-  "HeroAboutUs":{
-  "title":"Unsere Vision",
-  "subHeadline":"Ihr langfristiger Erfolg",
-  "mission": "Webomo ist eine Kl-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit massgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
-  "cta": "Werde Teil unseres Teams!"
-  } , 
-  "WhoWeAre":{
-    "title":"Mehr als nur ein Team",
+    "cta": "Erstgespräch buchen",
+    "videoSrc": "/images/about/about-end.mp4",
+    "frameAlt": "Mobile Frame",
+    "popcornAlt": "Popcorn Bild"
+  },
+  "Clients": {
+    "heading": "Diese Marken vertrauen auf Webomo"
+  },
+  "HeroAboutUs": {
+    "title": "Unsere Vision",
+    "subHeadline": "Ihr langfristiger Erfolg",
+    "mission": "Webomo ist eine Kl-gestützte Marketing-Agentur, die sich auf die Erstellung hochwertiger Social-Media-Inhalte spezialisiert hat. Unser Fokus liegt darauf, Unternehmen durch eine professionelle 12-monatige Betreuung langfristig zu unterstützen. Mit massgeschneiderten Strategien helfen wir unseren Kunden, ihre Markenbekanntheit zu steigern und eine stärkere Präsenz auf digitalen Plattformen aufzubauen. Unsere innovative KI-Technologie ermöglicht uns, effektive und datenbasierte Inhalte zu liefern, die direkt auf die Zielgruppen abgestimmt sind. Das Hauptziel von Webomo: Den Umsatz unserer Kunden nachhaltig zu steigern und ihr Wachstumspotenzial voll auszuschöpfen.",
+    "cta": "Werde Teil unseres Teams!"
+  },
+  "WhoWeAre": {
+    "title": "Mehr als nur ein Team",
     "smallTeamTitle": "Kleines Team, GROSSE Wirkung",
     "smallTeamDescription": "Bei Webomo setzen wir auf Qualität statt Quantität – in unserer Arbeit und unserem Team. Mit Agilität, Innovation und Leidenschaft konzentrieren wir uns vollkommendarauf, Ihre Erfolge zu maximieren.",
-    "growthTitle":"Bemerkenswertes Wachstum",
+    "growthTitle": "Bemerkenswertes Wachstum",
     "growthDescription": "Webomo wurde 2022 gegründet, ist profitabel und hilft bereits über 200 Unternehmen, ihr volles Potenzial auszuschöpfen. Mit einer soliden Basis und grossem Ehrgeiz bauen wir ein gesundes, dynamisch wachsendes Unternehmen auf, das begeistert und Erfolg.",
-    "trustedTitle":"Von Führungskräften vertraut",
-    "trustedDescription":"Die Führungskräfte anderer Unternehmen schätzen die Zusammenarbeit mit Webomo, da wir klare Visionen und kreative Lösungen bieten, die Vertrauen schaffen und nachhaltiges Wachstum sowie gemeinsame Erfolge fördern."
+    "trustedTitle": "Von Führungskräften vertraut",
+    "trustedDescription": "Die Führungskräfte anderer Unternehmen schätzen die Zusammenarbeit mit Webomo, da wir klare Visionen und kreative Lösungen bieten, die Vertrauen schaffen und nachhaltiges Wachstum sowie gemeinsame Erfolge fördern."
   },
-  "OurValues":{
-    "title":"Unsere Werte",
-   "candidFeedbackTitle": "Offenes Feedback",
-   "candidFeedbackDescription":"Bei Webomo schätzen wir ehrliches und durchdachtes Feedback, um den Status quo herauszufordern. Es ist unser Schlüssel, um nicht nur unsere Arbeit, sondern auch unsere Prozesse stetig zu verbessern.",
-   "shipFastTitle":"Schnell liefern, um zu lernen",
-   "shipFastDescription":"Bei Webomo setzen wir auf Fortschritt statt Perfektion. Unser Fokus auf schnelles Umsetzen ermöglicht es uns, frühzeitig zu lernen und kontinuierlich besser zu werden.",
-   "buildItTitle":"Bauen, besitzen",
-   "buildItDescription":"Bei Webomo sind wir alle vertrauenswürdigen Experten, die stolz auf unser Handwerk sind. Wir legen grossen Wert auf Konsequenz und darauf, einen echten Einfluss auf unsere Nutzer auszuüben – unabhängig von der Rolle, die wir übernehmen.",
-   "stayOpenTitle":"Neue Ideen",
-   "stayOpenDescription":"Bei Webomo sind wir stets offen für neue Ideen und fördern eine Kultur der Transparenz. Wir arbeiten gemeinsam und teilen unser Wissen, um kontinuierlich zu wachsen und zu innovieren."
+  "OurValues": {
+    "title": "Unsere Werte",
+    "candidFeedbackTitle": "Offenes Feedback",
+    "candidFeedbackDescription": "Bei Webomo schätzen wir ehrliches und durchdachtes Feedback, um den Status quo herauszufordern. Es ist unser Schlüssel, um nicht nur unsere Arbeit, sondern auch unsere Prozesse stetig zu verbessern.",
+    "shipFastTitle": "Schnell liefern, um zu lernen",
+    "shipFastDescription": "Bei Webomo setzen wir auf Fortschritt statt Perfektion. Unser Fokus auf schnelles Umsetzen ermöglicht es uns, frühzeitig zu lernen und kontinuierlich besser zu werden.",
+    "buildItTitle": "Bauen, besitzen",
+    "buildItDescription": "Bei Webomo sind wir alle vertrauenswürdigen Experten, die stolz auf unser Handwerk sind. Wir legen grossen Wert auf Konsequenz und darauf, einen echten Einfluss auf unsere Nutzer auszuüben – unabhängig von der Rolle, die wir übernehmen.",
+    "stayOpenTitle": "Neue Ideen",
+    "stayOpenDescription": "Bei Webomo sind wir stets offen für neue Ideen und fördern eine Kultur der Transparenz. Wir arbeiten gemeinsam und teilen unser Wissen, um kontinuierlich zu wachsen und zu innovieren."
   },
-  
   "Contact": {
-    "headline":"Kostenloses",
-    "subHeadline":"Beratungsgespräch",
-  "title": "kostenlos",
-  "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
-  "form": {
-    "title": "Kontaktieren Sie uns per",
-    "titleEmail": "E-Mail",
-    "namePlaceholder": "Geben Sie Ihren Namen ein",
-    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
-    "messagePlaceholder": "Erzählen Sie uns etwas über sich",
-    "submitting": "Ihre Nachricht wird gesendet...",
-    "successMessage": "Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir melden uns in Kürze bei Ihnen.",
-    "errorMessage": "Entschuldigung! Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    "headline": "Kostenloses",
+    "subHeadline": "Beratungsgespräch",
+    "title": "kostenlos",
+    "description": "Wir hören Ihnen aufmerksam zu und geben wertvolle Einblicke, um Ihre Ziele effizient zu erreichen.",
+    "form": {
+      "title": "Kontaktieren Sie uns per",
+      "titleEmail": "E-Mail",
+      "namePlaceholder": "Geben Sie Ihren Namen ein",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "messagePlaceholder": "Erzählen Sie uns etwas über sich",
+      "submitting": "Ihre Nachricht wird gesendet...",
+      "successMessage": "Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir melden uns in Kürze bei Ihnen.",
+      "errorMessage": "Entschuldigung! Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+    "bookCall": {
+      "title": "Videogespräch",
+      "title2": "vereinbaren",
+      "title3": "Ein Ziel - Dein Erfolg",
+      "subtitle": "Lassen Sie uns gemeinsam daran arbeiten, Ihre Vision zu verwirklichen.",
+      "button": "Jetzt planen",
+      "contactText": "Bevorzugen Sie eine andere Kontaktmöglichkeit?",
+      "orFaq": "oder sehen Sie in unseren FAQ nach",
+      "thankYou": "Vielen Dank! Wir freuen uns darauf, Sie kennenzulernen und Ihr Unternehmen auf das nächste Level zu bringen."
+    },
+    "submit": "Absenden"
   },
-  "bookCall": {
-    "title": "Videogespräch",
-    "title2": "vereinbaren",
-    "title3": "Ein Ziel - Dein Erfolg",
-    "subtitle": "Lassen Sie uns gemeinsam daran arbeiten, Ihre Vision zu verwirklichen.",
-    "button": "Jetzt planen",
-    "contactText": "Bevorzugen Sie eine andere Kontaktmöglichkeit?",
-    "orFaq": "oder sehen Sie in unseren FAQ nach",
-    "thankYou": "Vielen Dank! Wir freuen uns darauf, Sie kennenzulernen und Ihr Unternehmen auf das nächste Level zu bringen."
-  },
-  "submit": "Absenden"
-},
   "Calendly": {
     "schedule": "Erstgespräch vereinbaren",
     "features1": "Inklusive Paket Pro Leistungen",
@@ -240,8 +238,8 @@
     "faqBusiness8Details": "Du erhältst für die Buchung des Pakets: Basic jährlich 500.- CHF, Pro jährlich 700.- CHF, Business jährlich 1'000.- CHF Provisionen. Je grösser dein Team ist, desto grösser ist deine Chance, deine jährlichen Einnahmen zu erhöhen.",
     "faqBusiness9Title": "Wie werden die Provisionen ausgezahlt?",
     "faqBusiness9Details": "Deine Provisionen werden immer im Folgemonat am 30. auf dein Bankkonto oder deine Kreditkarte ausbezahlt. Bitte beachte, dass die Provisionen unabhängig von deiner Region/Land in CHF (Schweizer Franken) ausgezahlt werden.",
-    "faqBusiness10Title": "Ist die Teilnahme am Webomo-Business Partnerprogramm kostenlos?",
-    "faqBusiness10Details": "Die Registrierung für das Webomo-Business Programm ist kostenlos. Die Nutzung des Dashboards für die Affiliate-Again und Affiliate-Business Links ist jedoch kostenpflichtig. Erfahre in einem kostenlosen Gespräch, welche Variante für dich in Frage kommt."
+    "faqBusiness10Title": "Ist das Webomo-Business Partnerprogramm kostenlos?",
+    "faqBusiness10Details": "Für die Nutzung des Dashboards und der damit verbundenen Funktionen, wie die Verwaltung von Affiliate-Again und Affiliate-Business Links, ist jedoch der Erwerb einer entsprechenden Lizenz erforderlich. Vereinbare ein kostenloses Gespräch, um herauszufinden, welche Lizenzvariante optimal zu deinem Bedarf passt."
   },
   "Footer": {
     "companyDescription": "Wir helfen dir deinen Umsatz mit KI -Branding zu steigern und deine Ziele zu erreichen",
@@ -266,41 +264,38 @@
   },
   "Hiver3": {
     "title": "Warum ist KI Marketing -  Branding der Schlüssel zu deinem Erfolg?",
-       "description": "Steigere die Wahrnehmung und Marktposition deiner Marke und gewinne Kunden, die in herausragende Qualität investieren.",
-       "hiver": {
-        "leftTitle": "Aus der Masse herausstechen",
-        "centerTitle": "Deine Zielgruppe gewinnen",
-        "rightTitle": "Kunden zahlen höhere Preise",
-         "left": "Sorge dafür, dass die Wahrnehmung deiner Marke einzigartig ist und du dich von allen anderen abhebst.",
-         "center": "Erreiche deine Zielgruppe und gewinne sie, indem du deine Botschaft wirkungsvoll kommunizierst.",
-         "right": "Lass deine Kunden den Mehrwert deiner Marke spüren, sodass sie gerne in höhere Preise investieren."
-       }
-     },
-     
-      "Hiver6": {
-        "title": "Stehst du auch vor einer dieser Hürden?",
-        "description": "",
-        "leftTitle1": "Kunden gewinnen",
-        "left1": "Gewinnst du deine Kunden vor allem durch persönliche Kontakte oder durch begeisterte Weiterempfehlungen?",
-        "leftTitle2": "Mehr Umsatz",
-        "left2": "Kämpft dein Unternehmen damit, auf Google aus der Masse herauszustechen und mehr Menschen zu erreichen?",
-        "centerTitle1": "Mitarbeiter finden",
-        "center1": "Hast du Schwierigkeiten, die idealen Mitarbeiter zu finden, die dein Unternehmen wachsen lassen?",
-        "centerTitle2": "Vertrauen stärken",
-        "center2": "Springen potenzielle Kunden ab, weil ihnen das Vertrauen in dein Angebot fehlt?",
-        "rightTitle1": "Markenbekanntheit",
-        "right1": "Kennen die Kunden, die du erreichen möchtest, deine Marke noch gar nicht?",
-        "rightTitle2": "Foto- & Videocontent",
-        "right2": "Brauchst du Inhalte, die nicht nur hochwertig sind, sondern auch ideal zu deiner Markenstrategie passen?"
-      }
-    ,
-    
+    "description": "Steigere die Wahrnehmung und Marktposition deiner Marke und gewinne Kunden, die in herausragende Qualität investieren.",
+    "hiver": {
+      "leftTitle": "Aus der Masse herausstechen",
+      "centerTitle": "Deine Zielgruppe gewinnen",
+      "rightTitle": "Kunden zahlen höhere Preise",
+      "left": "Sorge dafür, dass die Wahrnehmung deiner Marke einzigartig ist und du dich von allen anderen abhebst.",
+      "center": "Erreiche deine Zielgruppe und gewinne sie, indem du deine Botschaft wirkungsvoll kommunizierst.",
+      "right": "Lass deine Kunden den Mehrwert deiner Marke spüren, sodass sie gerne in höhere Preise investieren."
+    }
+  },
+  "Hiver6": {
+    "title": "Stehst du auch vor einer dieser Hürden?",
+    "description": "",
+    "leftTitle1": "Kunden gewinnen",
+    "left1": "Gewinnst du deine Kunden vor allem durch persönliche Kontakte oder durch begeisterte Weiterempfehlungen?",
+    "leftTitle2": "Mehr Umsatz",
+    "left2": "Kämpft dein Unternehmen damit, auf Google aus der Masse herauszustechen und mehr Menschen zu erreichen?",
+    "centerTitle1": "Mitarbeiter finden",
+    "center1": "Hast du Schwierigkeiten, die idealen Mitarbeiter zu finden, die dein Unternehmen wachsen lassen?",
+    "centerTitle2": "Vertrauen stärken",
+    "center2": "Springen potenzielle Kunden ab, weil ihnen das Vertrauen in dein Angebot fehlt?",
+    "rightTitle1": "Markenbekanntheit",
+    "right1": "Kennen die Kunden, die du erreichen möchtest, deine Marke noch gar nicht?",
+    "rightTitle2": "Foto- & Videocontent",
+    "right2": "Brauchst du Inhalte, die nicht nur hochwertig sind, sondern auch ideal zu deiner Markenstrategie passen?"
+  },
   "Hero": {
     "subtitle": "Immer und überall",
     "centerText": "präsent",
     "mobileFrame": "Handyrahmen",
-    "mainText":"Ihre digitale Präsenz",
-    "subHeadline":"Content Kampagnen & Betreuung"
+    "mainText": "Ihre digitale Präsenz",
+    "subHeadline": "Content Kampagnen & Betreuung"
   },
   "Hero3": {
     "subtitleAlt": "Immer und überall",
@@ -322,9 +317,9 @@
     "title": "Was machen wir",
     "description": "Wir bieten ein einzigartiges Portfolio an Dienstleistungen an, von Social-Media-Kampagnen und Content-Marketing über professionelle Fotoshootings bis hin zu Videoproduktionen in Kinoqualität, Webentwicklung und massgeschneiderten Strategien. Unser Ziel ist es, Ihre Marke auf die nächste Stufe zu bringen."
   },
-  "TitleAboutHiver":{
+  "TitleAboutHiver": {
     "title": "Branding ist der Schlüssel zum Erfolg.",
-    "description": "Steigere die Wahrnehmung und Marktposition deiner Marke und gewinne Kunden, die in qualität investieren." 
+    "description": "Steigere die Wahrnehmung und Marktposition deiner Marke und gewinne Kunden, die in qualität investieren."
   },
   "Pricing": {
     "title": "Finden Sie den",
@@ -332,7 +327,7 @@
     "subHeadline": "richtigen Tarif",
     "description": "Massgeschneiderte Social-Media-Pakete für jede Unternehmensphase",
     "choosePlan": "Demo call buchen",
-    "payLaterDescription":"Buchen Sie noch heute Ihren Paket und erledigen Sie die Zahlung stressfrei.",
+    "payLaterDescription": "Buchen Sie noch heute Ihren Paket und erledigen Sie die Zahlung stressfrei.",
     "checkoutNow": "Jetzt buchen",
     "plans": {
       "Basic": {
@@ -378,9 +373,9 @@
     "duration": "12 Monate Betreuung",
     "footerText": "Inkl. Dashboard & Reporting"
   },
-  "Manager":{
-    "manager":"Manager",
-    "year":"jährlich",
+  "Manager": {
+    "manager": "Manager",
+    "year": "jährlich",
     "duration": "Dauer",
     "months": "Monate",
     "title": "Paket Manager",
@@ -399,22 +394,22 @@
     "Material": "WERBECONTENT",
     "MaterialInfo": "Bereitstellung Werbeinhalten durch Webomo, zur Unterstützung der Akquisition."
   },
-  "Screens":{
-  "title": "Designs für jede Branche",
-  "description": "Für jede Branche erstellen wir beeindruckende Social-Media-Präsenz. Designs, die Ihre Marke ins Rampenlicht rücken und Ihre Zielgruppe begeistern.",
-  "selectIndustry": "Wählen Sie eine Branche",
-  "currentlySelected": "Derzeit ausgewählt",
-  "mobileFrameAlt": "Handyrahmen",
-  "screenshotAlt": "Screenshot",
-  "sectors": {
-    "Food & Beverage": "Lebensmittel & Getränke",
-    "Retail & E-commerce": "Einzelhandel & E-Commerce",
-    "Healthcare": "Gesundheitswesen",
-    "Real Estate": "Immobilien",
-    "Automotive": "Automobilindustrie"
-  }
- },
- "ScreensAvantico": {
+  "Screens": {
+    "title": "Designs für jede Branche",
+    "description": "Für jede Branche erstellen wir beeindruckende Social-Media-Präsenz. Designs, die Ihre Marke ins Rampenlicht rücken und Ihre Zielgruppe begeistern.",
+    "selectIndustry": "Wählen Sie eine Branche",
+    "currentlySelected": "Derzeit ausgewählt",
+    "mobileFrameAlt": "Handyrahmen",
+    "screenshotAlt": "Screenshot",
+    "sectors": {
+      "Food & Beverage": "Lebensmittel & Getränke",
+      "Retail & E-commerce": "Einzelhandel & E-Commerce",
+      "Healthcare": "Gesundheitswesen",
+      "Real Estate": "Immobilien",
+      "Automotive": "Automobilindustrie"
+    }
+  },
+  "ScreensAvantico": {
     "title": "Social Media Stories",
     "description": "So können Ihre Stories, Posts und Reels aussehen, die Ihre Zielgruppe fesselt.",
     "mobileFrameAlt": "Smartphone-Rahmen",
@@ -510,7 +505,7 @@
       "description": "Wir verwenden Cookies, um die Benutzererfahrung zu verbessern und die Website-Performance zu analysieren. Dazu gehören Cookies von Drittanbietern wie Google und Meta."
     }
   },
-  "terms":{
+  "terms": {
     "title": "Allgemeine Geschäftsbedingungen",
     "introduction": {
       "title": "Einleitung",
@@ -537,7 +532,7 @@
       "description": "Diese AGB unterliegen dem schweizerischen Recht. Streitigkeiten werden ausschliesslich vor den Gerichten der Schweiz verhandelt."
     }
   },
-  "impressum":{
+  "impressum": {
     "title": "Impressum",
     "owner": {
       "title": "Eigentümer",
@@ -559,7 +554,7 @@
       "title": "Haftungsausschluss",
       "description": "Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr."
     }
-  }  ,
+  },
   "Timeline": {
     "title": "Wie setzen wir das um?",
     "subtitle": "Erfahre die fünf Schritte, die dich zu einer erfolgreichen Partnerschaft mit WEBOMO führen."
@@ -590,28 +585,26 @@
       "description": "Wir streben danach, die Performance deiner Marke konstant zu steigern. Mit regelmässigen Marktanalysen und strategischen Anpassungen optimieren wir unsere Zusammenarbeit."
     }
   },
-  
-    "CardsBusiness": {
-      "highlight": "Marketing mit Impact",
-      "title": "Warum ist KI Marketing - Branding der Schlüssel zu deinem Erfolg?",
-      "headlineHighlight": "Webomo-Business",
-      "headline": "Partner werden",
-      "subtitle": "Steigere die Wahrnehmung und Markposition deiner Marke und gewinne Kunden, die in herausragende Qualität investieren.",
-      "card1": {
-        "alt": "Stand out",
-        "title": "Unbegrenzte Einkommensmöglichkeiten",
-        "description": "Es gibt keine Obergrenze für deinen Verdienst. Jedes Jahr baust du dein Portfolio auf und gleichzeitig wächst dein Einkommen."
-      },
-      "card2": {
-        "alt": "Get dream clients",
-        "title": "Jährliche Einnahmen statt einmalige Gewinne",
-        "description": "Mit jährlichen Einnahmen erhältst du ein stetiges, wiederkehrendes Einkommen, anstatt nur einmalige Zahlungen zu erhalten."
-      },
-      "card3": {
-        "alt": "Increase your profits",
-        "title": "Mehr Freiheit",
-        "description": "Du arbeitest ortsunabhängig und hast die Freiheit, selbst zu bestimmen, wie viel und wie lange du arbeiten möchtest. Wir unterstützen dich dabei, dein Team auszubauen, damit du mehr Zeit für dich selbst gewinnen kannst."
-      }
+  "CardsBusiness": {
+    "highlight": "Marketing mit Impact",
+    "title": "Warum ist KI Marketing - Branding der Schlüssel zu deinem Erfolg?",
+    "headlineHighlight": "Webomo-Business",
+    "headline": "Partner werden",
+    "subtitle": "Steigere die Wahrnehmung und Markposition deiner Marke und gewinne Kunden, die in herausragende Qualität investieren.",
+    "card1": {
+      "alt": "Stand out",
+      "title": "Unbegrenzte Einkommensmöglichkeiten",
+      "description": "Es gibt keine Obergrenze für deinen Verdienst. Jedes Jahr baust du dein Portfolio auf und gleichzeitig wächst dein Einkommen."
+    },
+    "card2": {
+      "alt": "Get dream clients",
+      "title": "Jährliche Einnahmen statt einmalige Gewinne",
+      "description": "Mit jährlichen Einnahmen erhältst du ein stetiges, wiederkehrendes Einkommen, anstatt nur einmalige Zahlungen zu erhalten."
+    },
+    "card3": {
+      "alt": "Increase your profits",
+      "title": "Mehr Freiheit",
+      "description": "Du arbeitest ortsunabhängig und hast die Freiheit, selbst zu bestimmen, wie viel und wie lange du arbeiten möchtest. Wir unterstützen dich dabei, dein Team auszubauen, damit du mehr Zeit für dich selbst gewinnen kannst."
     }
+  }
 }
-
