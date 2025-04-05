@@ -58,7 +58,7 @@ const AboutHiver = () => {
             <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
               {/* Light mode */}
               <Image
-                src="/images/hiver/chf.webp"
+                src="/images/hiver/light_chf.webp"
                 alt="Hiver Card Light"
                 width={470}
                 height={450}
@@ -67,7 +67,7 @@ const AboutHiver = () => {
               />
               {/* Dark mode */}
               <Image
-                src="/images/hiver/chf-dark.webp"
+                src="/images/hiver/dark_chf.webp"
                 alt="Hiver Card Dark"
                 width={470}
                 height={450}
