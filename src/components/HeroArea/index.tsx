@@ -178,7 +178,7 @@ const Hero = () => {
               autoPlay
               muted
               loop
-              className="absolute right-[0%] top-[4px] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
+              className=" absolute right-[0%] top-[4px] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
         </motion.div>
