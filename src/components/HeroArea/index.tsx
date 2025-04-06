@@ -157,7 +157,7 @@ const Hero = () => {
         {/* Center Smartphone */}
         <motion.div
           ref={(el) => (smartphoneRefs.current[2] = el)}
-          className="relative z-[31] h-[240px] w-[112px] overflow-hidden rounded-2xl sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[310px] lg:w-[150px]"
+          className="relative z-[31] h-[240px] w-[112px] overflow-hidden rounded-2xl  sm:h-[256px] sm:w-[117px] md:h-[300px] md:w-[140px] lg:h-[310px] lg:w-[150px]"
           initial="hidden"
           animate={isInView[2] ? "visible" : "hidden"}
           variants={smartphoneVariants}
@@ -170,7 +170,7 @@ const Hero = () => {
               alt="mobile frame"
               layout="fill"
               objectFit="cover"
-              className="absolute inset-0 z-10"
+              className="absolute inset-0 z-10 "
             />
             <video
               playsInline
@@ -178,7 +178,7 @@ const Hero = () => {
               autoPlay
               muted
               loop
-              className="absolute right-[0%] top-[0%] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
+              className="absolute right-[0%] top-[4px] h-[100%] w-[100%] rounded-[21px] object-cover md:top-[2%] lg:h-[97%] lg:w-[97%]"
             />
           </div>
         </motion.div>
