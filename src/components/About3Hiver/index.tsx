@@ -4,6 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { CompareDemo } from "@/components/CompareDiamond";
+
 
 const About3Hiver = () => {
   const t = useTranslations("About3Hiver");
@@ -50,32 +52,16 @@ const About3Hiver = () => {
         <div className="-mx-4 flex flex-wrap items-center justify-between">
           {/* Left Section (Image) */}
           <motion.div
-            className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
-            initial="hidden"
-            animate={sectionInView ? "visible" : "hidden"}
-            variants={sectionVariants}
-          >
-            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
-              {/* Light mode */}
-              <Image
-                src="/images/hiver/ms-auto.webp"
-                alt="Hiver Card Light"
-                width={470}
-                height={450}
-                className="h-auto w-full object-cover dark:hidden"
-                priority
-              />
-              {/* Dark mode */}
-              <Image
-                src="/images/hiver/ms-auto-dark.webp"
-                alt="Hiver Card Dark"
-                width={470}
-                height={450}
-                className="hidden h-auto w-full object-cover dark:block"
-                priority
-              />
-            </div>
-          </motion.div>
+  className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
+  initial="hidden"
+  animate={sectionInView ? "visible" : "hidden"}
+  variants={sectionVariants}
+>
+  <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
+    <CompareDemo />
+  </div>
+</motion.div>
+
 
           {/* Right Section (Text) */}
           <motion.div
