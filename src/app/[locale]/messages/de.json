@@ -507,29 +507,85 @@
   },
   "terms": {
     "title": "Allgemeine Geschäftsbedingungen",
-    "introduction": {
-      "title": "Einleitung",
-      "description": "Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die Nutzung der Website Webomo (im Besitz von Cengiz Cokickli) und aller darauf angebotenen Dienste."
+    "agreement": {
+      "title": "Vereinbarung",
+      "description": "Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die vertraglichen Beziehungen zwischen Webomo GmbH (nachfolgend 'Webomo') und ihren Auftraggebern (nachfolgend 'Kunde'). Mit der Auftragserteilung erklärt sich der Kunde mit diesen AGB einverstanden."
     },
-    "userResponsibilities": {
-      "title": "Pflichten der Nutzer",
-      "description": "Die Nutzer verpflichten sich, die Website und ihre Inhalte ausschliesslich in Übereinstimmung mit geltendem Recht zu verwenden. Unzulässige Handlungen, wie das Verbreiten von schädlichem Code, sind streng verboten."
+    "contractConditions": {
+      "title": "Vertragsbedingungen",
+      "description": "Der Vertrag zwischen Webomo und dem Kunden kommt durch die schriftliche Annahme des Angebots von Webomo durch den Kunden zustande. Änderungen oder Ergänzungen des Vertrags bedürfen der Schriftform."
     },
-    "intellectualProperty": {
-      "title": "Geistiges Eigentum",
-      "description": "Alle Inhalte, Marken und Materialien auf dieser Website sind Eigentum von Webomo oder seinen Lizenzgebern und durch Urheberrechtsgesetze geschützt."
+    "writtenForm": {
+      "title": "Schriftform",
+      "description": "Abweichungen von den nachfolgenden Bedingungen sowie Änderungen oder Ergänzungen dieser AGB bedürfen der Schriftform und sind von beiden Parteien zu unterzeichnen, um rechtswirksam zu sein."
     },
-    "limitationsLiability": {
-      "title": "Haftungsbeschränkung",
-      "description": "Webomo haftet nicht für indirekte, zufällige oder Folgeschäden, die aus der Nutzung der Website entstehen können."
+    "services": {
+      "title": "Leistungen",
+      "description": "Webomo erbringt Dienstleistungen im Bereich Digital Marketing und Design gemäß den im Vertrag definierten Spezifikationen. Der genaue Umfang der Leistungen wird in einem separaten Leistungsdokument festgelegt, das Bestandteil des Vertrags ist."
     },
-    "modifications": {
-      "title": "Änderungen der AGB",
-      "description": "Webomo behält sich das Recht vor, diese AGB jederzeit zu ändern. Änderungen treten in Kraft, sobald sie auf der Website veröffentlicht werden."
+    "loyaltyAndConfidentiality": {
+      "title": "Treuepflicht, Geschäftsgeheimnis",
+      "description": "Der Kunde und Webomo verpflichten sich zur gegenseitigen Treue und zur Wahrung von Geschäftsgeheimnissen. Beide Parteien sind verpflichtet, alle im Rahmen der Zusammenarbeit erhaltenen Informationen vertraulich zu behandeln und Dritten nicht zugänglich zu machen."
     },
-    "governingLaw": {
-      "title": "Anwendbares Recht",
-      "description": "Diese AGB unterliegen dem schweizerischen Recht. Streitigkeiten werden ausschliesslich vor den Gerichten der Schweiz verhandelt."
+    "copyright": {
+      "title": "Urheberrecht",
+      "description": "Die Urheberrechte an allen von Webomo geschaffenen Werken (Konzepte, Skizzen, Entwürfe usw.) verbleiben bei Webomo. Diese kann über die Urheberrechte gemäß den Bestimmungen des Bundesgesetzes über das Urheberrecht und verwandte Schutzrechte vom 9. Oktober 1992 verfügen. Der Kunde ist nicht berechtigt, ohne ausdrückliche Zustimmung von Webomo die Werke zu verwenden oder Änderungen vorzunehmen."
+    },
+    "usageRights": {
+      "title": "Nutzungsrecht, Nutzungsumfang",
+      "description": "Die vereinbarten Nutzungsrechte an den von Webomo geschaffenen Werken gehen erst mit der vollständigen Begleichung des Honorars auf den Kunden über. Der Umfang der erlaubten Nutzung ergibt sich aus dem Zweck des abgeschlossenen Vertrags. Sofern nichts anderes vereinbart wird, gilt das Nutzungsrecht zeitlich und geografisch unbegrenzt, jedoch ausschließlich im Rahmen des Vertragszwecks."
+    },
+    "illegalUse": {
+      "title": "Widerrechtliche Nutzung",
+      "description": "Die widerrechtliche Nutzung eines urheberrechtlich geschützten Werks von Webomo verpflichtet den Kunden zur Zahlung einer Konventionalstrafe im Umfang von CHF 10.000.–. Die Geltendmachung eines weitergehenden Schadens bleibt vorbehalten."
+    },
+    "warrantyAndDefectClaims": {
+      "title": "Gewährleistung und Mängelrüge",
+      "description": "Der Kunde ist verpflichtet, die erbrachten Leistungen von Webomo unmittelbar nach Erhalt zu prüfen und etwaige Mängel unverzüglich, spätestens jedoch innerhalb von 5 Kalendertagen, schriftlich zu rügen. Unterlässt der Kunde die fristgerechte Rüge, gelten die Leistungen als genehmigt. Webomo übernimmt die Gewährleistung für Mängel, die nachweislich auf ihre Leistungen zurückzuführen sind."
+    },
+    "liabilityDisclaimer": {
+      "title": "Haftungsausschluss und Haftungsbegrenzung",
+      "description": "Webomo haftet für direkte Schäden nur bei grober Fahrlässigkeit oder Vorsatz. Eine Haftung für indirekte Schäden, entgangenen Gewinn, Datenverlust oder Ansprüche Dritter gegen den Kunden wird ausdrücklich ausgeschlossen. Die Haftung von Webomo ist auf die Höhe des vereinbarten Honorars begrenzt."
+    },
+    "orderReductionOrCancellation": {
+      "title": "Reduktion oder Annullierung des Auftrags",
+      "description": "Wird ein erteilter Auftrag reduziert oder annulliert, hat Webomo Anspruch auf Verrechnung der bisher geleisteten Arbeit, Unkosten und der Vorleistungen Dritter sowie Wiedergutmachung aller entstehenden Schäden."
+    },
+    "paymentTerms": {
+      "title": "Zahlungsbedingungen",
+      "description": "Die Abonnementgebühr ist jährlich im Voraus zu bezahlen. Sämtliche Rechnungen sind innerhalb von 30 Tagen ab Rechnungsdatum ohne Abzug zur Zahlung fällig, sofern nichts anderes schriftlich vereinbart wurde."
+    },
+    "thirdPartyCosts": {
+      "title": "Drittkosten",
+      "description": "Der Kunde verpflichtet sich, sämtliche Kosten, die für Leistungen Dritter anfallen, unverzüglich zu bezahlen. Webomo haftet nicht für Schäden, die durch die Nichtbezahlung von Drittkosten entstehen."
+    },
+    "subcontractors": {
+      "title": "Subunternehmer",
+      "description": "Webomo ist berechtigt, Subunternehmer zur Erfüllung ihrer vertraglichen Pflichten heranzuziehen. Webomo bleibt jedoch gegenüber dem Kunden für die ordnungsgemäße Erfüllung der vertraglich vereinbarten Leistungen verantwortlich."
+    },
+    "privacyAndDataProtection": {
+      "title": "Datenschutz und DSGVO",
+      "description": "Webomo verpflichtet sich, die Bestimmungen des Bundesgesetzes über den Datenschutz (DSG) sowie der Datenschutz-Grundverordnung (DSGVO) einzuhalten, soweit anwendbar."
+    },
+    "acceptanceOfServices": {
+      "title": "Abnahme der Leistungen",
+      "description": "Die Abnahme der erbrachten Leistungen durch den Kunden erfolgt nach Abschluss des Projekts. Der Kunde hat die Möglichkeit, innerhalb einer Frist von 5 Tagen nach Bereitstellung des finalen Ergebnisses diese zu prüfen und eventuelle Mängel zu rügen."
+    },
+    "contractDuration": {
+      "title": "Vertragsdauer",
+      "description": "Das Abonnement hat eine feste Laufzeit von mindestens 12 Monaten und verlängert sich automatisch um weitere 12 Monate, sofern es nicht fristgerecht gekündigt wird."
+    },
+    "termination": {
+      "title": "Kündigung",
+      "description": "Das Abonnement kann von beiden Parteien mit einer Frist von 4 Wochen zum Ende der jeweiligen Laufzeit gekündigt werden. Erfolgt keine fristgerechte Kündigung, verlängert sich das Abonnement automatisch um weitere 12 Monate."
+    },
+    "governingLawAndJurisdiction": {
+      "title": "Anwendbares Recht und Gerichtsstand",
+      "description": "Diese AGB und alle Verträge zwischen Webomo und dem Kunden unterliegen dem Schweizer Recht. Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesem Vertrag ist der Sitz von Webomo."
+    },
+    "finalProvisions": {
+      "title": "Schlussbestimmungen",
+      "description": "Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt."
     }
   },
   "impressum": {
