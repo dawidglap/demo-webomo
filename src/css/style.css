@@ -16,7 +16,7 @@
 
 @layer components {
   .sticky-navbar {
-    @apply !fixed !border-b !bg-opacity-80 !backdrop-blur-sm dark:!bg-opacity-80;
+    @apply !fixed !border-b !bg-opacity-80 !backdrop-blur-sm dark: !bg-opacity-80;
   }
 
   .sticky-navbar .menu-scroll.active,
@@ -24,13 +24,14 @@
     @apply text-primary dark:text-primary;
   }
 
-  .sticky-navbar ul > .menu-item > a {
+  .sticky-navbar ul>.menu-item>a {
     @apply lg:py-[21px];
   }
 
   .submenu-item a.active {
     @apply text-primary dark:text-white;
   }
+
   .submenu-item a.active span svg {
     @apply rotate-180 lg:rotate-0;
   }
@@ -39,17 +40,22 @@
     @apply w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
   }
 
-  .keep-signed:checked ~ span.box {
+  .keep-signed:checked~span.box {
     @apply border-primary bg-primary;
   }
 
-  .keep-signed:checked ~ span.box .icon {
+  .keep-signed:checked~span.box .icon {
     @apply block;
   }
 
-  #togglePlan:checked ~ span .dot {
+  #togglePlan:checked~span .dot {
     @apply translate-x-[26px];
   }
+
+  body {
+    overflow-x: hidden;
+  }
+
 
   /*.faq .faq-btn::after {*/
   /*  content: "+";*/
@@ -83,10 +89,11 @@
   }
 }
 
-.theme-transition, .theme-transition * {
+.theme-transition,
+.theme-transition * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.text-swiper-white{
+.text-swiper-white {
   color: #fff !important;
 }
