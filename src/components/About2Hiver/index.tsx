@@ -48,7 +48,7 @@ const About2Hiver = () => {
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1120px]">
-        <div className="-mx-4 flex flex-wrap items-center justify-between">
+        <div className="-mx-4 flex flex-wrap items-center justify-between flex-col-reverse lg:flex-row">
           {/* Left Section (Text Section) */}
           <motion.div
             ref={textRef}
