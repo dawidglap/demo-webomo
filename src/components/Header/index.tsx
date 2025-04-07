@@ -200,27 +200,27 @@ const Header = () => {
                       className="mt-8 flex flex-col items-center space-y-4"
                     >
                       <div className="flex space-x-4 border-t border-gray-300 pt-4 dark:border-gray-600">
-                        <Link
+                        {/* <Link
                           href="https://facebook.com"
                           target="_blank"
                           className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 text-white"
                         >
                           <FaFacebookF />
-                        </Link>
+                        </Link> */}
                         <Link
-                          href="https://instagram.com"
+                          href="https://www.instagram.com/webomo?igsh=cGZ0ZXdkczJ4a2l1"
                           target="_blank"
                           className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 text-white"
                         >
                           <FaInstagram />
                         </Link>
-                        <Link
+                        {/* <Link
                           href="https://twitter.com"
                           target="_blank"
                           className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-500 text-white"
                         >
                           <FaTwitter />
-                        </Link>
+                        </Link> */}
                       </div>
                     </motion.div>
                   </motion.nav>
