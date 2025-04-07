@@ -23,15 +23,21 @@ export default function Privacy() {
           {t("title")}
         </h1>
         <section className="mt-6">
-          <h2 className="text-xl font-semibold text-black dark:text-white">
+          {/* <h2 className="text-xl font-semibold text-black dark:text-white">
             {t("introduction.title")}
-          </h2>
+          </h2> */}
           <p className="text-text-secondary mt-2 text-sm">
             {t("introduction.description")}
           </p>
+          <p className="text-text-secondary mt-2 text-sm">
+            {t("introduction.description2")}
+          </p>
+          <p className="text-text-secondary mt-2 text-sm">
+            {t("introduction.description3")}
+          </p>
         </section>
 
-        <section className="mt-6">
+        {/* <section className="mt-6">
           <h2 className="text-xl font-semibold text-black dark:text-white">
             {t("dataCollection.title")}
           </h2>
@@ -74,7 +80,7 @@ export default function Privacy() {
           <p className="text-text-secondary mt-2 text-sm">
             {t("cookiesPolicy.description")}
           </p>
-        </section>
+        </section> */}
       </motion.div>
     </div>
   );
