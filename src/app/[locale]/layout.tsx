@@ -55,7 +55,7 @@ export default function RootLayout({
 
   return (
     <html lang={params.locale}>
-      <body suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true} className="!overflow-x-hidden">
         <IntlProvider locale={params.locale} messages={messages}>
           <Analytics />
           <NextTopLoader

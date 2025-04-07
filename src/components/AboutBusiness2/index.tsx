@@ -48,13 +48,13 @@ const AboutBusinessTwo = () => {
     <motion.section
       ref={sectionRef}
       id="leistungen"
-      className="relative bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 py-[80px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
+      className="relative bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 md:py-[80px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1200px]">
-        <div className="-mx-4 flex flex-wrap items-center justify-between">
+        <div className="-mx-4 flex flex-wrap-reverse items-center justify-between">
           {/* Left Text Section */}
           <div className="w-full px-4 lg:w-1/2">
             <motion.div

@@ -62,7 +62,8 @@ const AboutBusinessOne = () => {
         <p className="mx-auto mb-12 mt-[-60px] max-w-[768px] text-center text-lg font-light leading-relaxed text-black dark:text-gray-300 md:text-2xl">
           {t("subHeadlinedescription")}
         </p>
-        <div className="-mx-4 flex flex-wrap-reverse items-center justify-between">
+        <div className="-mx-4 flex flex-col lg:flex-row items-center justify-between">
+
           {/* Left Section with Single Image */}
           <div className="w-full px-4 py-8 xxs:block md:py-0 lg:w-1/2">
             <motion.div

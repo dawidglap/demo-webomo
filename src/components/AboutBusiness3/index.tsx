@@ -70,10 +70,10 @@ const AboutBusinessThree = () => {
   return (
     <motion.section
       id="about"
-      className="relative bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 py-[80px] pb-[100px] pt-[100px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
+      className="relative bg-gradient-to-r from-indigo-100 via-purple-50 to-cyan-100 md:py-[80px] md:pb-[100px] pt-[100px] dark:from-slate-800 dark:via-slate-900 dark:to-slate-800"
     >
       <div className="container lg:max-w-[1200px]">
-        <div className="-mx-4 flex flex-wrap-reverse items-center justify-between">
+        <div className="-mx-4 flex flex-wrap items-center justify-between">
           {/* Left Section with Single Video */}
           <div className="w-full px-4 lg:w-1/2">
             <motion.div
