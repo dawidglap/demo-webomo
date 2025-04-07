@@ -49,7 +49,7 @@ const About3Hiver = () => {
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1120px]">
-        <div className="-mx-4 flex flex-wrap items-center justify-between">
+        <div className="md:-mx-4 flex flex-wrap items-center justify-between">
           {/* Left Section (Image) */}
           <motion.div
   className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
