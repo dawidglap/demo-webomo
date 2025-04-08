@@ -77,7 +77,7 @@ const Stats = () => {
   return (
     <section
       ref={ref}
-      className="flex flex-col items-center overflow-hidden bg-[#F8FAFB] px-4 pb-20 pt-20 dark:bg-[#15182A]"
+      className="!overflow-x-hidden flex flex-col items-center overflow-hidden bg-[#F8FAFB] px-4 pb-20 pt-20 dark:bg-[#15182A]"
     >
       {/* Titolo */}
       <motion.h2

@@ -1,47 +1,44 @@
 "use client";
 
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
-
 const CardsBusiness = () => {
   const t = useTranslations("CardsBusiness");
-  const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.3, once: false });
+
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
+
+  const titleControls = useAnimation();
+  const card1Controls = useAnimation();
+  const card2Controls = useAnimation();
+  const card3Controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      titleControls.start({ opacity: 1 });
+      card1Controls.start({ opacity: 1 });
+      card2Controls.start({ opacity: 1 });
+      card3Controls.start({ opacity: 1 });
+    } else {
+      titleControls.start({ opacity: 0 });
+      card1Controls.start({ opacity: 0 });
+      card2Controls.start({ opacity: 0 });
+      card3Controls.start({ opacity: 0 });
+    }
+  }, [inView, titleControls, card1Controls, card2Controls, card3Controls]);
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={{
-        visible: { transition: { staggerChildren: 0.15 } },
-      }}
-      className="container mx-auto py-12 md:px-12"
-    >
+    <div ref={ref} className="container mx-auto py-12 md:px-12">
       {/* Section Title */}
       <motion.div
-        variants={{
-          hidden: { opacity: 0, y: -20 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.5, ease: "easeOut" },
-          },
-        }}
+        initial={{ opacity: 0 }}
+        animate={titleControls}
+        transition={{ duration: 0.5 }}
         className="mb-10 pb-16 text-center"
       >
         <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-5xl">
@@ -54,14 +51,13 @@ const CardsBusiness = () => {
       </motion.div>
 
       {/* Cards Grid */}
-      <motion.div
-        className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
-      >
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {/* Card 1 */}
         <motion.div
-          variants={cardVariants}
-          className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#3F2D7F] p-6 text-center shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl dark:bg-[#3F2D7F]"
+          initial={{ opacity: 0 }}
+          animate={card1Controls}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#3F2D7F] p-6 text-center shadow-xl dark:bg-[#3F2D7F]"
         >
           <Image
             src="/images/icons/money.webp"
@@ -78,8 +74,10 @@ const CardsBusiness = () => {
 
         {/* Card 2 */}
         <motion.div
-          variants={cardVariants}
-          className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#D4C4F4] p-6 text-center shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl dark:bg-[#D4C4F4]"
+          initial={{ opacity: 0 }}
+          animate={card2Controls}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#D4C4F4] p-6 text-center shadow-xl dark:bg-[#D4C4F4]"
         >
           <Image
             src="/images/icons/moremoney.webp"
@@ -96,8 +94,10 @@ const CardsBusiness = () => {
 
         {/* Card 3 */}
         <motion.div
-          variants={cardVariants}
-          className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#EECAC1] p-6 text-center shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl dark:bg-[#EECAC1]"
+          initial={{ opacity: 0 }}
+          animate={card3Controls}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#EECAC1] p-6 text-center shadow-xl dark:bg-[#EECAC1]"
         >
           <Image
             src="/images/icons/palm.webp"
@@ -111,8 +111,8 @@ const CardsBusiness = () => {
             <p className="mt-2 text-sm sm:text-base">{t("card3.description")}</p>
           </div>
         </motion.div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 
