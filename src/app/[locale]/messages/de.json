@@ -395,6 +395,11 @@
     "Material": "WERBECONTENT",
     "MaterialInfo": "Bereitstellung Werbeinhalten durch Webomo, zur Unterstützung der Akquisition."
   },
+  "CookieConsent": {
+    "message": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern.",
+    "learnMore": "Mehr erfahren",
+    "accept": "Akzeptieren"
+  },
   "Screens": {
     "title": "Designs für jede Branche",
     "description": "Für jede Branche erstellen wir beeindruckende Social-Media-Präsenz. Designs, die Ihre Marke ins Rampenlicht rücken und Ihre Zielgruppe begeistern.",

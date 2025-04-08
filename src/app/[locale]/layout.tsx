@@ -15,6 +15,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { IntlProvider } from "next-intl";
+import CookieConsent from "@/components/CookieConsent";
 
 export default function RootLayout({
   children,
@@ -96,6 +97,7 @@ export default function RootLayout({
                   <ScrollToTop />
                 </>
               )}
+              <CookieConsent />
             </AuthProvider>
           </ThemeProvider>
         </IntlProvider>
