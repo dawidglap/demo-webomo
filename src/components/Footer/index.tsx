@@ -3,6 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { FaInstagram } from "react-icons/fa";
+
 
 const Footer = ({ locale }: { locale: string }) => {
   const t = useTranslations("Footer");
@@ -19,6 +21,18 @@ const Footer = ({ locale }: { locale: string }) => {
             <p className="mt-2 text-xs  font-light text-gray-700  dark:text-gray-300 md:max-w-xs">
               {t("companyDescription")}
             </p>
+            <div className="mt-4 flex justify-center md:justify-start">
+  <Link
+    href="https://www.instagram.com/webomo?igsh=cGZ0ZXdkczJ4a2l1"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-pink-600 hover:text-pink-800 transition"
+    aria-label="Instagram Webomo"
+  >
+    <FaInstagram size={24} />
+  </Link>
+</div>
+
           </div>
 
           {/* Middle Section: Links (1 Column on Mobile, 3 Columns on Desktop) */}
