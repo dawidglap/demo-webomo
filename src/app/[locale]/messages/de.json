@@ -693,6 +693,10 @@
       "title": "Kündigung",
       "description": "Das Abonnement kann von beiden Parteien mit einer Frist von 4 Wochen zum Ende der jeweiligen Laufzeit gekündigt werden. Erfolgt keine fristgerechte Kündigung, verlängert sich das Abonnement automatisch um weitere 12 Monate."
     },
+    "services2": {
+      "title": "Leistungen",
+      "description": "Diese AGB und alle Verträge zwischen Webomo und dem Kunden unterliegen dem Schweizer Recht. Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesem Vertrag ist der Sitz von Webomo."
+    },
     "governingLawAndJurisdiction": {
       "title": "Anwendbares Recht und Gerichtsstand",
       "description": "Diese AGB und alle Verträge zwischen Webomo und dem Kunden unterliegen dem Schweizer Recht. Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesem Vertrag ist der Sitz von Webomo."
