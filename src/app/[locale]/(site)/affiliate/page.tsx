@@ -121,7 +121,7 @@ const Affiliate = () => {
       );
 
       setTimeout(() => {
-        router.push("https://buy.stripe.com/9AQ2c22Hl0OF64w7su");
+        router.push("https://buy.stripe.com/7sI03U6XBbtj8cE9AF");
       }, 3000);
     } catch (error) {
       console.error("Failed to send form data:", error);
