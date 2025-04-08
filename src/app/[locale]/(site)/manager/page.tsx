@@ -36,6 +36,8 @@ const ManagerPackage = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -72,6 +74,11 @@ const ManagerPackage = () => {
     if (!formData.email.trim()) newErrors.email = "E-Mail ist erforderlich.";
     else if (!/\S+@\S+\.\S+/.test(formData.email))
       newErrors.email = "Email is invalid.";
+
+    if (!acceptedTerms) {
+      newErrors.acceptedTerms = "Bitte akzeptieren Sie die Bedingungen.";
+    }
+    
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0; // Returns true if no errors
@@ -404,9 +411,30 @@ const ManagerPackage = () => {
                   YouTube
                 </span>
               </label> */}
+              {/* Checkbox per accettare termini */}
+
+
             </div>
           </div>
-
+          <div className="flex items-start">
+  <input
+    type="checkbox"
+    id="acceptedTerms"
+    name="acceptedTerms"
+    checked={acceptedTerms}
+    onChange={(e) => {
+      setAcceptedTerms(e.target.checked);
+      setErrors((prev) => ({ ...prev, acceptedTerms: "" }));
+    }}
+    className="mt-1 mr-2 h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500 dark:border-gray-600 dark:bg-gray-700"
+  />
+  <label htmlFor="acceptedTerms" className="text-sm text-gray-700 dark:text-gray-300">
+    {t("acceptTerms")}
+  </label>
+</div>
+{errors.acceptedTerms && (
+  <p className="mt-1 text-sm text-red-500">{errors.acceptedTerms}</p>
+)}
           {/* Submit Button */}
           <div>
             <button

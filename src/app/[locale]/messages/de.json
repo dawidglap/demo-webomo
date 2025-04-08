@@ -375,7 +375,8 @@
   },
   "Manager": {
     "manager": "Manager",
-    "year": "jährlich",
+    "acceptTerms": "Ich akzeptiere die Nutzungsbedingungen und die Datenschutzerklärung.",
+    "year": "monatlich",
     "duration": "Dauer",
     "months": "Monate",
     "title": "Paket Manager",
