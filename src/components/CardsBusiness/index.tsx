@@ -6,13 +6,12 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    scale: 1,
     transition: {
-      duration: 0.7,
+      duration: 0.5,
       ease: "easeOut",
     },
   },
@@ -20,13 +19,8 @@ const cardVariants = {
 
 const CardsBusiness = () => {
   const t = useTranslations("CardsBusiness");
-
   const ref = useRef(null);
-  const inView = useInView(ref, {
-    margin: "-100px 0px", // entra prima
-    amount: 0.3, // 30% visibile
-    once: false, // visibile sia andata che ritorno
-  });
+  const inView = useInView(ref, { amount: 0.3, once: false });
 
   return (
     <motion.div
@@ -34,20 +28,18 @@ const CardsBusiness = () => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={{
-        visible: {
-          transition: { staggerChildren: 0.2, delayChildren: 0.2 },
-        },
+        visible: { transition: { staggerChildren: 0.15 } },
       }}
       className="container mx-auto py-12 md:px-12"
     >
       {/* Section Title */}
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: -40 },
+          hidden: { opacity: 0, y: -20 },
           visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: "easeOut" },
+            transition: { duration: 0.5, ease: "easeOut" },
           },
         }}
         className="mb-10 pb-16 text-center"
@@ -64,14 +56,7 @@ const CardsBusiness = () => {
       {/* Cards Grid */}
       <motion.div
         className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-        variants={{
-          visible: {
-            transition: {
-              staggerChildren: 0.2,
-              delayChildren: 0.4,
-            },
-          },
-        }}
+        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
       >
         {/* Card 1 */}
         <motion.div
@@ -81,11 +66,11 @@ const CardsBusiness = () => {
           <Image
             src="/images/icons/money.webp"
             alt="Icon"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             className="mx-auto mb-4"
           />
-          <div className="flex flex-col items-center justify-center text-white font-light dark:text-white">
+          <div className="flex flex-col items-center justify-center text-white dark:text-white">
             <h3 className="text-lg font-bold">{t("card1.title")}</h3>
             <p className="mt-2 text-sm sm:text-base">{t("card1.description")}</p>
           </div>
@@ -99,11 +84,11 @@ const CardsBusiness = () => {
           <Image
             src="/images/icons/moremoney.webp"
             alt="Icon"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             className="mx-auto mb-4"
           />
-          <div className="flex flex-col items-center justify-center text-white font-light dark:text-white">
+          <div className="flex flex-col items-center justify-center text-[#3F2D7F] dark:text-[#3F2D7F]">
             <h3 className="text-lg font-bold">{t("card2.title")}</h3>
             <p className="mt-2 text-sm sm:text-base">{t("card2.description")}</p>
           </div>
@@ -117,11 +102,11 @@ const CardsBusiness = () => {
           <Image
             src="/images/icons/palm.webp"
             alt="Icon"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             className="mx-auto mb-4"
           />
-          <div className="flex flex-col items-center justify-center text-white font-light dark:text-white">
+          <div className="flex flex-col items-center justify-center text-[#3F2D7F] dark:text-[#3F2D7F]">
             <h3 className="text-lg font-bold">{t("card3.title")}</h3>
             <p className="mt-2 text-sm sm:text-base">{t("card3.description")}</p>
           </div>
