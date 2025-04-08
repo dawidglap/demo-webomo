@@ -709,24 +709,24 @@
   "impressum": {
     "title": "Impressum",
     "owner": {
-      "title": "Eigentümer",
+      "title": "Webomo GmbH",
       "description": "Webomo, im Besitz von Cengiz Cokickli."
     },
     "address": {
       "title": "Adresse",
-      "description": "Beispielstrasse 123, 8000 Zürich, Schweiz."
+      "description": "Berneckerstrasse 4a CH-9434 Au"
     },
     "contact": {
       "title": "Kontakt",
-      "description": "E-Mail: kontakt@webomo.ch | Telefon: +41 79 123 45 67."
+      "description": "E-Mail: kontakt@webomo.ch | Website: www.webomo.ch"
     },
     "registry": {
-      "title": "Handelsregister",
-      "description": "Webomo ist im schweizerischen Handelsregister eingetragen, Registernummer: CH-123.456.789."
+      "title": "Mehrwertsteuer- Nr.",
+      "description": "CHE-418.987.018"
     },
     "disclaimer": {
       "title": "Haftungsausschluss",
-      "description": "Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr."
+      "description": "Die Inhalte dieser Webseite wurden mit grösstmöglicher Sorgfallt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewahr."
     }
   },
   "Timeline": {
