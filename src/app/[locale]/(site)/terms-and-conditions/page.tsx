@@ -17,7 +17,7 @@ export default function Terms() {
   return (
     <div className="bg-background mx-auto my-4 mt-20 max-w-6xl px-4 py-8 text-body">
       <motion.div
-        className="border-accent mx-auto max-w-xl rounded-2xl border border-dotted px-4 py-8 shadow-lg"
+        className="border-accent mx-auto max-w-3xl rounded-2xl border border-dotted px-4 py-8 shadow-lg"
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
