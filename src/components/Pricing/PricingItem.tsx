@@ -79,7 +79,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
   
     <div
       className={`text-center relative rounded-2xl px-6 py-10 shadow-2xl md:shadow-md ${bgColor} flex flex-col ${
-        price.nickname === "Unlimited" ? "min-h-[580px]" : "min-h-[530px]"
+        price.nickname === "Unlimited" ? "md:min-h-[580px]" : "md:min-h-[530px]"
       }`}
     >
       {price.nickname === "Unlimited" && (
