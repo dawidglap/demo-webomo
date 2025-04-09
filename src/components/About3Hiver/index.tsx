@@ -43,7 +43,7 @@ const About3Hiver = () => {
     <motion.section
       ref={sectionRef}
       id="about"
-      className="relative mb-[100px] pt-[150px]"
+      className="relative mb-[100px] pt-16 md:pt-[150px]"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={sectionVariants}
@@ -66,7 +66,7 @@ const About3Hiver = () => {
           {/* Right Section (Text) */}
           <motion.div
             ref={textRef}
-            className="w-full px-4 lg:ml-auto lg:w-1/2 lg:max-w-[510px]"
+            className="w-full  px-0 md:px-4 lg:ml-auto lg:w-1/2 lg:max-w-[510px]"
             initial="hidden"
             animate={sectionInView ? "visible" : "hidden"}
             variants={sectionVariants}

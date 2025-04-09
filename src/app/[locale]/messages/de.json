@@ -374,12 +374,12 @@
     "footerText": "Inkl. Dashboard & Reporting"
   },
   "Manager": {
-    "manager": "Manager",
+    "manager": "Business Partner",
     "acceptTerms": "Ich akzeptiere die Nutzungsbedingungen und die Datenschutzerklärung.",
     "year": "monatlich",
     "duration": "Dauer",
     "months": "Monate",
-    "title": "Paket Manager",
+    "title": "Paket Business Partner",
     "name": "Vorname",
     "surname": "Nachname",
     "birthday": "Geburtsdatum",
