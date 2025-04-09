@@ -4,6 +4,7 @@ import Pricing from "@/components/Pricing";
 import Stats from "@/components/Stats";
 import Faq from "@/components/Faq";
 import ComparePricing from "@/components/ComparePricing";
+import Pricing2 from "@/components/Pricing2";
 
 const Price = () => {
   return (

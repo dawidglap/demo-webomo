@@ -33,7 +33,7 @@ const Pricing = () => {
         </div>
 
         <div className="container max-w-[1120px] overflow-hidden">
-          <div className="-mx-6 flex flex-wrap justify-center ">
+          <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-end ">
             {pricingData &&
               pricingData.map((price, key) => (
                 <PricingItem price={price} key={key} />

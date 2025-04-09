@@ -334,10 +334,10 @@
         "name": "Basic",
         "price": "799",
         "features": [
-          "Projektleitung: Bedarfsanalyse, Strategie- und Umsetzngsplan",
-          "Produktion: 106 Inhalte inkl. Text & Bildbearbeitung (Stories, Posts und Reels)",
-          "Veröffentlichung: 12 Monate / 2x pro Woche durch Webomo",
-          "Kanäle: Instagram",
+          "Planung Strategie",
+          "Content Produktion",
+          "Branding",
+          "Reporting",
           " ",
           ""
         ]
@@ -346,29 +346,26 @@
         "name": "Pro",
         "price": "899",
         "features": [
-          "Projektleitung: Content Beratung & Administration",
-          "Produktion: Inhalte 106 (Storys und Posts)",
-          "Veröffentlichung: 2x pro Woche durch Webomo",
-          "Kanäle: Instagram / Facebook ",
-          "Fotoshooting: z.B. Mitarbeiter, Büro, Werkstatt, Studio, Details, Showroom usw.",
-          "Video: 1 Werbefilm (max. 60 Sekunden) Planung, Filmen, Schneiden und Anpassung",
-          "Social Media Kampagnen: 1 Kampagne inkl. Planung-Konzep & Umsetzung"
+          "Inkl. Paket Basic",
+          "Fotoshooting",
+          "Videoshooting",
+          "Social Media Kampagnen",
+          "KI Publication"
         ]
       },
       "Business": {
         "name": "Business",
         "price": "Auf Anfrage",
         "features": [
-          "Inklusive Paket Pro Leistungen",
+          "Inkl. Paket Pro",
           "Webentwicklung, Logo & Print Design",
-          "Affiliate Marketing",
-          "Sie definieren Ihre Leistungen",
-          "Teilen Sie uns mit, was Sie sich wünschen und in welchem Umfang - wir entwickeln und realisieren es.",
-          "Social Media Kampagnen: Inklusive"
+          "Du definierst deine Leistungen und wir liefern.",
+          ""
         ]
       }
     },
-    "recommended": "Meist gebucht",
+    "recommended": "Meist",
+    "recommended2": "gebucht",
     "month": "mtl",
     "duration": "12 Monate Betreuung",
     "footerText": "Inkl. Dashboard & Reporting"

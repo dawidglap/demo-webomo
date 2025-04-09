@@ -24,7 +24,7 @@ const CalBtn: React.FC = () => {
       >
         {t("schedule")} {/* Fetch the localized text dynamically */}
       </button>
-      <ul className=" mt-4 dark:text-gray-400">
+      {/* <ul className=" mt-4 dark:text-gray-400">
         <div className="flex ">
           <FaCheck className="my-auto mr-4" />
           <li className="text-sm">{t("features1")}</li>
@@ -37,7 +37,7 @@ const CalBtn: React.FC = () => {
           <FaCheck className="my-auto mr-4" />
           <li className="text-sm">{t("features4")}</li>
         </div>
-      </ul>
+      </ul> */}
     </>
   );
 };

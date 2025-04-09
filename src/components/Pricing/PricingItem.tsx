@@ -11,7 +11,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
   const t = useTranslations("Pricing");
 
   // Define background color based on plan type
-  let bgColor = "bg-gray-100 dark:bg-gray-800"; // Default color
+  let bgColor = "bg-gray-100 dark:bg-gray-800";
   if (price.nickname === "Basic") {
     bgColor = "bg-indigo-100 dark:bg-gray-800";
   } else if (price.nickname === "Unlimited") {
@@ -22,7 +22,7 @@ export const PricingItem = ({ price, stripeLink }: any) => {
     bgColor = "bg-gray-100 dark:bg-gray-800";
   }
 
-  // Hardcoded features for each plan
+  // Hardcoded features
   const getFeatures = (nickname: string) => {
     const features = {
       Basic: [
@@ -54,116 +54,110 @@ export const PricingItem = ({ price, stripeLink }: any) => {
     return features[nickname].map((feature, index) => (
       <p
         key={index}
-        className="flex items-center text-base text-black dark:text-body"
+        className="flex items-center justify-center font-bold  mt-6 text-lg text-black dark:text-body"
       >
-        <span className="mr-2 text-lg font-semibold">✔</span> {feature}
+        <span className="mr-2 text-lg  font-bold mb-10"></span> {feature}
       </p>
     ));
   };
 
   return (
-    <div className="w-full px-6 pb-8 md:w-1/2 lg:w-1/3">
-      <div
-        className={`relative  mb-12 mt-10 rounded-2xl px-9 py-10 shadow-2xl md:shadow-md ${bgColor} flex h-[91%] flex-col justify-between lg:mb-4 lg:px-7 xl:px-9 ${
-          price.nickname === "Unlimited" ? "scale-110" : ""
-        }`}
-      >
-        {/* Badge for Recommended Plan */}
-        {price.nickname === "Unlimited" && (
-          <span className="absolute right-5 top-5 rounded-full bg-black px-4 py-1 text-sm font-medium text-white dark:bg-white dark:text-black">
-            {t("recommended")}
-          </span>
-        )}
-
-        {/* Plan Title and Price */}
-        <h3 className="mb-2 text-[22px] font-semibold leading-tight text-black dark:text-white">
-          {price.nickname === "Enterprise"
-            ? "LET'S TALK"
-            : t(`plans.${price.nickname}.name`)}
-        </h3>
-        {price.nickname !== "Enterprise" && (
-          <>
-            <p className="mb-2 text-4xl font-bold text-black dark:text-white">
-              {t(`plans.${price.nickname}.price`)}
-              {price.nickname !== "Business" && (
-                <>
-                  .- <span className="text-lg">/ {t("month")}</span>
-                </>
-              )}
-            </p>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
-              {t("duration")}
-            </p>
-            {/* Contact Button */}
-            {price.nickname === "Enterprise" && (
-              <Link
-                href="/kontakt"
-                aria-label="Contact us for Enterprise plan"
-                className="mt-10 block  rounded-full bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-              >
-                {t("contactUs")}
-              </Link>
+    <div
+    className={`w-full px-4 md:w-1/2 lg:w-1/3 mb-5 ${
+      price.nickname === "Unlimited" ? "lg:mt-10" : "lg:mt-0"
+    }`}
+  >
+    <h3
+      className={`text-center text-3xl font-extrabold leading-tight text-black dark:text-white ${
+        price.nickname === "Unlimited" ? "mt-0 mb-6" : "mt-6 mb-3"
+      }`}
+    >
+      {price.nickname === "Enterprise"
+        ? "LET'S TALK"
+        : t(`plans.${price.nickname}.name`)}
+    </h3>
+  
+    <div
+      className={`text-center relative rounded-2xl px-6 py-10 shadow-2xl md:shadow-md ${bgColor} flex flex-col ${
+        price.nickname === "Unlimited" ? "min-h-[580px]" : "min-h-[530px]"
+      }`}
+    >
+      {price.nickname === "Unlimited" && (
+        <span className="absolute -top-5 -right-5 h-20 w-20 rounded-full bg-black text-white text-xs font-bold flex items-center justify-center text-center shadow-md dark:bg-white dark:text-black">
+          {t("recommended")}
+          <br />
+          {t("recommended2")}
+        </span>
+      )}
+  
+      {/* Price */}
+      {price.nickname !== "Enterprise" && (
+        <>
+          <p className="mb-2 text-2xl font-bold text-black dark:text-white">
+            {t(`plans.${price.nickname}.price`)}
+            {price.nickname !== "Business" && (
+              <>
+                .- <span className="text-lg">/ {t("month")}</span>
+              </>
             )}
-            {price.nickname === "Basic" && <CalBtnBasic />}
-            {price.nickname === "Unlimited" && <CalBtnBusiness />}
-            {price.nickname === "Business" && <CalBtnEnterprise />}
-          </>
-        )}
-
-        {/* Features List */}
-        {/* <div className="mb-auto flex-1 space-y-4 pb-10 pt-6">
-          {getFeatures(price.nickname)}
-        </div> */}
-
-        {/* Stripe Checkout Button */}
-        {price.nickname === "Basic" && (
-          <div className="mb-4 mt-auto">
-            <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
-              {t("payLaterDescription")}
-            </p>
-            <Link
-              href="https://buy.stripe.com/00gaIyfu79lbcsU000"
-              aria-label="Pay for Basic"
-              className="
-    dark:hover:shadow-[0_0_5px_5px_rgba(99, 102, 241, 
-    0.6)] block w-full rounded-full bg-gradient-to-r from-indigo-500 
-    to-purple-500 
-    px-8 py-3 
-    text-center text-base font-medium text-white 
-    shadow-md transition-all duration-300 hover:shadow-[0_0_10px_5px_rgba(99,102,241,0.6)] dark:bg-indigo-500"
-            >
-              {t("checkoutNow")}
-            </Link>
-          </div>
-        )}
-
-        {price.nickname === "Unlimited" && (
-          <div className="mb-4 mt-auto">
-            <p className="mb-2 text-xs text-gray-600 dark:text-gray-400">
-              {t("payLaterDescription")}
-            </p>
-            <Link
-              href="https://buy.stripe.com/bIYeYO6XBfJzfF6bIJ"
-              aria-label="Pay for Unlimited"
-              className="
-    block w-full rounded-full 
-    bg-gradient-to-r from-indigo-500 to-purple-500 
-    px-8 py-3 text-center text-base font-medium text-white 
-    shadow-md 
-    transition-all duration-300 
-    hover:shadow-[0_0_5px_5px_rgba(99,102,241,0.6)]
-    dark:bg-indigo-500 dark:hover:shadow-[0_0_20px_5px_rgba(99,102,241,0.6)]"
-            >
-              {t("checkoutNow")}
-            </Link>
-          </div>
-        )}
-
-        {/* Footer Text */}
-        {/* <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
-          {t("footerText")}
-        </p> */}
+          </p>
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            {t("duration")}
+          </p>
+        </>
+      )}
+  
+      {/* Features */}
+      <div
+        className={`mt-6 ${
+          price.nickname === "Business" ? "mb-2" : "mb-6"
+        } space-y-2 text-sm text-black text-center dark:text-white`}
+      >
+        {getFeatures(price.nickname)}
       </div>
+  
+      {/* Booking Buttons */}
+      <div className="mb-6 mt-auto">
+        {/* Questo box cresce per spingere verso il basso il CTA */}
+        {price.nickname === "Basic" && <CalBtnBasic />}
+        {price.nickname === "Unlimited" && <CalBtnBusiness />}
+        {price.nickname === "Business" && <CalBtnEnterprise />}
+      </div>
+  
+      {/* CTA buttons */}
+      {price.nickname === "Basic" && (
+        <div className="mb-0">
+          <Link
+            href="https://buy.stripe.com/00gaIyfu79lbcsU000"
+            className="block w-full rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 px-8 py-3 text-center text-base font-medium text-white shadow-md transition-all duration-300 hover:shadow-[0_0_10px_5px_rgba(99,102,241,0.6)] dark:bg-indigo-500 dark:hover:shadow-[0_0_5px_5px_rgba(99,102,241,0.6)]"
+          >
+            {t("checkoutNow")}
+          </Link>
+        </div>
+      )}
+  
+      {price.nickname === "Unlimited" && (
+        <div className="mb-0">
+          <Link
+            href="https://buy.stripe.com/bIYeYO6XBfJzfF6bIJ"
+            className="block w-full rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 px-8 py-3 text-center text-base font-medium text-white shadow-md transition-all duration-300 hover:shadow-[0_0_5px_5px_rgba(99,102,241,0.6)] dark:bg-indigo-500 dark:hover:shadow-[0_0_20px_5px_rgba(99,102,241,0.6)]"
+          >
+            {t("checkoutNow")}
+          </Link>
+        </div>
+      )}
+  
+      {price.nickname === "Enterprise" && (
+        <Link
+          href="/kontakt"
+          className="mt-auto block rounded-full bg-black px-8 py-3 text-center text-base font-medium text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+        >
+          {t("contactUs")}
+        </Link>
+      )}
     </div>
+  </div>
+  
+  
   );
 };
