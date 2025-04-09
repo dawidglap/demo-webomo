@@ -20,23 +20,24 @@ const CardsBusiness = () => {
 
   useEffect(() => {
     if (inView) {
-      titleControls.start({ opacity: 1 });
-      card1Controls.start({ opacity: 1 });
-      card2Controls.start({ opacity: 1 });
-      card3Controls.start({ opacity: 1 });
+      titleControls.start({ opacity: 1, y: 0 });
+      card1Controls.start({ opacity: 1, x: 0 });
+      card2Controls.start({ opacity: 1, y: 0 });
+      card3Controls.start({ opacity: 1, x: 0 });
     } else {
-      titleControls.start({ opacity: 0 });
-      card1Controls.start({ opacity: 0 });
-      card2Controls.start({ opacity: 0 });
-      card3Controls.start({ opacity: 0 });
+      titleControls.start({ opacity: 0, y: 20 });
+      card1Controls.start({ opacity: 0, x: -100 });
+      card2Controls.start({ opacity: 0, y: 50 });
+      card3Controls.start({ opacity: 0, x: 100 });
     }
   }, [inView, titleControls, card1Controls, card2Controls, card3Controls]);
 
   return (
-    <div ref={ref} className="container mx-auto py-12 md:px-12">
+    <div className="w-full overflow-x-hidden">
+  <div ref={ref} className="container mx-auto py-12 md:px-12">
       {/* Section Title */}
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={titleControls}
         transition={{ duration: 0.5 }}
         className="mb-10 pb-16 text-center"
@@ -54,9 +55,9 @@ const CardsBusiness = () => {
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {/* Card 1 */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={card1Controls}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#3F2D7F] p-6 text-center shadow-xl dark:bg-[#3F2D7F]"
         >
           <Image
@@ -74,9 +75,9 @@ const CardsBusiness = () => {
 
         {/* Card 2 */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={card2Controls}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
           className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#D4C4F4] p-6 text-center shadow-xl dark:bg-[#D4C4F4]"
         >
           <Image
@@ -94,9 +95,9 @@ const CardsBusiness = () => {
 
         {/* Card 3 */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0, x: 100 }}
           animate={card3Controls}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           className="flex h-[320px] w-full flex-col justify-center rounded-2xl bg-[#EECAC1] p-6 text-center shadow-xl dark:bg-[#EECAC1]"
         >
           <Image
@@ -112,6 +113,7 @@ const CardsBusiness = () => {
           </div>
         </motion.div>
       </div>
+    </div>
     </div>
   );
 };
