@@ -183,7 +183,7 @@ const ManagerPackage = () => {
 
             <li className="flex items-center  text-base text-white dark:text-gray-300">
               <div className="mx-auto">
-                <p className="font-bold  text-xl">- {t("Coaching")}</p>
+                <p className="font-bold  text-xl"> {t("Coaching")}</p>
                 <p className="">{t("CoachingInfo")}</p>
               </div>
             </li>
@@ -205,7 +205,7 @@ const ManagerPackage = () => {
                 />
               </svg> */}
               <div className="mx-auto">
-                <p className="font-bold  text-xl">- {t("Material")}</p>
+                <p className="font-bold  text-xl"> {t("Material")}</p>
                 <p className="">{t("MaterialInfo")}</p>
               </div>
              
@@ -214,7 +214,7 @@ const ManagerPackage = () => {
 
             <li className="flex items-center text-base text-white dark:text-gray-300">
             <div className="mx-auto">
-                <p className="font-bold  text-xl">- {t("Material2")}</p>
+                <p className="font-bold  text-xl"> {t("Material2")}</p>
                 <p className="">{t("MaterialInfo2")}</p>
               </div>
             </li>
