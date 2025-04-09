@@ -75,9 +75,10 @@ const Stats = () => {
   }, [inView, leftControls, centerControls, rightControls]);
 
   return (
+    <div className="w-full overflow-x-hidden">
     <section
       ref={ref}
-      className="!overflow-x-hidden flex flex-col items-center overflow-hidden bg-[#F8FAFB] px-4 pb-20 pt-20 dark:bg-[#15182A]"
+      className="flex flex-col items-center overflow-hidden bg-[#F8FAFB] px-4 pb-20 pt-20 dark:bg-[#15182A]"
     >
       {/* Titolo */}
       <motion.h2
@@ -155,6 +156,7 @@ const Stats = () => {
         {t("cta")}
       </Link>
     </section>
+    </div>
   );
 };
 

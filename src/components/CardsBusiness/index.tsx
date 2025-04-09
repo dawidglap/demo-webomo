@@ -10,7 +10,7 @@ const CardsBusiness = () => {
   const t = useTranslations("CardsBusiness");
 
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.25,
   });
 
   const titleControls = useAnimation();
