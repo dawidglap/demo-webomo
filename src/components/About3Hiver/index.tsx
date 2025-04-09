@@ -52,7 +52,7 @@ const About3Hiver = () => {
         <div className="md:-mx-4 flex flex-wrap items-center justify-between">
           {/* Left Section (Image) */}
           <motion.div
-  className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
+  className="mb-10 md:ms-4 w-full px-0  xxs:block lg:mb-0 lg:w-1/2"
   initial="hidden"
   animate={sectionInView ? "visible" : "hidden"}
   variants={sectionVariants}
