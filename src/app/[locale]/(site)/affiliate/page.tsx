@@ -143,75 +143,55 @@ const Affiliate = () => {
     <div className="mx-auto mt-20 flex w-full max-w-6xl flex-col gap-8 p-6 lg:flex-row">
       <ToastContainer />
       {/* Package Details */}
-      <div className="w-full lg:w-1/3 text-center ">
-        <div className=" relative flex flex-col rounded-xl bg-gradient-to-r from-blue-700 to-purple-500 p-6 shadow-2xl dark:bg-slate-900">
-          <h3 className="mb-4 text-2xl font-semibold text-white dark:text-white">
-            Markenbotschafter
-          </h3>
-          <p className="mb-2 text-4xl font-bold text-white dark:text-white">
-            CHF 79.- <span className="text-lg font-medium">{t("year")}</span>
-          </p>
-          <p className="mb-6 text-sm text-gray-300 dark:text-gray-300">
-            {t("duration")} - 12 {t("months")}
-          </p>
-          
+      <div className="w-full lg:w-1/3 text-center">
+  <div className="relative flex flex-col rounded-2xl bg-gradient-to-r from-blue-700 to-purple-500 p-6 shadow-2xl dark:bg-slate-900">
+    <h3 className="mb-4 text-2xl font-extrabold text-white dark:text-white">
+      Markenbotschafter
+    </h3>
+    <p className="mb-2 text-2xl font-light text-white dark:text-white">
+      CHF 79.- <span className="text-lg font-medium">{t("year")}</span>
+    </p>
+    <p className="mb-6 text-xl font-bold text-white dark:text-gray-300">
+      {t("duration")} 
+    </p>
 
-          <ul className="mb-8 space-y-4">
-          <div className="border-b-2 pb-2"></div>
+    <ul className="mb-8 space-y-4">
+      <div className="border-b-2 pb-2"></div>
 
-            <li className="flex items-center text-base text-white dark:text-gray-300">
-              {/* <svg
-                className="mr-2 h-5 w-5 text-green-500 sm:h-6 sm:w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg> */}
-              <div className="">
-                <p className="font-bold">- {t("Dashboard")}</p>
-                <p className="">{t("DashboardInfo")}</p>
-              </div>
-            </li>
-          <div className="border-b-2 pb-2"></div>
-
-            <li className="flex items-center text-base text-white dark:text-gray-300">
-              <div className="">
-                <p className="font-bold">- {t("Coaching")}</p>
-                <p className="">{t("CoachingInfo")}</p>
-              </div>
-            </li>
-          <div className="border-b-2 pb-2"></div>
-
-            <li className="flex items-center text-base text-white dark:text-gray-300">
-              {/* <svg
-                className="mr-2 h-5 w-5 text-green-500 md:h-12 md:w-12"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg> */}
-              <div className="">
-                <p className="font-bold">- {t("Material")}</p>
-                <p className="">{t("MaterialInfo")}</p>
-              </div>
-            </li>
-          </ul>
+      <li className="flex items-center text-base text-white dark:text-gray-300">
+        <div className="mx-auto">
+          <p className="mx-auto font-bold text-xl">- {t("Dashboard")}</p>
+          <p className="">{t("DashboardInfo")}</p>
         </div>
-      </div>
+      </li>
+      <div className="border-b-2 pb-2"></div>
+
+      <li className="flex items-center text-base text-white dark:text-gray-300">
+        <div className="mx-auto">
+          <p className="font-bold text-xl">- {t("Coaching")}</p>
+          <p className="">{t("CoachingInfo")}</p>
+        </div>
+      </li>
+      <div className="border-b-2 pb-2"></div>
+
+      <li className="flex items-center text-base text-white dark:text-gray-300">
+        <div className="mx-auto">
+          <p className="font-bold text-xl">- {t("Material")}</p>
+          <p className="">{t("MaterialInfo")}</p>
+        </div>
+      </li>
+      {/* <div className="border-b-2 pb-2"></div> */}
+
+      {/* <li className="flex items-center text-base text-white dark:text-gray-300">
+        <div className="mx-auto">
+          <p className="font-bold text-xl">- {t("Material2")}</p>
+          <p className="">{t("MaterialInfo2")}</p>
+        </div>
+      </li> */}
+    </ul>
+  </div>
+</div>
+
 
       {/* Contact Form */}
       <div className="w-full rounded-xl bg-gray-50 p-6 shadow-lg dark:bg-gray-800 lg:w-2/3">

@@ -147,14 +147,14 @@ const ManagerPackage = () => {
       {/* Package Details */}
       <div className="w-full lg:w-1/3 text-center">
         <div className=" relative flex flex-col rounded-2xl bg-gradient-to-r from-blue-700 to-purple-500 p-6 shadow-2xl dark:bg-slate-900">
-          <h3 className="mb-4 text-2xl font-semibold text-white dark:text-white">
+          <h3 className="mb-4 text-2xl font-extrabold text-white dark:text-white">
             {t("manager")}
           </h3>
-          <p className="mb-2 text-4xl font-bold text-white dark:text-white">
+          <p className="mb-2 text-2xl font-light text-white dark:text-white">
             CHF 79.- <span className="text-lg font-medium">{t("year")}</span>
           </p>
-          <p className="mb-6 text-sm text-gray-300 dark:text-gray-300">
-            {t("duration")} - 12 {t("months")}
+          <p className="mb-6 text-xl font-bold text-white dark:text-gray-300">
+            {t("duration")}
           </p>
           <ul className="mb-8 space-y-4">
           <div className="border-b-2 pb-2"></div>
@@ -174,16 +174,16 @@ const ManagerPackage = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg> */}
-              <div className="">
-                <p className="font-bold">- {t("Dashboard")}</p>
+              <div className="mx-auto">
+                <p className="mx-auto font-bold text-xl">{t("Dashboard")}</p>
                 <p className="">{t("DashboardInfo")}</p>
               </div>
             </li>
             <div className="border-b-2 pb-2"></div>
 
             <li className="flex items-center  text-base text-white dark:text-gray-300">
-              <div className="">
-                <p className="font-bold">- {t("Coaching")}</p>
+              <div className="mx-auto">
+                <p className="font-bold  text-xl">- {t("Coaching")}</p>
                 <p className="">{t("CoachingInfo")}</p>
               </div>
             </li>
@@ -204,9 +204,18 @@ const ManagerPackage = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg> */}
-              <div className="">
-                <p className="font-bold">- {t("Material")}</p>
+              <div className="mx-auto">
+                <p className="font-bold  text-xl">- {t("Material")}</p>
                 <p className="">{t("MaterialInfo")}</p>
+              </div>
+             
+            </li>
+            <div className="border-b-2 pb-2"></div>
+
+            <li className="flex items-center text-base text-white dark:text-gray-300">
+            <div className="mx-auto">
+                <p className="font-bold  text-xl">- {t("Material2")}</p>
+                <p className="">{t("MaterialInfo2")}</p>
               </div>
             </li>
           </ul>
