@@ -35,6 +35,8 @@ const Hero4 = () => {
   };
 
   return (
+    <div className="w-full overflow-x-hidden">
+    
     <section className="relative flex h-screen max-h-[1080px] flex-col items-center justify-center bg-gradient-to-br from-indigo-200 via-pink-100 to-purple-300 dark:from-slate-900 dark:to-slate-800">
       {/* Subtitle Image with Motion */}
       {/* <motion.div
@@ -88,6 +90,7 @@ const Hero4 = () => {
         />
       </motion.div>
     </section>
+    </div>
   );
 };
 

@@ -8,6 +8,8 @@ const TitleAboutHiver = () => {
 
   return (
     <>
+    <div className="w-full overflow-x-hidden">
+
       <section id="pricing" className="relative z-10 mb-20 pt-[110px]">
         <div className="container">
           <div
@@ -27,6 +29,7 @@ const TitleAboutHiver = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };

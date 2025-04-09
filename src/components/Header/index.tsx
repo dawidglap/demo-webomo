@@ -73,6 +73,8 @@ const Header = () => {
 
   return (
     <>
+    <div className="w-full overflow-x-hidden">
+
       <header
         className={`navbar left-0 top-0 z-50 w-full transition-all duration-300 ${
           sticky ? "fixed bg-white dark:bg-black" : "absolute bg-opacity-100"
@@ -295,6 +297,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+      </div>
     </>
   );
 };

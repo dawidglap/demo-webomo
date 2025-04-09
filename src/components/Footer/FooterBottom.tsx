@@ -6,6 +6,8 @@ const FooterBottom = () => {
 
   return (
     <>
+    <div className="w-full overflow-x-hidden">
+
       <div className="bg-primary py-7 dark:bg-black">
         <div className="container max-w-[1390px]">
           <div className="-mx-3 flex flex-wrap">
@@ -94,6 +96,7 @@ const FooterBottom = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

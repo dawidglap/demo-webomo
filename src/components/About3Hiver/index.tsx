@@ -40,6 +40,8 @@ const About3Hiver = () => {
   };
 
   return (
+    <div className="w-full overflow-x-hidden">
+
     <motion.section
       ref={sectionRef}
       id="about"
@@ -87,6 +89,7 @@ const About3Hiver = () => {
         </div>
       </div>
     </motion.section>
+    </div>
   );
 };
 

@@ -39,6 +39,8 @@ const About2Hiver = () => {
   };
 
   return (
+    <div className="w-full overflow-x-hidden">
+
     <motion.section
       ref={sectionRef}
       id="about"
@@ -102,6 +104,7 @@ const About2Hiver = () => {
         </div>
       </div>
     </motion.section>
+    </div>
   );
 };
 

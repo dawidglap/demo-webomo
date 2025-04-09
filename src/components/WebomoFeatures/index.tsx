@@ -59,6 +59,8 @@ const WebomoFeatures = () => {
   };
 
   return (
+    <div className="w-full overflow-x-hidden">
+
     <motion.section
       ref={sectionRef}
       className="flex flex-col items-center justify-center py-20"
@@ -113,6 +115,7 @@ const WebomoFeatures = () => {
         </div>
       </motion.div>
     </motion.section>
+    </div>
   );
 };
 

@@ -42,6 +42,8 @@ const Testimonials = () => {
 
   return (
     <>
+    <div className="w-full overflow-x-hidden">
+
       <section id="testimonials" className="relative z-10 pb-[60px] pt-[110px]">
         <div className="container">
           {/* Title and Subtitle */}
@@ -154,6 +156,7 @@ const Testimonials = () => {
           </motion.div>
         </div>
       </section>
+      </div>
     </>
   );
 };

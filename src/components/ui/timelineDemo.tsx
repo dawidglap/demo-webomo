@@ -78,8 +78,11 @@ export function TimelineDemo() {
   ];
 
   return (
+    <div className="w-full overflow-x-hidden">
+
     <div className="mx-auto max-w-4xl">
       <Timeline data={data} />
+    </div>
     </div>
   );
 }

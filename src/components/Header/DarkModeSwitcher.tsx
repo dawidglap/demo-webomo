@@ -6,6 +6,7 @@ const DarkModeSwitcher = () => {
   const [colorMode, setColorMode] = useColorMode();
 
   return (
+    
     <motion.div
       onClick={() => {
         if (typeof setColorMode === "function") {
@@ -83,6 +84,8 @@ const DarkModeSwitcher = () => {
         )}
       </AnimatePresence>
     </motion.div>
+    
+    
   );
 };
 

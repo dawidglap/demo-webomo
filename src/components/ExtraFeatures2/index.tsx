@@ -46,6 +46,8 @@ const ExtraFeatures = () => {
 
   return (
     <>
+    <div className="w-full overflow-x-hidden">
+
       {/* Features Section */}
       <motion.section
         ref={ref}
@@ -113,6 +115,7 @@ const ExtraFeatures = () => {
           </motion.section>
         </div>
       </motion.section>
+      </div>
     </>
   );
 };

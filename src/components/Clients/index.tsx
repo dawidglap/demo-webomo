@@ -57,6 +57,7 @@ const Clients = () => {
   };
 
   return (
+    <div className="w-full overflow-x-hidden">
     <section className="relative z-10  pb-[50px] pt-[70px]">
       <div className="container overflow-hidden lg:max-w-[1200px]">
         <h2 className="mb-16 text-center text-base font-light text-black dark:text-white md:text-lg">
@@ -103,6 +104,7 @@ const Clients = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
