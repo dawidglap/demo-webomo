@@ -49,7 +49,7 @@ const AboutHiver = () => {
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1120px]">
-        <div className="-mx-4 flex flex-wrap items-center justify-between">
+        <div className="-mx-4 flex flex-wrap items-center justify-between md:pb-8 ">
           {/* IMAGE PART */}
           <motion.div
             className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
@@ -57,7 +57,7 @@ const AboutHiver = () => {
             animate={sectionInView ? "visible" : "hidden"}
             variants={sectionVariants}
           >
-            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
+            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-xl lg:mx-0">
               {/* Light mode */}
               <Image
                 src="/images/hiver/light_chf.webp"

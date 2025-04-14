@@ -75,12 +75,12 @@ const About2Hiver = () => {
 
           {/* Right Section (Image) */}
           <motion.div
-            className="mb-10  w-full px-4 pt-8 xxs:block lg:mb-0 lg:w-1/2"
+            className="mb-10  w-full px-4 pt-8 xxs:block lg:mb-0 lg:w-1/2 md:pb-8"
             initial="hidden"
             animate={sectionInView ? "visible" : "hidden"}
             variants={sectionVariants}
           >
-            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px]  shadow-2xl lg:ms-auto">
+            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px]  shadow-xl lg:ms-auto">
               {/* Light mode */}
               <Image
                 src="/images/hiver/magnet.webp"
