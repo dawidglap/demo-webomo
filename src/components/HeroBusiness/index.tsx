@@ -10,7 +10,7 @@ const HeroBusiness = () => {
 
   const { ref: smartphoneRef, inView: smartphoneInView } = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.35,
   });
 
   // Animation Variants
@@ -20,7 +20,7 @@ const HeroBusiness = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 1, ease: "easeOut" },
+      transition: { duration: 2, ease: "easeOut" },
     },
   };
 
