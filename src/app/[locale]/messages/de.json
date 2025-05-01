@@ -172,7 +172,7 @@
     "submit": "Absenden"
   },
   "Calendly": {
-    "schedule": "Erstgespräch buchen",
+    "schedule": "Erstgespräch",
     "features1": "Inklusive Paket Pro Leistungen",
     "features2": "Webentwicklung, Logo & Print Design",
     "features3": "Affiliate Marketing",
@@ -336,7 +336,7 @@
         "features": [
           "Planung Strategie",
           "Content Produktion",
-          "Branding",
+          "Texterstellung",
           "Reporting",
           " ",
           ""
@@ -347,10 +347,10 @@
         "price": "899",
         "features": [
           "Inkl. Paket Basic",
+          "Soc. Med. Kampagnen",
+          "KI Publication",
           "Fotoshooting",
-          "Videoshooting",
-          "Social Media Kampagnen",
-          "KI Publication"
+          "Werbefilm"
         ]
       },
       "Business": {
@@ -359,15 +359,14 @@
         "features": [
           "Inkl. Paket Pro",
           "Webentwicklung, Logo & Print Design",
-          "Du definierst deine Leistungen und wir liefern.",
-          ""
+          "Du definierst deine Leistungen und wir liefern."
         ]
       }
     },
     "recommended": "Meist",
     "recommended2": "gebucht",
     "month": "mtl",
-    "duration": "12 Monate Betreuung",
+    "duration": "12 Monate Veröffentlichung",
     "footerText": "Inkl. Dashboard & Reporting"
   },
   "Manager": {
