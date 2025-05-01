@@ -6,6 +6,8 @@ import Link from "next/link";
 import CalBtnBasic from "../CalBtnBasic";
 import CalBtnBusiness from "../CalBtnBusiness";
 import CalBtnEnterprise from "../CalBtnEnterprise";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+
 
 export const PricingItem = ({ price }: any) => {
   const t = useTranslations("Pricing");
@@ -76,7 +78,7 @@ export const PricingItem = ({ price }: any) => {
           key={index}
           className={
             isCircleBadge
-              ? "mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-r from-blue-700 to-purple-500 text-center text-md font-bold text-white shadow-lg p-4"
+              ? "mx-auto mb-4 flex h-24 w-24 border-2 border-white items-center justify-center rounded-full bg-gradient-to-r from-blue-700 to-purple-500 text-center text-md font-bold text-white shadow-lg p-4"
               : "rounded-full bg-gradient-to-r border-2 md:text-lg border-white from-indigo-600 to-purple-500 px-4 py-2 text-white shadow-lg transition-all duration-300 hover:bg-opacity-90 dark:from-indigo-500 dark:to-purple-400"
           }
         >
@@ -142,6 +144,44 @@ export const PricingItem = ({ price }: any) => {
           >
             {getFeatures(price.nickname)}
           </div>
+
+          {/* Social Icons */}
+<div className="flex justify-center gap-4 mt-6 mb-4">
+  {/* Instagram - always visible */}
+  <a
+    href="https://www.instagram.com/webomo?igsh=cGZ0ZXdkczJ4a2l1"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-black dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition"
+  >
+    <FaInstagram size={26} />
+  </a>
+
+  {/* Facebook - visible for Pro and Business */}
+  {(price.nickname === "Unlimited" || price.nickname === "Business") && (
+    <a
+      href="https://www.facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition"
+    >
+      <FaFacebookF size={26} />
+    </a>
+  )}
+
+  {/* LinkedIn - only for Business */}
+  {price.nickname === "Business" && (
+    <a
+      href="https://www.linkedin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-black dark:text-white hover:text-sky-600 dark:hover:text-sky-400 transition"
+    >
+      <FaLinkedinIn size={26} />
+    </a>
+  )}
+</div>
+
 
           {/* Enterprise Button */}
           {price.nickname === "Enterprise" ? (
