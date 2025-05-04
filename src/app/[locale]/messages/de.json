@@ -363,6 +363,40 @@
         ]
       }
     },
+    "plans1": {
+      "Basic": {
+        "name": "Basic",
+        "price": "799",
+        "features": [
+          "Planung Strategie",
+          "Content Produktion: 106 Inhalte / 2 pro Woche",
+          "Texterstellung: Hashtags & Beschreibung zu jedem Content",
+          "Reporting",
+          " ",
+          ""
+        ]
+      },
+      "Unlimited": {
+        "name": "Pro",
+        "price": "899",
+        "features": [
+          "Inkl. Paket Basic",
+          "Soc. Med. Kampagnen",
+          "KI Publication",
+          "Social Media Kampagne",
+          "Werbefilm"
+        ]
+      },
+      "Business": {
+        "name": "Business",
+        "price": "Auf Anfrage",
+        "features": [
+          "KI Publication: Reichweitenmaximierung",
+          "Logo & Print Design",
+          "Du definierst deine Leistungen und wir liefern."
+        ]
+      }
+    },
     "recommended": "Meist",
     "recommended2": "gebucht",
     "month": "mtl",
@@ -391,7 +425,8 @@
     "Material": "Business Afffiliate Link",
     "MaterialInfo": "Intergrierung Affiliate Link",
     "Material2": "Teamaufbau Set Up",
-    "MaterialInfo2": "Coaching 12 Monate durch Webomo."
+    "MaterialInfo2": "Coaching 12 Monate durch Webomo.",
+    "PaymentInfo": "jährliche Zahlung"
   },
   "CookieConsent": {
     "message": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern.",

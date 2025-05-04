@@ -189,6 +189,8 @@ const Affiliate = () => {
         </div>
       </li> */}
     </ul>
+    <small className="text-center text-white">*{t("PaymentInfo")}</small>
+
   </div>
 </div>
 

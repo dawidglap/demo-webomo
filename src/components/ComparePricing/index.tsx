@@ -24,42 +24,42 @@ const ComparePricing = () => {
   // Lista delle feature con indicazione di quali piani le supportano
   const features = [
     {
-      name: t("plans.Basic.features.0"),
+      name: t("plans1.Basic.features.0"),
       shortName: "Projektleitung",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
-      name: t("plans.Basic.features.1"),
+      name: t("plans1.Basic.features.1"),
       shortName: "Produktion",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
-      name: t("plans.Basic.features.2"),
+      name: t("plans1.Basic.features.2"),
       shortName: "Veröffentlichung",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
-      name: t("plans.Basic.features.3"),
+      name: t("plans1.Basic.features.3"),
       shortName: "Kanäle",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
-      name: t("plans.Unlimited.features.3"),
+      name: t("plans1.Unlimited.features.3"),
       shortName: "Fotoshooting",
       basic: false,
       pro: true,
       enterprise: true,
     },
     {
-      name: t("plans.Business.features.0"),
+      name: t("plans1.Business.features.0"),
       shortName: "Affiliate Marketing",
       basic: false,
       pro: true,
@@ -67,42 +67,36 @@ const ComparePricing = () => {
     },
 
     {
-      name: "Fotoshooting: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt",
+      name: "Fotoshooting: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt (Dauer 30 - 60 Sekunden)",
       shortName: "Fotoshooting",
       basic: false,
       pro: true,
       enterprise: true,
     },
     {
-      name: "Videoshooting: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt",
+      name: "Werbefilm: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt (Dauer 30 - 60 Sekunden)",
       shortName: "Videoshooting",
       basic: false,
       pro: true,
       enterprise: true,
     },
+  
     {
-      name: "Social Media Kampagnen: 2x Instagram Kampagne",
-      shortName: "Instagram Kampagne",
-      basic: false,
-      pro: true,
-      enterprise: true,
-    },
-    {
-      name: "Kanäle Instagram / Facebook / LinkedIn / TikTok / Youtube",
+      name: "Branding",
       shortName: "Kanäle",
       basic: false,
       pro: false,
       enterprise: true,
     },
     {
-      name: "Social Media Kampagnen: 2x Instagram / Facebook / LinkedIn / TikTok / Youtube Kampagnen",
+      name: "Webentwicklung",
       shortName: "SM Kampagnen",
       basic: false,
       pro: false,
       enterprise: true,
     },
     {
-      name: t("plans.Business.features.1"),
+      name: t("plans1.Business.features.1"),
       shortName: "Social Media Kampagnen",
       basic: false,
       pro: false,
@@ -125,19 +119,19 @@ const ComparePricing = () => {
           <div className="col-span-3 flex items-center justify-center md:col-span-2">
             <span className="mr-2 h-2 w-2 rounded-full bg-gray-500 md:h-3 md:w-3"></span>
             <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
-              {t("plans.Basic.name")}
+              {t("plans1.Basic.name")}
             </span>
           </div>
           <div className="col-span-3 flex items-center justify-center md:col-span-2">
             <span className="mr-2 h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400 md:h-3 md:w-3"></span>
             <span className="text-sm font-semibold text-gray-700 dark:text-gray-300  md:text-xl">
-              {t("plans.Unlimited.name")}
+              {t("plans1.Unlimited.name")}
             </span>
           </div>
           <div className="col-span-3 flex items-center justify-center md:col-span-2">
             <span className="mr-2 h-2 w-2 rounded-full bg-green-600 dark:bg-green-400 md:h-3 md:w-3"></span>
             <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
-              {t("plans.Business.name")}
+              {t("plans1.Business.name")}
             </span>
           </div>
           {/* </div> */}
