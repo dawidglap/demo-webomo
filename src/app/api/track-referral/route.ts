@@ -22,21 +22,21 @@ export async function POST(req: NextRequest) {
         const ip =
             req.headers.get("x-forwarded-for") || req.headers.get("host") || "unknown";
         const now = new Date();
-        const tenSecondsAgo = new Date(now.getTime() - 10_000);
+        const cutoff = new Date(now.getTime() - 250); // 250 ms fa
 
-        // 🔒 Check for duplicates in the last 10 seconds
+        // 🔒 Verifica doppione negli ultimi 250ms
         const existing = await collection.findOne({
             userId: new ObjectId(userId),
             ip,
-            timestamp: { $gte: tenSecondsAgo },
+            timestamp: { $gte: cutoff },
         });
 
         if (existing) {
-            console.log("⚠️ Duplicate click ignored (last 10s)");
+            console.log("⚠️ Duplicate click ignored (last 250ms)");
             return NextResponse.json({ success: true, duplicate: true });
         }
 
-        // ✅ Save new click
+        // ✅ Salva nuovo click
         const result = await collection.insertOne({
             userId: new ObjectId(userId),
             timestamp: now,
