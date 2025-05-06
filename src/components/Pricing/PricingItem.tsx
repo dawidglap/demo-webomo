@@ -146,41 +146,28 @@ export const PricingItem = ({ price }: any) => {
           </div>
 
           {/* Social Icons */}
+{/* Social Icons */}
 <div className="flex justify-center gap-4 mt-6 mb-4">
   {/* Instagram - always visible */}
-  <a
-    href="https://www.instagram.com/webomo?igsh=cGZ0ZXdkczJ4a2l1"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-black dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition"
-  >
+  <span className="text-black dark:text-white">
     <FaInstagram size={26} />
-  </a>
+  </span>
 
   {/* Facebook - visible for Pro and Business */}
   {(price.nickname === "Unlimited" || price.nickname === "Business") && (
-    <a
-      href="https://www.facebook.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition"
-    >
+    <span className="text-black dark:text-white">
       <FaFacebookF size={26} />
-    </a>
+    </span>
   )}
 
   {/* LinkedIn - only for Business */}
   {price.nickname === "Business" && (
-    <a
-      href="https://www.linkedin.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-black dark:text-white hover:text-sky-600 dark:hover:text-sky-400 transition"
-    >
+    <span className="text-black dark:text-white">
       <FaLinkedinIn size={26} />
-    </a>
+    </span>
   )}
 </div>
+
 
 
           {/* Enterprise Button */}

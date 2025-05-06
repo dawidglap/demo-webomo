@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import { CheckCircle, MinusCircle, Info } from "lucide-react";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+
 import { truncate } from "fs";
 
 const ComparePricing = () => {
@@ -113,29 +115,55 @@ const ComparePricing = () => {
       </h2> */}
 
         {/* Legenda sopra la tabella */}
-        <div className=" grid grid-cols-12 items-center border-b border-gray-200 py-4 dark:border-gray-700">
-          {/* <div className="mb-6 flex justify-end gap-4"> */}
-          <div className="col-span-3 md:col-span-6 "></div>
-          <div className="col-span-3 flex items-center justify-center md:col-span-2">
-            <span className="mr-2 h-2 w-2 rounded-full bg-gray-500 md:h-3 md:w-3"></span>
-            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
-              {t("plans1.Basic.name")}
-            </span>
-          </div>
-          <div className="col-span-3 flex items-center justify-center md:col-span-2">
-            <span className="mr-2 h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400 md:h-3 md:w-3"></span>
-            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300  md:text-xl">
-              {t("plans1.Unlimited.name")}
-            </span>
-          </div>
-          <div className="col-span-3 flex items-center justify-center md:col-span-2">
-            <span className="mr-2 h-2 w-2 rounded-full bg-green-600 dark:bg-green-400 md:h-3 md:w-3"></span>
-            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
-              {t("plans1.Business.name")}
-            </span>
-          </div>
-          {/* </div> */}
-        </div>
+        <div className="grid grid-cols-12 items-center border-b border-gray-200 py-4 dark:border-gray-700">
+  <div className="col-span-3 md:col-span-6"></div>
+
+  {/* Basic */}
+  <div className="col-span-3 flex flex-col items-center justify-center md:col-span-2">
+   
+    <div className="flex items-center justify-center">
+      <span className="mr-2 h-2 w-2 rounded-full bg-gray-500 md:h-3 md:w-3"></span>
+      <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
+        {t("plans1.Basic.name")}
+      </span>
+    </div>
+    <div className="mt-2 flex gap-2 mb-1 text-neutral-500 dark:text-white">
+      <FaInstagram size={20} />
+    </div>
+  </div>
+
+  {/* Unlimited */}
+  <div className="col-span-3 flex flex-col items-center justify-center md:col-span-2">
+   
+    <div className="flex items-center justify-center">
+      <span className="mr-2 h-2 w-2 rounded-full bg-indigo-600 dark:bg-indigo-400 md:h-3 md:w-3"></span>
+      <span className="text-sm font-semibold text-gray-700 dark:text-gray-300  md:text-xl">
+        {t("plans1.Unlimited.name")}
+      </span>
+    </div>
+    <div className="mt-2 flex gap-2 mb-1 text-neutral-500 dark:text-white">
+      <FaInstagram size={20} />
+      <FaFacebookF size={20} />
+    </div>
+  </div>
+
+  {/* Business */}
+  <div className="col-span-3 flex flex-col items-center justify-center md:col-span-2">
+   
+    <div className="flex items-center justify-center">
+      <span className="mr-2 h-2 w-2 rounded-full bg-green-600 dark:bg-green-400 md:h-3 md:w-3"></span>
+      <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 md:text-xl">
+        {t("plans1.Business.name")}
+      </span>
+    </div>
+    <div className="mt-2 flex gap-2 mb-1 text-neutral-500 dark:text-white">
+      <FaInstagram size={20} />
+      <FaFacebookF size={20} />
+      <FaLinkedinIn size={20} />
+    </div>
+  </div>
+</div>
+
 
         {/* Lista delle features */}
         <div className="w-full">
