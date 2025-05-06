@@ -319,7 +319,8 @@ const Affiliate = () => {
     }}
     className="mt-1 mr-2 h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500 dark:border-gray-600 dark:bg-gray-700"
   />
-  <label htmlFor="acceptedTerms" className="text-sm text-gray-700 dark:text-gray-300">
+   <label htmlFor="acceptedTerms" className="text-sm text-gray-700 dark:text-gray-300">
+  {t("acceptTermsStart")}{" "}
   <a
     href="/terms-and-conditions"
     target="_blank"
@@ -337,6 +338,9 @@ const Affiliate = () => {
   >
     {t("acceptTermsPrivacy")}
   </a>
+  .
+
+
   </label>
 </div>
 {errors.acceptedTerms && (
