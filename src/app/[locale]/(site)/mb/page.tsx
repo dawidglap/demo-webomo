@@ -149,7 +149,7 @@ const Affiliate = () => {
       Markenbotschafter
     </h3>
     <p className="mb-2 text-2xl font-light text-white dark:text-white">
-      CHF 79.- <span className="text-lg font-medium">{t("year")}</span>
+      CHF 99.- <span className="text-lg font-medium">{t("year")}</span>
     </p>
     <p className="mb-6 text-xl font-bold text-white dark:text-gray-300">
       {t("duration")} 
