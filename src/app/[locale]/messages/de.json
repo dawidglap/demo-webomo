@@ -405,7 +405,10 @@
   },
   "Manager": {
     "manager": "Business Partner",
-    "acceptTerms": "Ich akzeptiere die Nutzungsbedingungen und die Datenschutzerklärung.",
+    "acceptTermsStart": "Ich akzeptiere die",
+    "acceptTermsAgbs": "AGBs",
+    "acceptTermsAnd": "und die",
+    "acceptTermsPrivacy": "Datenschutzerklärung",
     "year": "monatlich",
     "duration": "12 Monate Betreuung",
     "months": "Monate",

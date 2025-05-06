@@ -444,8 +444,29 @@ const ManagerPackage = () => {
     }}
     className="mt-1 mr-2 h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500 dark:border-gray-600 dark:bg-gray-700"
   />
+  
   <label htmlFor="acceptedTerms" className="text-sm text-gray-700 dark:text-gray-300">
-    {t("acceptTerms")}
+  {t("acceptTermsStart")}{" "}
+  <a
+    href="/terms-and-conditions"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:text-indigo-600"
+  >
+    {t("acceptTermsAgbs")}
+  </a>{" "}
+  {t("acceptTermsAnd")}{" "}
+  <a
+    href="/privacy-policy"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:text-indigo-600"
+  >
+    {t("acceptTermsPrivacy")}
+  </a>
+  .
+
+
   </label>
 </div>
 {errors.acceptedTerms && (
