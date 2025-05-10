@@ -128,7 +128,7 @@ const ManagerPackage = () => {
       );
 
       setTimeout(() => {
-        router.push("https://buy.stripe.com/14k9Eufu71SJgJabIM");
+        router.push("https://buy.stripe.com/dR617Ygybcxn0Kc3cj");
       }, 3000);
     } catch (error) {
       console.error("Failed to send form data:", error);
