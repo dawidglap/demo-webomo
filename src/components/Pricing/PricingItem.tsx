@@ -6,7 +6,7 @@ import Link from "next/link";
 import CalBtnBasic from "../CalBtnBasic";
 import CalBtnBusiness from "../CalBtnBusiness";
 import CalBtnEnterprise from "../CalBtnEnterprise";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTiktok, FaYoutube } from "react-icons/fa";
 
 
 export const PricingItem = ({ price }: any) => {
@@ -165,6 +165,22 @@ export const PricingItem = ({ price }: any) => {
     <span className="text-black dark:text-white">
       <FaLinkedinIn size={26} />
     </span>
+    
+    
+  )}
+    {price.nickname === "Business" && (
+    <span className="text-black dark:text-white">
+      <FaTiktok size={26} />
+    </span>
+    
+    
+  )}
+    {price.nickname === "Business" && (
+    <span className="text-black dark:text-white">
+      <FaYoutube size={26} />
+    </span>
+    
+    
   )}
 </div>
 

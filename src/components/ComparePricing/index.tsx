@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import { CheckCircle, MinusCircle, Info } from "lucide-react";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTiktok, FaYoutube } from "react-icons/fa";
 
 import { truncate } from "fs";
 
@@ -69,14 +69,14 @@ const ComparePricing = () => {
     },
 
     {
-      name: "Fotoshooting: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt (Dauer 30 - 60 Sekunden)",
+      name: "Call to Action: Verlinkung auf Webseite / Formular / Landingpage / App",
       shortName: "Fotoshooting",
       basic: false,
       pro: true,
       enterprise: true,
     },
     {
-      name: "Werbefilm: 1x Firma / Büro / Mitarbeiter / Kunden / Showroom / Gebäude / Produkt (Dauer 30 - 60 Sekunden)",
+      name: "Werbevideos: Promovideos / Imagevideos / KI Videos (Dauer 15 - 30 Sekunden)",
       shortName: "Videoshooting",
       basic: false,
       pro: true,
@@ -160,6 +160,8 @@ const ComparePricing = () => {
       <FaInstagram size={20} />
       <FaFacebookF size={20} />
       <FaLinkedinIn size={20} />
+      <FaTiktok size={20} />
+      <FaYoutube size={20} />
     </div>
   </div>
 </div>

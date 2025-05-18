@@ -242,7 +242,7 @@
     "faqBusiness10Details": "Für die Nutzung des Dashboards und der damit verbundenen Funktionen, wie die Verwaltung von Affiliate-Again und Affiliate-Business Links, ist jedoch der Erwerb einer entsprechenden Lizenz erforderlich. Vereinbare ein kostenloses Gespräch, um herauszufinden, welche Lizenzvariante optimal zu deinem Bedarf passt."
   },
   "Footer": {
-    "companyDescription": "Wir helfen dir deinen Umsatz mit KI -Branding zu steigern und deine Ziele zu erreichen",
+    "companyDescription": "Wir helfen dir deinen Umsatz mit KI -Marketing zu steigern und deine Ziele zu erreichen",
     "followUs": "Folge uns",
     "company": "Unternehmen",
     "aboutUs": "Über uns",
@@ -332,7 +332,7 @@
     "plans": {
       "Basic": {
         "name": "Basic",
-        "price": "799",
+        "price": "299",
         "features": [
           "Planung Strategie",
           "Content Produktion",
@@ -344,7 +344,7 @@
       },
       "Unlimited": {
         "name": "Pro",
-        "price": "899",
+        "price": "399",
         "features": [
           "Inkl. Paket Basic",
           "Soc. Med. Kampagnen",
@@ -366,7 +366,7 @@
     "plans1": {
       "Basic": {
         "name": "Basic",
-        "price": "799",
+        "price": "299",
         "features": [
           "Planung Strategie",
           "Content Produktion: 106 Inhalte / 2 pro Woche",
@@ -378,7 +378,7 @@
       },
       "Unlimited": {
         "name": "Pro",
-        "price": "899",
+        "price": "399",
         "features": [
           "Inkl. Paket Basic",
           "Soc. Med. Kampagnen",
