@@ -39,7 +39,6 @@ export const PricingItem = ({ price }: any) => {
         t("plans.Unlimited.features.1"),
         t("plans.Unlimited.features.2"),
         t("plans.Unlimited.features.3"),
-        t("plans.Unlimited.features.4"),
 
       ],
       Business: [
