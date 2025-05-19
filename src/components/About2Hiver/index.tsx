@@ -39,8 +39,6 @@ const About2Hiver = () => {
   };
 
   return (
-    <div className="w-full overflow-x-hidden">
-
     <motion.section
       ref={sectionRef}
       id="about"
@@ -50,7 +48,7 @@ const About2Hiver = () => {
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1120px]">
-        <div className="-mx-4 flex flex-wrap items-center justify-between flex-col-reverse lg:flex-row">
+        <div className="-mx-4 flex flex-col-reverse flex-wrap items-center justify-between lg:flex-row">
           {/* Left Section (Text Section) */}
           <motion.div
             ref={textRef}
@@ -75,12 +73,12 @@ const About2Hiver = () => {
 
           {/* Right Section (Image) */}
           <motion.div
-            className="mb-10  w-full px-4 pt-8 xxs:block lg:mb-0 lg:w-1/2 md:pb-8"
+            className="mb-10 w-full px-4 pt-8 xxs:block lg:mb-0 lg:w-1/2 md:pb-8"
             initial="hidden"
             animate={sectionInView ? "visible" : "hidden"}
             variants={sectionVariants}
           >
-            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px]  shadow-xl lg:ms-auto">
+            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-xl lg:ms-auto">
               {/* Light mode */}
               <Image
                 src="/images/hiver/magnet.webp"
@@ -104,7 +102,6 @@ const About2Hiver = () => {
         </div>
       </div>
     </motion.section>
-    </div>
   );
 };
 

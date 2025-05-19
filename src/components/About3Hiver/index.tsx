@@ -2,10 +2,8 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { CompareDemo } from "@/components/CompareDiamond";
-
 
 const About3Hiver = () => {
   const t = useTranslations("About3Hiver");
@@ -40,35 +38,32 @@ const About3Hiver = () => {
   };
 
   return (
-    <div className="w-full overflow-x-hidden">
-
     <motion.section
       ref={sectionRef}
       id="about"
-      className="relative mb-[100px] pt-16 md:pt-[150px]"
+      className="relative pt-16 md:pt-[150px] mb-[100px]"
       initial="hidden"
       animate={sectionInView ? "visible" : "hidden"}
       variants={sectionVariants}
     >
       <div className="container lg:max-w-[1120px]">
-        <div className="md:-mx-4 flex flex-wrap items-center justify-between">
+        <div className="-mx-4 flex flex-col-reverse flex-wrap items-center justify-between lg:flex-row">
           {/* Left Section (Image) */}
           <motion.div
-  className="mb-10 md:ms-4 w-full px-0  xxs:block lg:mb-0 lg:w-1/2"
-  initial="hidden"
-  animate={sectionInView ? "visible" : "hidden"}
-  variants={sectionVariants}
->
-  <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
-    <CompareDemo />
-  </div>
-</motion.div>
-
+            className="mb-10 w-full px-4 xxs:block lg:mb-0 lg:w-1/2"
+            initial="hidden"
+            animate={sectionInView ? "visible" : "hidden"}
+            variants={sectionVariants}
+          >
+            <div className="relative mx-auto h-auto w-full max-w-[470px] overflow-hidden rounded-[30px] shadow-2xl lg:mx-0">
+              <CompareDemo />
+            </div>
+          </motion.div>
 
           {/* Right Section (Text) */}
           <motion.div
             ref={textRef}
-            className="w-full  px-0 md:px-4 lg:ml-auto lg:w-1/2 lg:max-w-[510px]"
+            className="w-full px-4 lg:ml-auto lg:w-1/2 lg:max-w-[510px]"
             initial="hidden"
             animate={sectionInView ? "visible" : "hidden"}
             variants={sectionVariants}
@@ -89,7 +84,6 @@ const About3Hiver = () => {
         </div>
       </div>
     </motion.section>
-    </div>
   );
 };
 
