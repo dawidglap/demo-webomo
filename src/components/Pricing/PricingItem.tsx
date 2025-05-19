@@ -213,8 +213,8 @@ export const PricingItem = ({ price }: any) => {
   <Link
     href={
       price.nickname === "Basic"
-        ? "https://buy.stripe.com/00gaIyfu79lbcsU000"
-        : "https://buy.stripe.com/bIYeYO6XBfJzfF6bIJ"
+        ? "https://buy.stripe.com/3cIfZi6JBbaagTT4SE2kw0b"
+        : "https://buy.stripe.com/9B614o8RJfqq333acY2kw0c"
     }
     className="block w-full rounded-full border border-black bg-white px-8 py-3 text-center text-base font-medium text-black transition-all hover:bg-black hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-900 dark:hover:text-white"
   >
