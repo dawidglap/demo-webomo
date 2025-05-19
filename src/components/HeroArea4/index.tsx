@@ -5,6 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
+
 
 const Hero4 = () => {
   const t = useTranslations("Hero3");
@@ -89,6 +91,21 @@ const Hero4 = () => {
           className="w-full max-w-sm rounded-md border-b-8 border-black px-10  sm:max-w-md md:max-w-xl lg:max-w-xl xl:max-w-2xl"
         />
       </motion.div>
+      {/* Social Icons */}
+<motion.div
+  className="mt-12 flex items-center justify-center gap-6"
+  variants={sectionVariants}
+  initial="hidden"
+  animate="visible"
+  transition={{ delay: 0.8 }}
+>
+  <FaFacebook size={26} className="text-gray-700 dark:text-gray-300  " />
+  <FaInstagram size={26} className="text-gray-700 dark:text-gray-300  " />
+  <FaLinkedin size={26} className="text-gray-700 dark:text-gray-300  " />
+  <FaTiktok size={26} className="text-gray-700 dark:text-gray-300   " />
+  <FaYoutube size={26} className="text-gray-700 dark:text-gray-300  " />
+</motion.div>
+
     </section>
     </div>
   );
