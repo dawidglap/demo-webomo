@@ -64,10 +64,10 @@ const Hero4 = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        <p className="md:mt-20 mt-10 text-3xl font-bold text-black dark:text-white md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-5xl 3xl:text-7xl">
+        <p className="md:mt-20 mt-10 text-3xl font-bold text-black dark:text-white md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-5xl 3xl:text-5xl">
           {t("mainText")}
         </p>
-        <p className=" bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text p-2 text-center text-3xl font-bold leading-none text-transparent md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl 3xl:text-7xl">
+        <p className=" bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text p-2 text-center text-3xl font-bold leading-none text-transparent md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl 3xl:text-5xl">
           {t("subHeadline")}
         </p>
         <p className="md:text-md pb-0 text-xl text-black dark:text-white lg:text-lg xl:text-lg 2xl:text-2xl 3xl:mt-4 3xl:text-4xl">
