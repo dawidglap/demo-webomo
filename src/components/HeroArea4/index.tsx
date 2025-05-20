@@ -64,7 +64,7 @@ const Hero4 = () => {
         animate="visible"
         transition={{ delay: 0.5 }}
       >
-        <p className="mt-10 text-3xl font-bold text-black dark:text-white md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-5xl 3xl:text-7xl">
+        <p className="md:mt-20 mt-10 text-3xl font-bold text-black dark:text-white md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-5xl 3xl:text-7xl">
           {t("mainText")}
         </p>
         <p className=" bg-gradient-to-br from-[#410cd9] to-[#f68efe] bg-clip-text p-2 text-center text-3xl font-bold leading-none text-transparent md:text-lg lg:text-xl xl:text-2xl 2xl:text-5xl 3xl:text-7xl">
@@ -73,6 +73,10 @@ const Hero4 = () => {
         <p className="md:text-md pb-0 text-xl text-black dark:text-white lg:text-lg xl:text-lg 2xl:text-2xl 3xl:mt-4 3xl:text-4xl">
           {t("subText")}
         </p>
+        <div className="mt-2 inline-block rounded-full border-2 border-black px-4 py-1 text-sm font-semibold text-black dark:text-white dark:border-white">
+  {t("badge")}
+</div>
+
       </motion.div>
 
       {/* Hero Image */}
