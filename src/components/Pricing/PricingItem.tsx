@@ -119,21 +119,25 @@ export const PricingItem = ({ price }: any) => {
           )}
 
           {/* Price */}
-          {price.nickname !== "Enterprise" && (
-            <>
-              <p className="mb-2 text-3xl font-bold text-black dark:text-white">
-                {t(`plans.${price.nickname}.price`)}
-                {price.nickname !== "Business" && (
-                  <>
-                    .- <span className="text-lg">/ {t("month")}</span>
-                  </>
-                )}
-              </p>
-              <p className="text-sm text-gray-700 dark:text-gray-300">
-                {t("duration")}
-              </p>
-            </>
-          )}
+        {price.nickname !== "Enterprise" && (
+  <>
+    <p className="mb-2 text-3xl font-bold text-black dark:text-white">
+      {t(`plans.${price.nickname}.price`)}
+      {price.nickname !== "Business" && (
+        <>
+          .- <span className="text-lg">/ {t("month")}</span>
+        </>
+      )}
+    </p>
+  </>
+)}
+
+{price.nickname === "Business" && (
+  <p className="text-sm text-gray-700 dark:text-gray-300">
+    {t("duration")}
+  </p>
+)}
+
 
           {/* Features */}
           <div

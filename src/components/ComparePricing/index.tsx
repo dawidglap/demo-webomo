@@ -82,7 +82,13 @@ const ComparePricing = () => {
       pro: true,
       enterprise: true,
     },
-  
+   {
+      name: "Veröffentlichung durch Webomo",
+      shortName: "Kanäle",
+      basic: false,
+      pro: false,
+      enterprise: true,
+    },
     {
       name: "Branding",
       shortName: "Kanäle",
@@ -90,6 +96,7 @@ const ComparePricing = () => {
       pro: false,
       enterprise: true,
     },
+   
     {
       name: "Webentwicklung",
       shortName: "SM Kampagnen",
@@ -128,7 +135,8 @@ const ComparePricing = () => {
       </span>
     </div>
     <div className="mt-2 flex gap-2 mb-1 text-neutral-500 dark:text-white">
-      <FaInstagram size={20} />
+              <FaInstagram className="w-3 h-3 md:w-5 md:h-5" />
+
     </div>
   </div>
 
@@ -142,8 +150,10 @@ const ComparePricing = () => {
       </span>
     </div>
     <div className="mt-2 flex gap-2 mb-1 text-neutral-500 dark:text-white">
-      <FaInstagram size={20} />
-      <FaFacebookF size={20} />
+        <FaInstagram className="w-3 h-3 md:w-5 md:h-5" />
+
+        <FaFacebookF className="w-3 h-3 md:w-5 md:h-5" />
+
     </div>
   </div>
 
@@ -156,13 +166,14 @@ const ComparePricing = () => {
         {t("plans1.Business.name")}
       </span>
     </div>
-    <div className="mt-2 flex gap-2 mb-1 text-neutral-500 dark:text-white">
-      <FaInstagram size={20} />
-      <FaFacebookF size={20} />
-      <FaLinkedinIn size={20} />
-      <FaTiktok size={20} />
-      <FaYoutube size={20} />
-    </div>
+   <div className="mt-2 flex gap-2 mb-1 text-neutral-500 dark:text-white">
+  <FaInstagram className="w-3 h-3 md:w-5 md:h-5" />
+  <FaFacebookF className="w-3 h-3 md:w-5 md:h-5" />
+  <FaLinkedinIn className="w-3 h-3 md:w-5 md:h-5" />
+  <FaTiktok className="w-3 h-3 md:w-5 md:h-5" />
+  <FaYoutube className="w-3 h-3 md:w-5 md:h-5" />
+</div>
+
   </div>
 </div>
 
