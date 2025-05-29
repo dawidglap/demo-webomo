@@ -11,8 +11,8 @@ import DarkModeSwitcher from "@/components/Header/DarkModeSwitcher";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import LangSwitcher from "../Language";
 import Image from "next/image";
-import LogoBlack from "../../../public/images/logo/logo_black.png";
-import LogoWhite from "../../../public/images/logo/logo_white.png";
+import LogoBlack from "../../../public/images/logo/logo_black_new.png";
+import LogoWhite from "../../../public/images/logo/logo_white_new.png";
 import CalBtnHeaderMobile from "../CalBtnHeaderMobile";
 import CalBtnHeaderDesktop from "../CalBtnHeaderDesktop";
 
