@@ -27,42 +27,42 @@ const ComparePricing = () => {
   const features = [
     {
       name: t("plans1.Basic.features.0"),
-      shortName: "Projektleitung",
+      shortName: "Planung Strategie",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
       name: t("plans1.Basic.features.1"),
-      shortName: "Produktion",
+      shortName: "Content Produktion",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
       name: t("plans1.Basic.features.2"),
-      shortName: "Veröffentlichung",
+      shortName: "Texterstellung",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
       name: t("plans1.Basic.features.3"),
-      shortName: "Kanäle",
+      shortName: "Reporting",
       basic: true,
       pro: true,
       enterprise: true,
     },
     {
       name: t("plans1.Unlimited.features.3"),
-      shortName: "Fotoshooting",
+      shortName: "Social Media Kampagne",
       basic: false,
       pro: true,
       enterprise: true,
     },
     {
       name: t("plans1.Business.features.0"),
-      shortName: "Affiliate Marketing",
+      shortName: "KI Publication",
       basic: false,
       pro: true,
       enterprise: true,
@@ -70,28 +70,28 @@ const ComparePricing = () => {
 
     {
       name: "Call to Action: Verlinkung auf Webseite / Formular / Landingpage / App",
-      shortName: "Fotoshooting",
+      shortName: "Call to Action",
       basic: false,
       pro: true,
       enterprise: true,
     },
     {
       name: "Werbevideos: Promovideos / Imagevideos / KI Videos (Dauer 15 - 30 Sekunden)",
-      shortName: "Videoshooting",
+      shortName: "Werbevideos",
       basic: false,
       pro: true,
       enterprise: true,
     },
    {
       name: "Veröffentlichung durch Webomo",
-      shortName: "Kanäle",
+      shortName: "Veröffentlichung durch Webomo",
       basic: false,
       pro: false,
       enterprise: true,
     },
     {
       name: "Branding",
-      shortName: "Kanäle",
+      shortName: "Branding",
       basic: false,
       pro: false,
       enterprise: true,
@@ -99,14 +99,14 @@ const ComparePricing = () => {
    
     {
       name: "Webentwicklung",
-      shortName: "SM Kampagnen",
+      shortName: "Webentwicklung",
       basic: false,
       pro: false,
       enterprise: true,
     },
     {
       name: t("plans1.Business.features.1"),
-      shortName: "Social Media Kampagnen",
+      shortName: "Logo & Print Design",
       basic: false,
       pro: false,
       enterprise: true,
@@ -193,15 +193,15 @@ const ComparePricing = () => {
                   onClick={() => handleTooltip(index)}
                 >
                   {feature.shortName}
-                  <Info className="h-4 w-4 text-gray-500 dark:text-gray-400" />
+                  {/* <Info className="h-4 w-4 text-gray-500 dark:text-gray-400" /> */}
                 </span>
 
                 {/* Tooltip */}
-                {activeTooltip === index && (
+                {/* {activeTooltip === index && (
                   <div className="absolute left-0 z-50 mt-2 w-56 rounded-2xl border border-gray-300 bg-white p-2 text-sm shadow-lg dark:border-gray-700 dark:bg-gray-800">
                     {feature.name}
                   </div>
-                )}
+                )} */}
               </div>
 
               {/* Basic Plan */}
