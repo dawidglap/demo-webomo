@@ -11,7 +11,7 @@
     },
     "session": {
       "signOut": "Sign Out",
-      "login": "Log In"
+      "login": "Sign In"
     }
   },
   "About": {
@@ -20,312 +20,428 @@
     "posts": "Posts",
     "stories": "Stories",
     "title": "Stories & Posts",
-    "description": "We create captivating Stories and Posts on a cinematic and Hollywood level that perfectly showcase your brand. Webomo handles the complete content creation and publishing on your social media channels – weekly for the next 12 months.",
-    "learnMore": "Learn More"
+    "description": "We create captivating stories and posts at cinema and Hollywood level that showcase your brand perfectly. Webomo takes care of the complete content creation and publication on your social media channels – delivered weekly for the next 12 months.",
+    "learnMore": "Book a demo call"
+  },
+  "AboutHiver": {
+    "weekly": "Weekly",
+    "reels": "Reels",
+    "posts": "Posts",
+    "stories": "Stories",
+    "title": "Stand Out from the Crowd",
+    "description": "Ensure your brand perception is unique and distinguishes you from all others. Use creative marketing strategies and authentic stories to forge an emotional connection with your target audience. By continuously introducing innovations and listening to customer feedback, you can further strengthen your brand and preserve its uniqueness.",
+    "learnMore": "Book a demo call"
   },
   "About2": {
-    "title": "Photoshoots",
+    "title": "Shooting",
     "description": {
-      "part1": "We conduct a",
+      "part1": "In a",
       "bold": " full-day",
-      "part2": " photoshoot to create a comprehensive selection of visuals for your social media channels. Whether it's for services, products, properties, or much more, we ensure your brand is presented effectively and purposefully."
+      "part2": " photo shoot, we create a comprehensive selection of visuals for your social media channels. Whether it's services, products, objects, or much more, we ensure your brand is presented effectively and purposefully."
     },
-    "learnMore": "Learn More",
+    "learnMore": "Learn more",
     "cardTitle": "Showroom",
-    "cardSubtitle": "Personalized shoots at your location.",
-    "imageAlt": "Photoshoot Image"
+    "cardSubtitle": "Custom on-site shooting.",
+    "imageAlt": "Shooting image"
+  },
+  "About2Hiver": {
+    "title": "Win Your Target Audience",
+    "description": "Reach and win your target audience by communicating your message effectively. Use engaging content and creative approaches to pique your audience's interest. Clear and authentic communication also fosters trust and loyalty to your brand.",
+    "learnMore": "Book a demo call",
+    "cardTitle": "Showroom",
+    "cardSubtitle": "Custom on-site shooting.",
+    "imageAlt": "Shooting image"
   },
   "About3": {
-    "title": "Videos",
+    "title": "Promotional Videos",
     "description": {
-      "part1": "A full-day video shoot where we capture footage of your company – facilities – interviews – customer feedback and much more. We deliver shots in",
-      "bold": "Cinema Quality",
-      "part2": " that authentically and impressively present your brand."
+      "part1": "A full-day video shoot where we capture footage of your company – premises – interviews – customer feedback, and much more. We deliver footage in",
+      "bold": " cinema quality",
+      "part2": " that presents your brand authentically and impressively."
     },
-    "learnMore": "Learn More"
+    "learnMore": "Learn more"
+  },
+  "About3Hiver": {
+    "title": "Customers Pay Higher Prices",
+    "description": "Let your customers feel the added value of your brand so they willingly invest in higher prices. By offering them a unique experience and excellent service, you create an emotional bond. This makes price a secondary concern, while the quality and benefits of your products take center stage.",
+    "learnMore": "Book a demo call"
   },
   "AboutWebsite": {
     "title": "Website Development",
-    "description": "From the initial idea to the launch, we are by your side to showcase your brand in the best digital light. With responsive design, fast loading times, and a user experience that convinces, we create sustainable online experiences. Utilizing the latest technologies ensures your website remains state-of-the-art and future-proof. Together, we turn your digital vision into reality.",
-    "learnMore": "Learn More",
+    "description": "From the initial idea to go-live, we stand by your side to showcase your brand in the best digital light. With responsive design, lightning-fast load times, and a user experience that convinces, we create sustainable online experiences. Thanks to the latest technologies, your website remains not only state-of-the-art but also future-proof. Together, we make your digital vision a reality.",
+    "learnMore": "Learn more",
     "cardTitle": "Custom Solutions",
-    "cardSubtitle": "Creative, powerful, and always one step ahead.",
-    "imageAlt": "Web Development Image"
+    "cardSubtitle": "Creative, powerful, and always one click ahead.",
+    "imageAlt": "Web development image"
+  },
+  "AboutPrint": {
+    "title": "Print and Graphic Design",
+    "description": "We offer tailor-made print solutions, from high-quality brochures to custom-designed promotional materials. Our graphic design includes the creative development of logos, corporate identities, and marketing collateral that visually strengthen your brand. With our expertise, we professionally implement your ideas and ensure a strong visual presence.",
+    "learnMore": "Learn more",
+    "cardTitle": "Custom Solutions",
+    "cardSubtitle": "Creative, powerful, and always one click ahead.",
+    "imageAlt": "Web development image"
   },
   "AboutBusinessOne": {
     "title": "Join Our Community.",
-    "description": "Whether you're a content creator, coach, or a regular Instagram user, Webomo offers everyone the chance to succeed and earn money. Position yourself in our community now, earn commissions, and experience the flexibility of future work.",
-    "learnMore": "Learn More",
-    "imageAlt": "About Us Image",
+    "description": "Whether you're a content creator, coach, or an Instagram user. At Webomo, we offer everyone the chance to succeed and earn money. Position yourself in our community now to earn commissions and experience the flexibility of future work.",
+    "learnMore": "Learn more",
+    "imageAlt": "About us image",
     "subHeadline": "Post, recommend & earn money",
-"subHeadlinedescription": "Earning money has never been so easy."
-
+    "subHeadlinedescription": "Earning money has never been easier."
   },
   "AboutBusinessTwo": {
-    "title": "Your Success is Our Priority",
-    "description": "We support you with resources and client acquisition to generate as many customers as possible. Our resources and support help you grow your team or portfolio. You receive creative marketing templates and your own dashboard with detailed performance metrics.",
-    "learnMore": "Learn More",
-    "imageAlt": "About Us Image"
+    "title": "Your Success Is Our Priority",
+    "description": "We support you with resources and acquisitions to help you generate as many customers as possible. Our resources and support are designed to help you grow your team or portfolio. You receive creative marketing templates from us and your own dashboard with detailed performance metrics.",
+    "learnMore": "Learn more",
+    "imageAlt": "About us image"
   },
   "AboutBusinessThree": {
-    "title": "Videos",
-    "description": "Webomo Incentives takes you to the most beautiful places in the world. Start with an exciting team-building adventure in majestic mountains, where you and your colleagues tackle thrilling challenges, enhancing your teamwork skills and creating unforgettable memories. Then, continue to exotic coastal cities where you experience the local culture, enjoy delicious cuisine, and relax in a luxurious beach resort. While at these stunning locations, you'll not only have fun but also feel inspired and motivated to achieve your goals, both professionally and personally.",
-    "learnMore": "Learn More",
+    "title": "Webomo Incentives",
+    "description": "Webomo Incentives take you to the most beautiful places in the world. You experience team-building adventures in the mountains and then relax in luxurious coastal cities, where you enjoy culture, delicious cuisine, and unforgettable moments – all to inspire you to achieve your goals.",
+    "learnMore": "Learn more",
     "videoSrc": "/images/about/drone-video1.mp4"
   },
   "AboutEnd": {
     "mainTitle": "One Goal: Your Success",
     "title": "Achieve More with Webomo",
     "description": {
-      "part1": "We amplify emotions within your target audience. Your content, including images, videos, and posts, is created in",
-      "bold": "Hollywood Cinema Quality",
-      "part2": ". Your product and service campaigns are on another level."
+      "part1": "We amplify emotions in your target audience. Your content such as images, videos, and content is created in",
+      "bold": " Hollywood cinema quality",
+      "part2": " . Your product & service campaigns are on another level."
     },
-    "cta": "Get Started",
+    "cta": "Book your initial consultation",
     "videoSrc": "/images/about/about-end.mp4",
-    "frameAlt": "Mobile Frame",
-    "popcornAlt": "Popcorn Image"
+    "frameAlt": "Mobile frame",
+    "popcornAlt": "Popcorn image"
   },
   "Clients": {
-    "heading": "These Brands Trust Webomo"
+    "heading": "These brands trust Webomo"
   },
   "HeroAboutUs": {
     "title": "Our Vision",
-    "subHeadline": "Your Success",
-    "mission": "Webomo is an AI-powered marketing agency specializing in creating high-quality social media content. Our focus is on providing long-term support to businesses through professional 12-month management. With tailored strategies, we help our clients increase brand awareness and build a stronger presence on digital platforms. Our innovative AI technology enables us to deliver effective, data-driven content that directly targets audiences. Webomo's main goal: To sustainably increase our clients' revenue and fully unlock their growth potential.",
+    "subHeadline": "Your Long-Term Success",
+    "mission": "Webomo is an AI-powered marketing agency specializing in creating high-quality social media content. Our focus is providing companies with professional 12-month support for sustainable growth. With customized strategies, we help our clients increase brand awareness and build a stronger presence on digital platforms. Our innovative AI technology enables us to deliver effective, data-driven content tailored directly to target audiences. Webomo's primary goal: to sustainably increase our clients' revenue and fully exploit their growth potential.",
     "cta": "Join our team!"
   },
   "WhoWeAre": {
-    "title": "More than just a team",
-    "smallTeamTitle": "Small team, BIG impact",
-    "smallTeamDescription": "At Webomo, we focus on quality over quantity – in our work and our team. With agility, innovation, and passion, we are fully committed to maximizing your success.",
+    "title": "More Than Just a Team",
+    "smallTeamTitle": "Small Team, BIG Impact",
+    "smallTeamDescription": "At Webomo, we prioritize quality over quantity – in both our work and our team. With agility, innovation, and passion, we focus entirely on maximizing your success.",
     "growthTitle": "Remarkable Growth",
-    "growthDescription": "Founded in 2022, Webomo is profitable and already helping over 200 businesses unlock their full potential. With a solid foundation and great ambition, we are building a healthy, dynamically growing company that inspires success.",
+    "growthDescription": "Founded in 2023, Webomo is profitable and already helps over 200 businesses unlock their full potential. With a solid foundation and great ambition, we are building a healthy, dynamically growing company that inspires and succeeds.",
     "trustedTitle": "Trusted by Leaders",
-    "trustedDescription": "Webomo is supported by industry experts: advisors like AI pioneer Yann LeCun, the renowned accelerator Y-Combinator, and experienced venture capitalist Nico Wittenborn."
+    "trustedDescription": "Leaders of other companies value collaborating with Webomo because we offer clear visions and creative solutions that build trust and foster sustainable growth and shared success."
   },
   "OurValues": {
     "title": "Our Values",
     "candidFeedbackTitle": "Candid Feedback",
-    "candidFeedbackDescription": "At Webomo, we value honest and thoughtful feedback to challenge the status quo. It's our key to continuously improving not only our work but also our processes.",
+    "candidFeedbackDescription": "At Webomo, we value honest and thoughtful feedback to challenge the status quo. It is our key to not only improving our work but also our processes continuously.",
     "shipFastTitle": "Ship Fast to Learn",
-    "shipFastDescription": "At Webomo, we prioritize progress over perfection. Our focus on quick implementation allows us to learn early and improve continuously.",
+    "shipFastDescription": "At Webomo, we prioritize progress over perfection. Our focus on rapid execution enables us to learn early and continuously improve.",
     "buildItTitle": "Build It, Own It",
-    "buildItDescription": "At Webomo, we are all trusted experts who take pride in our craft. We value follow-through and making a real impact on our users – no matter what role we take on.",
-    "stayOpenTitle": "Stay Open",
-    "stayOpenDescription": "At Webomo, we are always open to new ideas and promote a culture of transparency. We work together and share our knowledge to continuously grow and innovate."
+    "buildItDescription": "At Webomo, we are all trusted experts proud of our craft. We place great value on consistency and making a real impact on our users – regardless of the role we take on.",
+    "stayOpenTitle": "Stay Open to New Ideas",
+    "stayOpenDescription": "At Webomo, we are always open to new ideas and foster a culture of transparency. We work together and share our knowledge to grow and innovate continuously."
   },
-"Contact": {
-  "headline": "Choose your free",
-    "subHeadline": "Contact option",
-  "description": "We listen to you carefully and provide valuable insights to help you achieve your goals efficiently.",
-  "form": {
-    "title": "Contact Us via E-Mail",
-    "titleEmail": "",
-    "namePlaceholder": "Enter your name",
-    "emailPlaceholder": "Enter your email address",
-    "messagePlaceholder": "Tell us something about yourself",
-    "submitting": "Sending your message...",
-    "successMessage": "Thank you! Your message has been sent successfully. We’ll get back to you shortly.",
-    "errorMessage": "Oops! Something went wrong. Please try again later."
+  "Contact": {
+    "headline": "Free",
+    "subHeadline": "Consultation Call",
+    "title": "free",
+    "description": "We listen attentively and provide valuable insights to achieve your goals efficiently.",
+    "form": {
+      "title": "Contact us via",
+      "titleEmail": "Email",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email address",
+      "messagePlaceholder": "Tell us about yourself",
+      "submitting": "Your message is being sent...",
+      "successMessage": "Thank you! Your message was sent successfully. We'll be in touch shortly.",
+      "errorMessage": "Sorry! Something went wrong. Please try again later."
+    },
+    "bookCall": {
+      "title": "Video Call",
+      "title2": "Schedule",
+      "title3": "One Goal - Your Success",
+      "subtitle": "Let's work together to make your vision a reality.",
+      "button": "Schedule Now",
+      "contactText": "Prefer another way to get in touch?",
+      "orFaq": "or check our FAQs",
+      "thankYou": "Thank you! We look forward to meeting you and taking your business to the next level."
+    },
+    "submit": "Submit"
   },
-  "bookCall": {
-    "title": "Schedule",
-    "title2": "a Video Call",
-    "subtitle": "Let's work together to bring your vision to life.",
-    "button": "Schedule Now",
-    "contactText": "Do you prefer to contact us in a different way?",
-    "orFaq": "or check our FAQ",
-    "thankYou": "Thank you! We look forward to meeting you and taking your business to the next level."
-  },
-  "submit": "Submit"
-},
   "Calendly": {
-    "schedule": "Schedule time with us"
+    "schedule": "Initial Consultation",
+    "features1": "Includes Pro Package Services",
+    "features2": "Web Development, Logo & Print Design",
+    "features3": "Affiliate Marketing",
+    "features4": "You define your services"
   },
   "Cta": {
-    "title": "Elevate Your Social Media with Webomo",
+    "title": "Take Your Social Media to the Next Level with Webomo",
     "description": "Join Webomo's expert-led social media services and start building a strong online presence. From strategy to engagement – we have the tools to help you grow.",
     "getStarted": "Get Started",
     "bookCall": "Book a Call",
-    "ctaImageAlt": "CTA Image"
+    "ctaImageAlt": "CTA image"
   },
   "CtaBusiness": {
-    "headlineHighlight": "Webomo-Business",
+    "headlineHighlight": "Webomo Business",
     "headline": "Become a Partner",
-    "buttonText": "Start Earning Now"
+    "buttonText": "Book a Consultation"
   },
   "ExtraFeatures": {
-    "title": "Additionally, You Get",
-    "stat1": "Managed Social Media Profiles",
-    "stat2": "Published Posts",
-    "stat3": "Follower Growth in the First Year",
-    "feature1": "Your Own Dashboard",
-    "feature2": "Regular Reporting",
-    "feature3": "Custom Affiliate Marketing"
+    "title": "Additionally, you get from us",
+    "stat1": "Clients Served",
+    "stat2": "Posts Published",
+    "stat3": "More Revenue",
+    "feature1": "Your own dashboard",
+    "feature2": "Regular reporting",
+    "feature3": "Custom affiliate marketing"
   },
   "FAQ": {
     "heading": "Frequently Asked Questions",
-    "description": "Have questions? Find answers to the most common questions about our products and services.",
+    "description": "Have questions? Here you'll find answers to the most common questions about our products and services.",
     "faq1Title": "What is Webomo?",
-    "faq1Details": "Webomo is a marketing AI tool that also operates as a professional marketing agency. It helps businesses and individuals maximize their reach. Combining AI tools with personal expert support, Webomo ensures efficiency and creativity in perfect harmony.",
+    "faq1Details": "Webomo is a marketing AI tool that simultaneously acts as a professional marketing agency. It helps businesses and individuals maximize their reach. By combining AI tools with personal expert support, Webomo brings efficiency and creativity into perfect harmony.",
     "faq2Title": "How does Webomo work?",
-    "faq2Details": "Webomo revolutionizes content creation by generating creative video posts, stories, and more for social media channels like Instagram, Facebook, LinkedIn, YouTube, and TikTok. With automated publishing over 12 months and comprehensive reporting metrics, it optimizes reach and engagement.",
-    "faq3Title": "How are the contents created?",
-    "faq3Details": "Content is created through individual photoshoots and video recordings directly at the clients' locations. The material is fed into AI, which then produces expressive content. Direct contact with the client ensures strategies are implemented authentically and vibrantly.",
+    "faq2Details": "Webomo revolutionizes content creation by producing creative video posts, stories, and more for social media channels like Instagram, Facebook, LinkedIn, YouTube, and TikTok. With automated publishing over 12 months and comprehensive reporting metrics, it optimizes reach and engagement.",
+    "faq3Title": "How is content created?",
+    "faq3Details": "Content is created through individual photo shoots and video recordings directly on-site with clients. The material is fed into an AI that then generates expressive content. Direct client contact ensures strategies are implemented authentically and vibrantly.",
     "faq4Title": "Who can use Webomo?",
-    "faq4Details": "Webomo can be used by businesses and individuals looking to expand their customer base, increase brand awareness, or boost sales. It is suitable for both small businesses and large brands aiming to improve their visibility and reach.",
-    "faq5Title": "What benefits and advantages does Webomo offer?",
-    "faq5Details": "Webomo saves valuable time, reduces costs, and provides precise insights through AI-driven analytics. With tailored strategies, Webomo enables significant revenue growth and long-term success for businesses.",
+    "faq4Details": "Webomo can be used by businesses and individuals looking to expand their customer base, increase brand awareness, or boost revenue. It's suitable for both small companies and large brands aiming to improve their visibility and reach.",
+    "faq5Title": "What benefits & value does Webomo provide?",
+    "faq5Details": "Webomo saves valuable time, reduces costs, and delivers precise insights through AI-driven analytics. With tailored strategies, Webomo enables a significant revenue increase and long-term success for businesses.",
     "faq6Title": "Why is Webomo so popular among businesses and individuals?",
-    "faq6Details": "Webomo offers a unique opportunity to increase reach through affiliate marketing. Its international approach opens doors in local and global markets, creating the ideal environment for success – whether for startups or established brands.",
-    "faq7Title": "Why does Webomo use subscription models?",
-    "faq7Details": "Webomo offers flexible subscription models that can be tailored to individual needs. Customers benefit from automatic updates and new features that stay up-to-date without additional effort. This reduces complexity and marketing costs."
+    "faq6Details": "Webomo offers a unique opportunity to increase reach through affiliate marketing. The international approach opens doors to local and global markets and creates the ideal environment for success – whether for startups or established brands.",
+    "faq7Title": "Why does Webomo work with subscription models?",
+    "faq7Details": "Webomo offers flexible subscription models that adapt to individual needs. Customers benefit from automatic updates and new features that stay up-to-date without additional effort. This reduces complexity and costs in marketing."
   },
   "FaqBusiness": {
     "heading": "Frequently Asked Questions",
-    "description": "Have questions? Find answers to the most common questions about the Webomo Business Partner Program.",
-    "faqBusiness1Title": "What is the Webomo Business Program?",
-    "faqBusiness1Details": "The Webomo Business Program is an Affiliate-Again Marketing Tool. You can generate recurring income through referrals. It is designed for individuals looking to earn money with today's marketing tools and build a second income stream.",
-    "faqBusiness2Title": "How does the Webomo Business Program work?",
-    "faqBusiness2Details": "After successful registration, you receive an Affiliate-Again link with content for publishing in your own dashboard. Once a week, you publish the content on your account either as a post or a campaign.",
+    "description": "Have questions? Here you’ll find answers to the most common questions about the Webomo-Business partner program.",
+    "faqBusiness1Title": "What is the Webomo-Business Program?",
+    "faqBusiness1Details": "The Webomo-Business Program is an affiliate marketing tool. You can generate recurring income by making referrals. It’s designed for people who want to earn money with today’s marketing tools and build a second source of income.",
+    "faqBusiness2Title": "How does the Webomo-Business Program work?",
+    "faqBusiness2Details": "After you register successfully, you’ll get an affiliate link and ready-to-share content in your personal dashboard. Once a week, you post the content on your account as either a post or a campaign.",
     "faqBusiness3Title": "What are the requirements?",
-    "faqBusiness3Details": "You only need an active Instagram account with at least 100 followers.",
-    "faqBusiness4Title": "Can I use the Webomo Business Program from any country?",
-    "faqBusiness4Details": "No. The Webomo Business Partner Program is available to individuals based in Switzerland, Germany, Liechtenstein, Austria, Italy, and France.",
+    "faqBusiness3Details": "You must be at least 18 years old and have at least 100 Instagram followers.",
+    "faqBusiness4Title": "Can I use the Webomo-Business Program from any country?",
+    "faqBusiness4Details": "No. The Webomo-Business Program is available only to residents of Switzerland, Germany, Liechtenstein, Austria, Italy, and France.",
     "faqBusiness5Title": "What guidelines must I follow?",
-    "faqBusiness5Details": "By successfully registering, you automatically agree to the guidelines of the Webomo Business Partner Program. This includes publishing the content provided by Webomo once a week on your Instagram account.",
-    "faqBusiness6Title": "What does 'Building My Webomo Team' mean?",
-    "faqBusiness6Details": "With Webomo Business, you can build your own team and increase your earnings. Webomo provides you with the opportunity to recruit participants for the Webomo Business Partner Program using an Affiliate-Business link, allowing you to build your team. All participants registered through your Affiliate-Business link fall under your referral, generating recommendations for you.",
-    "faqBusiness7Title": "How can I earn money with Webomo Business?",
-    "faqBusiness7Details": "By publishing weekly, you generate referrals for our services. Once a customer books a package (Basic, Pro, or Business) with Webomo, you earn commissions.",
-    "faqBusiness8Title": "How much money can I earn with the Webomo Business Partner Program?",
-    "faqBusiness8Details": "You receive commissions for package bookings: Basic annually CHF 500, Pro annually CHF 700, Business annually CHF 1,000. The larger your team, the greater your potential annual earnings.",
-    "faqBusiness9Title": "How are commissions paid out?",
-    "faqBusiness9Details": "Your commissions are paid out on the 30th of the following month to your bank account or credit card. Please note that commissions are paid in CHF (Swiss Francs) regardless of your region/country.",
-    "faqBusiness10Title": "Is participation in the Webomo Business Partner Program free?",
-    "faqBusiness10Details": "Registration for the Webomo Business Program is free. However, using the dashboard for Affiliate-Again and Affiliate-Business links is subject to fees. Learn in a free consultation which option is right for you."
+    "faqBusiness5Details": "By registering, you agree to the Webomo-Business Program guidelines. You must publish the provided content on your Instagram account once a week and hold a valid license to participate and access the tool.",
+    "faqBusiness6Title": "What does “link Business link” mean?",
+    "faqBusiness6Details": "As a Webomo Business Partner, you can link new users to your Business link. This increases your potential annual earnings. Linked users appear in your personal dashboard.",
+    "faqBusiness7Title": "How can I earn money with Webomo-Business?",
+    "faqBusiness7Details": "By selling packages (Basic, Pro, or Business) and licenses. As a Business Partner, you receive a unique link for sharing our services, and earn commissions on every successful package or license sale.",
+    "faqBusiness8Title": "How much are the commissions for packages and licenses?",
+    "faqBusiness8Details": "You earn an annual commission of CHF 1,000 for each package sold—regardless of Basic, Pro, or Business. Additionally, you can sell the Webomo-Business tool license and earn CHF 300 per license sold each year via your link.",
+    "faqBusiness9Title": "When are commissions paid out?",
+    "faqBusiness9Details": "Commissions are paid on the 30th of the following month, to your bank account or credit card. All payments are made in CHF (Swiss francs), regardless of your country.",
+    "faqBusiness10Title": "Is the Webomo-Business Program free?",
+    "faqBusiness10Details": "Access to the dashboard and related features (managing Affiliate-Again and Affiliate-Business links) requires a license purchase. Schedule a free call to find the license option that best fits your needs."
   },
   "Footer": {
-    "companyDescription": "We help you increase your revenue with AI branding and achieve your goals",
-    "followUs": "Follow Us",
+    "companyDescription": "We help you boost revenue with AI-powered marketing and achieve your goals",
+    "followUs": "Follow us",
     "company": "Company",
     "aboutUs": "About Us",
-    "jobs": "Careers",
+    "jobs": "Jobs",
     "privacyPolicy": "Privacy Policy",
     "imprint": "Imprint",
     "termsAndConditions": "Terms & Conditions",
-    "webomoBusiness": "Webomo Business",
+    "webomoBusiness": "webomo-business",
     "partnerProgram": "Partner Program",
-    "faqPartnerProgram": "Partner Program FAQs",
+    "faqPartnerProgram": "Partner Program FAQ",
     "help": "Help",
-    "faq": "FAQs",
+    "faq": "FAQ",
     "contact": "Contact",
     "email": "Email",
     "phone": "Phone",
     "contactUs": "Contact Us",
-    "copyright": "Copyright © 2024 - webomo.ch",
+    "copyright": "Copyright © 2024 – webomo.ch",
     "allRightsReserved": "All rights reserved."
   },
+  "Hiver3": {
+    "title": "Why is AI Marketing & Branding the Key to Your Success?",
+    "description": "Increase your brand’s awareness and market position, and win customers who invest in outstanding quality.",
+    "hiver": {
+      "leftTitle": "Stand Out from the Crowd",
+      "centerTitle": "Win Your Target Audience",
+      "rightTitle": "Customers Pay Premium Prices",
+      "left": "Ensure your brand is perceived as unique and sets you apart from competitors.",
+      "center": "Reach and win your audience by communicating your message with impact.",
+      "right": "Let customers feel your brand’s value so they willingly pay higher prices."
+    }
+  },
+  "Hiver6": {
+    "title": "Are You Facing Any of These Challenges?",
+    "description": "",
+    "leftTitle1": "Acquiring Customers",
+    "left1": "Do you win customers mainly through personal contacts or enthusiastic referrals?",
+    "leftTitle2": "Increasing Revenue",
+    "left2": "Is your business struggling to stand out on Google and reach more people?",
+    "centerTitle1": "Finding Employees",
+    "center1": "Are you having trouble finding the right employees to grow your business?",
+    "centerTitle2": "Building Trust",
+    "center2": "Are potential customers dropping off because they don’t trust your offering?",
+    "rightTitle1": "Brand Awareness",
+    "right1": "Are the customers you want to reach not even aware of your brand?",
+    "rightTitle2": "Photo & Video Content",
+    "right2": "Do you need high-quality content that aligns perfectly with your brand strategy?"
+  },
   "Hero": {
-    "subtitle": "Anytime, Anywhere",
-    "centerText": "Present",
-    "mobileFrame": "Mobile Frame",
-      "mainText": "Your Digital Presence",
-    "subHeadline": "Content Campaigns & Management"
+    "subtitle": "Always and everywhere",
+    "centerText": "present",
+    "mobileFrame": "Mobile frame",
+    "mainText": "Your digital presence",
+    "subHeadline": "Content campaigns & support"
   },
   "Hero3": {
-    "subtitleAlt": "Anytime, Anywhere",
-    "mainText": "Discover",
-    "subText": "One Goal - Your Success",
-    "leftMobileAlt": "Left Smartphone Screen",
-    "centerMobileAlt": "Center Smartphone Screen",
-    "rightMobileAlt": "Right Smartphone Screen",
-    "subHeadline": "AI-powered marketing"
+    "subtitleAlt": "Always and everywhere",
+    "mainText": "Boost your revenue",
+    "subText": "One goal – Your success",
+    "leftMobileAlt": "Left smartphone screen",
+    "centerMobileAlt": "Center smartphone screen",
+    "rightMobileAlt": "Right smartphone screen",
+    "subHeadline": "with AI-powered marketing",
+    "badge": "Every week"
   },
   "HeroBusiness": {
-    "subtitleAlt": "Anytime, Anywhere",
+    "subtitleAlt": "Always and everywhere",
     "mainText": "Webomo",
     "mainTextSpan": "-Business",
-    "subText": "A Tool - Your Success",
-    "smartphoneAlt": "Webomo-Business Smartphone Screen"
+    "subText": "One tool – Your success",
+    "smartphoneAlt": "Webomo-Business smartphone screen"
   },
   "Mission": {
     "title": "What We Do",
-    "description": "We offer a unique portfolio of services, from social media campaigns and content marketing to professional photoshoots, cinema-quality video productions, web development, and customized strategies. Our goal is to take your brand to the next level."
+    "description": "We offer a unique portfolio of services—from social media campaigns and content marketing to professional photoshoots, Hollywood-quality video production, web development, and tailored strategies. Our goal is to elevate your brand to the next level."
+  },
+  "TitleAboutHiver": {
+    "title": "Branding Is the Key to Success.",
+    "description": "Boost your brand’s awareness and market position, and attract customers who invest in quality."
   },
   "Pricing": {
-    "title": "Find the",
-    "titleCompare": "Compare our plans",
-    "subHeadline": "right plan",
-    "description":"Tailored Social Media Packages for Every Stage of Your Business", 
-    "choosePlan": "Choose",
-    "checkoutNow": "Book Now",
-    "payLaterDescription": "Book your plan today and make the payment stress-free.",
+    "title": "Ready?",
+    "titleCompare": "Compare Our Packages",
+    "subHeadline": "Choose a package.",
+    "description": "Get noticed. Increase revenue. Secure success.",
+    "choosePlan": "Book a demo",
+    "payLaterDescription": "Book your package today and pay stress-free later.",
+    "checkoutNow": "Book now",
     "plans": {
       "Basic": {
         "name": "Basic",
-        "price": "799",
-     "features": [
-  "Project management: Content consulting & administration 1x per year via video call or on-site",
-  "Production: 53 contents including text & image editing (Stories, Posts, and Reels)",
-  "Publication: 12 months / 1x per week by Webomo",
-  "Channels: Instagram",
-  " ",
-  ""
-]
+        "price": "299",
+        "features": [
+          "Strategy planning",
+          "Content creation",
+          "Copywriting",
+          "Reporting",
+          "",
+          ""
+        ]
       },
       "Unlimited": {
         "name": "Pro",
-        "price": "899",
-      "features": [
-  "Project Management: Content Consulting & Administration",
-  "Production: 106 contents (Stories and Posts)",
-  "Publication: 1x per week by Webomo",
-  "Channels: Instagram / Facebook / LinkedIn / YouTube",
-  "Photoshoot: e.g., employees, office, workshop, studio, details, showroom, etc.",
-  "Video: 1 promotional film (max. 60 seconds) planning, filming, editing, and customization",
-  "Social Media Campaigns: 1 campaign incl. planning concept & implementation"
-]
-
+        "price": "399",
+        "features": [
+          "Includes Basic package",
+          "Campaigns",
+          "AI publishing",
+          "Promotional videos"
+        ]
       },
       "Business": {
-        "name": "Enterprise",
+        "name": "Business",
         "price": "On request",
-       "features": [
-  "Including Pro Package Services",
-  "Web Development",
-  "Affiliate Marketing",
-  "Logo & Print Design",
-  "You define your services",
-  "Tell us what you want and to what extent - we will develop and implement it.",
-  "Social Media Campaigns: Included"
-]
-
+        "features": [
+          "Includes Pro package",
+          "Web, logo & print design",
+          "You define services, we deliver"
+        ]
       }
     },
-    "recommended": "Recommended",
-    "month": "Month",
-    "duration": "12 Months Support",
-    "footerText": "Includes Dashboard & Reporting"
+    "plans1": {
+      "Basic": {
+        "name": "Basic",
+        "price": "299",
+        "features": [
+          "Strategy planning",
+          "Content creation: 106 items (2/week)",
+          "Copywriting: hashtags & captions",
+          "Reporting",
+          "",
+          ""
+        ]
+      },
+      "Unlimited": {
+        "name": "Pro",
+        "price": "399",
+        "features": [
+          "Includes Basic package",
+          "Social media campaigns",
+          "AI publishing",
+          "Social media blitz",
+          "Promo video"
+        ]
+      },
+      "Business": {
+        "name": "Business",
+        "price": "On request",
+        "features": [
+          "AI publishing: reach max",
+          "Logo & print design",
+          "You define services, we deliver"
+        ]
+      }
+    },
+    "recommended": "Most",
+    "recommended2": "booked",
+    "month": "mo",
+    "duration": "12 months publishing",
+    "footerText": "Includes dashboard & reporting"
   },
   "Manager": {
-    "title": "Package Manager",
+    "manager": "Business Partner",
+    "acceptTermsStart": "I accept the",
+    "acceptTermsAgbs": "Terms & Conditions",
+    "acceptTermsAnd": "and the",
+    "acceptTermsPrivacy": "Privacy Policy",
+    "year": "monthly",
+    "duration": "12 months support",
+    "months": "months",
+    "title": "Business Partner Package",
     "name": "First Name",
     "surname": "Last Name",
-    "birthday": "Date of Birth",
-    "email": "Email",
+    "birthday": "Birthdate",
+    "email": "E-mail",
     "platformSelection": "Social Media Channels",
-    "platformInstruction": "Choose a social media channel on which you want to publish your affiliate marketing.",
+    "platformInstruction": "Select a social media channel to publish your affiliate marketing on.",
     "paymentMethod": "Payment Method",
-    "paymentMethodSubtitle": "Choose the payment method you prefer"
+    "paymentMethodSubtitle": "Choose your preferred payment method",
+    "Dashboard": "Dashboard",
+    "DashboardInfo": "Install your login details.",
+    "Coaching": "1-year content",
+    "CoachingInfo": "Upload and install content.",
+    "Material": "Business Affiliate Link",
+    "MaterialInfo": "Integrate affiliate link",
+    "Material2": "Team setup package",
+    "MaterialInfo2": "12-month coaching by Webomo.",
+    "PaymentInfo": "annual payment"
+  },
+  "CookieConsent": {
+    "message": "We use cookies to enhance your experience.",
+    "learnMore": "Learn more",
+    "accept": "Accept"
   },
   "Screens": {
     "title": "Designs for Every Industry",
-    "description": "We create impressive social media presences for every industry. Designs that spotlight your brand and captivate your target audience.",
+    "description": "We create stunning social media presence for every industry. Designs that put your brand in the spotlight and captivate your audience.",
     "selectIndustry": "Select an Industry",
     "currentlySelected": "Currently Selected",
-    "mobileFrameAlt": "Mobile Frame",
+    "mobileFrameAlt": "Mobile frame",
     "screenshotAlt": "Screenshot",
     "sectors": {
       "Food & Beverage": "Food & Beverage",
@@ -337,17 +453,17 @@
   },
   "ScreensAvantico": {
     "title": "Social Media Stories",
-    "description": "This is how your Stories, Posts, and Reels can look to captivate your audience.",
-    "mobileFrameAlt": "Smartphone Frame",
-    "storyAlt": "Story Image"
+    "description": "See how your stories, posts, and reels can look to engage your audience.",
+    "mobileFrameAlt": "Smartphone frame",
+    "storyAlt": "Story image"
   },
   "Stats": {
     "title": "Advertising for Your Business",
-    "description": "Reach more potential customers and strengthen your brand recognition with high-quality marketing images and videos.",
+    "description": "Reach more potential customers and strengthen your brand recognition with high-quality marketing images and video content.",
     "stats": {
-      "left": "Increased Visibility",
-      "center": "Enhanced Engagement",
-      "right": "Lower Marketing Costs"
+      "left": "More revenue",
+      "center": "increased engagement",
+      "right": "lower marketing costs"
     },
     "cta": "Contact us to learn more"
   },
@@ -356,24 +472,24 @@
     "subtitle": "Our clients love what we do and are happy to share their enthusiasm.",
     "reviews": [
       {
-        "quote": "Thanks to Webomo, our company finally has a strong presence on social media! The content is creative and engaging. We've received significantly more customer inquiries.",
+        "quote": "Thanks to Webomo, our company finally has a strong social media presence! The content is creative and engaging. We've received significantly more customer inquiries.",
         "authorName": "Daniel Meier",
         "authorRole": "CEO, Meier & Co."
       },
       {
-        "quote": "Working with Webomo has been a real asset to our marketing. The high-quality videos and images have helped us present our brand professionally.",
-        "authorName": "Sara Schmid",
+        "quote": "Working with Webomo was a real win for our marketing. The high-quality videos and images helped us present our brand professionally.",
+        "authorName": "Xander Schmid",
         "authorRole": "Marketing Manager, Schmid AG"
       },
       {
-        "quote": "I'm impressed with how quickly and efficiently Webomo built our social media channels. Our reach has doubled in a very short time.",
+        "quote": "I'm impressed by how quickly and efficiently Webomo built our social media channels. Our reach doubled in no time.",
         "authorName": "Lukas Müller",
         "authorRole": "Startup Founder, Innovatech"
       },
       {
-        "quote": "Webomo's creative content has taken our social media engagement to a new level. Thank you for the great service!",
+        "quote": "Webomo’s creative content has taken our social media engagement to a new level. Thank you for the great service!",
         "authorName": "Claudia Keller",
-        "authorRole": "Freelancer, Keller Design Studio"
+        "authorRole": "Freelancer, Designstudio Keller"
       }
     ]
   },
@@ -381,28 +497,28 @@
     "title": "Discover Our Services"
   },
   "Designs": {
-    "headline": "Suitable for Every",
+    "headline": "Tailored for Every",
     "subHeadline": "Industry",
-    "description": "You choose the design, and we handle the implementation and planning of your content.",
+    "description": "You choose the design, and we take care of planning and executing your content.",
     "videoError": "Video could not be loaded. Please check the format.",
-    "cta": "Get Started Now",
+    "cta": "Get Started",
     "compareHeadline": "Before & After",
-    "compareDescription": "The difference we make is clearly noticeable, as our work is characterized by outstanding quality, precision, and dedication. See for yourself with the Before and After feature."
+    "compareDescription": "The difference we make is palpable—our work stands out for its exceptional quality, precision, and dedication. See for yourself with the Before & After feature."
   },
   "WebomoBusinessOnboarding": {
     "affiliatePackageTitle": "Affiliate Package",
-    "affiliatePackageDescription": "Discover the exclusive benefits of your Webomo Affiliate Package:",
+    "affiliatePackageDescription": "Discover the exclusive benefits of your Webomo affiliate package:",
     "features": {
-      "0": "Dedicated Dashboard for Tracking",
-      "1": "Weekly Reports and Insights",
-      "2": "Personalized Support in Affiliate Marketing",
-      "3": "Access to Premium Resources",
-      "4": "24/7 Support from Our Team"
+      "0": "Dedicated tracking dashboard",
+      "1": "Weekly reports and insights",
+      "2": "Personalized affiliate marketing support",
+      "3": "Access to premium resources",
+      "4": "24/7 support from our team"
     },
-    "thankYouTitle": "Thank You for Attending the Onboarding Meeting!",
-    "thankYouDescription": "We thank you for your trust and congratulate you on joining the Webomo family. We look forward to supporting you on your journey and helping you get the most out of your affiliate program.",
-    "startNowAriaLabel": "Start Now",
-    "startNowButton": "Start Now"
+    "thankYouTitle": "Thank you for joining the onboarding meeting!",
+    "thankYouDescription": "We appreciate your trust and congratulate you on becoming part of the Webomo family. We look forward to supporting you and helping you get the most out of your affiliate program.",
+    "startNowAriaLabel": "Start now",
+    "startNowButton": "Start now"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -481,59 +597,56 @@
       "description": "The contents of this website have been created with the utmost care. However, we do not guarantee the accuracy, completeness, or timeliness of the content."
     }
   },
-  
-    "Timeline": {
-      "title": "How do we implement this?",
-      "subtitle": "Discover the five steps that will lead you to a successful partnership with WEBOMO."
+  "Timeline": {
+    "title": "How do we implement this?",
+    "subtitle": "Discover the five steps that will lead you to a successful partnership with WEBOMO."
+  },
+  "TimelineDemo": {
+    "step1": {
+      "number": "01",
+      "label": "Let's get started",
+      "title": "Book a free consultation",
+      "description": "Start your branding journey by scheduling your first consultation. We can't wait to connect with you and help reshape your brand."
     },
-    "TimelineDemo": {
-      "step1": {
-        "number": "01",
-        "label": "Let's get started",
-        "title": "Book a free consultation",
-        "description": "Start your branding journey by scheduling your first consultation. We can't wait to connect with you and help reshape your brand."
-      },
-      "step2": {
-        "number": "02",
-        "label": "What do you need?",
-        "title": "Tailored Strategy",
-        "description": "During our consultation, we will develop a customized strategy specifically designed for your business needs. Our goal is to create a clear roadmap that outlines your brand’s path to success."
-      },
-      "step3": {
-        "number": "03",
-        "label": "Time to execute",
-        "title": "Implementation",
-        "description": "Once you approve our proposal, we move into the execution phase. Together, we will implement customized branding strategies and materials to steer your brand in a new direction."
-      },
-      "step4": {
-        "number": "04",
-        "label": "Optimization",
-        "title": "Maximizing Performance",
-        "description": "We continuously strive to enhance your brand’s performance. With regular market analysis and strategic adjustments, we fine-tune our collaboration for even better results."
-      }
+    "step2": {
+      "number": "02",
+      "label": "What do you need?",
+      "title": "Tailored Strategy",
+      "description": "During our consultation, we will develop a customized strategy specifically designed for your business needs. Our goal is to create a clear roadmap that outlines your brand’s path to success."
     },
-      "CardsBusiness": {
-        "highlight": "Marketing with Impact",
-        "title": "Why is AI Marketing - Branding the Key to Your Success?",
-        "headlineHighlight": "Webomo-Business",
-        "headline": "Become a partner",
-        "subtitle": "Boost your brand’s visibility and market position to attract clients who value exceptional quality.",
-        "card1": {
-          "alt": "Unlimited income opportunities",
-          "title": "Unlimited Earning Potential",
-          "description": "There is no income cap. Every year, you build your portfolio, and your revenue grows alongside it."
-        },
-        "card2": {
-          "alt": "Recurring income",
-          "title": "Annual Revenue Instead of One-Time Gains",
-          "description": "With recurring annual revenue, you secure a stable and predictable income instead of relying on one-off payments."
-        },
-        "card3": {
-          "alt": "Freedom and flexibility",
-          "title": "More Freedom",
-          "description": "Work from anywhere and decide how much and how long you want to work. We support you in growing your team so you can gain more time for yourself."
-        }
-      }
+    "step3": {
+      "number": "03",
+      "label": "Time to execute",
+      "title": "Implementation",
+      "description": "Once you approve our proposal, we move into the execution phase. Together, we will implement customized branding strategies and materials to steer your brand in a new direction."
+    },
+    "step4": {
+      "number": "04",
+      "label": "Optimization",
+      "title": "Maximizing Performance",
+      "description": "We continuously strive to enhance your brand’s performance. With regular market analysis and strategic adjustments, we fine-tune our collaboration for even better results."
+    }
+  },
+  "CardsBusiness": {
+    "highlight": "Marketing with Impact",
+    "title": "Why is AI Marketing - Branding the Key to Your Success?",
+    "headlineHighlight": "Webomo-Business",
+    "headline": "Become a partner",
+    "subtitle": "Boost your brand’s visibility and market position to attract clients who value exceptional quality.",
+    "card1": {
+      "alt": "Unlimited income opportunities",
+      "title": "Unlimited Earning Potential",
+      "description": "There is no income cap. Every year, you build your portfolio, and your revenue grows alongside it."
+    },
+    "card2": {
+      "alt": "Recurring income",
+      "title": "Annual Revenue Instead of One-Time Gains",
+      "description": "With recurring annual revenue, you secure a stable and predictable income instead of relying on one-off payments."
+    },
+    "card3": {
+      "alt": "Freedom and flexibility",
+      "title": "More Freedom",
+      "description": "Work from anywhere and decide how much and how long you want to work. We support you in growing your team so you can gain more time for yourself."
+    }
+  }
 }
-
-
