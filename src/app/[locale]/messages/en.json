@@ -520,33 +520,6 @@
     "startNowAriaLabel": "Start now",
     "startNowButton": "Start now"
   },
-  "terms": {
-    "title": "Terms and Conditions",
-    "introduction": {
-      "title": "Introduction",
-      "description": "These Terms and Conditions (T&Cs) govern the use of the Webomo website (owned by Cengiz Cokickli) and all services offered on it."
-    },
-    "userResponsibilities": {
-      "title": "User Responsibilities",
-      "description": "Users agree to use the website and its content in compliance with applicable law. Prohibited actions, such as spreading malicious code, are strictly forbidden."
-    },
-    "intellectualProperty": {
-      "title": "Intellectual Property",
-      "description": "All content, trademarks, and materials on this website are the property of Webomo or its licensors and are protected by copyright laws."
-    },
-    "limitationsLiability": {
-      "title": "Limitation of Liability",
-      "description": "Webomo is not liable for indirect, incidental, or consequential damages arising from the use of the website."
-    },
-    "modifications": {
-      "title": "Modifications to T&Cs",
-      "description": "Webomo reserves the right to modify these T&Cs at any time. Changes take effect as soon as they are published on the website."
-    },
-    "governingLaw": {
-      "title": "Governing Law",
-      "description": "These T&Cs are governed by Swiss law. Disputes will be exclusively handled by Swiss courts."
-    }
-  },
   "privacy": {
     "title": "Privacy Policy",
     "title1": "General Notice",
@@ -679,6 +652,93 @@
     "description69": "We may adjust this privacy notice at any time without notice. The current version published on our website applies. If the notice is part of an agreement with you, we will inform you of changes via email or another suitable method.",
     "title70": "Questions to the Data Protection Officer",
     "description70": "If you have any questions about data protection, please write to us or contact the responsible person listed at the beginning of this privacy notice."
+  },
+  "terms": {
+    "title": "General Terms and Conditions",
+    "agreement": {
+      "title": "Agreement",
+      "description": "These General Terms and Conditions (GTC) govern the contractual relationship between Webomo GmbH (hereinafter 'Webomo') and its clients (hereinafter 'Client'). By placing an order, the Client agrees to these GTC."
+    },
+    "contractConditions": {
+      "title": "Contract Conditions",
+      "description": "The contract between Webomo and the Client is concluded through the written acceptance of Webomo’s offer by the Client. Any changes or additions to the contract must be made in writing."
+    },
+    "writtenForm": {
+      "title": "Written Form",
+      "description": "Deviations from the following conditions as well as amendments or additions to these GTC must be in writing and signed by both parties to be legally valid."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Webomo provides services in the field of digital marketing and design in accordance with the specifications defined in the contract. The exact scope of services is set out in a separate service document that forms part of the contract."
+    },
+    "loyaltyAndConfidentiality": {
+      "title": "Duty of Loyalty and Confidentiality",
+      "description": "Both the Client and Webomo commit to mutual loyalty and to maintaining business confidentiality. Both parties are obliged to treat all information received during the collaboration as confidential and not disclose it to third parties."
+    },
+    "copyright": {
+      "title": "Copyright",
+      "description": "Copyrights for all works created by Webomo (concepts, sketches, drafts, etc.) remain with Webomo. Webomo may exercise these rights in accordance with the Swiss Federal Act on Copyright and Related Rights of October 9, 1992. The Client may not use or alter the works without Webomo’s express consent."
+    },
+    "usageRights": {
+      "title": "Usage Rights and Scope",
+      "description": "The agreed usage rights to works created by Webomo are transferred to the Client only after full payment of the fee. The permitted usage scope is defined by the purpose of the concluded contract. Unless otherwise agreed, the usage right is unlimited in time and geographically, but only within the scope of the contract’s purpose."
+    },
+    "illegalUse": {
+      "title": "Unauthorized Use",
+      "description": "Unauthorized use of a copyrighted work by Webomo obliges the Client to pay a contractual penalty of CHF 10,000.–. Webomo reserves the right to claim additional damages."
+    },
+    "warrantyAndDefectClaims": {
+      "title": "Warranty and Notification of Defects",
+      "description": "The Client is obliged to inspect the services provided by Webomo immediately upon receipt and to report any defects in writing without delay, and no later than 5 calendar days. If the Client fails to report within this period, the services are deemed approved. Webomo warrants only for defects that can be proven to result from its performance."
+    },
+    "liabilityDisclaimer": {
+      "title": "Disclaimer and Limitation of Liability",
+      "description": "Webomo is liable for direct damages only in cases of gross negligence or willful misconduct. Liability for indirect damages, loss of profit, data loss or third-party claims against the Client is expressly excluded. Webomo’s liability is limited to the amount of the agreed fee."
+    },
+    "orderReductionOrCancellation": {
+      "title": "Order Reduction or Cancellation",
+      "description": "If an order is reduced or canceled, Webomo is entitled to charge for work performed, incurred expenses, services from third parties, and compensation for damages incurred."
+    },
+    "paymentTerms": {
+      "title": "Payment Terms",
+      "description": "The subscription fee is payable annually in advance. All invoices are due within 30 days from the invoice date without deductions, unless otherwise agreed in writing."
+    },
+    "thirdPartyCosts": {
+      "title": "Third-Party Costs",
+      "description": "The Client agrees to pay all costs incurred for services provided by third parties promptly. Webomo is not liable for damages resulting from non-payment of such costs."
+    },
+    "subcontractors": {
+      "title": "Subcontractors",
+      "description": "Webomo is entitled to use subcontractors to fulfill its contractual obligations. However, Webomo remains responsible to the Client for the proper performance of the agreed services."
+    },
+    "privacyAndDataProtection": {
+      "title": "Data Protection and GDPR",
+      "description": "Webomo undertakes to comply with the provisions of the Swiss Federal Data Protection Act (FADP) and the General Data Protection Regulation (GDPR), where applicable."
+    },
+    "acceptanceOfServices": {
+      "title": "Acceptance of Services",
+      "description": "Acceptance of the services provided by Webomo takes place after project completion. The Client has 5 days to review the final result and report any defects."
+    },
+    "contractDuration": {
+      "title": "Contract Duration",
+      "description": "The subscription has a fixed term of at least 12 months and will be automatically renewed for another 12 months unless terminated in due time."
+    },
+    "termination": {
+      "title": "Termination",
+      "description": "The subscription can be terminated by either party with 4 weeks' notice before the end of the term. If not terminated in time, it will be automatically renewed for another 12 months."
+    },
+    "services2": {
+      "title": "Services",
+      "description": "These GTC and all contracts between Webomo and the Client are governed by Swiss law. The place of jurisdiction for all disputes arising from or in connection with this contract is the registered office of Webomo."
+    },
+    "governingLawAndJurisdiction": {
+      "title": "Governing Law and Jurisdiction",
+      "description": "These GTC and all contracts between Webomo and the Client are subject to Swiss law. The exclusive place of jurisdiction for all disputes arising out of or in connection with this contract is the registered office of Webomo."
+    },
+    "finalProvisions": {
+      "title": "Final Provisions",
+      "description": "If individual provisions of these GTC are or become invalid or unenforceable, the validity of the remaining provisions shall remain unaffected."
+    }
   },
   "impressum": {
     "title": "Imprint",

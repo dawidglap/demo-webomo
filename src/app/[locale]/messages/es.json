@@ -601,6 +601,93 @@
     "title39": "Herramienta de seguimiento CrazyEgg",
     "description39": "Este sitio usa CrazyEgg.com para registrar visitas seleccionadas al azar con IP anonimizadas. Usa cookies para analizar el uso (por ejemplo, clics). Solo se crean perfiles con seudónimo. Base legal: interés legítimo (Art. 6(1)(f) RGPD).\nPuede oponerse siguiendo las instrucciones del servicio. Más información en su política de privacidad."
   },
+  "terms": {
+    "title": "Conditions Générales de Vente",
+    "agreement": {
+      "title": "Accord",
+      "description": "Les présentes conditions générales de vente (CGV) régissent les relations contractuelles entre Webomo GmbH (ci-après « Webomo ») et ses clients (ci-après « le Client »). En passant commande, le Client accepte les présentes CGV."
+    },
+    "contractConditions": {
+      "title": "Conditions contractuelles",
+      "description": "Le contrat entre Webomo et le Client est conclu par l'acceptation écrite de l'offre de Webomo par le Client. Toute modification ou ajout au contrat doit être effectué par écrit."
+    },
+    "writtenForm": {
+      "title": "Forme écrite",
+      "description": "Les dérogations aux conditions suivantes, ainsi que les modifications ou ajouts aux présentes CGV, doivent être rédigés par écrit et signés par les deux parties pour être juridiquement valides."
+    },
+    "services": {
+      "title": "Prestations",
+      "description": "Webomo fournit des services dans le domaine du marketing digital et du design conformément aux spécifications définies dans le contrat. L'étendue exacte des prestations est précisée dans un document séparé faisant partie intégrante du contrat."
+    },
+    "loyaltyAndConfidentiality": {
+      "title": "Devoir de loyauté et confidentialité",
+      "description": "Le Client et Webomo s'engagent à une loyauté mutuelle et à préserver la confidentialité des informations commerciales. Les deux parties sont tenues de traiter de manière confidentielle toutes les informations obtenues dans le cadre de leur collaboration et de ne pas les divulguer à des tiers."
+    },
+    "copyright": {
+      "title": "Droits d'auteur",
+      "description": "Les droits d'auteur sur toutes les œuvres créées par Webomo (concepts, croquis, maquettes, etc.) restent la propriété de Webomo. Webomo peut en disposer conformément à la loi fédérale sur le droit d'auteur et les droits voisins du 9 octobre 1992. Le Client n’est pas autorisé à utiliser ou modifier les œuvres sans l’accord exprès de Webomo."
+    },
+    "usageRights": {
+      "title": "Droits et étendue d’utilisation",
+      "description": "Les droits d’utilisation convenus sur les œuvres créées par Webomo ne sont transférés au Client qu’après paiement intégral des honoraires. L’étendue de l’utilisation autorisée découle de l’objectif du contrat conclu. Sauf accord contraire, le droit d’utilisation est illimité dans le temps et dans l’espace, mais limité à l’usage prévu par le contrat."
+    },
+    "illegalUse": {
+      "title": "Utilisation illicite",
+      "description": "Toute utilisation illicite d’une œuvre protégée par les droits d’auteur de Webomo entraîne une pénalité contractuelle de CHF 10 000.– à la charge du Client. Webomo se réserve le droit de réclamer des dommages supplémentaires."
+    },
+    "warrantyAndDefectClaims": {
+      "title": "Garantie et réclamations",
+      "description": "Le Client doit examiner les prestations fournies par Webomo dès réception et signaler immédiatement, au plus tard dans les 5 jours calendaires, tout défaut par écrit. En l’absence de réclamation dans ce délai, les prestations sont considérées comme acceptées. Webomo garantit uniquement les défauts directement imputables à ses services."
+    },
+    "liabilityDisclaimer": {
+      "title": "Exclusion et limitation de responsabilité",
+      "description": "Webomo n’est responsable des dommages directs qu’en cas de négligence grave ou de faute intentionnelle. Toute responsabilité pour des dommages indirects, perte de bénéfices, perte de données ou réclamations de tiers est expressément exclue. La responsabilité de Webomo est limitée au montant des honoraires convenus."
+    },
+    "orderReductionOrCancellation": {
+      "title": "Réduction ou annulation de commande",
+      "description": "En cas de réduction ou d’annulation d’une commande, Webomo est en droit de facturer le travail déjà effectué, les frais engagés, les services de tiers, ainsi qu’un dédommagement pour les pertes subies."
+    },
+    "paymentTerms": {
+      "title": "Conditions de paiement",
+      "description": "Les frais d’abonnement sont à payer annuellement à l’avance. Sauf accord écrit contraire, toutes les factures sont payables sans déduction dans un délai de 30 jours à compter de la date de facturation."
+    },
+    "thirdPartyCosts": {
+      "title": "Frais de tiers",
+      "description": "Le Client s’engage à régler immédiatement tous les frais liés à des prestations de tiers. Webomo décline toute responsabilité pour les dommages résultant du non-paiement de ces frais."
+    },
+    "subcontractors": {
+      "title": "Sous-traitants",
+      "description": "Webomo est autorisée à faire appel à des sous-traitants pour remplir ses obligations contractuelles. Elle reste toutefois responsable vis-à-vis du Client de la bonne exécution des prestations convenues."
+    },
+    "privacyAndDataProtection": {
+      "title": "Protection des données et RGPD",
+      "description": "Webomo s'engage à respecter les dispositions de la Loi fédérale sur la protection des données (LPD) ainsi que du Règlement général sur la protection des données (RGPD), dans la mesure où elles sont applicables."
+    },
+    "acceptanceOfServices": {
+      "title": "Acceptation des prestations",
+      "description": "L’acceptation des prestations par le Client a lieu à la fin du projet. Le Client dispose d’un délai de 5 jours pour vérifier le résultat final et signaler d’éventuels défauts."
+    },
+    "contractDuration": {
+      "title": "Durée du contrat",
+      "description": "L’abonnement a une durée minimale de 12 mois et est renouvelé automatiquement pour 12 mois supplémentaires s’il n’est pas résilié dans les délais."
+    },
+    "termination": {
+      "title": "Résiliation",
+      "description": "L’abonnement peut être résilié par les deux parties avec un préavis de 4 semaines avant la fin de la période en cours. En l’absence de résiliation, il est reconduit automatiquement pour une nouvelle période de 12 mois."
+    },
+    "services2": {
+      "title": "Prestations",
+      "description": "Les présentes CGV ainsi que tous les contrats entre Webomo et le Client sont soumis au droit suisse. Le tribunal compétent pour tout litige est celui du siège de Webomo."
+    },
+    "governingLawAndJurisdiction": {
+      "title": "Droit applicable et juridiction",
+      "description": "Les présentes CGV ainsi que tous les contrats entre Webomo et le Client sont régis par le droit suisse. Tout litige sera soumis exclusivement aux tribunaux compétents du siège de Webomo."
+    },
+    "finalProvisions": {
+      "title": "Dispositions finales",
+      "description": "Si l'une des dispositions des présentes CGV s’avère invalide ou inapplicable, cela n’affecte en rien la validité des autres dispositions."
+    }
+  },
   "impressum": {
     "title": "Aviso legal",
     "owner": {

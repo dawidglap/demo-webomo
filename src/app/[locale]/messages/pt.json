@@ -661,6 +661,93 @@
     "title70": "Perguntas ao Encarregado de Proteção de Dados",
     "description70": "Se você tiver perguntas sobre proteção de dados, envie-nos um e-mail ou entre em contato diretamente com a pessoa responsável mencionada no início desta política."
   },
+  "terms": {
+    "title": "Termos e Condições Gerais",
+    "agreement": {
+      "title": "Acordo",
+      "description": "Estes Termos e Condições Gerais (TCG) regem as relações contratuais entre a Webomo GmbH (doravante \"Webomo\") e os seus clientes (doravante \"Cliente\"). Ao fazer um pedido, o Cliente concorda com estes TCG."
+    },
+    "contractConditions": {
+      "title": "Condições contratuais",
+      "description": "O contrato entre a Webomo e o Cliente é celebrado mediante aceitação por escrito da proposta da Webomo por parte do Cliente. Alterações ou complementos ao contrato devem ser feitos por escrito."
+    },
+    "writtenForm": {
+      "title": "Forma escrita",
+      "description": "Desvios das seguintes condições, bem como alterações ou adições a estes TCG, devem ser feitos por escrito e assinados por ambas as partes para terem validade legal."
+    },
+    "services": {
+      "title": "Serviços",
+      "description": "A Webomo presta serviços nas áreas de marketing digital e design conforme especificado no contrato. A extensão exata dos serviços é definida num documento separado, que faz parte integrante do contrato."
+    },
+    "loyaltyAndConfidentiality": {
+      "title": "Fidelidade e sigilo comercial",
+      "description": "O Cliente e a Webomo comprometem-se à lealdade mútua e à proteção dos segredos comerciais. Ambas as partes devem tratar como confidenciais todas as informações obtidas durante a colaboração e não as divulgar a terceiros."
+    },
+    "copyright": {
+      "title": "Direitos autorais",
+      "description": "Os direitos autorais de todas as obras criadas pela Webomo (conceitos, esboços, projetos, etc.) permanecem com a Webomo. A Webomo pode dispor desses direitos de acordo com a lei federal suíça de direitos autorais de 9 de outubro de 1992. O Cliente não tem o direito de utilizar ou modificar essas obras sem o consentimento expresso da Webomo."
+    },
+    "usageRights": {
+      "title": "Direitos e extensão de uso",
+      "description": "Os direitos de uso acordados sobre as obras criadas pela Webomo só são transferidos para o Cliente após o pagamento integral da remuneração. A extensão do uso permitido resulta do propósito do contrato. Salvo acordo em contrário, o direito de uso é ilimitado no tempo e território, mas restrito ao objetivo do contrato."
+    },
+    "illegalUse": {
+      "title": "Uso ilegal",
+      "description": "O uso ilegal de uma obra protegida por direitos autorais da Webomo obriga o Cliente ao pagamento de uma multa contratual no valor de CHF 10.000.–. A Webomo reserva-se o direito de exigir indemnizações adicionais."
+    },
+    "warrantyAndDefectClaims": {
+      "title": "Garantia e reclamação de defeitos",
+      "description": "O Cliente é obrigado a inspecionar imediatamente os serviços prestados pela Webomo após a receção e a reportar quaisquer defeitos por escrito, no prazo máximo de 5 dias de calendário. A não reclamação dentro do prazo implica a aceitação dos serviços. A Webomo garante apenas defeitos comprovadamente causados por suas prestações."
+    },
+    "liabilityDisclaimer": {
+      "title": "Exclusão e limitação de responsabilidade",
+      "description": "A Webomo é responsável por danos diretos apenas em casos de negligência grave ou dolo. Está excluída qualquer responsabilidade por danos indiretos, lucros cessantes, perda de dados ou reivindicações de terceiros contra o Cliente. A responsabilidade da Webomo está limitada ao valor acordado do pagamento."
+    },
+    "orderReductionOrCancellation": {
+      "title": "Redução ou cancelamento do pedido",
+      "description": "Se um pedido for reduzido ou cancelado, a Webomo tem direito a ser paga pelo trabalho já realizado, pelas despesas incorridas e pelos serviços de terceiros, bem como por qualquer dano resultante."
+    },
+    "paymentTerms": {
+      "title": "Condições de pagamento",
+      "description": "A taxa de subscrição é paga anualmente adiantado. Todas as faturas devem ser pagas no prazo de 30 dias a partir da data de emissão, sem desconto, salvo acordo escrito em contrário."
+    },
+    "thirdPartyCosts": {
+      "title": "Custos de terceiros",
+      "description": "O Cliente compromete-se a pagar imediatamente todos os custos de serviços prestados por terceiros. A Webomo não se responsabiliza por danos causados pelo não pagamento desses custos."
+    },
+    "subcontractors": {
+      "title": "Subcontratados",
+      "description": "A Webomo tem o direito de recorrer a subcontratados para cumprir as suas obrigações contratuais. No entanto, a Webomo continua responsável perante o Cliente pelo cumprimento adequado dos serviços acordados."
+    },
+    "privacyAndDataProtection": {
+      "title": "Proteção de dados e RGPD",
+      "description": "A Webomo compromete-se a cumprir a Lei Suíça de Proteção de Dados (LPD) e o Regulamento Geral sobre a Proteção de Dados (RGPD), quando aplicável."
+    },
+    "acceptanceOfServices": {
+      "title": "Aceitação dos serviços",
+      "description": "A aceitação dos serviços pelo Cliente ocorre após a conclusão do projeto. O Cliente tem 5 dias para rever o resultado final e relatar eventuais defeitos."
+    },
+    "contractDuration": {
+      "title": "Duração do contrato",
+      "description": "A assinatura tem uma duração mínima de 12 meses e renova-se automaticamente por mais 12 meses, salvo rescisão no prazo adequado."
+    },
+    "termination": {
+      "title": "Rescisão",
+      "description": "A assinatura pode ser rescindida por qualquer uma das partes com 4 semanas de antecedência ao fim do período contratual. Em caso de ausência de rescisão, renova-se automaticamente por mais 12 meses."
+    },
+    "services2": {
+      "title": "Serviços",
+      "description": "Estes TCG e todos os contratos entre a Webomo e o Cliente são regidos pela legislação suíça. O foro competente para quaisquer litígios é o domicílio da Webomo."
+    },
+    "governingLawAndJurisdiction": {
+      "title": "Lei aplicável e jurisdição",
+      "description": "Estes TCG e todos os contratos entre a Webomo e o Cliente são regidos pela legislação suíça. O foro competente para quaisquer litígios é o domicílio da Webomo."
+    },
+    "finalProvisions": {
+      "title": "Disposições finais",
+      "description": "Caso alguma disposição destes TCG seja ou se torne inválida ou inexequível, a validade das restantes disposições não será afetada."
+    }
+  },
   "impressum": {
     "title": "Impressum",
     "owner": {

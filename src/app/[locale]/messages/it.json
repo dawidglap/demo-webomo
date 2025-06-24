@@ -661,6 +661,93 @@
     "title70": "Domande al responsabile privacy",
     "description70": "Per qualsiasi domanda sulla privacy, scrivici o contatta direttamente la persona responsabile indicata all’inizio di questa informativa."
   },
+  "terms": {
+    "title": "Condizioni Generali di Contratto",
+    "agreement": {
+      "title": "Accordo",
+      "description": "Le presenti Condizioni Generali di Contratto (CGC) regolano i rapporti contrattuali tra Webomo GmbH (di seguito \"Webomo\") e i suoi clienti (di seguito \"Cliente\"). Con l'ordine, il Cliente accetta queste CGC."
+    },
+    "contractConditions": {
+      "title": "Condizioni contrattuali",
+      "description": "Il contratto tra Webomo e il Cliente si considera concluso con l'accettazione scritta dell'offerta di Webomo da parte del Cliente. Modifiche o integrazioni al contratto devono essere fatte per iscritto."
+    },
+    "writtenForm": {
+      "title": "Forma scritta",
+      "description": "Le deroghe alle seguenti condizioni, così come eventuali modifiche o integrazioni delle presenti CGC, devono essere redatte per iscritto e firmate da entrambe le parti per avere validità legale."
+    },
+    "services": {
+      "title": "Prestazioni",
+      "description": "Webomo fornisce servizi nell’ambito del marketing digitale e del design secondo le specifiche definite nel contratto. L’esatta portata delle prestazioni è definita in un documento separato che costituisce parte integrante del contratto."
+    },
+    "loyaltyAndConfidentiality": {
+      "title": "Fedeltà e segreto commerciale",
+      "description": "Il Cliente e Webomo si impegnano alla reciproca lealtà e alla tutela dei segreti aziendali. Entrambe le parti sono tenute a trattare in modo confidenziale tutte le informazioni ricevute durante la collaborazione e a non divulgarle a terzi."
+    },
+    "copyright": {
+      "title": "Diritto d'autore",
+      "description": "I diritti d’autore su tutte le opere create da Webomo (concetti, schizzi, bozze, ecc.) rimangono di proprietà di Webomo. Webomo può disporne in conformità con la legge federale sul diritto d’autore del 9 ottobre 1992. Il Cliente non è autorizzato a utilizzare o modificare tali opere senza l’esplicito consenso di Webomo."
+    },
+    "usageRights": {
+      "title": "Diritti d'uso e ambito",
+      "description": "I diritti d’uso concordati sulle opere create da Webomo vengono trasferiti al Cliente solo dopo il pagamento completo del compenso. L’ambito dell’uso consentito è definito dallo scopo del contratto. Salvo diverso accordo, il diritto d’uso è illimitato nel tempo e nello spazio, ma limitato allo scopo contrattuale."
+    },
+    "illegalUse": {
+      "title": "Uso illecito",
+      "description": "L’uso illecito di un’opera protetta da diritto d’autore di Webomo obbliga il Cliente al pagamento di una penale pari a CHF 10.000.–. Webomo si riserva il diritto di richiedere ulteriori risarcimenti."
+    },
+    "warrantyAndDefectClaims": {
+      "title": "Garanzia e reclami",
+      "description": "Il Cliente è tenuto a controllare le prestazioni fornite da Webomo immediatamente dopo la ricezione e segnalare per iscritto eventuali difetti entro 5 giorni di calendario. In assenza di reclami entro il termine indicato, le prestazioni si considerano accettate. Webomo garantisce solo i difetti provatamente attribuibili ai propri servizi."
+    },
+    "liabilityDisclaimer": {
+      "title": "Esclusione e limitazione di responsabilità",
+      "description": "Webomo risponde solo dei danni diretti causati da colpa grave o dolo. È esclusa qualsiasi responsabilità per danni indiretti, perdita di profitto, perdita di dati o pretese di terzi. La responsabilità di Webomo è limitata all’ammontare del compenso concordato."
+    },
+    "orderReductionOrCancellation": {
+      "title": "Riduzione o annullamento dell’ordine",
+      "description": "In caso di riduzione o annullamento di un ordine, Webomo ha diritto a fatturare il lavoro svolto fino a quel momento, le spese sostenute, i servizi di terzi e a ricevere un risarcimento per eventuali danni."
+    },
+    "paymentTerms": {
+      "title": "Condizioni di pagamento",
+      "description": "Il canone di abbonamento è da pagare annualmente in anticipo. Tutte le fatture sono da saldare entro 30 giorni dalla data di emissione senza alcuna detrazione, salvo diverso accordo scritto."
+    },
+    "thirdPartyCosts": {
+      "title": "Costi di terzi",
+      "description": "Il Cliente si impegna a pagare tempestivamente tutti i costi relativi a servizi di terzi. Webomo non è responsabile per danni derivanti dal mancato pagamento di tali costi."
+    },
+    "subcontractors": {
+      "title": "Subappaltatori",
+      "description": "Webomo è autorizzata ad avvalersi di subappaltatori per l’adempimento delle obbligazioni contrattuali. Tuttavia, Webomo rimane responsabile nei confronti del Cliente per la corretta esecuzione dei servizi pattuiti."
+    },
+    "privacyAndDataProtection": {
+      "title": "Protezione dei dati e GDPR",
+      "description": "Webomo si impegna a rispettare le disposizioni della Legge federale sulla protezione dei dati (LPD) e del Regolamento generale sulla protezione dei dati (GDPR), ove applicabili."
+    },
+    "acceptanceOfServices": {
+      "title": "Accettazione delle prestazioni",
+      "description": "L’accettazione delle prestazioni da parte del Cliente avviene alla conclusione del progetto. Il Cliente ha 5 giorni di tempo per esaminare il risultato finale e segnalare eventuali difetti."
+    },
+    "contractDuration": {
+      "title": "Durata del contratto",
+      "description": "L’abbonamento ha una durata minima di 12 mesi e si rinnova automaticamente per ulteriori 12 mesi, salvo disdetta nei termini previsti."
+    },
+    "termination": {
+      "title": "Disdetta",
+      "description": "L’abbonamento può essere disdetto da entrambe le parti con un preavviso di 4 settimane prima della fine del periodo contrattuale. In caso contrario, si rinnova automaticamente per ulteriori 12 mesi."
+    },
+    "services2": {
+      "title": "Prestazioni",
+      "description": "Le presenti CGC e tutti i contratti tra Webomo e il Cliente sono soggetti al diritto svizzero. Il foro competente per eventuali controversie è la sede di Webomo."
+    },
+    "governingLawAndJurisdiction": {
+      "title": "Legge applicabile e foro competente",
+      "description": "Le presenti CGC e tutti i contratti tra Webomo e il Cliente sono regolati dal diritto svizzero. Il foro competente per eventuali controversie è la sede legale di Webomo."
+    },
+    "finalProvisions": {
+      "title": "Disposizioni finali",
+      "description": "Qualora una qualsiasi clausola delle presenti CGC risultasse invalida o inapplicabile, ciò non pregiudica la validità delle restanti clausole."
+    }
+  },
   "impressum": {
     "title": "Note legali",
     "owner": {
