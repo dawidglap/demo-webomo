@@ -521,6 +521,73 @@
     "startNowButton": "Comenzar ahora"
   },
   "privacy": {
+    "title": "Política de Privacidade",
+    "title1": "Aviso Geral",
+    "description1": "Com base no Artigo 13 da Constituição Federal Suíça e nas disposições federais de proteção de dados (Lei de Proteção de Dados, LPD), toda pessoa tem direito à proteção de sua privacidade e contra o uso indevido de seus dados pessoais. Os responsáveis por este site levam a sério a proteção de seus dados pessoais. Tratamos seus dados pessoais com confidencialidade, em conformidade com as leis de proteção de dados e esta Política de Privacidade.\n\nEm colaboração com nossos provedores de hospedagem, esforçamo-nos para proteger os bancos de dados de acessos não autorizados, perdas, uso indevido ou falsificação.\n\nAlertamos que a transmissão de dados pela internet (por ex. comunicação por e‑mail) pode apresentar vulnerabilidades de segurança. A proteção completa contra acesso de terceiros não é possível.\n\nAo usar este site, você concorda com a coleta, processamento e uso dos dados conforme descrito abaixo. Este site pode ser acessado sem registro. Nesses casos, dados como páginas visitadas, nome de arquivos acessados, data e hora são armazenados no servidor para estatísticas, sem vinculação direta a pessoa. Dados pessoais, especialmente nome, endereço ou e‑mail, são coletados voluntariamente. Sem seu consentimento, não há compartilhamento com terceiros.\n\nEmbora a Webomo GmbH se esforce para garantir a exatidão das informações, não garantimos precisão, atualidade, confiabilidade ou integridade.\n\nReservamo-nos o direito de alterar, excluir ou não publicar conteúdos a qualquer momento e sem aviso.\n\nExcluem-se responsabilidades de qualquer tipo contra a Webomo GmbH por danos decorrentes do acesso, uso ou não uso das informações, uso indevido da conexão ou falhas técnicas.\n\nReferências e links para sites externos estão fora de nossa responsabilidade. Seu uso é por sua conta e risco. Não temos controle sobre design, conteúdo ou ofertas desses sites, e não assumimos qualquer responsabilidade.",
+    "title2": "Tratamento de Dados Pessoais",
+    "description2": "Dados pessoais são todas as informações relacionadas a pessoa identificada ou identificável. Pessoa afetada é aquela sobre quem os dados são processados. O tratamento inclui qualquer operação com os dados, como armazenamento, divulgação, obtenção, exclusão, modificação, destruição e uso.\nProcessamos dados pessoais de acordo com a legislação suíça e, quando aplicável, com o Regulamento Europeu (GDPR), com base nas seguintes fundamentações:\n- Consentimento (art. 6(1)(a) GDPR): a pessoa deu consentimento específico.\n- Execução de contrato/solicitação prévia (art. 6(1)(b) GDPR): o tratamento é necessário para cumprir contrato ou preparatório.\n- Obrigação legal (art. 6(1)(c) GDPR): necessário por obrigação legal.\n- Interesses vitais (art. 6(1)(d) GDPR): protege vida da pessoa ou de terceiros.\n- Interesses legítimos (art. 6(1)(f) GDPR): necessário para interesses legítimos, respeitando os direitos da pessoa.",
+    "title3": "Bases Legais Relevantes",
+    "description3": "De acordo com o art. 13 do GDPR, informamos as bases legais do tratamento. Se não indicadas especificamente, aplicam-se:\nConsentimento: art. 6(1)(a) e art. 7 GDPR\nExecução de contrato: art. 6(1)(b)\nObrigação legal: art. 6(1)(c)\nInteresses legítimos: art. 6(1)(f)\nInteresses vitais: art. 6(1)(d)",
+    "title4": "Medidas de Segurança",
+    "description4": "Adotamos medidas técnicas e organizacionais apropriadas ao estado da técnica, custos, natureza, escopo, circunstâncias e finalidades do tratamento, bem como aos riscos para direitos e liberdades das pessoas, garantindo nível adequado de proteção.\nAs medidas incluem proteção da confidencialidade, integridade e disponibilidade dos dados por controle de acesso físico e eletrônico, monitoramento de acesso, entrada, transmissão, armazenamento e separação. Também implementamos procedimentos para responder a direitos dos titulares e incidentes, incluindo exclusão de dados. Aplicamos privacy by design e privacy by default no desenvolvimento e seleção de hardware, software e processos.",
+    "title5": "Transferência de Dados Pessoais",
+    "description5": "Durante o processamento, os dados podem ser transferidos ou tornados acessíveis a entidades, empresas, unidades autônomas ou pessoas, como prestadores de serviços de TI ou provedores integrados ao site. Nestes casos, respeitamos as leis e firmamos contratos ou acordos para proteger seus dados.",
+    "title6": "Processamento em Países Terceiros",
+    "description6": "Se processarmos dados fora da UE/EEE ou utilizarmos serviços de terceiros ou transferirmos dados, fazemos isso conforme a lei.\nExceto com consentimento, contrato ou obrigação legal, transferimos dados apenas para países com nível adequado de proteção ou com cláusulas padrão da UE, certificações ou regras corporativas (art.44–49 GDPR).",
+    "title7": "Declaração sobre Cookies",
+    "description7": "Este site utiliza cookies, que são arquivos de texto com dados sobre sua visita. Servem para armazenar informações como idioma, login, carrinho ou posição de vídeo.\nTipos de cookies:\n- Temporários (sessão): excluídos ao fechar o navegador.\n- Permanentes: permanecem após fechar o navegador.\n- First‑party: definidos pelo site.\n- Third‑party: definidos por terceiros (ex. anúncios).\n- Essenciais: necessários ao funcionamento do site.\n- Estatísticos, de marketing e personalização: usados para rastreamento e perfis de usuários.\n\nTecnologias similares (p.ex. IDs anônimos) também são utilizadas.\n\n**Base legal**: se com consentimento, art. 6(1)(a); caso contrário, interesses legítimos (art. 6(1)(f)) ou obrigações contratuais.\n\n**Duração**: até 2 anos, salvo indicação em contrário.\n\n**Revogação/opt‑out**: possível via configurações do navegador ou serviços como optout.aboutads.info e youronlinechoices.com.\n\n**Gestão de consentimento**: usamos sistema para coletar, gerenciar e registrar consentimentos por até 2 anos, com ID anônimo, data, escopo, navegador, sistema e dispositivo.\n\n**Dados coletados**: uso (páginas visitadas, interesses, horários), metadados/comunicação (info do dispositivo, IP).\n\n**Titulares**: usuários (visitantes, usuários dos serviços online).\n\n**Normativa**: consentimento (art. 6(1)(a)) ou interesses legítimos (art. 6(1)(f)).",
+    "title8": "Segurança de Transmissão (sem SSL)",
+    "description8": "Dados transmitidos em redes abertas como a Internet ou e‑mail sem SSL podem ser visualizados por terceiros. Conexões não seguras usam “http://” e não mostram o cadeado no navegador. Informações podem passar por redes terceiras, inclusive em países com proteção limitada. Não garantimos confidencialidade e não assumimos responsabilidade por perdas ou manipulações. Considere usar métodos de comunicação alternativos.\n\nApesar de nossas medidas, dados podem ser interceptados fora de nosso controle. O usuário deve adotar precauções adequadas. Não somos responsáveis por perdas ou manipulações.\n\nInformações enviadas por formulários online podem ser compartilhadas com terceiros encarregados do processamento.",
+    "title9": "Informações sobre SSL/TLS",
+    "description9": "Este site utiliza criptografia SSL/TLS para proteger conteúdo confidencial, como formulários. Conexões seguras são identificadas pelo “https://” e o cadeado no navegador.\n\nCom SSL/TLS ativo, seus dados não podem ser lidos por terceiros durante a transmissão.",
+    "title10": "Política de Log de Servidor",
+    "description10": "O provedor deste site coleta automaticamente informações em logs enviadas pelo navegador:\n- Tipo/version do navegador\n- Sistema operacional\n- URL de origem (referrer)\n- Nome do host do dispositivo\n- Hora da solicitação ao servidor\n\nEsses dados não identificam pessoas e não são combinados com outras fontes. Podemos analisá-los em caso de suspeita de uso ilegal.",
+    "title11": "Serviços de Terceiros",
+    "description11": "Este site pode usar Google Maps para mapas, Google Invisible reCAPTCHA para proteção contra bots/spam e YouTube para vídeos incorporados.\nEsses serviços do Google LLC (EUA) utilizam cookies e transferem dados para os EUA. Acreditamos que não há rastreamento pessoal pela simples visita.\nO Google mantém proteção de dados via Privacy Shield UE‑EUA e Suíça‑EUA.\nMais informações estão disponíveis na política do Google.",
+    "title12": "Política para Formulário de Contato",
+    "description12": "Se você nos enviar uma consulta por formulário, os dados preenchidos e de contato serão armazenados para processar sua solicitação e responder. Não iremos divulgá-los sem consentimento.",
+    "title13": "Política para Newsletter",
+    "description13": "Para receber nossa newsletter, solicitamos e‑mail e dados para verificar propriedade e consentimento. Não coletamos outros dados. Usamos apenas para envio e não compartilhamos com terceiros.\nVocê pode revogar seu consentimento a qualquer momento (ex.: link de cancelamento na newsletter).",
+    "title14": "Política para Comentários",
+    "description14": "Para comentários no site, armazenamos o texto, data/hora, e‑mail e nome de usuário, caso não anônimo.\nSalvamos o endereço IP para prevenir abuso, já que os comentários não são moderados antes da publicação.\n\nVocê pode se inscrever para ser notificado sobre respostas a comentários. Após se registrar, receberá e‑mail de confirmação. Pode cancelar a inscrição a qualquer momento por link no e‑mail.",
+    "title15": "Direitos dos Titulares",
+    "description15": "Você tem direito de solicitar ao responsável se seus dados pessoais estão sendo processados. Para exercer esse direito, contate nosso Encarregado da Proteção de Dados.",
+    "title16": "Direito de Acesso",
+    "description16": "Você pode solicitar gratuitamente informações sobre seus dados pessoais armazenados e obter uma cópia. Também pode saber:\n- finalidades\n- categorias de dados\n- destinatários\n- prazo ou critérios de retenção\n- direitos de retificação, exclusão, restrição ou oposição\n- direito de reclamar a uma autoridade\n- origem dos dados não coletados diretamente\n- transferências internacionais e garantias\n\nPara exercer esse direito, contate nosso Encarregado de Proteção de Dados.",
+    "title17": "Direito de Retificação",
+    "description17": "Você pode solicitar a correção imediata de dados imprecisos e completar dados incompletos (ex.: declaração adicional).\nPara isso, contate nosso Encarregado de Proteção de Dados.",
+    "title18": "Direito de Exclusão (“Direito ao Esquecimento”)",
+    "description18": "Você pode solicitar exclusão imediata se:\n- os dados não são mais necessários\n- revogou o consentimento e não há base legal alternativa\n- se opôs ao processamento e interesses legítimos não prevalecem\n- os dados foram processados ilegalmente\n- a exclusão é exigida por lei\n- os dados referem-se a criança e foram coletados online\n\nPara exercer esse direito, contate nosso Encarregado, que dará seguimento imediato.",
+    "title19": "Direito de Restrição de Tratamento",
+    "description19": "Você pode solicitar restrição se:\n- contesta a exatidão dos dados\n- o processamento é ilegal e você se opõe à exclusão\n- não precisamos mais dos dados, mas você precisa para reivindicações\n- se opôs e não está claro se interesses prevalecem\n\nPara exercer esse direito, contate nosso Encarregado, que tomará providências.",
+    "title20": "Direito à Portabilidade dos Dados",
+    "description20": "Você pode receber seus dados pessoais em formato estruturado, de uso comum e legível por máquina, e transferi-los a outro responsável, se tecnicamente viável e sem prejudicar direitos de terceiros.\nPara exercer esse direito, contate nosso Encarregado.",
+    "title21": "Direito de Oposição",
+    "description21": "Você pode se opor a qualquer momento ao tratamento por motivos relacionados à sua situação.\nEm tal caso, interromperemos o processamento, a menos que prevaleçam motivos legítimos ou legais.\nPara exercer esse direito, contate diretamente nosso Encarregado.",
+    "title22": "Direito de Revogar o Consentimento",
+    "description22": "Você pode revogar consentimento ao tratamento de dados pessoais a qualquer momento.\nPara isso, contate nosso Encarregado.",
+    "title23": "Política de Oposição a E‑mails Promocionais",
+    "description23": "O uso dos dados de contato disponíveis no impressum para envio de publicidade não solicitada é expressamente rejeitado. Os responsáveis se reservam o direito de ação legal contra envio não solicitado (spam).",
+    "title24": "Serviços Pagos",
+    "description24": "Para fornecer serviços pagos, solicitamos dados adicionais como informações de pagamento para processar seu pedido. Esses dados são armazenados em nossos sistemas até cumprirem os prazos legais.",
+    "title25": "Uso do Google Maps",
+    "description25": "Este site utiliza Google Maps, permitindo exibir mapas interativos. Ao visitar, o Google recebe informação da página acessada, independentemente de login.\nSe estiver conectado ao Google, os dados podem ser associados à sua conta. Caso contrário, o Google pode criar perfis para fins publicitários e de pesquisa. Você pode se opor, contatando o Google.\nMais detalhes estão na política do Google.",
+    "title26": "Google Ads",
+    "description26": "Usamos o rastreamento de conversão do Google Ads. Se você acessou via anúncio, um cookie de conversão válido por 30 dias é armazenado, sem identificação pessoal.\nSe visitar certas páginas, nós e o Google saberemos que você clicou no anúncio. Cada cliente Ads possui cookie próprio, impedindo cruzamento.\nOs dados servem para estatísticas, sem identificação individual.\nVocê pode rejeitar estes cookies nas configurações do navegador ou bloqueando-os do domínio “googleleadservices.com”.\nNão exclua o cookie de opt‑out se quiser evitar rastreamento. Se limpar cookies, será necessário configurá-lo novamente.",
+    "title27": "Remarketing do Google",
+    "description27": "Usamos remarketing para exibir anúncios personalizados na rede Google.\nQuando o cookie é definido, você pode ser reconhecido em sites conectados à rede e receber anúncios com base nas páginas visitadas.\nO Google afirma que não coleta dados pessoais nesse processo.\nVocê pode desativar o remarketing em http://www.google.com/settings/ads ou desabilitar cookies em http://www.networkadvertising.org/managing/opt_out.asp.",
+    "title28": "Uso do Google reCAPTCHA",
+    "description28": "Utilizamos o Google reCAPTCHA (fornecido pela Google Ireland Limited) para verificar se entradas em formulários são feitas por humanos ou bots. O reCAPTCHA analisa comportamento (IP, tempo no site, movimentos do mouse etc.) e envia dados ao Google em segundo plano, sem aviso.\nA base legal é interesse legítimo (art. 6(1)(f)), pois protegemos contra spams automatizados.\nMais informações sobre reCAPTCHA e privacidade estão nas páginas oficiais do Google.",
+    "title29": "Política do Google Analytics",
+    "description29": "Este site usa Google Analytics (Google Ireland Limited ou Google LLC fora do EEE/Suíça) para melhorar serviços. Utilizamos análise multi-dispositivo com User-ID.\nSe tiver conta Google, pode desativar o recurso em “Meus dados” → “Dados pessoais”.\nA base legal é interesse legítimo (art. 6(1)(f)).\nO código “_anonymizeIp();” anonimiza IP, impedindo identificação pessoal. Em casos raros, o IP é enviado completo aos EUA, mas imediatamente anonimizado.\nGoogle usa cookies e transfere dados aos EUA. Você pode impedir o armazenamento de cookies pelo navegador, com possível limitação de funções do site. Pode bloquear o Analytics via plugin ou clicando em “Desativar Google Analytics”, gerando cookie de opt‑out. Esse cookie é específico por navegador/dispositivo e deve ser configurado novamente se você limpar cookies.",
+    "title30": "Política do Google AdSense",
+    "description30": "Usamos Google AdSense para exibir anúncios relevantes. AdSense utiliza cookies para personalização, evitar exibição repetida e medir conversões.\nO cookie AdSense carrega um ID para anúncio, mas não contém dados pessoais.\nAo incluir Google Ads, o navegador estabelece conexão direta com servidores do Google. Se estiver logado, sua visita pode ser associada à sua conta; mesmo assim, seu IP pode ser registrado.\nVocê pode desativar o rastreamento:\n- bloqueando cookies de terceiros no navegador;\n- bloqueando cookies de “www.googleadservices.com” ou usando https://adssettings.google.com (configuração é removida se limpar cookies);\n- desativando anúncios baseados em interesse via https://www.aboutads.info/choices;\n- desativando permanentemente com plugin do Google para navegadores.\nEssas ações podem afetar funcionalidades do site.\nA base legal é interesse legítimo (art. 6(1)(f)).\nMais informações na política do Google Ads, política de privacidade do Google e Network Advertising Initiative.",
+    "title31": "Uso do Google Web Fonts",
+    "description31": "Este site utiliza Google Web Fonts para padronizar fontes. O navegador carrega fonts do google.com para cache. Se não suportado, fontes padrão são usadas.\nMais informações estão no FAQ do Google Fonts e na política de privacidade do Google.",
+    "title32": "Google Tag Manager",
+    "description32": "O Google Tag Manager permite gerenciar tags (ex. Analytics, outros serviços Google) via interface. Ele próprio não processa dados pessoais. Para uso de serviços Google e proteção de dados, consulte as políticas correspondentes.",
+    "title33": "Política do HubSpot",
+    "description33": "Nosso site usa o HubSpot, uma plataforma de automação de marketing da HubSpot, Inc. (EUA), com sede europeia na Irlanda. O HubSpot nos ajuda a analisar o uso do site usando cookies.\nAlguns dados de uso são vinculados à pessoa (ex. ao preencher formulário) e armazenados no nosso CRM. Isso permite enviar informações e ofertas personalizadas.\nOs dados podem ser transferidos aos EUA. O HubSpot participa do Privacy Shield UE‑EUA e quadro Suíça‑EUA, garantindo proteção adequada.\nA base legal é interesse legítimo (art. 6(1)(f)).\nOs dados são mantidos enquanto necessários para os fins mencionados.\nO fornecimento dos dados não é obrigatório por lei ou contrato. Se não fornecer, não poderemos oferecer informações personalizadas.\nPara mais detalhes, consulte a política de privacidade do HubSpot.\nVocê pode se opor ao uso dos dados a qualquer momento, por e‑mail conforme indicado na política.\nO HubSpot é certificado pelo EU‑U.S. Privacy Shield, possui o selo TRUSTe e o quadro U.S.–Swiss Safe Harbor.",
     "title34": "Uso do Matomo",
     "description34": "Este site utiliza o Matomo (anteriormente Piwik), um software open-source para análise estatística de visitantes. O Matomo usa cookies, que são arquivos de texto armazenados no seu computador e permitem analisar o uso do site.\nAs informações geradas pelo cookie sobre o seu uso do site são armazenadas em um servidor na Alemanha.\nO endereço IP é anonimizado imediatamente após o processamento e antes do armazenamento. Você pode impedir a instalação de cookies alterando as configurações do seu navegador. Note que, dependendo da configuração, algumas funcionalidades do site podem ficar indisponíveis.\nVocê pode escolher se permite ou não que um cookie de análise web único seja armazenado em seu navegador, permitindo ao operador do site coletar e analisar dados estatísticos.",
     "title35": "Uso do Adobe Analytics (Omniture)",
@@ -594,56 +661,79 @@
     "title70": "Perguntas ao Encarregado de Proteção de Dados",
     "description70": "Se você tiver perguntas sobre proteção de dados, envie-nos um e-mail ou entre em contato diretamente com a pessoa responsável mencionada no início desta política."
   },
+  "impressum": {
+    "title": "Impressum",
+    "owner": {
+      "title": "Webomo GmbH",
+      "description": ""
+    },
+    "address": {
+      "title": "Endereço",
+      "description": "Berneckerstrasse 4a CH-9434 Au"
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "E-mail: kontakt@webomo.ch | Website: www.webomo.ch"
+    },
+    "registry": {
+      "title": "N.º de IVA",
+      "description": "CHE-418.987.018"
+    },
+    "disclaimer": {
+      "title": "Isenção de responsabilidade",
+      "description": "O conteúdo deste site foi criado com o maior cuidado possível. No entanto, não garantimos a exatidão, integridade ou atualidade das informações fornecidas."
+    }
+  },
   "Timeline": {
-    "title": "Como implementamos isso?",
-    "subtitle": "Descubra os cinco passos que levarão você a uma parceria de sucesso com a WEBOMO."
+    "title": "Como colocamos isso em prática?",
+    "subtitle": "Descubra os quatro passos que levam você a uma parceria de sucesso com a WEBOMO."
   },
   "TimelineDemo": {
     "step1": {
       "number": "01",
       "label": "Vamos começar",
-      "title": "Agende uma consulta gratuita",
-      "description": "Inicie sua jornada de branding agendando sua primeira consulta. Estamos ansiosos para conhecê-lo e ajudar a transformar sua marca."
+      "title": "Agende uma consultoria gratuita",
+      "description": "Comece sua jornada de branding marcando uma consulta inicial. Estamos ansiosos para conhecê-lo e transformar a sua marca."
     },
     "step2": {
       "number": "02",
-      "label": "O que você precisa?",
+      "label": "Do que você precisa?",
       "title": "Estratégia personalizada",
-      "description": "Durante nossa consulta, desenvolveremos uma estratégia personalizada para atender às necessidades do seu negócio. Nosso objetivo é criar um roteiro claro para garantir o sucesso da sua marca."
+      "description": "Durante a consultoria, desenvolveremos juntos uma estratégia personalizada que atenda às necessidades da sua empresa. Criaremos um plano claro que mostra o caminho para o sucesso da sua marca."
     },
     "step3": {
       "number": "03",
-      "label": "Execução",
+      "label": "Vamos lá",
       "title": "Implementação",
-      "description": "Após a sua aprovação, entramos na fase de execução. Juntos, implementaremos estratégias e materiais de branding personalizados para direcionar sua marca para um novo caminho."
+      "description": "Após a sua aprovação da proposta, iniciamos a implementação. Juntos colocaremos em prática estratégias e materiais de branding sob medida para levar sua marca a um novo patamar."
     },
     "step4": {
       "number": "04",
       "label": "Otimização",
       "title": "Desempenho máximo",
-      "description": "Nos esforçamos constantemente para melhorar o desempenho da sua marca. Com análises de mercado regulares e ajustes estratégicos, otimizamos nossa colaboração para alcançar resultados ainda melhores."
+      "description": "Nosso objetivo é melhorar continuamente o desempenho da sua marca. Com análises de mercado regulares e ajustes estratégicos, otimizamos nossa colaboração."
     }
   },
   "CardsBusiness": {
-    "highlight": "Marketing de Impacto",
-    "title": "Por que o AI Marketing - Branding é a chave do seu sucesso?",
-    "headlineHighlight": "Webomo-Business",
-    "headline": "Torne-se parceiro",
-    "subtitle": "Aumente a visibilidade e o posicionamento da sua marca para atrair clientes que investem em qualidade excepcional.",
+    "highlight": "Marketing com impacto",
+    "title": "Por que o marketing com IA – branding é a chave para o seu sucesso?",
+    "headlineHighlight": "Webomo Business",
+    "headline": "Torne-se um parceiro",
+    "subtitle": "Aumente a visibilidade e o posicionamento da sua marca no mercado e conquiste clientes que valorizam qualidade excepcional.",
     "card1": {
-      "alt": "Oportunidades de renda ilimitadas",
-      "title": "Potencial de Ganhos Ilimitado",
-      "description": "Não há limite para seus ganhos. A cada ano, você constrói seu portfólio e sua renda cresce junto com ele."
+      "alt": "Destaque-se",
+      "title": "Potencial de renda ilimitado",
+      "description": "Não há limite para os seus ganhos. A cada ano, você constrói seu portfólio e sua renda cresce junto com ele."
     },
     "card2": {
-      "alt": "Renda recorrente",
-      "title": "Receita Anual em Vez de Ganhos Únicos",
-      "description": "Com receita recorrente anual, você garante uma renda estável em vez de depender de pagamentos únicos."
+      "alt": "Conquiste clientes dos sonhos",
+      "title": "Renda anual em vez de ganhos pontuais",
+      "description": "Com uma renda anual, você garante um fluxo contínuo e recorrente, ao invés de depender apenas de pagamentos únicos."
     },
     "card3": {
-      "alt": "Liberdade e flexibilidade",
-      "title": "Mais Liberdade",
-      "description": "Trabalhe de onde quiser e decida quanto e por quanto tempo deseja trabalhar. Ajudamos você a expandir sua equipe para conquistar mais tempo para si mesmo."
+      "alt": "Aumente seus lucros",
+      "title": "Mais liberdade",
+      "description": "Você trabalha de onde quiser e decide quanto e quando deseja trabalhar. Nós ajudamos você a expandir sua equipe para que possa ter mais tempo para si mesmo."
     }
   }
 }
