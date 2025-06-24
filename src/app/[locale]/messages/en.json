@@ -324,22 +324,72 @@
   },
   "Pricing": {
     "title": "Ready?",
-    "titleCompare": "Compare Our Packages",
-    "subHeadline": "Choose a package.",
-    "description": "Get noticed. Increase revenue. Secure success.",
-    "choosePlan": "Book a demo",
+    "titleCompare": "Compare our packages",
+    "subHeadline": "Choose your package.",
+    "description": "Gain visibility. Increase revenue. Secure success.",
+    "choosePlan": "Book demo call",
     "payLaterDescription": "Book your package today and pay stress-free later.",
     "checkoutNow": "Book now",
+    "features": {
+      "planningStrategy": {
+        "name": "Strategy planning",
+        "short": "Strategy"
+      },
+      "contentProduction": {
+        "name": "Content production",
+        "short": "Content"
+      },
+      "copywriting": {
+        "name": "Copywriting",
+        "short": "Text"
+      },
+      "reporting": {
+        "name": "Reporting",
+        "short": "Reporting"
+      },
+      "socialMediaCampaign": {
+        "name": "Social media campaign",
+        "short": "Campaign"
+      },
+      "aiPublication": {
+        "name": "AI publication",
+        "short": "AI post"
+      },
+      "callToAction": {
+        "name": "Call to action (link to website/form/landing page/app)",
+        "short": "CTA"
+      },
+      "promoVideos": {
+        "name": "Promo videos (15–30 seconds)",
+        "short": "Videos"
+      },
+      "publicationByWebomo": {
+        "name": "Publishing by Webomo",
+        "short": "Posting"
+      },
+      "branding": {
+        "name": "Branding",
+        "short": "Branding"
+      },
+      "webDevelopment": {
+        "name": "Web development",
+        "short": "Webdev"
+      },
+      "logoPrintDesign": {
+        "name": "Logo & print design",
+        "short": "Logo/Print"
+      }
+    },
     "plans": {
       "Basic": {
         "name": "Basic",
         "price": "299",
         "features": [
           "Strategy planning",
-          "Content creation",
+          "Content production",
           "Copywriting",
           "Reporting",
-          "",
+          " ",
           ""
         ]
       },
@@ -349,8 +399,8 @@
         "features": [
           "Includes Basic package",
           "Campaigns",
-          "AI publishing",
-          "Promotional videos"
+          "AI publication",
+          "Promo videos"
         ]
       },
       "Business": {
@@ -358,8 +408,8 @@
         "price": "On request",
         "features": [
           "Includes Pro package",
-          "Web, logo & print design",
-          "You define services, we deliver"
+          "Web development, logo & print design",
+          "You define your services, and we deliver."
         ]
       }
     },
@@ -369,10 +419,10 @@
         "price": "299",
         "features": [
           "Strategy planning",
-          "Content creation: 106 items (2/week)",
-          "Copywriting: hashtags & captions",
+          "Content production: 106 posts / 2 per week",
+          "Copywriting: hashtags & descriptions for each post",
           "Reporting",
-          "",
+          " ",
           ""
         ]
       },
@@ -381,9 +431,9 @@
         "price": "399",
         "features": [
           "Includes Basic package",
-          "Social media campaigns",
-          "AI publishing",
-          "Social media blitz",
+          "Soc. med. campaigns",
+          "AI publication",
+          "Social media campaign",
           "Promo video"
         ]
       },
@@ -391,16 +441,16 @@
         "name": "Business",
         "price": "On request",
         "features": [
-          "AI publishing: reach max",
+          "AI publication: reach maximization",
           "Logo & print design",
-          "You define services, we deliver"
+          "You define your services, and we deliver."
         ]
       }
     },
     "recommended": "Most",
     "recommended2": "booked",
-    "month": "mo",
-    "duration": "12 months publishing",
+    "month": "monthly",
+    "duration": "12 months of publishing",
     "footerText": "Includes dashboard & reporting"
   },
   "Manager": {

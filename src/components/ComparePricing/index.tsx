@@ -24,94 +24,95 @@ const ComparePricing = () => {
   };
 
   // Lista delle feature con indicazione di quali piani le supportano
-  const features = [
-    {
-      name: t("plans1.Basic.features.0"),
-      shortName: "Planung Strategie",
-      basic: true,
-      pro: true,
-      enterprise: true,
-    },
-    {
-      name: t("plans1.Basic.features.1"),
-      shortName: "Content Produktion",
-      basic: true,
-      pro: true,
-      enterprise: true,
-    },
-    {
-      name: t("plans1.Basic.features.2"),
-      shortName: "Texterstellung",
-      basic: true,
-      pro: true,
-      enterprise: true,
-    },
-    {
-      name: t("plans1.Basic.features.3"),
-      shortName: "Reporting",
-      basic: true,
-      pro: true,
-      enterprise: true,
-    },
-    {
-      name: t("plans1.Unlimited.features.3"),
-      shortName: "Social Media Kampagne",
-      basic: false,
-      pro: true,
-      enterprise: true,
-    },
-    {
-      name: t("plans1.Business.features.0"),
-      shortName: "KI Publication",
-      basic: false,
-      pro: true,
-      enterprise: true,
-    },
+// 👇  Sostituisci l’intero array features con questo
+const features = [
+  {
+    name: t("features.planningStrategy.name"),
+    shortName: t("features.planningStrategy.short"),
+    basic: true,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.contentProduction.name"),
+    shortName: t("features.contentProduction.short"),
+    basic: true,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.copywriting.name"),
+    shortName: t("features.copywriting.short"),
+    basic: true,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.reporting.name"),
+    shortName: t("features.reporting.short"),
+    basic: true,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.socialMediaCampaign.name"),
+    shortName: t("features.socialMediaCampaign.short"),
+    basic: false,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.aiPublication.name"),
+    shortName: t("features.aiPublication.short"),
+    basic: false,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.callToAction.name"),
+    shortName: t("features.callToAction.short"),
+    basic: false,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.promoVideos.name"),
+    shortName: t("features.promoVideos.short"),
+    basic: false,
+    pro: true,
+    enterprise: true,
+  },
+  {
+    name: t("features.publicationByWebomo.name"),
+    shortName: t("features.publicationByWebomo.short"),
+    basic: false,
+    pro: false,
+    enterprise: true,
+  },
+  {
+    name: t("features.branding.name"),
+    shortName: t("features.branding.short"),
+    basic: false,
+    pro: false,
+    enterprise: true,
+  },
+  {
+    name: t("features.webDevelopment.name"),
+    shortName: t("features.webDevelopment.short"),
+    basic: false,
+    pro: false,
+    enterprise: true,
+  },
+  {
+    name: t("features.logoPrintDesign.name"),
+    shortName: t("features.logoPrintDesign.short"),
+    basic: false,
+    pro: false,
+    enterprise: true,
+  },
+];
 
-    {
-      name: "Call to Action: Verlinkung auf Webseite / Formular / Landingpage / App",
-      shortName: "Call to Action",
-      basic: false,
-      pro: true,
-      enterprise: true,
-    },
-    {
-      name: "Werbevideos: Promovideos / Imagevideos / KI Videos (Dauer 15 - 30 Sekunden)",
-      shortName: "Werbevideos",
-      basic: false,
-      pro: true,
-      enterprise: true,
-    },
-   {
-      name: "Veröffentlichung durch Webomo",
-      shortName: "Veröffentlichung durch Webomo",
-      basic: false,
-      pro: false,
-      enterprise: true,
-    },
-    {
-      name: "Branding",
-      shortName: "Branding",
-      basic: false,
-      pro: false,
-      enterprise: true,
-    },
-   
-    {
-      name: "Webentwicklung",
-      shortName: "Webentwicklung",
-      basic: false,
-      pro: false,
-      enterprise: true,
-    },
-    {
-      name: t("plans1.Business.features.1"),
-      shortName: "Logo & Print Design",
-      basic: false,
-      pro: false,
-      enterprise: true,
-    },
-  ];
+
 
   return (
     <div className="bg-gradient-to-b from-purple-100 via-gray-100 to-white pt-[110px] dark:from-purple-500 dark:via-slate-900 dark:to-black">
