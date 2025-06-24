@@ -815,54 +815,54 @@
     "Timeline": {
       "title": "How do we make it happen?",
       "subtitle": "Discover the four steps that lead you to a successful partnership with WEBOMO."
+    }
+  },
+  "TimelineDemo": {
+    "step1": {
+      "number": "01",
+      "label": "Let’s go",
+      "title": "Book a free consultation",
+      "description": "Start your branding journey by scheduling your first consultation. We can’t wait to meet you and transform your brand."
     },
-    "TimelineDemo": {
-      "step1": {
-        "number": "01",
-        "label": "Let’s go",
-        "title": "Book a free consultation",
-        "description": "Start your branding journey by scheduling your first consultation. We can’t wait to meet you and transform your brand."
-      },
-      "step2": {
-        "number": "02",
-        "label": "What do you need?",
-        "title": "Tailored Strategy",
-        "description": "In our consultation, we’ll develop a customized strategy tailored to your business needs. Together, we’ll create a clear roadmap that outlines your brand’s path to success."
-      },
-      "step3": {
-        "number": "03",
-        "label": "Let’s begin",
-        "title": "Implementation",
-        "description": "Once you approve our proposal, we begin the implementation. Together, we launch the customized branding strategies and materials that will move your brand in a new direction."
-      },
-      "step4": {
-        "number": "04",
-        "label": "Optimization",
-        "title": "Maximum Performance",
-        "description": "We aim to continuously enhance your brand’s performance. With regular market analysis and strategic adjustments, we optimize our collaboration."
-      }
+    "step2": {
+      "number": "02",
+      "label": "What do you need?",
+      "title": "Tailored Strategy",
+      "description": "In our consultation, we’ll develop a customized strategy tailored to your business needs. Together, we’ll create a clear roadmap that outlines your brand’s path to success."
     },
-    "CardsBusiness": {
-      "highlight": "Marketing with Impact",
-      "title": "Why is AI Marketing – Branding the key to your success?",
-      "headlineHighlight": "Webomo Business",
-      "headline": "Become a Partner",
-      "subtitle": "Boost your brand’s visibility and market position while attracting clients who value outstanding quality.",
-      "card1": {
-        "alt": "Stand out",
-        "title": "Unlimited Income Potential",
-        "description": "There’s no cap on your earnings. Every year, you build your portfolio and grow your income at the same time."
-      },
-      "card2": {
-        "alt": "Get dream clients",
-        "title": "Annual Revenue Instead of One-Time Gains",
-        "description": "With annual revenue, you generate a steady, recurring income instead of relying on one-time payments."
-      },
-      "card3": {
-        "alt": "Increase your profits",
-        "title": "More Freedom",
-        "description": "Work from anywhere and choose how much and how long you want to work. We support you in growing your team so you can gain more time for yourself."
-      }
+    "step3": {
+      "number": "03",
+      "label": "Let’s begin",
+      "title": "Implementation",
+      "description": "Once you approve our proposal, we begin the implementation. Together, we launch the customized branding strategies and materials that will move your brand in a new direction."
+    },
+    "step4": {
+      "number": "04",
+      "label": "Optimization",
+      "title": "Maximum Performance",
+      "description": "We aim to continuously enhance your brand’s performance. With regular market analysis and strategic adjustments, we optimize our collaboration."
+    }
+  },
+  "CardsBusiness": {
+    "highlight": "Marketing with Impact",
+    "title": "Why is AI Marketing – Branding the key to your success?",
+    "headlineHighlight": "Webomo Business",
+    "headline": "Become a Partner",
+    "subtitle": "Boost your brand’s visibility and market position while attracting clients who value outstanding quality.",
+    "card1": {
+      "alt": "Stand out",
+      "title": "Unlimited Income Potential",
+      "description": "There’s no cap on your earnings. Every year, you build your portfolio and grow your income at the same time."
+    },
+    "card2": {
+      "alt": "Get dream clients",
+      "title": "Annual Revenue Instead of One-Time Gains",
+      "description": "With annual revenue, you generate a steady, recurring income instead of relying on one-time payments."
+    },
+    "card3": {
+      "alt": "Increase your profits",
+      "title": "More Freedom",
+      "description": "Work from anywhere and choose how much and how long you want to work. We support you in growing your team so you can gain more time for yourself."
     }
   }
 }

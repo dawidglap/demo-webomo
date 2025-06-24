@@ -759,58 +759,58 @@
     "disclaimer": {
       "title": "Descargo de responsabilidad",
       "description": "Los contenidos de este sitio web han sido creados con el mayor cuidado posible. Sin embargo, no garantizamos la exactitud, integridad o actualidad de los contenidos."
+    }
+  },
+  "Timeline": {
+    "title": "¿Cómo lo hacemos?",
+    "subtitle": "Descubre los cuatro pasos que te llevan a una colaboración exitosa con WEBOMO."
+  },
+  "TimelineDemo": {
+    "step1": {
+      "number": "01",
+      "label": "Empecemos",
+      "title": "Reserva una consulta gratuita",
+      "description": "Inicia tu camino hacia el branding concertando una cita para tu primera consulta. Estamos deseando conocerte y rediseñar tu marca contigo."
     },
-    "Timeline": {
-      "title": "¿Cómo lo hacemos?",
-      "subtitle": "Descubre los cuatro pasos que te llevan a una colaboración exitosa con WEBOMO."
+    "step2": {
+      "number": "02",
+      "label": "¿Qué necesitas?",
+      "title": "Estrategia personalizada",
+      "description": "En nuestra consulta desarrollaremos juntos una estrategia personalizada que se adapte a las necesidades de tu empresa. Crearemos una hoja de ruta clara para el éxito de tu marca."
     },
-    "TimelineDemo": {
-      "step1": {
-        "number": "01",
-        "label": "Empecemos",
-        "title": "Reserva una consulta gratuita",
-        "description": "Inicia tu camino hacia el branding concertando una cita para tu primera consulta. Estamos deseando conocerte y rediseñar tu marca contigo."
-      },
-      "step2": {
-        "number": "02",
-        "label": "¿Qué necesitas?",
-        "title": "Estrategia personalizada",
-        "description": "En nuestra consulta desarrollaremos juntos una estrategia personalizada que se adapte a las necesidades de tu empresa. Crearemos una hoja de ruta clara para el éxito de tu marca."
-      },
-      "step3": {
-        "number": "03",
-        "label": "Manos a la obra",
-        "title": "Implementación",
-        "description": "Una vez que apruebes nuestra propuesta, comenzamos con la implementación. Juntos pondremos en marcha estrategias y materiales de branding personalizados para llevar tu marca en una nueva dirección."
-      },
-      "step4": {
-        "number": "04",
-        "label": "Optimización",
-        "title": "Rendimiento máximo",
-        "description": "Nuestro objetivo es mejorar continuamente el rendimiento de tu marca. A través de análisis de mercado regulares y ajustes estratégicos, optimizamos nuestra colaboración."
-      }
+    "step3": {
+      "number": "03",
+      "label": "Manos a la obra",
+      "title": "Implementación",
+      "description": "Una vez que apruebes nuestra propuesta, comenzamos con la implementación. Juntos pondremos en marcha estrategias y materiales de branding personalizados para llevar tu marca en una nueva dirección."
     },
-    "CardsBusiness": {
-      "highlight": "Marketing con impacto",
-      "title": "¿Por qué el marketing con IA – branding es la clave de tu éxito?",
-      "headlineHighlight": "Webomo Business",
-      "headline": "Hazte socio",
-      "subtitle": "Mejora la visibilidad y la posición de tu marca en el mercado y atrae a clientes que valoran la calidad excepcional.",
-      "card1": {
-        "alt": "Destácate",
-        "title": "Ingresos ilimitados",
-        "description": "No hay un límite para tus ganancias. Cada año amplías tu portafolio y aumentan tus ingresos."
-      },
-      "card2": {
-        "alt": "Consigue clientes ideales",
-        "title": "Ingresos anuales en lugar de ganancias únicas",
-        "description": "Con ingresos anuales obtienes ingresos constantes y recurrentes, en lugar de pagos únicos."
-      },
-      "card3": {
-        "alt": "Aumenta tus beneficios",
-        "title": "Más libertad",
-        "description": "Trabaja desde cualquier lugar y decide tú mismo cuánto y cuándo trabajar. Te ayudamos a ampliar tu equipo para que ganes más tiempo para ti."
-      }
+    "step4": {
+      "number": "04",
+      "label": "Optimización",
+      "title": "Rendimiento máximo",
+      "description": "Nuestro objetivo es mejorar continuamente el rendimiento de tu marca. A través de análisis de mercado regulares y ajustes estratégicos, optimizamos nuestra colaboración."
+    }
+  },
+  "CardsBusiness": {
+    "highlight": "Marketing con impacto",
+    "title": "¿Por qué el marketing con IA – branding es la clave de tu éxito?",
+    "headlineHighlight": "Webomo Business",
+    "headline": "Hazte socio",
+    "subtitle": "Mejora la visibilidad y la posición de tu marca en el mercado y atrae a clientes que valoran la calidad excepcional.",
+    "card1": {
+      "alt": "Destácate",
+      "title": "Ingresos ilimitados",
+      "description": "No hay un límite para tus ganancias. Cada año amplías tu portafolio y aumentan tus ingresos."
+    },
+    "card2": {
+      "alt": "Consigue clientes ideales",
+      "title": "Ingresos anuales en lugar de ganancias únicas",
+      "description": "Con ingresos anuales obtienes ingresos constantes y recurrentes, en lugar de pagos únicos."
+    },
+    "card3": {
+      "alt": "Aumenta tus beneficios",
+      "title": "Más libertad",
+      "description": "Trabaja desde cualquier lugar y decide tú mismo cuánto y cuándo trabajar. Te ayudamos a ampliar tu equipo para que ganes más tiempo para ti."
     }
   }
 }
