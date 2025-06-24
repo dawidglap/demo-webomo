@@ -325,21 +325,71 @@
   "Pricing": {
     "title": "¿Listo?",
     "titleCompare": "Compara nuestros paquetes",
-    "subHeadline": "Elige un paquete.",
-    "description": "Hazte visible. Aumenta ingresos. Asegura el éxito.",
+    "subHeadline": "Elige tu paquete.",
+    "description": "Gana visibilidad. Aumenta tus ingresos. Asegura el éxito.",
     "choosePlan": "Reservar demo",
-    "payLaterDescription": "Reserva hoy tu paquete y paga más tarde sin estrés.",
+    "payLaterDescription": "Reserva hoy tu paquete y paga sin estrés más tarde.",
     "checkoutNow": "Reservar ahora",
+    "features": {
+      "planningStrategy": {
+        "name": "Planificación estratégica",
+        "short": "Estrategia"
+      },
+      "contentProduction": {
+        "name": "Producción de contenido",
+        "short": "Contenido"
+      },
+      "copywriting": {
+        "name": "Redacción de textos",
+        "short": "Texto"
+      },
+      "reporting": {
+        "name": "Informes",
+        "short": "Informe"
+      },
+      "socialMediaCampaign": {
+        "name": "Campaña en redes sociales",
+        "short": "Campaña"
+      },
+      "aiPublication": {
+        "name": "Publicación con IA",
+        "short": "IA post"
+      },
+      "callToAction": {
+        "name": "Llamado a la acción (enlace a sitio/formulario/landing/app)",
+        "short": "CTA"
+      },
+      "promoVideos": {
+        "name": "Videos promocionales (15–30 segundos)",
+        "short": "Videos"
+      },
+      "publicationByWebomo": {
+        "name": "Publicación por Webomo",
+        "short": "Publicación"
+      },
+      "branding": {
+        "name": "Branding",
+        "short": "Marca"
+      },
+      "webDevelopment": {
+        "name": "Desarrollo web",
+        "short": "Web"
+      },
+      "logoPrintDesign": {
+        "name": "Diseño de logo e impresión",
+        "short": "Logo/Print"
+      }
+    },
     "plans": {
       "Basic": {
-        "name": "Basic",
+        "name": "Básico",
         "price": "299",
         "features": [
-          "Planificación de estrategia",
+          "Planificación estratégica",
           "Producción de contenido",
-          "Redacción",
+          "Redacción de textos",
           "Informes",
-          "",
+          " ",
           ""
         ]
       },
@@ -347,32 +397,32 @@
         "name": "Pro",
         "price": "399",
         "features": [
-          "Incluye paquete Basic",
+          "Incluye paquete Básico",
           "Campañas",
           "Publicación con IA",
-          "Vídeos promocionales"
+          "Videos promocionales"
         ]
       },
       "Business": {
         "name": "Business",
-        "price": "A petición",
+        "price": "A consultar",
         "features": [
           "Incluye paquete Pro",
-          "Desarrollo web, logo y print",
-          "Tú defines servicios, nosotros entregamos"
+          "Desarrollo web, diseño de logo e impresión",
+          "Tú defines los servicios y nosotros los entregamos."
         ]
       }
     },
     "plans1": {
       "Basic": {
-        "name": "Basic",
+        "name": "Básico",
         "price": "299",
         "features": [
-          "Planificación de estrategia",
-          "Creación de contenido: 106 ítems (2/semana)",
-          "Redacción: hashtags y descripciones",
+          "Planificación estratégica",
+          "Producción de contenido: 106 publicaciones / 2 por semana",
+          "Redacción: hashtags y descripciones para cada publicación",
           "Informes",
-          "",
+          " ",
           ""
         ]
       },
@@ -380,26 +430,26 @@
         "name": "Pro",
         "price": "399",
         "features": [
-          "Incluye paquete Basic",
+          "Incluye paquete Básico",
           "Campañas en redes sociales",
           "Publicación con IA",
-          "Blitz en social media",
-          "Vídeo promo"
+          "Campaña en redes sociales",
+          "Video promocional"
         ]
       },
       "Business": {
         "name": "Business",
-        "price": "A petición",
+        "price": "A consultar",
         "features": [
-          "Publicación IA: alcance máximo",
-          "Diseño de logo y print",
-          "Tú defines servicios, nosotros entregamos"
+          "Publicación con IA: maximización de alcance",
+          "Diseño de logo e impresión",
+          "Tú defines los servicios y nosotros los entregamos."
         ]
       }
     },
     "recommended": "Más",
-    "recommended2": "reservado",
-    "month": "mes",
+    "recommended2": "contratado",
+    "month": "mensual",
     "duration": "12 meses de publicación",
     "footerText": "Incluye panel e informes"
   },

@@ -307,56 +307,6 @@
     "subHeadline": "  mit KI - Marketing",
     "badge": "Jede Woche"
   },
-  "features": {
-    "planningStrategy": {
-      "name": "Planungsstrategie",
-      "short": "Strategie"
-    },
-    "contentProduction": {
-      "name": "Content-Produktion",
-      "short": "Content"
-    },
-    "copywriting": {
-      "name": "Texterstellung",
-      "short": "Text"
-    },
-    "reporting": {
-      "name": "Reporting",
-      "short": "Reporting"
-    },
-    "socialMediaCampaign": {
-      "name": "Social-Media-Kampagne",
-      "short": "Kampagne"
-    },
-    "aiPublication": {
-      "name": "KI-Publikation",
-      "short": "KI-Post"
-    },
-    "callToAction": {
-      "name": "Call-to-Action (Link zu Website/Formular/Landing-Page/App)",
-      "short": "CTA"
-    },
-    "promoVideos": {
-      "name": "Werbevideos (15–30 Sekunden)",
-      "short": "Videos"
-    },
-    "publicationByWebomo": {
-      "name": "Veröffentlichung durch Webomo",
-      "short": "Posting"
-    },
-    "branding": {
-      "name": "Branding",
-      "short": "Branding"
-    },
-    "webDevelopment": {
-      "name": "Webentwicklung",
-      "short": "Webdev"
-    },
-    "logoPrintDesign": {
-      "name": "Logo & Print-Design",
-      "short": "Logo/Print"
-    }
-  },
   "HeroBusiness": {
     "subtitleAlt": "Immer und überall",
     "mainText": "Webomo",

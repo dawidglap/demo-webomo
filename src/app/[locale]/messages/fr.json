@@ -324,22 +324,72 @@
   },
   "Pricing": {
     "title": "Prêt ?",
-    "titleCompare": "Comparez nos offres",
-    "subHeadline": "Choisissez un forfait.",
-    "description": "Soyez visible. Augmentez vos revenus. Assurez votre succès.",
+    "titleCompare": "Comparez nos forfaits",
+    "subHeadline": "Choisissez votre forfait.",
+    "description": "Soyez visible. Augmentez votre chiffre d'affaires. Assurez votre succès.",
     "choosePlan": "Réserver une démo",
-    "payLaterDescription": "Réservez votre forfait aujourd’hui et réglez sans stress plus tard.",
+    "payLaterDescription": "Réservez votre forfait aujourd’hui et effectuez le paiement sans stress.",
     "checkoutNow": "Réserver maintenant",
+    "features": {
+      "planningStrategy": {
+        "name": "Planification stratégique",
+        "short": "Stratégie"
+      },
+      "contentProduction": {
+        "name": "Production de contenu",
+        "short": "Contenu"
+      },
+      "copywriting": {
+        "name": "Rédaction",
+        "short": "Texte"
+      },
+      "reporting": {
+        "name": "Rapports",
+        "short": "Rapport"
+      },
+      "socialMediaCampaign": {
+        "name": "Campagne sur les réseaux sociaux",
+        "short": "Campagne"
+      },
+      "aiPublication": {
+        "name": "Publication avec IA",
+        "short": "Post IA"
+      },
+      "callToAction": {
+        "name": "Call-to-Action (lien vers site/formulaire/landing page/app)",
+        "short": "CTA"
+      },
+      "promoVideos": {
+        "name": "Vidéos promotionnelles (15–30 secondes)",
+        "short": "Vidéos"
+      },
+      "publicationByWebomo": {
+        "name": "Publication par Webomo",
+        "short": "Publication"
+      },
+      "branding": {
+        "name": "Branding",
+        "short": "Marque"
+      },
+      "webDevelopment": {
+        "name": "Développement web",
+        "short": "Web"
+      },
+      "logoPrintDesign": {
+        "name": "Conception de logo & impression",
+        "short": "Logo/Print"
+      }
+    },
     "plans": {
       "Basic": {
-        "name": "Basic",
+        "name": "Basique",
         "price": "299",
         "features": [
           "Planification stratégique",
           "Production de contenu",
           "Rédaction",
-          "Reporting",
-          "",
+          "Rapports",
+          " ",
           ""
         ]
       },
@@ -347,9 +397,9 @@
         "name": "Pro",
         "price": "399",
         "features": [
-          "Inclut le forfait Basic",
+          "Inclus : Forfait Basique",
           "Campagnes",
-          "Publication IA",
+          "Publication avec IA",
           "Vidéos promotionnelles"
         ]
       },
@@ -357,22 +407,22 @@
         "name": "Business",
         "price": "Sur demande",
         "features": [
-          "Inclut le forfait Pro",
-          "Dév. web, logo & print",
-          "Vous définissez les services, nous livrons"
+          "Inclus : Forfait Pro",
+          "Développement web, logo & design imprimé",
+          "Vous définissez vos prestations et nous livrons."
         ]
       }
     },
     "plans1": {
       "Basic": {
-        "name": "Basic",
+        "name": "Basique",
         "price": "299",
         "features": [
           "Planification stratégique",
-          "Création de contenu : 106 éléments (2/semaine)",
-          "Rédaction : hashtags & légendes",
-          "Reporting",
-          "",
+          "Production de contenu : 106 contenus / 2 par semaine",
+          "Rédaction : hashtags & descriptions pour chaque contenu",
+          "Rapports",
+          " ",
           ""
         ]
       },
@@ -380,28 +430,28 @@
         "name": "Pro",
         "price": "399",
         "features": [
-          "Inclut le forfait Basic",
-          "Campagnes social media",
-          "Publication IA",
-          "Blitz social media",
-          "Vidéos promo"
+          "Inclus : Forfait Basique",
+          "Campagnes réseaux sociaux",
+          "Publication avec IA",
+          "Campagne sur les réseaux sociaux",
+          "Vidéo publicitaire"
         ]
       },
       "Business": {
         "name": "Business",
         "price": "Sur demande",
         "features": [
-          "Publication IA : reach max",
-          "Logo & print design",
-          "Vous définissez les services, nous livrons"
+          "Publication avec IA : maximisation de la portée",
+          "Conception de logo & impression",
+          "Vous définissez vos prestations et nous livrons."
         ]
       }
     },
     "recommended": "Le plus",
-    "recommended2": "réservé",
-    "month": "mois",
-    "duration": "12 mois de publication",
-    "footerText": "Inclut dashboard & reporting"
+    "recommended2": "choisi",
+    "month": "par mois",
+    "duration": "Publication pendant 12 mois",
+    "footerText": "Inclut tableau de bord & rapports"
   },
   "Manager": {
     "manager": "Partenaire Business",
