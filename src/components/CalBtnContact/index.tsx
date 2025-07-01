@@ -16,7 +16,7 @@ const CalBtn: React.FC = () => {
     <button
       type="button"
       data-cal-namespace="30min"
-      data-cal-link="webomo/demo"
+      data-cal-link="webomo/partnerprogramm"
       data-cal-config='{"layout":"month_view"}'
       className="w-full rounded-full bg-gradient-to-r from-[#410cd9] to-[#f68efe] py-3 font-semibold text-white shadow-xl transition duration-300 hover:shadow-2xl"
     >
